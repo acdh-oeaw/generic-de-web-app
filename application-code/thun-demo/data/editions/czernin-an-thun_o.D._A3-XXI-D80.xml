@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?oxygen RNGSchema="http://thun-korrespondenz.uibk.ac.at/svn/thun/thun-korrespondenz/schema/thun-schema.rnc" type="compact"?> -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="http://digital-archiv.at:8081/exist/rest/db/files/thun/xml/" xml:id="czernin-an-thun_o.D._A3-XXI-D80.xml">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>
+                    <persName key="czernin-von-und-zu-chudenitz-eugen" role="sender">Eugen
+                        Czernin</persName> an <persName key="thun-hohenstein-leo" role="recipient">Leo Thun</persName>
+                    <lb/>
+                    <placeName>o. O. [Neuhaus]</placeName>, o. D.
+                        [18]50<note xml:id="note_1">Vermerk von fremder Hand am oberen Rand des
+                        Briefes</note>
+                </title>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Staatliches Gebietsarchiv Leitmeritz, Zweigstelle
+                            Tetschen-Bodenbach</institution>
+                        <repository>Familienarchiv Thun-Hohenstein, Linie Tetschen, Nachlass Leo
+                            Thun</repository>
+                        <idno>A3 XXI D80</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <p>Eugen Czernin, Herr der Herrschaft Neuhaus, bittet Leo Thun um
+                            Unterstützung für das Obergymnasium in Neuhaus. In der Stadt befürchtet
+                            man nämlich, dass das Gymnasium aufgelassen werde. Die Gemeinde will
+                            dies unbedingt verhindern. Da sie jedoch nicht in der Lage ist,
+                            ausreichend finanzielle Mittel zur Erhaltung des Gymnasiums
+                            aufzubringen, bittet Czernin den Minister um eine staatliche
+                            Unterstützung. Zur Bekräftigung seines Antrages betont er, dass sich die
+                            Stadt Neuhaus und ihre Bürger während er Unruhen in den Jahren zuvor
+                            stets ruhig verhalten hatten.</p>
+                    </msContents>
+                    <physDesc/>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc docStatus="approved"/>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript">
+                <index>
+                    <term>Gymnasien</term>
+                    <term>Böhmen</term>
+                </index>
+                <p>Hochgeborner Graf!</p>
+                <p>Nicht ohne Besorgnis eine Unbescheidenheit zu begehen, wage ich es, Euer
+                    Excellenz mit diesen Zeilen zu belästigen. Eine Stimme sagt mir, daß ich es
+                    vermeiden sollte, einem Manne auch nur einige Momente zu rauben, der unermüdlich
+                    seine Tage dem Wohl des States zum Opfer bringt und dessen Zeit unausgesetzt den
+                    wichtigsten Gegenständen gewidmet ist. Allein andererseits ist es doch hart,
+                    wohlbegründete Anliegen gänzlich unberücksichtigt zu lassen und hierdurch
+                    Bittende in tiefen Kummer zu versetzen. Ich zähle daher auf Euer Excellenz mir
+                    bekannte und bewährte Güte und erlaube mir, Ihnen insbesondere von dem Gesuche
+                    der Stadt <placeName>Neuhaus</placeName> zu sprechen, welche mich bei der
+                    Constituirung der Gemeinde zu ihrem Ausschußmann erwählte. Diese Stadt, unter
+                    deren 7 bis 8.000 Einwohnern sich sehr viele Nothleidende und Arme befinden, und
+                    welche während der Zeit allgemeiner Aufregung im Ganzen gute Gesinnungen hegte,
+                    die Stadt <placeName>Neuhaus</placeName> befürchtet ihr Obergymnasium zu
+                    verlieren. Dieser Verlust wäre für die Bewohner des Ortes in jeder Hinsicht von
+                    den nachtheiligsten Folgen. Die Gemeinde ist zwar allerdings nicht in der Lage,
+                    bedeutende Kapitalien zur Dotirung ausweisen zu können, allein sie bringt gern
+                    alle Opfer, die mit ihren Vermögensumständen vereinbar sind, und eingezogener
+                    Erkundigungen zufolge sind auch mehrere andere von den ansehnlichern Städten des
+                        <region key="boehmen">böhmischen Vaterlandes</region> nicht im Stande
+                    hinreichende Fonds auszuweisen. Eine Unterstützung von Seite des Staates dürfte
+                    daher wohl kaum zu vermeiden seyn. Was höhere Rücksichten gebiethen, ist mir
+                    nicht möglich zu beurtheilen, sollten aber diese nicht das Gegentheil verlangen,
+                    so würden Euer Excellenz durch Beachtung meiner Fürsprache Leute beglücken, die
+                    der empfangenen Wohlthat gewiß nicht unwürdig sind.<lb/>Als ich vor wenig Tagen
+                    von einer Reise nach nordischen Seebädern heimkehrte, fand ich zwischen
+                    verschiedenen Papieren auf meinem Schreibtische eine Zuschrift, welche Ihren
+                    verehrten Namen enthielt. Ich wurde benachrichtigt, daß ein sicherer Herr
+                        <persName key="rochleder-victor">Victor Rochleder</persName>, dessen
+                    sehnlichster Wunsch es ist, unter dem Befehle von Euer Excellenz zu stehen, von
+                    Ihnen freundlich aufgenommen wurde, und daß, als derselbe sich auf meine
+                    Anempfehlung bezog, er zur Antwort erhielt, ich möchte nur ferner Euer Excellenz
+                    auf den Bittsteller erinnern. Indem ich bloß diese Worte des erhaltenen Briefes
+                    wiederhole, füge ich nur noch die dringende Bitte bei, mir den belästigenden
+                    Inhalt meines Schreibens gütigst zu verzeihen, und verbleibe mit ausgezeichneter
+                    Hochachtung</p>
+                <p>Euer Excellenz</p>
+                <p>ergebenster Diener<lb/>E. G. Czernin</p>
+            </div>
+        </body>
+    </text>
+</TEI>

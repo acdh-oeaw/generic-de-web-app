@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?oxygen RNGSchema="http://thun-korrespondenz.uibk.ac.at/svn/thun/thun-korrespondenz/schema/thun-schema.rnc" type="compact"?> -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="http://digital-archiv.at:8081/exist/rest/db/files/thun/xml/" xml:id="aufsatz-von-langenau-ueber-einfluss-von-windischgraetz-1848_1849-12_A3-XXI-D23.xml">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Aufsatz von <persName key="langenau-ferdinand">Ferdinand Langenau</persName>
+                    über den Einfluss von Windisch-Graetz am Kaiserhof während der Revolution
+                        1848<lb/>
+                    <placeName>Wien</placeName>, <date when="1849-12">Dezember
+                        1849</date>
+                </title>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Staatliches Gebietsarchiv Leitmeritz, Zweigstelle Tetschen-Bodenbach</institution>
+                        <repository>Familienarchiv Thun-Hohenstein, Linie Tetschen, Nachlass Leo Thun</repository>
+                        <idno>A3 XXI D23</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <p>Ferdinand Langenau schildert in diesem Aufsatz die Taten des Grafen
+                            Alfred Windisch-Graetz während der Ereignisse des Jahres 1848. Er geht
+                            besonders auf den Einfluss des Feldmarschalls bei der Bekanntgabe der
+                            Abdankung von Kaiser Ferdinand und die Thronbesteigung von Kaiser Franz
+                            Joseph sowie die Flucht des Kaiserhofes nach Olmütz ein. Langenau
+                            betont, dass Windisch-Graetz insbesondere durch das Vertrauen der
+                            Kaiserin Maria Anna an Einfluss gewinnen konnte. Durch sie erhielt
+                            Windisch-Graetz auch ein kaiserliches Handschreiben, das ihn
+                            ermächtigte, im Falle neuerlicher Umwälzungen, militärisch vorzugehen.
+                            Langenau betont, dass sich Windisch-Graetz durch seine Ansichten und
+                            seinen Einfluss jedoch auch viele Feinde zugezogen hatte, die ständig
+                            versuchten ihn zu kompromittieren. Schließlich hebt Langenau jedoch
+                            hervor, dass Windisch-Graetz als Retter der Monarchie anzusehen sei und
+                            sein Wirken und seine Leistungen für Österreich, ja für Europa zu wenig
+                            Anerkennung fänden.</p>
+                    </msContents>
+                    <physDesc/>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc docStatus="approved"/>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript">
+                <index>
+                    <term>Revolution</term>
+                </index>
+                <p>Es ist die Aufgabe der folgenden Zeilen einige Momente der neuesten
+                    Revolutionsgeschichte <country key="oesterreich">Oesterreichs</country> näher zu
+                    beleuchten, deren einzelne Thatsachen wohl hinlänglich bekannt sind, während die
+                    Beweggründe und die Art und Weise, wie manches wichtige Ereignis ins Leben trat,
+                    dem Publikum gänzlich fremd blieben. Die Verdienste und das Wirken eines Mannes,
+                    der in jener Epoche die bedeutendste Rolle spielte, bilden den Hauptgegenstand
+                    dieser Blätter, sein Wirken namentlich in einer Zeit, wo es zwar von höchster
+                    Wichtigkeit war, jedoch weniger ostensibl hervortrat und daher durchaus nicht
+                    allgemein bekannt wurde.<lb/>Dem Verfasser dieses Aufsatzes, den er nur für sich
+                    selbst und seine nächsten Freunde zu Papier bringt, ward die Ehre zu Theil vom
+                        <persName key="windisch-graetz-alfred">Fürsten Windischgrätz</persName> zu
+                    verschiedenen wichtigen Missionen, namentlich Verhandlungen mit dem damals in
+                        <placeName key="innsbruck">Inspruk</placeName> [Innsbruck] befindlichen Hofe
+                    verwendet zu werden; er besaß sein ganzes Vertrauen und ist daher mehr als
+                    mancher Andere in der Lage Aufschlüsse gerade über diese wichtige Epoche zu
+                    geben.<lb/>Der Einfluß des <persName key="windisch-graetz-alfred">Fürsten</persName> im Monat März in <placeName>Wien</placeName>, wo er
+                    leider zu spät zu einer außerordentlichen, ganz exceptionellen Stellung berufen,
+                    das Wenige noch aufrecht erhielt, was dem Monarchen an Rechten noch geblieben
+                    war, während alles Andere in übereilten Conzessionen einer Kotterie Aufwieglern
+                    hingeworfen wurde, ist hinlänglich bekannt. Ebenso sein Wirken in
+                        <placeName>Prag</placeName>, die Bekämpfung des dortigen Juniaufstandes
+                    sowie das, was er zur Rettung der Monarchie nach den Oktoberereignissen
+                    geleistet. Alles dies sind Handlungen, welche dem <persName key="windisch-graetz-alfred">Fürsten</persName> einen der ersten Plätze in
+                    dem großen Drama der Jahre 1848 und 1849 anweisen und deren nähere Beleuchtung
+                    wohl eine geschicktere Feder unternehmen wird.<lb/>In dem Zeitraume jedoch,
+                    zwischen den <placeName key="prag">Prager</placeName> Ereignissen und der
+                        <placeName key="wien">Wiener</placeName> Oktoberrevolution, finden wir den
+                        <persName key="windisch-graetz-alfred">Fürsten</persName> als Commandirenden
+                    General von <region key="boehmen">Böhmen</region> ohne einer anderen ostensiblen
+                    Stellung, während gerade diese Epoche es ist, wo sein Name und sein Einfluß von
+                    der höchsten Wichtigkeit waren und sowohl dem Throne als der conservativen
+                    Parthei einen großen moralischen Halt gewährten. In dieser Zeit nur wollen wir
+                    seinem Wirken, nämlich denjenigen Theil desselben, welches sein öffentliches
+                    war, eine besondere Aufmerksamkeit widmen.<lb/>Die bewunderungswürdige Kraft und
+                    Energie, mit welcher <persName key="windisch-graetz-alfred">Fürst
+                        Windisch-Graetz</persName> dem Aufstande in <placeName>Prag</placeName> die
+                    Spitze bot, hatte ihm die Sympathien aller Gutdenkenden und besonders eine
+                    unbegränzte Verehrung von Seite der Truppen zugewendet, deren im höchsten Grade
+                    gefährdete Ehre und Reputation er damals rettete; und denen er durch sein
+                    energisches Handeln eine achtunggebietende Stellung verschaffte, wie sie
+                    dieselbe seit Langem nicht besessen hatten. Die ziemlich ernsthaften Spielereien
+                    mit Nationalgarden und Studentenlegionen, die vielen denselben gewährten
+                    Conzessionen hatten dem Ansehen des Soldaten einen zu gewaltigen Haß
+                    versetzt.<lb/>Der Sieg über die <placeName key="prag">Prager</placeName>
+                    Insurgenten, den man nebst der Tapferkeit jedes Einzelnen, namentlich der
+                    Entschlossenheit und Consequenz des Anführers verdankte, gab der Truppe auf
+                    einmal wieder eine Stellung, welche der Umsturzparthei im höchsten Grade
+                    imponirte. Dankbarkeit und tiefes Mitleiden mit dem entsetzlichen Unglücke,
+                    welches den <persName key="windisch-graetz-alfred">Fürsten</persName> gleich
+                    beim Ausbruch des Aufruhrs betroffen, steigerten die Sympathien der Offiziere
+                    und Soldaten für ihren Feldherrn bis zur Begeistherung. Viele Beweise von
+                    Anhänglichkeit, Treue und aufopfernder Ergebenheit wurde damals dem <persName key="windisch-graetz-alfred">Fürsten</persName> wie seinen Untergebenen
+                    geliefert und denselben absichtlich eine gewisse Öffentlichkeit gegenüber dem
+                    Reichstage und der Parthei gegeben, die den großen Verdiensten der Armee die
+                    Anerkennung versagten und Alles anwendeten, um das Vertrauen und den engen
+                    Verband zwischen Anführer und Soldaten zu lockern.<lb/>Diese feste
+                    abgeschlossene Stellung des <persName key="windisch-graetz-alfred">Fürsten</persName> mit seinen Truppen in <region key="boehmen">Böhmen</region>, die gleichzeitigen Siege der Armee in
+                        <country>Italien</country> imponirten, besonders erstere wegen ihrer großen
+                    Nähe dem Reichstage und dem Ministerium, welche keinen sehnlicheren Wunsch
+                    hatten als die Entfernung des <persName key="windisch-graetz-alfred">Fürsten</persName>. Dieselbe war im Reichstage verlangt worden, doch hatte
+                    das Ministerium nicht den Muth sie ins Werk zu setzen, man fürchtete, und mit
+                    vollem Rechte, der <persName key="windisch-graetz-alfred">Fürst</persName> würde
+                    einem solchen Befehle nicht gehorchen und von den ihm ergebenen Truppen auf das
+                    Kräftigste unterstützt werden. Noch während des <placeName key="prag">Prager</placeName> Aufstands und nach demselben geschah von Seite der
+                    Minister <persName key="pillersdorf-franz">Pillersdorf</persName> und <persName key="doblhoff-dier-anton">Doblhoff</persName> alles Mögliche, um dem
+                        <persName key="windisch-graetz-alfred">Fürsten</persName> durch Concessionen
+                    und Eingriffe in seine Verwaltung seine Stellung unhaltbar zu machen, ihn
+                    vielleicht dazu zu bringen selbst seine Demission zu geben und so das
+                    herbeizuführen, was man anzubefehlen nicht wagte, wenn man auch von <placeName key="innsbruck">Insbruck</placeName> her der Bestätigung Alles dessen fast
+                    gewiß sein konnte, was man verlangte. Der <persName key="windisch-graetz-alfred">Fürst</persName> war mehrmals daran seine Entlassung zu nehmen, es war
+                    jedoch das Bewußtsein von der Wichtigkeit seiner Stellung, seiner Nothwendigkeit
+                    für den Monarchen und die Armee sowie endlich auch eine gewisse Eitelkeit,
+                    welche ihn an dem Platze erhielten, an welchem er noch große Dienste zu leisten
+                    überzeugt war. <lb/>Eine klare Beurtheilung der Verhältnisse der Gegenwart, die
+                    sich immer mehr verwickelten, ein sehr richtiger Blick in die Zukunft, ja man
+                    möchte fast sagen, ein gewisses Vorgefühl hatten in dem <persName key="windisch-graetz-alfred">Fürsten</persName> den Gedanken zur Überzeugung
+                    werden lassen, daß wir uns in <country key="oesterreich">Österreich</country>
+                    auf dem Wege zu einer großartigen Katastrophe befänden und daß er allein mit der
+                    Armee und gerade nur er dazu berufen sein könne, der gerechten Sache den
+                    nöthigen Schutz zu verleihen. Seine Äußerungen in dieser Beziehung klangen fast
+                    prophetisch.<lb/>Er sah den Hof in <placeName key="innsbruck">Insbruck</placeName> in den Händen der Parthei, die durch <persName key="doblhoff-dier-anton">Doblhoff</persName> dort durchsetzte, was sie
+                    wollte, während das ungarische Ministerium den <persName key="stefan-franz-viktor-erzherzog">Erzherzog Stephan</persName> und Herrn
+                        <persName key="kossuth-lajos">Kossúth</persName> auf und abschickte, um neue
+                    Zugeständnisse zu erpressen. Die <placeName key="innsbruck">Insprucker</placeName> [Innsbruck] Reise, deren richtige Benutzung so vortreffliche
+                    Folgen hätte haben können, war nach einem schwachen Versuche nur von den
+                    Schlechten ausgebeutet worden, da dort Niemand war, der den Organen der
+                    Revolutionsparthei die Spitze geboten hätte, während die <persName key="maria-anna">Kaiserin</persName> damals noch nicht die Stellung
+                    eingenommen hatte, welche ihre Festigkeit und ihr nobler Charakter ihr später
+                    anwiesen. Daß die Armee berufen war unter seiner Leitung die Monarchie zu
+                    retten, dies war im<persName key="windisch-graetz-alfred"> Fürsten
+                        W[indisch-Graetz]</persName> zur Überzeugung geworden, es war jedoch
+                    möglich, ja sogar wahrscheinlich, daß bei der allgemeinen Verwirrung, welche
+                    eine neue Katastrophe herbeiführen mußte, der Hof nicht in der Lage sein würde,
+                    dem <persName key="windisch-graetz-alfred">Fürsten</persName> die für einen
+                    solchen Fall nothwendigen Vollmachten zu ertheilen und daß er aus Eigenem
+                    handeln müsse. Er fand es daher nothwendig sich für alle Fälle des pünktlichen
+                    Gehorsams seiner Untergebenen zu versichern und wollte vor Allem nicht, daß
+                    seine Handlungen von Seite Einzelner mißdeutet werden könnten, daß man ihm
+                    vorwerfe, er handle für eigene Rechnung und was sonst noch die Böswilligkeit
+                    erfinden konnte. Er bedurfte hiezu einer kaiserlichen Vollmacht für alle
+                    möglichen Fälle und schickte in dieser Absicht gegen Ende Juli 1848 den
+                    Oberstleutnant <persName key="langenau-ferdinand">Langenau</persName> mit
+                    Briefen an die <persName key="maria-anna">Kaiserin</persName> und pro forma auch
+                    an den <persName key="franz-karl-erzherzog">Erzherzog Franz Carl</persName> nach
+                        <placeName key="innsbruck">Insbruck</placeName>, um dort die Nothwendigkeit
+                    eines solchen Handschreibens darzustellen und dasselbe gleich ausfertigen zu
+                    lassen. Nebstdem erhielt <persName key="langenau-ferdinand">Langenau</persName>
+                    noch mündliche Aufträge an die <persName key="maria-anna">Kaiserin</persName>,
+                    namentlich die Bitte den <persName key="ferdinand-I">Kaiser</persName> strenge
+                    zu überwachen, damit seine Unterschrift nicht mißbrauche, ferner Concessionen zu
+                    verhindern und hauptsächlich nicht zuzugeben, daß der <persName key="ferdinand-I">Kaiser</persName> nach <placeName>Wien</placeName>
+                    zurückkehre, was damals schon stürmisch von allen Seiten verlangt wurde. Die
+                    unglückselige Achterklärung des <persName key="jelacic-joseph">Banus von
+                        Croatien</persName>, die vor Kurzem dem <persName key="ferdinand-I">Kaiser</persName> von ungarischer Seite war abgedrungen worden, hatte die
+                        <persName key="maria-anna">Kaiserin</persName> auf das Äußerste empört und
+                    sie aufmerksam gemacht, wie nothwendig eine strenge Überwachung des <persName key="ferdinand-I">Kaisers</persName> war, um ähnliche Dinge in Zukunft zu
+                    verhindern. Diese Rolle fiel natürlich ihr zu und das, was der <persName key="windisch-graetz-alfred">Fürst</persName> ihr sagen ließ, bestärkte sie
+                    in ihrem Vorhaben, so daß sie seit dieser Zeit auf den Gang der Ereignisse einen
+                    bedeutenden Einfluß nahm, da nichts ohne ihr Vorwissen geschehen durfte.<lb/>Es
+                    ist hier vielleicht der Platz einige Worte über den Charakter der <persName key="maria-anna">Kaiserin</persName> zu sagen; persönlicher und moralischer
+                    Muth, eine große Festigkeit des Willens und ein seltener Adel in den Gesinnungen
+                    sind die hervorragendsten Eigenschaften, welche der <persName key="maria-anna">Kaiserin</persName> das ganze Treiben seit der Märzrevolution mit der
+                    höchsten Verachtung ansehen ließen. Sie war all den Conzessionen entgegen
+                    gewesen, ihre große politische und Geschäftsunkenntnis jedoch hatte sie
+                    verhindert damals energisch aufzutreten, von dem Moment aber, wo sie die
+                    Überzeugung geschöpft hatte, daß man auf dem Wege zum Untergange sei und wo der
+                    Fürst sie aufforderte, mit all ihrer Kraft ferneres Nachgeben zu verhindern,
+                    widmete sie dem, was vorging, die größte Aufmerksamkeit und war durch ihre
+                    Festigkeit vom heilsamsten Einfluß auf die Handlungen des <persName key="ferdinand-I">Kaisers</persName>. <persName key="langenau-ferdinand">Langenau</persName> wurde als Abgesandter des <persName key="windisch-graetz-alfred">Fürsten</persName> von der <persName key="maria-anna">Kaiserin</persName> und <persName key="sophie-erzherzogin">Erzherzogin Sophie</persName> mit offenen Armen empfangen und ihm
+                    vollkommenes Vertrauen geschenkt.<lb/>Die Überzeugung, daß der <persName key="windisch-graetz-alfred">Fürst</persName>, wenn auch weit von ihnen,
+                    doch dem Gange der Ereignisse mit Aufmerksamkeit folge und daß sie an ihm einen
+                    treuen Anhänger und Verfechter ihres guten Rechtes hatten, auf den sie unter
+                    allen Umständen mit Bestimmtheit rechnen konnten, war dem damals sehr
+                    verlassenen Hofe eine große Beruhigung. Die Idee einer unumschränkten Vollmacht
+                    für den <persName key="windisch-graetz-alfred">Fürsten
+                        W[indisch-Graetz]</persName>, in den sie ein unumschränktes Vertrauen
+                    hatten, wurde von beiden Damen mit Freude ergriffen und an der Erfüllung dieses
+                    Wunsches des Fürsten mit vielem Eifer gearbeitet.<lb/>
+                    <persName key="franz-karl-erzherzog">Erzherzog Franz Carl</persName>, den dieser
+                    Gedanke anfänglich erschreckte und der darüber beim Onkl <persName key="johann-erzherzog">Johann</persName> anfragen wollte (!!!), der damals
+                    in <placeName>Wien</placeName> an des <persName key="ferdinand-I">Kaisers</persName> statt fungirte, bekümmerte sich später nicht mehr viel
+                    darum und wurde endlich bei dieser Gelegenheit so wie bei vielen andern ganz aus
+                    dem Spiele gelassen. <persName key="windisch-graetz-alfred">Fürst
+                        W[indisch-Graetz]</persName> glaubte ihm damals schreiben zu müssen, da er
+                    ihn nicht übergehen wollte, alle späteren Verhandlungen wurden dann mit der
+                        <persName key="maria-anna">Kaiserin</persName> und der <persName key="sophie-erzherzogin">Erzherzogin Sophie</persName> geführt.<lb/>Die
+                    Unterschrift des <persName key="ferdinand-I">Kaisers</persName> zu erhalten, war
+                    für die <persName key="maria-anna">Kaiserin</persName> ein Leichtes, es handelte
+                    sich aber nun um den Aufsatz der Vollmacht selbst. Nicht ein Mensch befand sich
+                    damals in der Umgebung des Hofes, dem man hiezu das Vertrauen geschenkt hätte;
+                    die Wenigsten waren dem Hofe gefolgt, ein großer Theil unbegreiflicher Weise, in
+                    einem solchen Momente auf Urlaub, dem Hofrathe <persName key="czillich-karl">Zcillich</persName>
+                    <note xml:id="note_1">Anmerkung am Rand von fremder Hand: <persName key="czillich-karl">Karl von Czillich</persName>, ein [?] ergebener Mann
+                    </note>, dem gewöhnlichen Verfertiger der Handbillets, wagte man als Ungar nicht
+                    zu trauen, kurz die Leute, die den Hof umgaben, waren entweder Nullen oder nicht
+                    sicher. So bot sich denn <persName key="langenau-ferdinand">Langenau</persName>,
+                    der genau wußte, was der <persName key="windisch-graetz-alfred">Fürst</persName>
+                    eigentlich wollte, an das Handbillet zu verfassen. Es wurde ins französische
+                    übersetzt, damit die <persName key="maria-anna">Kaiserin</persName> es ganz
+                    fassen könne und endlich dem <persName key="ferdinand-I">Kaiser</persName> zur
+                    Unterschrift, vor der <persName key="maria-anna">Kaiserin</persName> selbst,
+                    vorgelegt. Der Inhalt dieses wichtigen Dokumentes war folgender: „Lieber
+                        <persName key="windisch-graetz-alfred">Fürst W[indisch-Graetz]</persName>!
+                    Ihre stete Treue und Anhänglichkeit an mich und mein Haus und die Dienste, die
+                    Sie mir und dem Staate, namentlich während Ihrer Verwendung in
+                        <placeName>Wien</placeName> im Monat März erwiesen haben, erwecken in mir
+                    das vollste Vertrauen zu Ihnen und die Überzeugung, daß Sie stets nur zum Wohle
+                    meiner Dynastie und des ganzen Kaiserstaates handeln werden. Ich habe Ihnen in
+                    meinem Handschreiben vom 3. April dieses Jahres eine höhere Verwendung
+                    zugedacht, die ich bis jetzt noch nicht in der Lage war Ihnen anzuweisen. Die
+                    fortdauernden Bewegungen jedoch in meinen Ländern und namentlich in meiner
+                    Residenzstadt <placeName>Wien</placeName> können möglicherweise Ereignisse
+                    herbeiführen, denen mit Kraft und Energie entgegengetreten werden muß und ich
+                    ermächtige Sie daher in jenem außerordentlichen Falle die Maßregeln zu ergreifen
+                    und durchzuführen, die Ihnen dann als die geeignetesten erscheinen werden, um
+                    den Bestrebungen einer Parthei, die den Umsturz alles Bestehenden zum Zwecke
+                    hat, Einhalt zu thun, so wie ich für diesen außerordentlichen Fall auch
+                    diejenigen Truppen, die Sie zur Verstärkung Ihrer Armee an sich ziehen wollen,
+                    an Sie anweise. Ich vertraue übrigens vollkommen Ihrer vielbewährten Einsicht
+                    und Erfahrung, daß Sie von diesem meinen Handschreiben nur im äußersten
+                    Nothfalle Gebrauch machen und ihm nur dann eine Folge geben werden, wenn jede
+                    Aussicht auf eine friedliche Lösung der Dinge gänzlich geschwunden
+                        ist.<lb/>
+                    <placeName key="innsbruck">Insbruck</placeName> am 22. Mai
+                        1848<lb/>
+                    <persName key="ferdinand-I">Ferdinand</persName> m.p.<lb/>Dieses
+                    Handschreiben war absichtlich zurückdatirt worden, weil es wahrscheinlich war,
+                    daß der Hof gleich nach seiner Ankunft in <placeName key="innsbruck">Insbruck</placeName> und in der Verzweiflung über die jüngst verflossenen
+                    Ereignisse dem <persName key="windisch-graetz-alfred">Fürsten</persName> eine
+                    solche Vollmacht ertheilt hatte; auch wollte er, wenn es zum Vorzeigen dieses
+                    Handschreibens kommen sollte, vermeiden, daß man glauben könnte, er habe sich
+                    selbst darum beworben. Allerdings fehlte diesem Aktenstücke die konstitutionelle
+                    Contrasignatur, doch dies war vom Minister <persName key="doblhoff-dier-anton">Doblhoff</persName>, der dem Hofe nach <placeName key="innsbruck">Innsbruck</placeName> gefolgt, nicht zu erwarten und den Kommandanten, die
+                    in dem Handschreiben aufgefordert wurden, dem <persName key="windisch-graetz-alfred">Fürsten</persName> Folge zu leisten, genügte
+                    die Unterschrift des <persName key="ferdinand-I">Kaisers</persName>. Eine andere
+                    sehr wichtige Angelegenheit, die damals zur Sprache kam, war die Abdikation des
+                        <persName key="ferdinand-I">Kaisers</persName>.<lb/>Schon seit längerer Zeit
+                    hatten die Journale sich damit beschäftigt, den Gegenstand aber immer als einen
+                    Staatsstreich behandelt und verdammt, der nothwendig von reaktionären
+                    Bestrebungen begleitet sein müsse, denn es war den Leuten nicht angenehm und
+                    bequem <persName key="ferdinand-I">Ferdinand den Gütigen</persName>, besonders
+                    mit seinem dermaligen Ministerium, beizubehalten und gerade in <placeName key="innsbruck">Insbruck</placeName>, wo zwar seine Sturmpetionen
+                    hingelangten, aber auch der wohlmeinende Rath der treuen und aufrichtigen
+                    Anhänger des Thrones nur spärlich hinkam und jedenfalls in den dort anwesenden
+                    constitutionellen Organen ein Gegengewicht fand.<lb/>Die <persName key="maria-anna">Kaiserin</persName> sprach sich gegen <persName key="langenau-ferdinand">Langenau</persName> über die Abdikation des
+                        <persName key="ferdinand-I">Kaisers</persName> sehr offen aus, wollte
+                    dieselbe mit einer gleichzeitigen Thronentsagung des <persName key="franz-karl-erzherzog">Erzherzogs Franz Carl</persName> in Verbindung
+                    setzen und am 18. August ins Leben treten lassen, wo der junge <persName key="franz-joseph">Erzherzog Franz Josef</persName> seine Volljährigkeit
+                    erreichte. Der neue Kaiser sei zu nichts verpflichtet, er könne geben, was er
+                    wolle und solle sich im schlimmsten Falle ganz der Armee in die Arme werfen, auf
+                    deren Treue man bauen konnte.<lb/>Die <persName key="maria-anna">Kaiserin</persName> besprach sich mit <persName key="langenau-ferdinand">Langenau</persName> über diesen Gegenstand in Gegenwart der <persName key="sophie-erzherzogin">Erzherzogin Sophie</persName>. Merkwürdig bleibt
+                    es, daß letztere so ohne allen Wiederstand in diese Idee einging und es so ruhig
+                    hinnahm, daß sie nicht Kaiserin werden sollte. Bei ihrem Charakter war diese
+                    Entsagung der Kaiserkrone ein großes Opfer und findet ihre Bereitwilligkeit wohl
+                    nur in dem Umstande einige Erklärung, daß wenn auch nicht ihr Mann, dessen
+                    gewaltige Fehler und Schwächen sie gar wohl kannte, es doch ihr Sohn war, der
+                    den Thron bestieg, ihr Sohn, dessen glänzende Eigenschaften zu den schönsten
+                    Hoffnungen berechtigten. Auch mag allerdings die constitutionelle Kaiserkrone
+                    nicht mehr den früheren Reitz gehabt haben.<lb/>Wegen der Rückkehr des <persName key="ferdinand-I">Kaisers</persName> nach <placeName>Wien</placeName> war
+                    mit <persName key="langenau-ferdinand">Langenau</persName> zugleich, wenn auch
+                    im ganz entgegengesetzten Sinne, ein Abgesandter des Ministeriums in <placeName key="innsbruck">Insbruck</placeName> angelangt. Die Minister stellten die
+                    Nothwendigkeit derselben auf das Dringlichste dar, da die ganze Anhänglichkeit
+                    der getreuen Bevölkerung an den Monarchen, ja an das monarchische Prinzip
+                    überhaupt, stehe auf dem Spiele, der Kaiser müsse zurück, wenn man nicht das
+                    Ärgste befürchten wolle.<lb/>Die Persönlichkeit des Abgesandten General
+                        <persName key="hanneckart">Hanneckart</persName>, der als provisorischer
+                    Generaladjutant bei der Abreise des <persName key="ferdinand-I">Kaisers</persName> in der Burg zurückgeblieben war, eignete sich so wenig
+                    wie sein Auftrag, demselben einen angenehmen Empfang zu bereiten. Die <persName key="maria-anna">Kaiserin</persName> und <persName key="sophie-erzherzogin">Erzherzogin Sophie</persName> wollten dem Reichstage diese neue Concession
+                    nicht machen, einem Reichstage, der die Abreise des <persName key="ferdinand-I">Kaisers</persName> mit der Flucht <persName key="ludwig-XVI">Ludwig
+                        XVI.</persName> verglichen hatte und der Rath des <persName key="windisch-graetz-alfred">Fürsten W[indisch-Graetz]</persName> hatte sie
+                    noch mehr in diesem Vorsatze bestärkt. <persName key="franz-karl-erzherzog">Erzherzog Franz Carl</persName> und die Umgebungen des Hofes sehnten sich
+                    allerdings größtentheils nach den gewohnten <placeName key="wien">Wiener</placeName> Leben und mögen auf die später erfolgte Rückkehr nicht
+                    ohne Einfluß geblieben sein. General <persName key="hanneckart">Hanneckart</persName> hatte in unendlich langen und langweiligen Phrasen zu
+                    beweisen gesucht, wie nothwendig die Rückkehr des Hofes sei, von der er selbst
+                    durchdrungen schien, doch ward er abschlägig beschieden und in diesem Sinne eine
+                    Art Erklärung erlassen, worin der <persName key="ferdinand-I">Kaiser</persName>
+                    sagt, er könne nicht zurückkommen, ehe ihm sichere Garantien der Ruhe seiner
+                        <placeName key="wien">Hauptstadt</placeName> geboten würden. Eine größere
+                    Wirkung auf die <persName key="maria-anna">Kaiserin</persName> und die <persName key="sophie-erzherzogin">Erzherzogin Sophie</persName> machte eine Mission
+                    des <persName key="stadion-franz">Grafen Stadion</persName> durch den eben
+                    damals an seine neue Bestimmung in <placeName key="innsbruck">Insbruck</placeName> eintreffenden <persName key="gruenne-karl-ludwig">Grafen Grünne</persName>. <persName key="stadion-franz">Stadion</persName>
+                    rieth ebenfalls dringend zur schleunigen Rückkehr. Wie wenig <persName key="stadion-franz">Stadion</persName> – wenn er es auch ehrlich meinte –
+                    verstand, die wahren Interessen der Dynastie zu vertreten, hat er später
+                    gezeigt, wie wenig die Rückkehr des Hofes zur Beruhigung der <placeName key="wien">Hauptstadt</placeName> beitrug, hat die Folge gelehrt.<lb/>Einen
+                    merkwürdigen Beleg von der Verlassenheit des Hofes in <placeName key="innsbruck">Insbruck</placeName> giebt der Umstand, den wir hier einschalten wollen,
+                    daß das Manifest des <persName key="ferdinand-I">Kaisers</persName> in Folge der
+                        <persName key="hanneckart">Haneckart’schen</persName> Mission vom <persName key="medem-paul">Grafen Medem</persName>, russischen Gesandten am
+                    österreichischen Hofe, verfaßt worden war, daß man sich an Fremde wandte, ihnen
+                    mehr Vertrauen schenkte als der eigenen Umgebung, die mit Ausnahme der <persName key="fuerstenberg-therese">Landgräfin Fürstenberg</persName>,
+                    Obersthofmeisterin der Kaiserin, von gar nichts in Kenntnis gesetzt wurde.
+                        <persName key="medem-paul">Graf Medem</persName> und <persName key="ponsonby-john">Lord Ponsonby</persName> waren dem Hofe, ersterer auf
+                    ausdrücklichen Befehl seines <persName key="nikolaus-I">Monarchen</persName>,
+                    letzterer aus persönlicher Anhänglichkeit, nach <placeName key="innsbruck">Insbruck</placeName> gefolgt, während von österreichischen conservativen
+                    Nobilitäten, deren loyale Grundsätze, wenn auch nicht offiziell, so doch
+                    insgeheim, dem Hofe eine Stütze gewesen wären, ich in <placeName key="innsbruck">Insbruck</placeName> Niemand eingefunden hatte.<lb/>Mit einem wirklich
+                    rührenden Brief an den <persName key="windisch-graetz-alfred">Fürsten
+                        W[indisch-Graetz]</persName> ward <persName key="langenau-ferdinand">Langenau</persName> von der <persName key="maria-anna">Kaiserin</persName>
+                    entlassen, sie schrieb dem <persName key="windisch-graetz-alfred">Fürsten</persName> ganz offen und unverhohlen, dankte für seine
+                    Unterstützung, versprach ihm fest zu vertrauen und seinen Rath zu befolgen. Mit
+                    diesem Schreiben, dem kaiserlichen Handbillet und vielen mündlichen Aufträgen in
+                    demselben Sinne kehrte <persName key="langenau-ferdinand">Langenau</persName>
+                    nach <placeName>Prag</placeName> zurück. Der <persName key="windisch-graetz-alfred">Fürst</persName> war mit dem Erfolge der
+                    Sendung zufrieden. Der Abdikation, welcher er auch in seinem Schreiben an die
+                        <persName key="maria-anna">Kaiserin</persName> erwähnt hatte, war er anfangs
+                    entgegen gewesen, weil er fürchtete, daß <persName key="franz-karl-erzherzog">Erzherzog Franz Carl</persName> nicht zur Thronentsagung würde zu bewegen
+                    sein, daß in diesem Falle der Intrigue ein noch weiteres Feld als unter
+                        <persName key="ferdinand-I">Kaiser Ferdinand</persName> offen stünde, er
+                    fürchtete überhaupt und mit Recht, daß eine Abdikation, die nicht gehörig bemüht
+                    würde, nur schlechte Folgen haben könne, denn sie war das letzte Mittel und der
+                        <persName key="franz-joseph">junge Kaiser</persName> sollte nur unter den
+                    möglichst günstigen Auspizien auf den Thron erhoben werden. Die Bereitwilligkeit
+                    der <persName key="maria-anna">Kaiserin</persName> und sogar der <persName key="sophie-erzherzogin">Erzherzogin Sophie</persName> in dieser Hinsicht
+                    und das, was die <persName key="maria-anna">Kaiserin</persName> dem <persName key="windisch-graetz-alfred">Fürsten</persName> hierüber schrieb, stimmten
+                    ihn dafür, nur wollte er dieselbe nicht in Voraus an einen bestimmten Zeitpunkt
+                    als den Tag der Großjährigkeit des neuen Kaisers knüpfen, sondern glaubte sie
+                    besser erst da angewendet, wenn neue Unruhen oder wiederholte stürmische
+                    Forderungen, die nicht gewährt werden konnten, einen solchen Akt motiviren
+                    würden; der <persName key="ferdinand-I">Kaiser</persName> sollte dann in einem
+                    Manifest auseinandersetzen, was er Alles gethan in der Absicht das Glück seiner
+                    Völker zu begründen und wie trotzdem neue Unruhen und stets neue Begehren der
+                    Lohn dafür gewesen seien. Er habe deshalb in der Überzeugung, daß es ihn nicht
+                    bestimmt zu sein scheine, seine Unterthanen glücklich zu machen die Krone
+                    niedergelegt und <persName key="franz-karl-erzherzog">Erzherzog Franz
+                        Carl</persName> habe derselben zu Gunsten <persName key="franz-joseph">seines ältesten Sohnes</persName> entsagt. Ebenso sollt <persName key="franz-joseph">der neue Kaiser</persName> ein sehr energisches Manifest
+                    erlassen, worin er seinen Ländern eine Verfassung zu geben verspricht, die
+                    jedoch Garantien der Ruhe und Ordnung böte und gleichzeitig erklären, sich auf
+                    die Treue seiner Armee stützend, dieselbe mit aller Kraft, die ihm zu Gebote
+                    stünde, aufrecht zu erhalten sowie alle ferneren Handlungen energisch
+                    zurückzuweisen.<lb/>In diesem Sinne wurden zwei Manifeste vom <persName key="windisch-graetz-alfred">Fürsten</persName> verfaßt mit der Absicht
+                    dieselben der <persName key="maria-anna">Kaiserin</persName> zu übersenden. Der
+                    Zeitpunkt, wenn dieses wichtige Ereignis eintreten sollte, wurde einer späteren
+                    Bestimmung überlassen.<lb/>
+                    <persName key="windisch-graetz-alfred">Fürst
+                        W[indisch-Graetz]</persName> beschäftigte sich nur damit, die commandirenden
+                    Generäle von <region key="galizien">Gallizien</region> und <region key="maehren">Mähren</region> im strengsten Vertrauen von den allerhöchsten Vollmachten
+                    in Kenntnis zu setzen, die ihm ertheilt worden und die Anzahl der Truppen zu
+                    bestimmen, die er bei einem etwaigen Marsche gegen <placeName>Wien</placeName>
+                    sowohl aus <region key="boehmen">Böhmen</region> als aus den genannten beiden
+                    Generalcommanden verwenden könnte. Es wurden hiezu die nöthigen Dispositionen
+                    getroffen und Alles so vorbereitet, daß bei eintretender Nothwendigkeit die
+                    Truppen allsogleich in Marsch gesetzt werden konnten.<lb/>Der <persName key="windisch-graetz-alfred">Fürst</persName> verwendete sich damals auch
+                    bei dem für seine loyalen Gesinnungen bekannten <persName key="stadion-franz">Grafen Stadion Franz</persName>, um ihm seine Ansichten über die Lage der
+                    Dinge zu entwickeln und ihn aufzufordern, wenn es die Nothwendigkeit erheische
+                    mit ihm in Gemeinschaft, dem Alles überschwemmenden Strome der Revolution
+                    kräftig entgegen zu treten. <persName key="stadion-franz">Stadion’s</persName>
+                    Antwort lautete ausweichend und fast belehrend für den <persName key="windisch-graetz-alfred">Fürsten</persName>, er sprach von
+                    Versprechungen, die gehalten werden müßten und schloß mit der Versicherung, daß
+                    er sich nie zu reaktionären Bestrebungen hergeben würde. Dieser Brief des
+                        <persName key="stadion-franz">Grafen Stadion</persName>, über den er sich
+                    später entschuldigte, entfremdete ihn dem <persName key="windisch-graetz-alfred">Fürsten</persName> der früher auf ihn gebaut hatte und wenn wir später auch
+                    die beiden Männer auf demselben Weg sehen, so waren sie in ihren Gesinnungen
+                    doch immer weit auseinander.<lb/>Das Ministerium arbeitete rastlos daran dem
+                        <persName key="windisch-graetz-alfred">Fürsten</persName> seine Stellung in
+                        <region key="boehmen">Böhmen</region> zu verleiden und selbst der
+                    Kriegsminister <persName key="latour-theodor">Graf Latour</persName> war von
+                    seinen Collegen so umstrickt worden, er hatte sowenig durchblickt, wo <persName key="pillersdorf-franz">Pillersdorf</persName>, <persName key="doblhoff-dier-anton">Doblhoff</persName> und Consorten eigentlich
+                    hinaus wollten, daß er mit ihnen dem souveränen Volke zu gefallen, dem <persName key="windisch-graetz-alfred">Fürsten</persName> alle möglichen Hindernisse
+                    in den Weg legte, die ihn gegenüber der Parthei compromittieren mußten. Die
+                    wegen Betheiligung an dem Juniaufstande Verhafteten wurden durch einen
+                    förmlichen Machtspruch des <persName key="taaffe-ludwig">Justizministers</persName> einer nach dem andern entlassen und besonders an
+                    dem Wechsel der <placeName key="prag">Prager</placeName> Garnison gearbeitet,
+                    deren Ablösung durch andere Truppen sich die czechische Parthei ausbedungen
+                    hatte.<lb/>Diese Parthei war der Regierung in mehreren Fragen, die im Reichstage
+                    verhandelt wurden, vom Nutzen gewesen, sie hatte momentan die conservative
+                    Majorität gebildet, war jedoch, besonders einzelne Mitglieder derselben, gerade
+                    so radikal als die äußerste Linke des Reichstages.<lb/>Für die der Regierung
+                    geleistete Unterstützung hatte sie die Gewährung einer Petition verlangt, die
+                    gegen den <persName key="windisch-graetz-alfred">Fürsten
+                        W[indisch-Graetz]</persName> gerichtet war und die dem <persName key="latour-theodor">Kriegsminister</persName> eingereicht
+                        wurde.<lb/>
+                    <persName key="latour-theodor">Graf Latour</persName>,
+                    durchdrungen von der guten Gesinnung dieser Parthei, worüber er dem <persName key="windisch-graetz-alfred">Fürsten</persName> mehrmals schrieb, glaubte
+                    die Petition nicht ganz abweisen zu dürfen, um die Regierung nicht der
+                    Unterstützung der Czechen zu berauben, handelte jedoch einige Punkte herunter
+                    und blieb bei dem Wechsel zweier Grenadiner Baons. stehen, die sich
+                    hauptsächlich durch ihre Tapferkeit den Zorn ihrer Landsleute zugezogen hatten.
+                    Diesen Wechsel versprach er durchzuführen. <persName key="windisch-graetz-alfred">Fürst W[indisch-Graetz]</persName> war jedoch
+                    entschlossen, in dieser Beziehung nicht die geringste Concession zu machen und
+                    auch einen etwaigen Befehl des <persName key="latour-theodor">Kriegsministers</persName> hierüber nicht zu befolgen. Er glaubte dies
+                    seinen braven Truppen und sich selbst schuldig zu sein.<lb/>Es wurde über diesen
+                    Punkt längere Zeit hin und her debattirt und einmal sogar der<persName key="mertens-karl"> Major Mertens</persName> an den <persName key="latour-theodor">Kriegsminister</persName> abgesendet, um ihm den festen
+                    Entschluß des <persName key="windisch-graetz-alfred">Fürsten</persName>
+                    mitzutheilen, in dieser Angelegenheit nicht nachzugeben und ihm vorzustellen, er
+                    möge in dieser Beziehung keinen definitiven Befehl erlassen. Der 6. Oktober fand
+                    die Sache noch in der Schwebe. Es hatte sich zwischen dem <persName key="latour-theodor">Kriegsminister</persName> eine ziemlich eifrige
+                    Correspondenz über die damaligen Verhältnisse entsponnen, die von Seite des
+                    Ersteren stets in entschuldigenden Tone geführt wurde, über das, was er als
+                    constitutioneller Minister zu thuen gezwungen sei, wie er mit der Parthei gehen
+                    müsse und nicht immer nach seiner militärischen Überzeugung handeln könne etc.
+                    etc.<lb/>Die Antworten des <persName key="windisch-graetz-alfred">Fürsten</persName> waren sehr ge[?] belehrend, auch derb. Ein Charakter,
+                    wie er konnte nie begreifen, daß <persName key="latour-theodor">Latour</persName> als ehrlicher Mann sich mit Leuten, wie Schwartzen [?]
+                    auf die Ministerbank setzen würde, er prophezeite, was kommen würde und daß nur
+                    die Gewalt der Waffen da entscheiden könne, wo eine Versöhnung unmöglich und ein
+                    Nachgeben nur verderblich sein konnten. Ganz unbegreiflich war dem <persName key="windisch-graetz-alfred">Fürsten</persName> das damals sehr beliebte
+                    „mit der Parthei gehen“.<lb/>Merkwürdig bleibt es, daß der <persName key="windisch-graetz-alfred">Fürst</persName> dem <persName key="latour-theodor">Grafen Latour</persName> wenig Tage vor seinem Tode und
+                    bei Gelegenheit der Ermordung des <persName key="lamberg-franz-phillip">Grafen
+                        Lamberg</persName> schrieb: „Die Mörder <persName key="lamberg-franz-phillip">Lamberg’s</persName> sind im Solde der Parthei
+                    und hätten gewiß auch Sie und mich schon umgebracht, wenn wir nicht die
+                    gehörigen Vorsichtsmaßregeln dagegen getroffen hätten.“<lb/>
+                    <persName key="latour-theodor">Graf Latour</persName> hatte die Eitelkeit Minister zu
+                    sein und es bleiben zu wollen. Dem Minister brachte er gewaltige Opfer. Sein
+                    Unglück war die große, constitutionelle Ehrlichkeit und die Überzeugung er müsse
+                    mit diesem Reichstag gehen, er könne nicht abtreten, weil sonst irgend ein
+                    Möring oder Pannasch folgen würde. Letzterer war nicht zu befürchten, die Armee
+                    hatte eine große Stimme und hätte dies nie geduldet und die Katastrophe wäre in
+                    diesem Falle auf eine andere Art herbeigeführt worden. Blieb aber <persName key="latour-theodor">Latour</persName> so mußte er namentlich in der
+                    ungarischen Sache mehr Festigkeit zeigen, die Armee nach Möglichkeit retten,
+                    dies war seine Pflicht, anstatt die ungarischen Regimenter <persName key="kossuth-lajos">Kossuth</persName> zur Disposition zu stellen, wenn es
+                    am Ende auch nicht auf ganz constitutionellen Wege hätte geschehen können. Aber
+                    hierin war eben <persName key="latour-theodor">Graf Latours</persName>
+                    Ehrlichkeit gegenüber von Spitzbuben eine große Kalamität.<lb/>Der Hof hatte
+                    einstweilen den von allen Seiten immer heftiger werdenden Drängen nachgegeben
+                    und war nach Schönbrunn zurückgekehrt, zu welchem Entschluß die Umgebung des
+                    Hofes das Ihrige beigetragen haben mag. Es war vorauszusehen, daß es so kommen
+                    würde und der <persName key="windisch-graetz-alfred">Fürst</persName>, obwohl
+                    mit der Rückkehr nicht einverstanden und sie als Concession gegenüber dem
+                    Reichstage und den Wienern im höchsten Grade mißbilligend, sah doch bei der
+                    größeren Nähe die Möglichkeit erleichtert, seinem Einfluß geltend zu machen,
+                    während die große Entfernung von <placeName key="innsbruck">Insbruck</placeName>
+                    durchaus keine Garantie bot, daß man seine Rathschläge befolgen
+                    würde.<lb/>Gleich nach der Rückkehr des Hofes war <persName key="gruenne-karl-ludwig">Graf Grünne</persName> an den <persName key="windisch-graetz-alfred">Fürsten</persName> geschickt worden, namentlich
+                    deshalb, ob <persName key="franz-joseph">Erzherzog Franz Josef</persName> in
+                    Schönbrunn bleiben oder sich an einen anderen Ort begeben solle, um
+                    nöthigenfalls hors de portée dessen zu sein, was sich in
+                        <placeName>Wien</placeName> ereignen konnte. <persName key="gruenne-karl-ludwig">Graf Grünne</persName>, von dem damals aufs
+                    Höchste eingeschüchterten Hofe kommend, erschrak fast über die höchst aufgeregte
+                    Stimmung, die in <placeName>Prag</placeName> unter den Truppen, über die stets
+                    zunehmende Studentenwirthschaft in <placeName>Wien</placeName> herrschte. Der
+                    Gedanke an die Möglichkeit eines Unternehmens gegen <placeName>Wien</placeName>
+                    war vielen klar geworden, es hatte darüber Manches transpirirt und es wurden
+                    allerdings unvorsichtige Stimmen laut, die unverhohlen den Wunsch aussprachen
+                    die Wiener für die viele Schmach zu züchtigen, welche den dortigen Kameraden
+                    angethan und von den schwachen Commandanten nicht gehindert worden war,
+                    Demonstrationen aller Art bethätigten den Geist der Offiziere und die Lust gegen
+                    die Hauptstadt zu ziehen, gab sich immer mehr kund. Der Rath des <persName key="windisch-graetz-alfred">Fürsten</persName>, den <persName key="gruenne-karl-ludwig">Graf Grünne</persName> nach
+                        <placeName>Wien</placeName> nahm, ging dahin den <persName key="franz-joseph">jungen Prinzen</persName> einstweilen in
+                        <placeName>Wien</placeName> zu lassen, dem Gange der Ereignisse die größte
+                    Aufmerksamkeit zu schenken und die nächste Gelegenheit eines Anstoßes oder einer
+                    nicht zu gewährenden Forderung der Revolutionsparthei zu benutzen, um abermals
+                        <placeName>Wien</placeName> zu verlassen. Alles käme darauf an, hiezu den
+                    richtigen Zeitpunkt zu wählen und dann eine zweite Entfernung, die allerdings
+                    schwieriger war als die erste, auch besser zu benutzen.<lb/>Wenige Tage nach
+                        <persName key="gruenne-karl-ludwig">Grünnes</persName> Abreise wurde
+                    Oberstleutnant <persName key="langenau-ferdinand">Langenau</persName> abermals
+                    vom <persName key="windisch-graetz-alfred">Fürsten</persName> an die <persName key="maria-anna">Kaiserin</persName> abgeschickt. Er überbrachte ihr die
+                    zwei Manuskripte über die Abdikation und die Thronbesteigung des <persName key="franz-joseph">neuen Kaisers</persName>, deren oben gedacht wurde. Der
+                        <persName key="windisch-graetz-alfred">Fürst</persName> bat um Festigkeit in
+                    allen inneren und äußeren Fragen, er wiederrieth jede Nachgiebigkeit und glaubte
+                    auf diese Weise am Leichtesten einen Bruch herbeizuführen, der allerdings
+                    nothwendig war, um offen gegen die Revolution aufzutreten. In diesem Falle
+                    sollte der <persName key="ferdinand-I">Kaiser</persName> mit einer hinlänglichen
+                    Anzahl Truppen Schönbrunn verlassen und nach <placeName key="olmuetz">Olmütz</placeName> gehen. Die Abdikation und die Thronbesteigung des
+                        <persName key="franz-joseph">Erzherzogs Franz Josef</persName> sowie die
+                    Auflösung des Reichstages sollte nach der Absicht des <persName key="windisch-graetz-alfred">Fürsten</persName> mit dieser Abreise in
+                    Verbindung stehen und sobald als möglich erfolgen. Der Rath des <persName key="windisch-graetz-alfred">Fürsten</persName> ging dahin einen Theil der
+                    dem Hofe abgerungenen Freiheiten, die sich als ganz unvereinbar mit einem
+                    geordneten Zustande der Dinge erwiesen hatten, wie unbedingte Preßfreiheit,
+                    Nationalgarde und [?], wo nicht zurückzunehmen, doch bei dieser Gelegenheit zu
+                    regeln und zu schmälern.<lb/>In dieser Beziehung fand er gewaltige Gegner. Die
+                    sogenannten ehrlichen Constitutionellen, zu denen auch <persName key="stadion-franz">Graf Franz Stadion</persName> gehörte, erklärten den
+                        <persName key="franz-joseph">neuen Kaiser</persName> zum strengen Halten
+                    Alles dessen moralisch verpflichtet, was sein Vorgänger verspochen hatte, wenn
+                    auch diese Versprechungen größtentheils unausführbar waren und dabei die
+                    Monarchie zu Grunde gehen sollte. Man hatte einmal den Weg einggschlagen und
+                    mußte ihn nach Ansicht dieser Leute auch verfolgen. Eine ganz unglückselige,
+                    unpraktische und unheilbringende Theorie.<lb/>Was die Abdikation betrifft, so
+                    fand <persName key="langenau-ferdinand">Langenau</persName> die <persName key="maria-anna">Kaiserin</persName> den Ansichten ganz getreu, die sie in
+                        <placeName key="innsbruck">Insbruck</placeName> geäußert hatte, fern von
+                    aller Ambition und von dem Gedanken, daß <persName key="ferdinand-I">Kaiser
+                        Ferdinand</persName> noch länger die Krone tragen solle, wenn das Wohl
+                    seines Landes es anders erheische. Die <persName key="sophie-erzherzogin">Erzherzogin Sophie</persName> jedoch schien andrer Meinung geworden zu
+                    sein, sie vermied diesen Gegenstand zu berühren. Ihre Umgebung so wie namentlich
+                        <persName key="gruenne-karl-ludwig">Graf Grünne</persName>, Obersthofmeister
+                    des <persName key="franz-joseph">Erzherzog Franz Josef</persName>, dessen
+                    Einfluß schon damals anfing sich geltend zu machen, waren diesem Schritte
+                    entgegen. Letzterer besonders schrak vor der Wichtigkeit dieser Handlung zurück,
+                    er fand den jungen Prinzen nicht a la hauteur des Ereignisses und meinte, was
+                    allerdings viel für sich hatte, diese letzte Hülfsmittel müsse mit der größten
+                    Vorsicht angewendet werden, weil im Falle des Mißlingens Alles verloren wäre. So
+                    stand diese Angelegenheit dann nicht nach dem Wunsche des <persName key="windisch-graetz-alfred">Fürsten</persName>, der eine kathegorische
+                    Befolgung seiner Rathschläge verlangte und in dieser Beziehung mannigfaltigen
+                    Widerspruch fand.<lb/>Was die Abreise des <persName key="ferdinand-I">Kaisers</persName>, die jeden Augenblick nothwendig werden konnte, betraf,
+                    so war vor Allem ein Mann nothwendig und unentbehrlich, der Alles vorbereiten
+                    und eintretenden Falls leiten würde, ein Mann von einer höheren Stellung in der
+                    unmittelbaren Nähe des <persName key="ferdinand-I">Kaisers</persName>, der auch
+                    geneiget war durch seine Persönlichkeit zu imponiren. Den <persName key="latour-theodor">Grafen Latour</persName>, in seiner konstitutionellen
+                    Ehrlichkeit konnte man von so etwas nicht in Kenntnis setzen, er hätte es
+                    entweder dem <orgName key="ministerrat">Ministerrathe</orgName> mitgetheilt oder
+                    wäre aus Gewissenhaftigkeit abgetreten; man schlug daher damals vor den
+                        <persName key="gyulay-ferencz-jozsef">Grafen Gyulay</persName> zum
+                    Generaladjutanten des <persName key="ferdinand-I">Kaisers</persName> zu ernennen
+                    und ihn mit dieser allerdings sehr schmeichelhaften, aber auch sehr schwierigen
+                    Aufgabe zu betrauen. Der <persName key="latour-theodor">Kriegsminister</persName>, von dem die <persName key="maria-anna">Kaiserin</persName> den <persName key="gyulay-ferencz-jozsef">Grafen
+                        Gyulay</persName> begehrte, fand dessen Anwesenheit in
+                        <placeName>Triest</placeName> so nothwendig, daß er sich zu seiner
+                    Entfernung von dort nicht verstehen wollte, so wählte sie denn den <persName key="lobkowitz-joseph">General Fürst Lobkowitz</persName> allerdings nicht
+                    ganz der Mann, um in einem solchen Moment diese Stellung auszufüllen. Niemand
+                    erschrak über seine Ernennung mehr als <persName key="lobkowitz-joseph">Lobkowitz</persName> selbst.<lb/>Die <persName key="maria-anna">Kaiserin</persName> hatte ihn jedoch in der Umgebung des <persName key="windisch-graetz-alfred">Fürsten W[indisch-Graetz]</persName> im Monat
+                    März kennen gelernt und hielt ihn für geeignet, besonders weil ihn der <persName key="windisch-graetz-alfred">Fürst</persName> damals seines Vertrauens
+                    gewürdigt, während dieser ihn eigentlich nur als Verwandten und Gesellschafter
+                    bei sich behielt.<lb/>Wenn einerseits dem <persName key="lobkowitz-joseph">neuen
+                        Generaladjutanten</persName> größtentheils diejenigen Eigenschaften
+                    abgingen, welche man eigentlich für diesen Posten gewünscht hatte, so war
+                    anderseits sein intimes Verhältnis zum <persName key="windisch-graetz-alfred">Fürsten</persName> und die Vormundschaft, die dieser über ihn ausübte,
+                    insoferne von Nutzen, daß alle Vorbereitungen zu dem sehnlichst erwarteten,
+                    wichtigen Schritte im strengsten Einvernehmen mit <placeName>Prag</placeName>
+                    geschehen konnten. Auch bemühte <persName key="windisch-graetz-alfred">Fürst
+                        W[indisch-Graetz]</persName> seine Superiorität über <persName key="lobkowitz-joseph">Lobkowitz</persName> und des Letzteren unbedingte
+                    Ergebenheit, um ihm ganz genau dasjenige vorzuschreiben, was er zu thun hatte.
+                    Nur Eines war von <placeName>Prag</placeName> aus nicht zu bestimmen, worüber
+                    man auch in nicht geringer Sorge war und das Eine war, wird <persName key="lobkowitz-joseph">Lobkowitz</persName> den richtigen Moment wählen, den
+                        <persName key="ferdinand-I">Kaiser</persName> zur Abreise von
+                        <placeName>Wien</placeName> zu bewegen? Zu einer Entfernung, an welche sich
+                    dann die militärischen Unternehmungen gegen <placeName>Wien</placeName> knüpfen
+                    sollten.<lb/>Die Verabredung und Bestimmung der militärischen Maßregeln, um den
+                    Hof bei der nächsten passenden Gelegenheit nicht flüchtend, sondern in der Mitte
+                    getreuer Truppen in die Festung <placeName key="olmuetz">Olmütz</placeName> zu
+                    führen, war die Hauptobliegenheit des <persName key="lobkowitz-joseph">Fürsten
+                        Lobkowitz</persName>. Man hatte einen Moment geglaubt
+                        <placeName>Neustadt</placeName> wegen der größeren Nähe von
+                        <placeName>Wien</placeName> als Zufluchtsort des Hofes vorschlagen zu
+                    sollen. <placeName key="olmuetz">Olmütz</placeName> behielt jedoch als Festung
+                    den Vorzug, wenn gleich das dorthin sich begeben länger dauerte und schwieriger
+                    sein mochte. Die Truppen, die im Falle einer Bewegung Schönbrunn schützen
+                    sollten, waren im Voraus bestimmt und mit diesen sollte dann unter Kommando des
+                        <persName key="lobkowitz-joseph">Generaladjutanten</persName> der Marsch
+                    nach <placeName key="olmuetz">Olmütz</placeName> angetreten werden, der
+                    namentlich für die Umgebung des Hofes, mit Ausnahme der <persName key="fuerstenberg-therese">Landgräfin Fürstenberg</persName>, ein großes
+                    Geheimnis blieb.<lb/>Seit der Rückkehr nach Schönbrunn hatte die <persName key="maria-anna">Kaiserin</persName> mehrere ihrer loyalen Gesinnungen engen
+                    bekannte Männer zu Rath gezogen und ihre Meinung über die Lage der Dinge
+                    eingeholt. Es waren dies der frühere Finanzminister, <persName key="kuebeck-karl-friedrich">Baron Kübek</persName>, <persName key="schwarzenberg-felix">Fürst Felix Schwarzenberg</persName>, <persName key="josika-miklos">Baron Josika</persName> und <persName key="szecsen-nikolaus">Graf Szecsen</persName>, besonders in den ungarischen
+                    Angelegenheiten und mehrere andere. Alle stimmten so ziemlich in dem Punkte
+                    überein, daß nur ein entschiedener Schlag mit Consequenz durchgeführt die
+                    Monarchie retten könne und riethen zur größten Festigkeit und zum Widerstand
+                    gegen alle Begehren, welche die Revolutionsparthei machen würde. Mehrmals noch
+                    sandte der <persName key="windisch-graetz-alfred">Fürst</persName> den
+                    Oberstlieutnant <persName key="langenau-ferdinand">Langenau</persName> nach
+                        <placeName>Wien</placeName>, er drängte zu einer Entscheidung, die
+                    allerdings erst die Ereignisse in <placeName>Wien</placeName> herbeiführen
+                    konnte. Er bestand mit Entschiedenheit auf der Abdikation des <persName key="ferdinand-I">Kaiser Ferdinands</persName> im Falle einer Entfernung von
+                        <placeName>Wien</placeName> und hatte sogar mit seinem Abtreten gedroht,
+                    wenn man seine Rathschläge nicht befolgte. Dies der <persName key="maria-anna">Kaiserin</persName> auszurichten war einer von <persName key="langenau-ferdinand">Langenaus</persName> am wenigsten angenehmen
+                    Aufträge.<lb/>Die <persName key="maria-anna">Kaiserin</persName> für ihre Person
+                    ganz mit den Ansichten des <persName key="windisch-graetz-alfred">Fürsten</persName> einverstanden und eine unbegrenzte Verehrung für ihn
+                    hegend gerieth bei dem Gedanken außer sich, daß der <persName key="windisch-graetz-alfred">Fürst</persName>, ihr einziger Rettungsanker,
+                    abtreten könne, sie war jedoch nicht im Stande den Widerstand zu bekämpfen, den
+                    sie wahrscheinlich von Seite der <persName key="sophie-erzherzogin">Erzherzogin
+                        Sophie</persName>, so wie von der Umgebung, die zum Theile in das Geheimnis
+                    eingedrungen war, und von <persName key="gruenne-karl-ludwig">Graf
+                        Grünne</persName> namentlich erfuhr.<lb/>Von den Ministern meinten <persName key="latour-theodor">Latour</persName> und <persName key="wessenberg-johann-philipp">Weßenberg</persName> es ehrlich mit dem
+                    Hofe, beide jedoch waren sehr schwach und nicht a la hauteur von entscheidenden
+                    Maßregeln. Besonders nachgiebig hatte sich <persName key="wessenberg-johann-philipp">Wesenberg</persName> in den italienischen
+                    Angelegenheiten gezeigt. Die inzwischen eingetretene günstige Wendung in
+                        <country>Italien</country>, <persName key="radetzky-josef-wenzel">Radetzky’s</persName> Siege, hatten der Sache eine andere Wendung gegeben.
+                    Trotz dem war von vielen Seiten die Ansicht ausgesprochen, es sei nothwendig die
+                        <region>Lombardei</region> abzutreten, während anderseits sich die
+                    ungarischen Angelegenheiten immer mehr verwickelten.<lb/>Sowohl in Betreff
+                        <country key="italien">Italiens</country> als gegenüber von
+                        <country>Ungarn</country> hatte der <persName key="windisch-graetz-alfred">Fürst</persName> die größtmöglichste Festigkeit angerathen; die <persName key="maria-anna">Kaiserin</persName> befolgte diesen Rath und den armen
+                        <persName key="wessenberg-johann-philipp">Wessenberg</persName>, der wie ein
+                    Rohr hin und herschwankte, mehrmals durch ihre eigene Festigkeit, die ihm so
+                    nöthige Kraft verliehen. Man war entschieden nicht nachzugeben und im Falle
+                    äußerer Verwicklungen augenblicklich die russische Hülfe anzusprechen. <persName key="medem-paul">Graf Medem</persName> wurde in einer ganz geheimen
+                    Unterredung über die Gesinnungen <persName key="nikolaus-I">seines
+                        Herren</persName> befragt.<lb/>Er betheuerte, daß <persName key="nikolaus-I">sein Kaiser</persName> zu jeder Unterstützung bereit sei und berichtete
+                    sogleich darüber an seinen Hof, von wo er die Bestätigung dessen erhielt, was
+                    man niemals bezweifelt hatte, nämlich der innigsten Theilnahme des Kaisers und
+                    seines festen Willens, dem Kaiser von Oesterreich, wenn er es verlange kräftigst
+                    beizustehen.<lb/>Was <country>Ungarn</country> anbelangt, so waren die dortigen
+                    Angelegenheiten durch langes Zögern und Unentschlossenheit bereits in eine Phase
+                    getreten, daß ebenfalls nur die Gewalt der Waffen entscheiden konnte.<lb/>Das
+                    Wichtigste, wozu es theilweise noch Zeit war, was aber<persName key="latour-theodor"> Graf Latour</persName> ganz unglaublicher Weise
+                    verabsäumte, war die Rettung der Armee. Die allerdings loyalen und ganz
+                    constitutionellen Sünden, die damals <persName key="latour-theodor">Graf
+                        Latour</persName> auf sich lud, hat er schwer gebüßt, man wird es jedoch
+                    dereinst nicht glauben wollen, daß man die noch gutgesinnten ungarischen
+                    Regimenter an die wohl damals nicht mehr zu bezweifelnde Revolution auslieferte,
+                    damit sie verderben und gegen ihren rechtmäßigen Kaiser geführt werden,
+                    diejenigen, die um Verhaltungsbefehle gegenüber der revolutionären Regierung
+                    baten, ohne alle Instruktion ließ und an das ungarische Ministerium anwies,
+                    dessen Absichten, wenn es auch damals noch legal bestand, dem Kurzsichtigsten
+                    klar geworden sein mußten. Eine entschiedene Opposition gegen den Einmarsch
+                    dieser Truppen nach <country>Ungarn</country> und ein offenes Wort an die in
+                        <country>Ungarn</country> stationirten, hätten viel Unheil verhindert – doch
+                    dies war ja nicht streng constitutionell.<lb/>Es ist höchst schmerzlich, wenn
+                    man bedenkt, mit wie wenig, selbst noch in diesem Augenblick, die Armee gerettet
+                    hätte werden können; sie erwartete mit Sehnsucht einen solchen Schritt vom
+                        <persName key="latour-theodor">österreichischen Kriegsminister</persName>,
+                    den sie trotz Handbillets und Manifesten noch immer als ihren einzigen Chef
+                    bezeichnete.<lb/>Was war also Alles vorbereitet und bedurfte nur eines Anstoßes,
+                    um die vom <persName key="windisch-graetz-alfred">Fürsten</persName> längst
+                    ersehnte Entscheidung herbeizuführen. Er harrte ihrer mit der größten Sehnsucht
+                    entgegen und konnte gar nicht erwarten den Hof in Sicherheit und von
+                        <placeName>Wien</placeName> entfernt zu wissen. Die Arbeiterunruhen gleich
+                    nach des <persName key="ferdinand-I">Kaisers</persName> Rückkehr, die Bewegungen
+                    im September hatten gezeigt, wie wenig Garantie der Ruhe die Hauptstadt bot, es
+                    war ein Treiben in <placeName>Wien</placeName>, eine Gährung, die länger so
+                    nicht fortdauern konnte. Eben sollte <persName key="langenau-ferdinand">Langenau</persName> abermals an die <persName key="maria-anna">Kaiserin</persName> geschickt werden, um sie zu bitten den <persName key="ferdinand-I">Kaiser</persName> sobald als möglich von
+                        <placeName>Wien</placeName> zu entfernen, als die Ereignisse des 6. Oktober
+                    eintraten, welche den <persName key="lobkowitz-joseph">Fürsten
+                        Lobkowitz</persName> nicht im Zweifel ließen, der Augenblick sei gekommen
+                    die empörte <placeName key="wien">Hauptstadt</placeName> zum 2. Male zu
+                    verlassen, wenig Stunden, nachdem die Ermordung des <persName key="latour-theodor">Grafen Latour</persName> und der <placeName key="wien">Wiener</placeName> Ereignisse in <placeName>Prag</placeName> eingetroffen
+                    war, ging das erste Bataillon mit der Eisenbahn gegen
+                        <placeName>Wien</placeName> ab, um die Bahn zu besetzen.<lb/>Von allen
+                    Seiten gingen die dringendsten Aufforderungen an den <persName key="windisch-graetz-alfred">Fürsten</persName> ein, sobald als möglich
+                    selbst vor <placeName>Wien</placeName> zu erscheinen und das Kommando zu
+                    übernehmen, seine Gegenwart wäre vor Allem nothwendig.<lb/>
+                    <persName key="schwarzenberg-felix">Fürst Felix Schwarzenberg</persName>, damals in
+                        <placeName>Wien</placeName> in betreff der italienischen Angelegenheiten
+                    anwesend, hatte sich mit den Truppen ins Belvedere begeben. Er schrieb von dort
+                    einen ziemlich niederschlagenden Brief mit der Schilderung der dortigen Zustände
+                    und beschwor den <persName key="windisch-graetz-alfred">Fürsten</persName> zu
+                    recht bald zu kommen, Er und nur Er allein könne sie retten!!<lb/>Die
+                    widersprechendsten Gerüchte aus <placeName>Wien</placeName>, unter andern die
+                    bestimmte Nachricht von der Gefangennehmung des <persName key="ferdinand-I">Kaisers</persName>, entschieden ausgesprengt, um zu allarmiren, fanden den
+                        <persName key="windisch-graetz-alfred">Fürsten</persName> ruhig und fest
+                    entschlossen, auch im Letzteren allerdings sehr schwierigen Falle den Weg zu
+                    verfolgen, die Pflicht und Überzeugung ihm vorschreiben. Sein Erscheinen in
+                        <placeName key="olmuetz">Olmütz</placeName> ward nun wie das eines Retters,
+                    was er auch war, begrüßt, er ward mit Ehren überhäuft, welch‘ praller Abstand
+                    mit seiner jetzigen Lage!<lb/>Das, was er längst vorhergesagt, war eingetroffen,
+                    freilich begleitet von entsetzlichen Nebenumständen.
+                        <country>Oesterreich</country> war in eine Krisis getreten, in der nur er
+                    und gerade nur er berufen war, mit der Armee die Ruhe wieder
+                    herzustellen.<lb/>Sein Wirken und seine Leistungen sind bekannt und räumen ihm
+                    einen Platz unter den ersten Männern in <country key="oesterreich">Oesterreichs</country>, in <country key="europa">Europas</country>
+                    Geschichte ein. Er war der Mann des Tages und sein Wort von großem Gewicht bei
+                    allem, was in <country>Oesterreich</country> geschah.<lb/>Es ist sehr die Frage,
+                    ob es nicht viel besser gewesen wäre, seinen Rath zu befolgen und das
+                    Revolutionstribunal, Reichstag genannt, gleich aufzulösen, anstatt demselben
+                    auch seinen Verhandlungen in <placeName>Wien</placeName> durch eine spätere
+                    Wiederzusammenberufung den Stempel der Legalität aufzudrücken.<lb/>
+                    <persName key="wessenberg-johann-philipp">Weßenberg</persName> war noch Minister, man
+                    arbeitete damals an dem Ministerium <persName key="stadion-franz">Stadion</persName>-<persName key="wessenberg-johann-philipp">Weßenberg</persName>, was aber erst später ins Leben trat. Wie schwach, wie
+                    unfähig <persName key="wessenberg-johann-philipp">Weßenberg</persName> war,
+                    zeigt sein Manifest vom 19. nach dem vom 16., welches erstere vom schlechten
+                    Theil der Wiener mit Jubel begrüßt wurde.<lb/>Die nun folgenden Ereignisse zu
+                    beschreiben, liegt nicht in dem Bereiche dieses Aufsatzes. Unter allen denen,
+                    für die <persName key="windisch-graetz-alfred">Fürst
+                        W[indisch-Graetz]</persName> gekämpft und gewirkt, hat Niemand ihm die
+                    Anerkennung so treu bewahrt als die <persName key="maria-anna">Kaiserin</persName>. Niemand hat sein späteres Abtreten so schmerzlich
+                    berührt als diese noble Frau, die genau weiß, was <country>Oesterreich</country>
+                    dem <persName key="windisch-graetz-alfred">Fürsten</persName> verdankt und nicht
+                    begreift, daß man dies jemals vergessen konnte.<lb/>Spätere Fehler und nie
+                    entschiedenes Unglück in militärischen Operationen, während auf einer anderen
+                    Seite der Monarchie, neben großer Tapferkeit ein ganz besonderer Glücksstern
+                    waltete, lassen aus unberufenen Munde manch ungerechtes Urtheil über den großen
+                    Mann laut werden.<lb/>Seine geringen Erfolge in <country>Ungarn</country> sind
+                    die Ursache, daß er bei dem jüngeren Theil der Armee seine früher so bedeutende
+                    Popularität eingebüßt hat, bei denjenigen Theile der Armee, der seine frühere
+                    Stellung, seine Leistungen nicht zu beurtheilen vermag.<lb/>Möge dem sein, wie
+                    ihm wolle, möge er Fehler begangen haben, dies wollen wir nicht weiter erörtern,
+                    sein Verdienst aber, der Retter <country key="oesterreich">Oesterreich’s</country> gewesen zu sein, bleibt ihm unbenommen, stellt ihn
+                    höher, als Viele es eingestehen wollen und als es Manchem lieb sein mag.<lb/>Dem
+                    Verfasser dieser Zeilen aber wird es stets zur höchsten Ehre gereichen in jener
+                    wichtigen Epoche das Vertrauen des <persName key="windisch-graetz-alfred">Fürsten</persName> besessen zu haben, eines Mannes, dessen ganz besondere
+                    und gerade in dieser Zeit so äußerst seltene Eigenschaften, er die die höchste
+                    Verehrung zollt.<lb/>Wien im Dezember (November – Im Windischgrätz’schen
+                    Exemplar) 1849</p>
+            </div>
+        </body>
+    </text>
+</TEI>
