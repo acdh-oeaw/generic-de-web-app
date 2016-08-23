@@ -3,7 +3,7 @@ title:       Create a Digital Edition Web-App
 email:       your_email@example.com
 author:      Peter Andorfer
 description: "A blog about creating a web application to serve digital editions."
-baseurl:     "/generic-de-web-app"
+baseurl:     ""
 url:         ""
 date_format: "%b %-d, %Y"
 
