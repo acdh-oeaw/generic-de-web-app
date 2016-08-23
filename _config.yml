@@ -1,10 +1,10 @@
 # Site settings
-title:       Pixyll
+title:       Create a Digital Edition Web-App
 email:       your_email@example.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
-baseurl:     ""
-url:         "http://pixyll.com"
+author:      Peter Andorfer
+description: "A blog about creating a web application to serve digital editions."
+baseurl:     "/generic-de-web-app/tree"
+url:         "https://github.com/csae8092/"
 date_format: "%b %-d, %Y"
 
 # Google services
