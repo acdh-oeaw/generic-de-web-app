@@ -3,7 +3,7 @@ layout:     post
 title:      # Part 3 - Table of Contents
 date:       2016-08-09 11:21:29
 summary:    In this third part of our series of HowTos we will upload the XML/TEI files in our database and write our first xQuery function which will generate a very basic table of content from the uploaded XML/TEI documents.
-categories: jekyll pixyll
+categories: digital-edition
 ---
 
 # Introduction and requirements
