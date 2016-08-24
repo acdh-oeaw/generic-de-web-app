@@ -1,9 +1,9 @@
 ---
 layout:     post
 title:      # Part 2 - Getting started
-date:       2016-06-08 11:21:29
-summary:    In the second part of our tutorial we will install eXist-db, and create a ‘plain vanilla’ eXist-db web application using eXist-db´s in build **Deployment Editor**.
-categories: jekyll pixyll
+date:       2016-08-11 11:21:29
+summary:    In the second part of our tutorial we will install eXist-db, and create a ‘plain vanilla’ eXist-db web application using eXist-db´s in build Deployment Editor.
+categories: digital-edition
 ---
 
 # Introduction

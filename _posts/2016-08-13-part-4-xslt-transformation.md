@@ -1,8 +1,14 @@
-# Part 4 - XSLT Transformation
+---
+layout     post
+title      Part 4 - XSLT Transformation
+date       2016-08-13
+summary    In the fourth parth we will start with a detail view by transforming XML via XSL into HTML.
+categories digital-edition
+---
 
 # Introduction and requirements
 
-The fourth part of this series of tutorials starts off where the third part ends. You can deploy the latest codebase by downloading and installing **[thi**s](#linkToCome)[ ](#linkToCome)package. For detaild instructions on how to do this, please consult the [previous tutorial](#linkToCome). 
+The fourth part of this series of tutorials starts off where the third part ends. You can deploy the latest codebase by downloading and installing [this](#linkToCome)[ ](#linkToCome)package. For detaild instructions on how to do this, please consult the [previous tutorial](#linkToCome). 
 
 In the last tutuorial we created a very basic [table of content](http://localhost:8080/exist/apps/thun-demo/pages/toc.html) which lists the content of the application’s data directory. For this part of the tutorial, our requrirments demand, that we will be able to click on any document of our interest listed in the table of content to retrieve a (very basic) HTML representation of the underlying XML/TEI document.
 
@@ -52,6 +58,7 @@ return
 ```
 
 As you can see below, we are transforming the document celakovsky-an-thun_1850_A3-XXI-D82.xml with the stylesheet we just created. What is left now to do is to reference the function **app:XMLtoHTML** in **show.html.** Therefore just add the follwoing line to show.html.
+
 ```html
 <div class="templates:surround?with=templates/page.html&amp;at=content">
     <h1>show.html</h1>

@@ -1,9 +1,9 @@
 ---
 layout:     post
 title:      Part I - Definition and Requirements 
-date:       2016-06-08 11:21:29
+date:       2016-08-10 11:21:29
 summary:    The following series of blog posts will guide you step by step through the process of building a web application for digital editions.
-categories: jekyll pixyll
+categories: digital-edition
 ---
 
 ## A definition of digital edition

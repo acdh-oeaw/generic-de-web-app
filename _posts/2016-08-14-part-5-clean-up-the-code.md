@@ -1,4 +1,11 @@
-# Part 5 - Clean up the code
+---
+layout     post
+title      Part 5 - Clean up the code
+date       2016-08-14
+summary    In the fith part we will clean up our code base - a little bit
+categories digital-edition
+---
+
 
 # Introduction and requirements
 
@@ -46,11 +53,14 @@ Now we also want to remove the other hard coded link in this function which is t
 
 **modules/app.xql | app:toc**
 
+```html
 <a href="{concat("**http://localhost:8080/exist/apps/thun-demo/pages/show.html**?document=",functx:substring-after-last(document-uri(root($doc)), "/"))}">{document-uri(root($doc))}</a>
+```
 
 To remove the hard coded link from above, we could basically do something similar as before. Unfortunately building the needed URL [http://localhost:8080/](http://localhost:8080/exist/apps/rita/pages/show.html)**[exis**t](http://localhost:8080/exist/apps/rita/pages/show.html)[/apps/rita/pages/show.html](http://localhost:8080/exist/apps/rita/pages/show.html)  is slightly more complicated than */db/apps/thun-demo/data/editions*. 
 
 Without going into detail, the following (bold) line of code does the juggling and creates the appropriate link without any hard coded parts in it.
+
 ```xquery
 (:~
  : creates a basic table of content derived from the documents stored in '/data/editions'
