@@ -3,7 +3,7 @@ layout     post
 title      # Part 4 - XSLT Transformation
 date       2016-08-13 11:21:29
 summary    In the fourth parth we will start with a detail view by transforming XML via XSL into HTML.
-categories digital-edition
+categories: digital-edition
 ---
 
 # Introduction and requirements
