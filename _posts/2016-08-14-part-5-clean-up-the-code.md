@@ -14,15 +14,15 @@ In the last chapter we implemented a kind of nice function which takes an XML an
 
 But when you now try to pack your application and deploy it to another server, you will run into some severe troubles - as long as the server you try to deploy your package is not named exactly as the one you developed the application. As you can see on the following screnshot, I deployed our little application to my personal but public play and test server called [www.digital-archiv.at](http://www.digital-archiv.at) (and not localhost).
 
-![image alt text](/staticblog/pages/img/part-5/image_0.jpg)
+![image alt text]({{ site.baseurl }}/images/part-5/image_0.jpg)
 
 When you try to click on one of the links, you will be redirected to localhost thanks to our hardcoded URLs. And as long as you don't have exact the same application running on your localhost, you will receive something like this:
 
-![image alt text](/staticblog/pages/img/part-5/image_1.jpg)
+![image alt text]({{ site.baseurl }}/images/part-5/image_1.jpg)
 
 And even if you want to deploy your application on the same server with a new name (we will look into renaming the application in another part of the tutorial later) you will run into problems. Because now your table of content will stay completely blank since so far, the application will look for your XML documents in a collection called something like *db/***_thun-demo_***/*… and not in the collection *db/***_{name-of-your-app}_***/…* .
 
-![image alt text](/staticblog/pages/img/part-5/image_2.jpg)
+![image alt text]({{ site.baseurl }}/images/part-5/image_2.jpg)
 
 # Remove hard coded links
 
@@ -46,7 +46,7 @@ declare function app:toc($node as node(), $model as map(*)) {
 
 This fix brings back the table of content even if we rename the application.
 
-![image alt text](/staticblog/pages/img/part-5/image_3.jpg)
+![image alt text]({{ site.baseurl }}/images/part-5/image_3.jpg)
 
 Now we also want to remove the other hard coded link in this function which is the link leading to our *show.html* page:
 
@@ -73,7 +73,7 @@ declare function app:toc($node as node(), $model as map(*)) {
 
 To test my claim, we should browse to the table of content and follow one of the links. Although the link seems to be correct, we simply get a not very nice error message:
 
-![image alt text](/staticblog/pages/img/part-5/image_4.jpg)
+![image alt text]({{ site.baseurl }}/images/part-5/image_4.jpg)
 
 BE AWARE. So far I am still working with a renamed version of our thun-demo app (which is now called rita, an abbreviation of **R**eading **I**n **T**he **A**lps). 
 
@@ -117,7 +117,7 @@ let $xsl := doc(concat($config:app-root, "/resources/xslt/xmlToHtml.xsl"))**
 
 Now the creation of the table of content is showing the (right) content and sends the correct parameters to the right location of show.html which itself renders the XML/TEI document, no matter of the name of the application’s or the server’s name. 
 
-![image alt text](/staticblog/pages/img/part-5/image_5.jpg)
+![image alt text]({{ site.baseurl }}/images/part-5/image_5.jpg)
 
 # Conclusion and outlook
 

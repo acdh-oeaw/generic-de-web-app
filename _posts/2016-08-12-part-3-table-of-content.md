@@ -16,7 +16,7 @@ Part III of this tutorial builds upon the work done in Part II. In case you lost
 
 The probably most simplest way to distribute your application is to download it with the help of eXide. So browse to [http://localhost:8080/exist/apps/eXide/index.html](http://localhost:8080/exist/apps/eXide/index.html), and open any files stored in your application root directory like *thun-demo/repo.xml*. Then click on **Application** in eXide’s main menu and click on **Download app**.
 
-![image alt text](/staticblog/pages/img/part-3/image_0.jpg)
+![image alt text]({{ site.baseurl }}/images/part-3/image_0.jpg)
 
 This triggers a download of a file called *thun-demo.xar*. This is actually just a .zip file containing your application’s code. So you can rename it to *thun-demo.zip*, unzip it and inspect its content which should look striking similar to the directories and documents of your application stored in eXist-db. 
 
@@ -26,13 +26,13 @@ Such a *thun-demo.xar* containing the code from at the end of Part II can be dow
 
 To (re)install your application, browse to the dashboard [http://localhost:8080/exist/apps/dashboard/index.html](http://localhost:8080/exist/apps/dashboard/index.html) and open the **Package Manager**. This gives you a list of all your currently all available as well as installed packages (some packages can be applications). Check ‘installed’ to only see your installed apps. In case you did follow along coding while reading Part II, you should see an entry: "Thun Demo App".
 
-![image alt text](/staticblog/pages/img/part-3/image_1.jpg)
+![image alt text]({{ site.baseurl }}/images/part-3/image_1.jpg)
 
 Let's uninstall it - but please make sure you download your web app before as described above. To download an app, hover over the entry and a quite self explanatory icon appears. Click on it and confirm your command. When you now return to the dashboard, the tile named "Thun-Demo" should be gone (maybe you have to reload the page). 
 
 Ok, now try and install "Thun-Demo". Again open the **Package Manager** and click on the top right symbol:
 
-![image alt text](/staticblog/pages/img/part-3/image_2.jpg)
+![image alt text]({{ site.baseurl }}/images/part-3/image_2.jpg)
 
 Inside the pop up dialog, click in the **Upload** field, browse to the directory where you saved your previously downloaded thun-demo.xar file and upload it. Since the application is very small, the upload and the following unzipping and installing should go very fast. After a successfull upload/installment you should see (again) a tile on your dashboard named "Thun Demo App". Start it and browse through all pages to check if everything is working. 
 
@@ -50,7 +50,7 @@ Second, we have to figure out a smart directory layout for storing our data. Thi
 
 Mapping this two types of documents in directories/collections resolves in a *data/* collection which is located in our application’s root collection and this *data/* collections contains two other collections called *data/editions/* and *data/indices/*. But looking at the following screenshots might makes things even easier to follow.
 
-![image alt text](/staticblog/pages/img/part-3/image_3.jpg)![image alt text](/staticblog/pages/img/part-3/image_4.jpg)
+![image alt text]({{ site.baseurl }}/images/part-3/image_3.jpg)![image alt text]({{ site.baseurl }}/images/part-3/image_4.jpg)
 
 Now we can upload our XML/TEI documents from the Thun correspondence into the *data/editions/* collection. 
 
@@ -58,13 +58,13 @@ Now we can upload our XML/TEI documents from the Thun correspondence into the *d
 
 If our only goal was to publish our XML/TEI documents in the internet, then we would have accomplished our goal and could go all for a beer. This is because eXist-db ships with an API that exposes the content of our database by default to the public. The nice thing about this application programming interface is, that humans as well as computers can interact with it. So as long as we don´t restrict access to our data - and there is absolutely no reason why we should do this - our uploaded XML/TEI can be read and downloaded by the www. You don’t believe me? Well, than type the following url [http://localhost:8080/exist/rest/db/apps/thun-demo/data/editions](http://localhost:8080/exist/rest/db/apps/thun-demo/data/editions) into your browser and you see some xml representation of the content of our *data/editions* collection. 
 
-![image alt text](/staticblog/pages/img/part-3/image_5.jpg)
+![image alt text]({{ site.baseurl }}/images/part-3/image_5.jpg)
 
 Getting from this table of content or list view to the representation (or detail view) of one of the documents is accomplished by adding a slash ("/") and the document's name, the value of the** name** attribute of one of the <exist:resource> elements, to the current url. So for example the following url leads to the XML/TEI file (or a representation of this file) in your browser:
 
 [http://localhost:8080/exist/rest/db/apps/thun-demo/data/editions/dittrich-an-thun_1849-08-10_A3-XXI-D1.xml](http://localhost:8080/exist/rest/db/apps/thun-demo/data/editions/dittrich-an-thun_1849-08-10_A3-XXI-D1.xml)
 
-![image alt text](/staticblog/pages/img/part-3/image_6.jpg)
+![image alt text]({{ site.baseurl }}/images/part-3/image_6.jpg)
 
 # Table of Content
 
@@ -110,7 +110,7 @@ We also want a link to our table of content page in our applications nav bar. So
 
 Save your changes and check if everything works out. Browse to [http://localhost:8080/exist/apps/thun-demo/](http://localhost:8080/exist/apps/thun-demo/) click on **Home **and follow the "Table of Content" link which should lead you to this page: 
 
-![image alt text](/staticblog/pages/img/part-3/image_7.jpg)
+![image alt text]({{ site.baseurl }}/images/part-3/image_7.jpg)
 
 ## xQuery
 
@@ -134,11 +134,11 @@ return
 
 To execute or run this function, just click on **Eval**. This should create a list of the document names in the bottom of eXide. But be aware that this is only a preview showing the first ten hits.
 
-![image alt text](/staticblog/pages/img/part-3/image_8.jpg)
+![image alt text]({{ site.baseurl }}/images/part-3/image_8.jpg)
 
  But a little temporary pop up note in the bottom right corner informs you about the actual number hits:
 
-![image alt text](/staticblog/pages/img/part-3/image_9.jpg)
+![image alt text]({{ site.baseurl }}/images/part-3/image_9.jpg)
 
 And this number should match the number of documents stored in *data/editions/*. Or, to be more precise, this number should match all documents stored in *data/editions/* which root element or node is named TEI. 
 
@@ -148,7 +148,7 @@ We have now a (very basic) script which fetches the names (or actually the names
 
 By default this document just contains some kind of demo function **app:test**. You can inspect the results of this test-function on our application's start page (*index.html*). 
 
-![image alt text](/staticblog/pages/img/part-3/image_10.jpg)
+![image alt text]({{ site.baseurl }}/images/part-3/image_10.jpg)
 
 Let’s add our own table of content function to this file. The easiest way to start with is probably to copy and paste the **app:test** function, delete everything between the curly brackets {} and exchange the **:test** against a more declarative name. Since the function wa are going to write will be responsible for creating a table of content, why don't name it **toc** for example. The barebone of our toc-function looks now like this: 
 
@@ -189,7 +189,7 @@ Now the only thing we have to do is to link the **toc.html** with our **app:toc 
 
 Save the changes and browse to [http://localhost:8080/exist/apps/thun-demo/pages/toc.html](http://localhost:8080/exist/apps/thun-demo/pages/toc.html)
 
-![image alt text](/staticblog/pages/img/part-3/image_11.jpg)
+![image alt text]({{ site.baseurl }}/images/part-3/image_11.jpg)
 
 # Conclusion and outlook
 

@@ -44,7 +44,7 @@ After clicking **Done** another window should have opened, showing you the conte
 
 The basic application code layout created by the Deployment Editor consists of the three directories (modules, resources, templates) and seven documents of different kind stored in the application's root directory. 
 
-To see the results of all our effort, browse to [http://localhost:8080/exist/apps/thun-demo/index.html](http://localhost:8080/exist/apps/thun-demo/index.html). ![image alt text](/staticblog/pages/img//staticblog/pages/img/part-2/image_0.jpg)
+To see the results of all our effort, browse to [http://localhost:8080/exist/apps/thun-demo/index.html](http://localhost:8080/exist/apps/thun-demo/index.html). ![image alt text](/staticblog/pages/img/{{ site.baseurl }}/images/part-2/image_0.jpg)
 
 We could start building our digital edition application right away. But I prefer to modify this default application code layout a little bit. Because right now all our HTML files are meant to be stored in the application’s root directory. This is basically not a problem but I like a more structured code base. Therefore let´s create a new directory in our application's root directory, called *pages*. To create a new directory you can browse to eXist-db´s [dashboard](http://localhost:8080/exist/apps/dashboard/index.html) and click on the the **Collections** tile which will open the **Collection Browser**. Navigate to the application root directory */db/apps/thun-demo*, click on the **New Collection** icon, enter *pages* as **name** and click ok.
 
@@ -105,11 +105,11 @@ In case you are wondering about the first line, this is used to load our applica
 
 To admire our work, browse to [http://localhost:8080/exist/apps/thun-demo/pages/show.html](http://localhost:8080/exist/apps/thun-demo/pages/show.html) and you should see:
 
-![image alt text](/staticblog/pages/img/part-2/image_1.jpg)
+![image alt text]({{ site.baseurl }}/images/part-2/image_1.jpg)
 
 But when you now try to go back to the application's start page, either by clicking on home or on the applications title, you will only see a 404 page not found error.
 
-![image alt text](/staticblog/pages/img/part-2/image_2.jpg)
+![image alt text]({{ site.baseurl }}/images/part-2/image_2.jpg)
 
 ## URL Redirecting
 
@@ -237,9 +237,9 @@ Save your changes and browse to [http://localhost:8080/exist/apps/thun-demo/inde
 
 [http://localhost:8080/exist/apps/thun-demo/pages/show.html](http://localhost:8080/exist/apps/thun-demo/pages/show.html).
 
-![image alt text](/staticblog/pages/img/part-2/image_3.jpg)
+![image alt text]({{ site.baseurl }}/images/part-2/image_3.jpg)
 
-But wait a second! Why is the eXist-db logo so ridiculously big. Especially in comparison to the *index.html*? ![image alt text](/staticblog/pages/img/part-2/image_4.jpg)
+But wait a second! Why is the eXist-db logo so ridiculously big. Especially in comparison to the *index.html*? ![image alt text]({{ site.baseurl }}/images/part-2/image_4.jpg)
 
 To find out what is going on or wrong, go to [http://localhost:8080/exist/apps/thun-demo/pages/show.html](http://localhost:8080/exist/apps/thun-demo/pages/show.html) and open your browser’s developer tool (F12 in Chrome). Here you should find an error message complaining about something like:
 
@@ -281,7 +281,7 @@ Go to the *resources directory* located in our application’s root directory. C
 
 Your resources collection should now look like on the following screenshot taken from eXist-db **Collection Browser**:
 
-![image alt text](/staticblog/pages/img/part-2/image_5.jpg)
+![image alt text]({{ site.baseurl }}/images/part-2/image_5.jpg)
 
 Of course we need to populate these collections with some documents.
 
@@ -291,7 +291,7 @@ In *resources/js* create a collection *jquery* and one called *tablesorter*. In 
 
 In *resources/js *add the bootstrap javascript libraries needed for bootstrap. For the time being we are done and our resource collection should look like on the screenshot below.
 
-![image alt text](/staticblog/pages/img/part-2/image_6.jpg)
+![image alt text]({{ site.baseurl }}/images/part-2/image_6.jpg)
 
 ## URL Forwarding
 
@@ -357,13 +357,13 @@ to:
 
 The actual effects all this hard work might be not very astonishing because the only visible change is the shrunken and now again right aligned eXist-db logo in our *[show.htm*l](http://localhost:8080/exist/apps/thun-demo/pages/show.html).
 
-![image alt text](/staticblog/pages/img/part-2/image_7.jpg)
+![image alt text]({{ site.baseurl }}/images/part-2/image_7.jpg)
 
 To check out if our *templates/pages.html* template is really loading the bootstrap library from our application’s *resource *collection, let's change the bootstrap theme. Therefore you could go to [http://bootswatch.com/](http://bootswatch.com/) select the theme you like, click on download, copy the all the css text, go to the bootstrap file in our application’s *resource/css collection *(*resources/css/bootstrap-3.0.3.min.css*), open it and replace its content. Save your changes, go back to the browser and reload the page. If nothing went wrong, you should see some changes like on the screenshot below, showing our application styled with [http://bootswatch.com/superhero/](http://bootswatch.com/superhero/)
 
-![image alt text](/staticblog/pages/img/part-2/image_8.jpg)
+![image alt text]({{ site.baseurl }}/images/part-2/image_8.jpg)
 
-![image alt text](/staticblog/pages/img/part-2/image_9.jpg)
+![image alt text]({{ site.baseurl }}/images/part-2/image_9.jpg)
 
 # Conclusion and outlook
 

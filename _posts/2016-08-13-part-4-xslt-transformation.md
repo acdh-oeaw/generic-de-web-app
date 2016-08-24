@@ -68,11 +68,11 @@ As you can see below, we are transforming the document celakovsky-an-thun_1850_A
 
 Now browse to [http://localhost:8080/exist/apps/thun-demo/pages/show.html](http://localhost:8080/exist/apps/thun-demo/pages/show.html) and see your the result of your first xslt transformation. 
 
-![image alt text](/staticblog/pages/img/part-4/image_0.jpg)
+![image alt text]({{ site.baseurl }}/images/part-4/image_0.jpg)
 
 As already mentioned, writing XSLT stylesheets is not in the scope of this HowTos. But to have a slightly more attractive (HTML) representation of your XML/TEI (well, actually of the TEI files used for this tutorial), I will added a few more lines of code to **resources/xslt/xmlToHtml.xsl**. You can find the xslt-stylessheet I used for the screenshots below in the coded packaged provided at the end of this tutorial.
 
-![image alt text](/staticblog/pages/img/part-4/image_1.jpg)
+![image alt text]({{ site.baseurl }}/images/part-4/image_1.jpg)
 
 You might have noticed it. I also removed `<h1>show.html</h1>` from **pages/show.html**.
 
@@ -112,7 +112,7 @@ return
 
 When you now save your changes and browse to [http://localhost:8080/exist/apps/thun-demo/pages/show.html](http://localhost:8080/exist/apps/thun-demo/pages/show.html) you will only see the result of an xml transformation on a non existing XML document.
 
-![image alt text](/staticblog/pages/img/part-4/image_2.jpg)
+![image alt text]({{ site.baseurl }}/images/part-4/image_2.jpg)
 
 But when you add an actual name of an XML/TEI document stored in the applications **data/editions/** collection as a value to the parameter **document** (e.g. [http://localhost:8080/exist/apps/thun-demo/pages/show.html?document=celakovsky-an-thun_1850_A3-XXI-D82.xml](http://localhost:8080/exist/apps/thun-demo/pages/show.html?document=celakovsky-an-thun_1850_A3-XXI-D82.xml)) then exactly this file will be transformed by our **app:XMLtoHTML** function. 
 
@@ -150,7 +150,7 @@ declare function app:toc($node as node(), $model as map(*)) {
 
 Yes - the code is quite clumsy and also contains hard coded links. But we are going to clean up the code in one of the following HowTos. For now, it does what we wanted. This is, when you now browse to [http://localhost:8080/exist/apps/thun-demo/pages/toc.html](http://localhost:8080/exist/apps/thun-demo/pages/toc.html) you will see that the names (and paths) of the documents are now hyperlinks.
 
-![image alt text](/staticblog/pages/img/part-4/image_3.jpg)
+![image alt text]({{ site.baseurl }}/images/part-4/image_3.jpg)
 
 And a click on any of those links, will present us the XML/TEIs HTML representation or DetailView. 
 

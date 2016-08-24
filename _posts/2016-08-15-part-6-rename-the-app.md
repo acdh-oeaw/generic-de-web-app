@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      # Rename the app
+title:      # Part 6 - Rename the app
 date:       2016-08-15 11:21:29
 summary:    In this sixth part of this series of tutorials we will rename, pack and (re)deploy our current digital edition’s application.
 categories: digital-edition
