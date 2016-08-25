@@ -10,7 +10,7 @@ categories: digital-edition
 
 In this sixth part of this series of tutorials we will rename, pack and (re)deploy our current digital edition’s application. If you have no intentions at all to ever create another digital editions application than the current one (which is called thun-demo), then you can go on and skip this part. If not, you will learn, which parts of which files you will have to modify to rename the package, the applications title and the visible URLs. 
 
-This tutorial will use the code build so far and which you can download [here](#linkToCome).
+This tutorial will use the code build so far and which you can download [here]({{ site.baseurl }}/downloads/part-5/thun-demo-0.1.xar).
 
 # expath-pkg.xml
 
@@ -29,7 +29,7 @@ As far as the name attribute in the package element is concerned, the only thing
 
 More important (or visible) is the **@abbrev** value which will be reflected in the package’s name. 
 
-This is also true for the <title>-element. 
+This is also true for the `<title>`-element. 
 
 If you want to transform our Thun-Demo application into a digital edition dealing with sources about reading in alpine regions in the 18th/19th century and which might be called [Reading in the alps](http://digital-archiv.at:8081/exist/apps/buchbesitz-collection/index.html), then go ahead and change **expath-pkg.xml** into:
 

@@ -10,9 +10,9 @@ categories: digital-edition
 
 From an application’s user’s perspective, the upcoming changes to code base are more or less invisible. But from the perspective of the people who are in charge of developing and maintaining this application, this changes will make their lives much easier - hopefully. 
 
-In the last chapter we implemented a kind of nice function which takes an XML and transforms it with a XSLT stylesheet into a more or less good looking HTML document. The only thing the user has to do for this is clicking on a link.
+In the last chapter we implemented a kind of nice function which takes an XML and transforms it with a XSLT stylesheet into a more or less good looking HTML document. You can download the code [here]({{ site.baseurl }}/downloads/part-4/thun-demo-0.1.xar). The only thing the user has to do for this is clicking on a link.
 
-But when you now try to pack your application and deploy it to another server, you will run into some severe troubles - as long as the server you try to deploy your package is not named exactly as the one you developed the application. As you can see on the following screnshot, I deployed our little application to my personal but public play and test server called [www.digital-archiv.at](http://www.digital-archiv.at) (and not localhost).
+But when you now try to pack your application and deploy it to another server, you will run into some severe troubles - as long as the server you try to deploy your package is not named exactly as the one you developed the application. As you can see on the following screenshot, I deployed our little application to my personal but public play and test server called [www.digital-archiv.at](http://www.digital-archiv.at) (and not localhost).
 
 ![image alt text]({{ site.baseurl }}/images/part-5/image_0.jpg)
 

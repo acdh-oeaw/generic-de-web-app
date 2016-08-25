@@ -20,7 +20,7 @@ The probably most simplest way to distribute your application is to download it 
 
 This triggers a download of a file called *thun-demo.xar*. This is actually just a .zip file containing your application’s code. So you can rename it to *thun-demo.zip*, unzip it and inspect its content which should look striking similar to the directories and documents of your application stored in eXist-db. 
 
-Such a *thun-demo.xar* containing the code from at the end of Part II can be downloaded [here](http://#).
+Such a *thun-demo.xar* containing the code from at the end of Part II can be downloaded [here]({{ site.baseurl }}/downloads/part-2/thun-demo-0.1.xar).
 
 ## … and (re)install your application.
 

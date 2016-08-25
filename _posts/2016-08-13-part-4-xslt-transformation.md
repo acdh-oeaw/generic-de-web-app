@@ -8,7 +8,7 @@ categories: digital-edition
 
 # Introduction and requirements
 
-The fourth part of this series of tutorials starts off where the third part ends. You can deploy the latest codebase by downloading and installing [this](#linkToCome)[ ](#linkToCome)package. For detaild instructions on how to do this, please consult the [previous tutorial](#linkToCome). 
+The fourth part of this series of tutorials starts off where the third part ends. You can deploy the latest codebase by downloading and installing [here]({{ site.baseurl }}/downloads/part-3/thun-demo-0.1.xar) package. For detaild instructions on how to do this, please consult the [previous tutorial](#linkToCome). 
 
 In the last tutuorial we created a very basic [table of content](http://localhost:8080/exist/apps/thun-demo/pages/toc.html) which lists the content of the application’s data directory. For this part of the tutorial, our requrirments demand, that we will be able to click on any document of our interest listed in the table of content to retrieve a (very basic) HTML representation of the underlying XML/TEI document.
 
