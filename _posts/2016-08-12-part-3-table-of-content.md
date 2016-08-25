@@ -10,7 +10,7 @@ categories: digital-edition
 
 In this third part of our series of HowTos we will upload the XML/TEI files in our database and write our first xQuery function which will generate a very basic table of content from the uploaded XML/TEI documents. To present this table of content to the users of our web app, we will also learn how to integrate xQuery functions in HTML code. (Yes, this lines were copy-pasted from Part II).
 
-Part III of this tutorial builds upon the work done in [Part II]({% post_url 2016-08-11-part-2-getting-started %}). In case you lost your laptop in the train, deleted your eXist-db instance or just didn’t follow Part III you will need the code created in Part II. 
+Part III of this tutorial builds upon the work done in [Part II]({{ site.baseurl }}{% post_url 2016-08-11-part-2-getting-started %}). In case you lost your laptop in the train, deleted your eXist-db instance or just didn’t follow Part III you will need the code created in Part II. 
 
 ## Download...
 
@@ -195,5 +195,5 @@ Save the changes and browse to [http://localhost:8080/exist/apps/thun-demo/pages
 
 Congrats, you wrote your first xQuery script in this session of our tutorial and you played with it  in a quite interactive way using eXide. And you also wrote your first xQuery function and called it with the help from eXist-db templating system. Oh, and by the way, you have also just created a very basic digital edition application. An application which publishes XML/TEI in a machine readable and yes - also human readable manner. Even reading the XML/TEI model of the encoded text is usually not big fun for most of your users (from the humanities domain). 
 
-In the [IV part]({% post_url 2016-08-13-part-4-xslt-transformation %}) of this little series of tutorials we will engage the detail view of our applications. This means, we will write another xQuery function, which will fetch an XML/TEI document and transform it with the help of an XSLT-script we are also going to write in the next session into a very basic HTML document. 
+In the [IV part]({{ site.baseurl }}{% post_url 2016-08-13-part-4-xslt-transformation %}) of this little series of tutorials we will engage the detail view of our applications. This means, we will write another xQuery function, which will fetch an XML/TEI document and transform it with the help of an XSLT-script we are also going to write in the next session into a very basic HTML document. 
 
