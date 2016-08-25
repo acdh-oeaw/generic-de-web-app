@@ -3,8 +3,8 @@ title:       Create a Digital Edition Web-App
 email:       your_email@example.com
 author:      Peter Andorfer
 description: "A blog about creating a web application to serve digital editions."
-baseurl:     ""
-url:         "http://127.0.0.1:4000/"
+baseurl:     "/generic-de-web-app"
+url:         "https://csae8092.github.io"
 date_format: "%b %-d, %Y"
 
 # Google services
