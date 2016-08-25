@@ -8,6 +8,7 @@ categories: digital-edition
 
 # Introduction
 
+
 In the second part of our tutorial we will install eXist-db, and create a ‘plain vanilla’ eXist-db web application using eXist-db´s in build **Deployment Editor**. Then we will start customizing this standard web app to our needs. We will customize the code layout by adding new directories and documents as well as ad some few lines of code in our applications controller.xql which is the script which is responsible to process the urls typed in the browser while navigating/controlling our application. These modifications do neither result in spectacular results, nor are very exiting as it will mostly be copy and pasting work. But this part of the tutorial will ease our further developement and might give you some general (although very superficial) insights in general mechanics of web applications.  
 
 # Install eXist-db

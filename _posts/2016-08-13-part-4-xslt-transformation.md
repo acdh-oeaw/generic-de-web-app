@@ -8,6 +8,7 @@ categories: digital-edition
 
 # Introduction and requirements
 
+
 The fourth part of this series of tutorials starts off where the [third part]({{ site.baseurl }}{% post_url 2016-08-12-part-3-table-of-content %}) ends. You can deploy the latest codebase by downloading and installing [here]({{ site.baseurl }}/downloads/part-3/thun-demo-0.1.xar) package. For detaild instructions on how to do this, please consult the [previous tutorial](#linkToCome). 
 
 In the last tutuorial we created a very basic [table of content](http://localhost:8080/exist/apps/thun-demo/pages/toc.html) which lists the content of the application’s data directory. For this part of the tutorial, our requrirments demand, that we will be able to click on any document of our interest listed in the table of content to retrieve a (very basic) HTML representation of the underlying XML/TEI document.
@@ -30,7 +31,8 @@ To get started, we need a place to store this (and later some more) stylesheets 
 </xsl:stylesheet>
 ```
 
-You wonder what this stylesheet does. Well, let’s find out. 
+You wonder what this stylesheet does. Well, let’s find out.
+
 
 ## run transformation with xQuery function(s)
 

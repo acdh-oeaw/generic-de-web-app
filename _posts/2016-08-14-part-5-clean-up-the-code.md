@@ -6,6 +6,7 @@ summary:    In the fifth part we will clean up our code base - a little bit
 categories: digital-edition
 ---
 
+
 # Introduction and requirements
 
 From an application’s user’s perspective, the upcoming changes to code base are more or less invisible. But from the perspective of the people who are in charge of developing and maintaining this application, this changes will make their lives much easier - hopefully. 

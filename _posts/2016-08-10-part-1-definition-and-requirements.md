@@ -8,6 +8,7 @@ categories: digital-edition
 
 ## A definition of digital edition
 
+
  The following series of blog posts will guide you step by step through the process of building a web application for digital editions. Such web application makes digital editions available over the world wide web. A digital edition in the context of this blog posts is understood as a well structured and (therefore) machine readable representation (or model) of basically any kind of text. The language of choice which is used to model the text is XML and this XML should preferably validate against the rules or recommendations set by the Text Encoding Initiative ([TEI](http://www.tei-c.org/)). In general, however, our digital edition web app should be able to handle every well formatted XML documents. 
 
 ## Web app requirements

@@ -6,6 +6,7 @@ summary:    In this third part of our series of HowTos we will upload the XML/TE
 categories: digital-edition
 ---
 
+
 # Introduction and requirements
 
 In this third part of our series of HowTos we will upload the XML/TEI files in our database and write our first xQuery function which will generate a very basic table of content from the uploaded XML/TEI documents. To present this table of content to the users of our web app, we will also learn how to integrate xQuery functions in HTML code. (Yes, this lines were copy-pasted from Part II).
