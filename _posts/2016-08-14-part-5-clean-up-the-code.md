@@ -10,7 +10,7 @@ categories: digital-edition
 
 From an application’s user’s perspective, the upcoming changes to code base are more or less invisible. But from the perspective of the people who are in charge of developing and maintaining this application, this changes will make their lives much easier - hopefully. 
 
-In the last chapter we implemented a kind of nice function which takes an XML and transforms it with a XSLT stylesheet into a more or less good looking HTML document. You can download the code [here]({{ site.baseurl }}/downloads/part-4/thun-demo-0.1.xar). The only thing the user has to do for this is clicking on a link.
+In the [last chapter]{% post_url 2016-08-13-part-4-xslt-transformation.md %} we implemented a kind of nice function which takes an XML and transforms it with a XSLT stylesheet into a more or less good looking HTML document. You can download the code [here]({{ site.baseurl }}/downloads/part-4/thun-demo-0.1.xar). The only thing the user has to do for this is clicking on a link.
 
 But when you now try to pack your application and deploy it to another server, you will run into some severe troubles - as long as the server you try to deploy your package is not named exactly as the one you developed the application. As you can see on the following screenshot, I deployed our little application to my personal but public play and test server called [www.digital-archiv.at](http://www.digital-archiv.at) (and not localhost).
 
@@ -123,7 +123,7 @@ Now the creation of the table of content is showing the (right) content and send
 
 To make our code independent from any hard coded urls we had to write several times very similar lines of code. For instance, to create the dynamic links from our table of content to the HTML representation of the chosen XML/TEI document, we had to replace ‘db’ against ‘exist’ in the first function (app:toc) only to revert this change in ‘app:XMLtoHTML’. This feels very much like useless and duplicated code. But we will keep the code as it is for the time being since all our requirements are fulfilled by the current code base and the duplicated parts of code are (still) very few. 
 
-In the next part of this series of tutorials, we will learn how to rename our application. This is extremely useful if you plan to use the code base written so far for similar digital edition projects.
+In the [next part]({% post_url 2016-08-15-part-6-rename-the-app }) of this series of tutorials, we will learn how to rename our application. This is extremely useful if you plan to use the code base written so far for similar digital edition projects.
 
  
 
