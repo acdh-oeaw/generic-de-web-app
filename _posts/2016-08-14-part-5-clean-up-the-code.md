@@ -2,7 +2,7 @@
 layout:     post
 title:      # Part 5 - Clean up the code
 date:       2016-08-14 11:21:29
-summary:    In the fith part we will clean up our code base - a little bit
+summary:    In the fifth part we will clean up our code base - a little bit
 categories: digital-edition
 ---
 
