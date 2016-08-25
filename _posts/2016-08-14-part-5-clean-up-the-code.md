@@ -123,6 +123,7 @@ Now the creation of the table of content is showing the (right) content and send
 
 To make our code independent from any hard coded urls we had to write several times very similar lines of code. For instance, to create the dynamic links from our table of content to the HTML representation of the chosen XML/TEI document, we had to replace ‘db’ against ‘exist’ in the first function (app:toc) only to revert this change in ‘app:XMLtoHTML’. This feels very much like useless and duplicated code. But we will keep the code as it is for the time being since all our requirements are fulfilled by the current code base and the duplicated parts of code are (still) very few. 
 
+
 In the [next part]({% post_url 2016-08-15-part-6-rename-the-app }) of this series of tutorials, we will learn how to rename our application. This is extremely useful if you plan to use the code base written so far for similar digital edition projects.
 
  
