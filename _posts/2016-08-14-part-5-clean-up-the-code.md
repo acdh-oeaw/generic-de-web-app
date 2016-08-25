@@ -10,7 +10,7 @@ categories: digital-edition
 
 From an application’s user’s perspective, the upcoming changes to code base are more or less invisible. But from the perspective of the people who are in charge of developing and maintaining this application, this changes will make their lives much easier - hopefully. 
 
-In the [last chapter]{% post_url 2016-08-13-part-4-xslt-transformation.md %} we implemented a kind of nice function which takes an XML and transforms it with a XSLT stylesheet into a more or less good looking HTML document. You can download the code [here]({{ site.baseurl }}/downloads/part-4/thun-demo-0.1.xar). The only thing the user has to do for this is clicking on a link.
+In the [last chapter]({% post_url 2016-08-13-part-4-xslt-transformation %}) we implemented a kind of nice function which takes an XML and transforms it with a XSLT stylesheet into a more or less good looking HTML document. You can download the code [here]({{ site.baseurl }}/downloads/part-4/thun-demo-0.1.xar). The only thing the user has to do for this is clicking on a link.
 
 But when you now try to pack your application and deploy it to another server, you will run into some severe troubles - as long as the server you try to deploy your package is not named exactly as the one you developed the application. As you can see on the following screenshot, I deployed our little application to my personal but public play and test server called [www.digital-archiv.at](http://www.digital-archiv.at) (and not localhost).
 
@@ -34,11 +34,11 @@ We create the table of content with the self created function *app:toc* and so f
 
 `for $doc in collection("/db/apps/thun-demo/data/editions")/tei:TEI`
 
-To remove the application’s name from this function we use the variable *$config:app-root* which, according to the inline comment to this variable/function "Determine[s] the application root collection from the current module load path." For our application this means that $config:app-root will resolve into */db/apps/thun-demo/*. Since our XML/TEI documents are stored in */db/apps/thun-demo/***_data/edition/_*** *we have to add this last part. This we achieve with the xQuery function *concat* which concatenates two or more strings. Everything put together resolves in:
+To remove the application’s name from this function we use the variable *$config:app-root* which, according to the inline comment to this variable/function "Determine[s] the application root collection from the current module load path." For our application this means that $config:app-root will resolve into `/db/apps/thun-demo/`. Since our XML/TEI documents are stored in `/db/apps/thun-demo/data/edition/` we have to add this last part. This we achieve with the xQuery function *concat* which concatenates two or more strings. Everything put together resolves in:
 
 ```xquery
 declare function app:toc($node as node(), $model as map(*)) {
-    for $doc in **collection(concat($config:app-root, '/data/editions/'))//tei:TEI**
+    for $doc in collection(concat($config:app-root, '/data/editions/'))//tei:TEI
         return
         <li><a href="{concat("http://localhost:8080/exist/apps/thun-demo/pages/show.html?document=",functx:substring-after-last(document-uri(root($doc)), "/"))}">{document-uri(root($doc))}</a></li>   
 };
@@ -50,13 +50,13 @@ This fix brings back the table of content even if we rename the application.
 
 Now we also want to remove the other hard coded link in this function which is the link leading to our *show.html* page:
 
-**modules/app.xql | app:toc**
+**modules/app.xql**
 
 ```html
-<a href="{concat("**http://localhost:8080/exist/apps/thun-demo/pages/show.html**?document=",functx:substring-after-last(document-uri(root($doc)), "/"))}">{document-uri(root($doc))}</a>
+<a href="{concat('http://localhost:8080/exist/apps/thun-demo/pages/show.html?document=',functx:substring-after-last(document-uri(root($doc)), '/''))}">{document-uri(root($doc))}</a>
 ```
 
-To remove the hard coded link from above, we could basically do something similar as before. Unfortunately building the needed URL [http://localhost:8080/](http://localhost:8080/exist/apps/rita/pages/show.html)**[exis**t](http://localhost:8080/exist/apps/rita/pages/show.html)[/apps/rita/pages/show.html](http://localhost:8080/exist/apps/rita/pages/show.html)  is slightly more complicated than */db/apps/thun-demo/data/editions*. 
+To remove the hard coded link from above, we could basically do something similar as before. Unfortunately building the needed URL [http://localhost:8080/exist/apps/rita/pages/show.html](http://localhost:8080/exist/apps/rita/pages/show.html) is slightly more complicated than */db/apps/thun-demo/data/editions*. 
 
 Without going into detail, the following (bold) line of code does the juggling and creates the appropriate link without any hard coded parts in it.
 
@@ -67,7 +67,7 @@ Without going into detail, the following (bold) line of code does the juggling a
 declare function app:toc($node as node(), $model as map(*)) {
     for $doc in collection(concat($config:app-root, '/data/editions/'))//tei:TEI
         return
-        <li><a href="**{concat(replace(concat($config:app-root, '/pages/show.html'), '/db/', '/exist/'),'?document=',functx:substring-after-last(document-uri(root($doc)), '/'))}**">{document-uri(root($doc))}</a></li>   
+        <li><a href="{concat(replace(concat($config:app-root, '/pages/show.html'), '/db/', '/exist/'),'?document=',functx:substring-after-last(document-uri(root($doc)), '/'))}">{document-uri(root($doc))}</a></li>   
 };
 ```
 
@@ -83,13 +83,13 @@ As the error message points out, there seems to be something wrong in the functi
 
 Inspecting this function, the problem becomes quite obvious. Look at the bold lines
 
-**modules/app.xql | app:XMLtoHTML**
+**modules/app.xql and app:XMLtoHTML**
 
 ```xquery
 declare function app:XMLtoHTML ($node as node(), $model as map (*), $query as xs:string?) {
 let $ref := xs:string(request:get-parameter("document", ""))
-let $xml := doc(concat("/db/apps/thun-demo/data/editions/",$ref))**
-let $xsl := doc("/db/apps/thun-demo/resources/xslt/xmlToHtml.xsl")**
+let $xml := doc(concat("/db/apps/thun-demo/data/editions/",$ref))
+let $xsl := doc("/db/apps/thun-demo/resources/xslt/xmlToHtml.xsl")
 let $params := 
 <parameters>
    {for $p in request:get-parameter-names()
@@ -110,8 +110,8 @@ The XML as well as the XSL document involved in the transformation are loaded fr
 ```xquery
 declare function app:XMLtoHTML ($node as node(), $model as map (*), $query as xs:string?) {
 let $ref := xs:string(request:get-parameter("document", ""))
-let $xml := doc(replace(concat($config:app-root,"/data/editions/",$ref), '/exist/', '/db/'))**
-let $xsl := doc(concat($config:app-root, "/resources/xslt/xmlToHtml.xsl"))**
+let $xml := doc(replace(concat($config:app-root,"/data/editions/",$ref), '/exist/', '/db/'))
+let $xsl := doc(concat($config:app-root, "/resources/xslt/xmlToHtml.xsl"))
 ...
 ```
 

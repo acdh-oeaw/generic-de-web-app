@@ -10,7 +10,7 @@ categories: digital-edition
 
 In this sixth part of this series of tutorials we will rename, pack and (re)deploy our current digital edition’s application. If you have no intentions at all to ever create another digital editions application than the current one (which is called thun-demo), then you can go on and skip this part. If not, you will learn, which parts of which files you will have to modify to rename the package, the applications title and the visible URLs. 
 
-This tutorial will use the code build so far and which you can download [here]({{ site.baseurl }}/downloads/part-5/thun-demo-0.1.xar).
+This tutorial will use the code [build so far]({% post_url 2016-08-14-part-5-clean-up-the-code %}) and which you can download [here]({{ site.baseurl }}/downloads/part-4/thun-demo-0.1.xar).
 
 # expath-pkg.xml
 

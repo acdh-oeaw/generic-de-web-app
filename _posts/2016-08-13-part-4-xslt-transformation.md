@@ -8,7 +8,7 @@ categories: digital-edition
 
 # Introduction and requirements
 
-The fourth part of this series of tutorials starts off where the [third part]({% post_url 2016-08-12-part-3-table-of-content.md %}) ends. You can deploy the latest codebase by downloading and installing [here]({{ site.baseurl }}/downloads/part-3/thun-demo-0.1.xar) package. For detaild instructions on how to do this, please consult the [previous tutorial](#linkToCome). 
+The fourth part of this series of tutorials starts off where the [third part]({% post_url 2016-08-12-part-3-table-of-content %}) ends. You can deploy the latest codebase by downloading and installing [here]({{ site.baseurl }}/downloads/part-3/thun-demo-0.1.xar) package. For detaild instructions on how to do this, please consult the [previous tutorial](#linkToCome). 
 
 In the last tutuorial we created a very basic [table of content](http://localhost:8080/exist/apps/thun-demo/pages/toc.html) which lists the content of the application’s data directory. For this part of the tutorial, our requrirments demand, that we will be able to click on any document of our interest listed in the table of content to retrieve a (very basic) HTML representation of the underlying XML/TEI document.
 
@@ -40,8 +40,8 @@ To do so, add the following lines to **modules/app.xql**:
 
 ```xquery
 declare function app:XMLtoHTML ($node as node(), $model as map (*), $query as xs:string?) {
-let $xml := doc("/db/apps/thun-demo/data/editions/celakovsky-an-thun_1850_A3-XXI-D82.xml")**
-let $xsl := doc("/db/apps/thun-demo/resources/xslt/xmlToHtml.xsl")**
+let $xml := doc("/db/apps/thun-demo/data/editions/celakovsky-an-thun_1850_A3-XXI-D82.xml")
+let $xsl := doc("/db/apps/thun-demo/resources/xslt/xmlToHtml.xsl")
 let $params := 
 <parameters>
    {for $p in request:get-parameter-names()
@@ -78,7 +78,7 @@ You might have noticed it. I also removed `<h1>show.html</h1>` from **pages/show
 
 # Link from ListView to DetailView
 
-So far our table of content is not linked to the detail view of our XML/TEI document (show.html) at all. Even worse, show.html generates only a HTML representation of **celakovsky-an-thun_1850_A3-XXI-D82.xml.** To fix this, we could of course write as many xmlToHtml functions as there are XML/TEI documents in our **data/editions/ **collections and call them by the same number of html pages. But this is not much fun to implement which would involve a lot of copy and pasting. Not to talk about maintaining the application and adding new functionalities. 
+So far our table of content is not linked to the detail view of our XML/TEI document (show.html) at all. Even worse, show.html generates only a HTML representation of **celakovsky-an-thun_1850_A3-XXI-D82.xml.** To fix this, we could of course write as many xmlToHtml functions as there are XML/TEI documents in our `data/editions/` collections and call them by the same number of html pages. But this is not much fun to implement which would involve a lot of copy and pasting. Not to talk about maintaining the application and adding new functionalities. 
 
 But - big surprise - there is a better solution. A solution which builds upon *dynamically genereated URL - paramaters.*
 
@@ -86,9 +86,9 @@ But - big surprise - there is a better solution. A solution which builds upon *d
 
 As we saw before, the transform:transform function takes as first parameter the xml document which it should transform. To turn our **app:XMLtoHTML** function into a more dynamic one, we simply have to removed the hardcoded path to one XML/TEI document and replace it with something more flexible. Let’s say we are able to pass the name of the XML/TEI document we want to transform to the function as a part (or parameter) of the URL which we type into the browser (or link to it) when we are calling **show.html**. Our URL could look like, e.g. 
 
-[http://localhost:8080/exist/apps/thun-demo/pages/show.html](http://localhost:8080/exist/apps/thun-demo/pages/show.html?document=%7Bany)**[?document=**{](http://localhost:8080/exist/apps/thun-demo/pages/show.html?document=%7Bany)**nameOfAnyDocument.xml} **
+http://localhost:8080/exist/apps/thun-demo/pages/show.html?document={nameOfAnyDocument.xml
 
-Then we just have to tell our **app:XMLtoHTML** function to fetch (parse) the name of the document from the URL and transform it. Exactly this is accomplished by the following changes in our **app:XMLtoHTML **function.
+Then we just have to tell our **app:XMLtoHTML** function to fetch (parse) the name of the document from the URL and transform it. Exactly this is accomplished by the following changes in our **app:XMLtoHTML** function.
 
 ```xquery
 declare function app:XMLtoHTML ($node as node(), $model as map (*), $query as xs:string?) {
@@ -120,7 +120,7 @@ But when you add an actual name of an XML/TEI document stored in the application
 
 Because I am a more of a lazy person, I don't want to type the file names into my browser. I want to see the HTML representation of an XML/TEI document stored in my app with nothing more than one mouse click. 
 
-To achieve this, we have to modify our table of content function **app:toc: **
+To achieve this, we have to modify our table of content function **app:toc**.
 
 Frist, we need to declare a new namespace for the helper function **functx:substring-after-last**. For more upon this (and many other very useful functions) please refere to: [http://www.xqueryfunctions.com/xq/functx_substring-after-last.html](http://www.xqueryfunctions.com/xq/functx_substring-after-last.html).
 
@@ -130,21 +130,21 @@ So after our TEI namespace declaration, add this line
 
 And then copy paste this lines into the modules/app.xql: 
 
-```xquery
+```
 declare function functx:substring-after-last
   ( $arg as xs:string? ,
     $delim as xs:string )  as xs:string {
     replace ($arg,concat('^.*',$delim),'')
  };
- ```
+```
 
-Now we can call this function in our updated **app:toc** function: 
+Now we can call this function in our updated **app:toc** function.
 
-```xquery
+```
 declare function app:toc($node as node(), $model as map(*)) {
     for $doc in collection("/db/apps/thun-demo/data/editions")/tei:TEI
         return
-        <li><a href="{concat("http://localhost:8080/exist/apps/thun-demo/pages/show.html?document=",functx:substring-after-last(document-uri(root($doc)), "/"))}"**>{document-uri(root($doc))}</a></li>   
+        <li><a href="{concat('http://localhost:8080/exist/apps/thun-demo/pages/show.html?document=',functx:substring-after-last(document-uri(root($doc)), '/''))}">{document-uri(root($doc))}</a></li>   
 };
 ```
 
@@ -166,5 +166,5 @@ Before we conclude this fourth part of the tutorial, let’s remove the link to 
 
 With this fourth part of our digital edition web app tutorial, we are now capable of triggering XSLT transformations with one mouse click from our digital edition app’s table of context. With some XSLT as well as some CSS, HTML (and maybe some JavaScript) skills you will be able to create quite fancy (HTML) representations of your XML/TEI documents. 
 
-Looking at the requirements of our application from Part I of this tutorial series, we see, that the only thing which is not realized yet is a fulltext search. But before we will engage this feature, we should spend some time and energy on refactoring the code (see [https://de.wikipedia.org/wiki/Refactoring](https://de.wikipedia.org/wiki/Refactoring))  as well on removing all the hard coded links we introduced in this chapter. Therefore in the [next part]({% post_url 2016-08-14-part-5-clean-up-the-code}) of this tutorial we will clean up the code and will transform our application into a state which will make it very easy to pack the code and deploy it to any other eXist-db instance, without having to worry that some functions won’t work any more. 
+Looking at the requirements of our application from Part I of this tutorial series, we see, that the only thing which is not realized yet is a fulltext search. But before we will engage this feature, we should spend some time and energy on refactoring the code (see [https://de.wikipedia.org/wiki/Refactoring](https://de.wikipedia.org/wiki/Refactoring))  as well on removing all the hard coded links we introduced in this chapter. Therefore in the [next part]({% post_url 2016-08-14-part-5-clean-up-the-code %}) of this tutorial we will clean up the code and will transform our application into a state which will make it very easy to pack the code and deploy it to any other eXist-db instance, without having to worry that some functions won’t work any more. 
 
