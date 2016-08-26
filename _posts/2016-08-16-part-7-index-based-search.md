@@ -253,5 +253,5 @@ But be aware that using the same or very similar lines of code in several differ
 
 In this part of the tutorial we added an index of persons to our digital editions app which allows users to quickly identify and view all documents in the edition where the persons of their interests have been mentioned. For other indices (likes places or terms or bibliographic references) we can more or less re use the same logic and functionalities, either by copy and pasting most parts of the code or by improving the already existing functionality. We will come back to this question in one of the following tutorials. 
 
-But in the next one, we will create a nice full text search which will allow searching all documents of our digital edition at once.
+But in the [next one]({{ site.baseurl }}{% post_url 2016-08-17-part-8-full-text-search %}), we will create a nice full text search which will allow searching all documents of our digital edition at once.
 
