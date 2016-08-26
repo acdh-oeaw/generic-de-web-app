@@ -166,5 +166,5 @@ No go ahead and search something for example: "kirche" (german for church, donâ€
 
 As you can see, the Keyword in its context is rendered as a link. But clicking on it produces (for now) only a 404 (page not found) error. 
 
-To fix this, we could (once more) copy and paste parts of the code used for the index based search results view. But since this would be now the third time we copy paste very similar functionalities, we should do something more advanced like writing a reusable function. But this we will engage in the next part. 
+To fix this, we could (once more) copy and paste parts of the code used for the index based search results view. But since this would be now the third time we copy paste very similar functionalities, we should do something more advanced like writing a reusable function. But this we will engage in the [next part]({{ site.baseurl }}{% post_url 2016-08-18-part-9-code-refactoring %}). 
 
