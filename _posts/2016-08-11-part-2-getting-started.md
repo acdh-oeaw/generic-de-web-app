@@ -391,5 +391,5 @@ We
 
 ## Upcoming steps
 
-In the [third part]({% post_url 2016-08-12-part-3-table-of-content %}) of this tutorial we will upload the XML/TEI files in our database and write our first xQuery function which will generate a very basic table of contents from the uploaded XML/TEI documents. To present this table of contents to the users of our web app, we will also learn how to integrate xQuery functions in HTML code. 
+In the [third part]({{ site.baseurl }}{% post_url 2016-08-12-part-3-table-of-content %}) of this tutorial we will upload the XML/TEI files in our database and write our first xQuery function which will generate a very basic table of contents from the uploaded XML/TEI documents. To present this table of contents to the users of our web app, we will also learn how to integrate xQuery functions in HTML code. 
 
