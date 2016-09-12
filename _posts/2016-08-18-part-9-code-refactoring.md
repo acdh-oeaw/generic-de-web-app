@@ -16,12 +16,12 @@ In both cases we first extracted the documents name with some string juggling an
 
 ## app:getDocName
 
-Let’s start with writing a function which well extract the name (or URI, or the location where this document is stored in the database) of the document of an XML node passed to this function. As mentioned above we did this already several times, so it shouldn’t be too hard to encapsulate this procedure in a small function like shown below:
+Let’s start with writing a function which will extract the name (or URI, or the location where this document is stored in the database) of the document of an XML node passed to this function. As mentioned above we did this already several times, so it shouldn’t be too hard to encapsulate this procedure in a small function like shown below:
 
-```
+```xquery
 declare function app:getDocName($node as node()){
-let $name := functx:substring-after-last(document-uri(root($node)), '/')
-return $name
+    let $name := functx:substring-after-last(document-uri(root($node)), '/')
+    return $name
 };
 ```
 
@@ -33,36 +33,35 @@ Now we can pass an XML node of any XML document stored in our database to this f
 
 To create a link which actually works and shows the HTML representation of of a chosen XML/TEI document, we can use app:getDocName() in another custom made function we will call app:hrefToDoc:
 
-```
+```xquery
 declare function app:hrefToDoc($node as node()){
-let $name := functx:substring-after-last($node, '/')
-let $href := concat('show.html','?document=', app:getDocName($node)**)
-    return $href
+    let $name := functx:substring-after-last($node, '/')
+    let $href := concat('show.html','?document=', app:getDocName($node))
+        return $href
 };
 ```
 
-This function now returns a string like e.g.  *show.html?document=aufsatz-von-langenau-ueber-einfluss-von-windischgraetz-1848_1849-12_A3-XXI-D23.xml*.
+This function now returns a string like e.g.  *show.html?document=aufsatz-von-langenau-ueber-einfluss-von-windischgraetz-1848_1849-12_A3-XXI-D23.xml* if we pass in any xml node from this document.
 
 Now we have everything we need to create dynamically the correct links leading from our full text search result view to the HTML representations of the matching XML/TEI documents. The only thing left to do is to adapt our **app:ft_search()** function written in the tutorial like demonstrated below:
 
 ```
-declare function app:ft_search($node as node(), $model as map (*)) {
-if (request:get-parameter("searchexpr", "") !="") then
-let $searchterm as xs:string:= request:get-parameter("searchexpr", "")
-for $hit in collection(concat($config:app-root, '/data/editions/'))//tei:p[ft:query(.,$searchterm)]
-    	let $href := app:hrefToDoc($hit)
-    	let $document := document-uri(root($hit))
-    	let $score as xs:float := ft:score($hit)
-    	order by $score descending
-    	return
-    		<tr>
-        		<td>{$score}</td>
-        		<td>{kwic:summarize($hit, <config width="40" link="{$href}"/>)}</td>
-        		<td>{app:getDocName($hit)}</td>
-    		</tr>
- else
-    <div>Nothing to search for</div>
-};
+ declare function app:ft_search($node as node(), $model as map (*)) {
+    if (request:get-parameter("searchexpr", "") !="") then
+    let $searchterm as xs:string:= request:get-parameter("searchexpr", "")
+    for $hit in collection(concat($config:app-root, '/data/editions/'))//tei:p[ft:query(.,$searchterm)]
+       let $href := app:hrefToDoc($hit)
+       let $score as xs:float := ft:score($hit)
+       order by $score descending
+       return
+       <tr>
+           <td>{$score}</td>
+           <td>{kwic:summarize($hit, <config width="40" link="{$href}" />)}</td>
+           <td>{app:getDocName($hit)}</td>
+       </tr>
+    else
+       <div>Nothing to search for</div>
+ };
 ```
 
 Finally we can browse to [http://localhost:8080/exist/apps/thun-demo/pages/ft_search.html](http://localhost:8080/exist/apps/thun-demo/pages/ft_search.html) search for e.g. "leben" (living), 
