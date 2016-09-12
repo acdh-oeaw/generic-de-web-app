@@ -8,7 +8,8 @@ categories: digital-edition
 
 # Introduction and requirements
 
-Even those humanities scholars who are usually rather skeptic about digital humanities and digital editions estimate well designed search functionalities like a fulltext search (we will address this topic in the next tutorial) or of course an index based search. Whereas a fulltext search is something new in comparison to traditional (printed) editions an index of persons, places, terms of interest, and other things is one of the most genuine parts of a scholarly editions/book. Therefore a well planned transformation of this core asset from the printed to the digital domain will most likely help to make digital editions a sincerely respected alternative to printed ones. 
+Even those humanities scholars who are usually rather skeptic about digital humanities and digital editions estimate well designed search functionalities like a fulltext search (we will address this topic in the [next tutorial]({{ site.baseurl }}{% post_url 2016-08-17-part-8-full-text-search %})) or of course an index based search. Whereas a fulltext search is something new in comparison to traditional (printed) editions an index of persons, places, terms of interest, and other things is one of the most genuine parts of a printed scholarly edition. Therefore a well planned transformation of this core asset from the printed to the digital domain will most likely help to make digital editions a sincerely respected alternative to printed ones. 
+As usually you can download the [latest code base]({{ site.baseurl }}/downloads/part-6/thun-demo-0.1) from the [previous tutorial]({{ site.baseurl }}{% post_url 2016-08-15-part-6-rename-the-app %})).
 
 ## Markup
 
@@ -24,13 +25,15 @@ The usage of `<placeName>` and `<personName>` (or just `<name>` as in a project 
 <div>...Daß auf den Antrag der Synode von <date>1848</date> der <persName key="maximilian-II-von-bayern">König von Baiern</persName> <hi rend="ul">die Trennung des Consistorialbezirks ...</div>
 ```
 
-Here the string "König von Baiern" (King of Bavaria) is tagged with `<personName>` which is slightly odd, because strictly spoken, “King of Bavaria” is not a person’s name. But of course it references a real person who the editors were able to identify as some “maximilian-II-von-bayern” as the @key value indicates. The sematically more appropriate solution would have been to tag “König von Baiern” with the element `<rs>` which: “contains a general purpose name or referring string.” ([http://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-rs.html](http://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-rs.html)). The rs-element usually uses a type attribute to make explicit what kind of entity it refers to. So for our example we could would tag:
+Here the string "König von Baiern" (King of Bavaria) is tagged with `<personName>` which is slightly odd, because strictly spoken, “King of Bavaria” is not a person’s name. But of course it references a real person who the editors were able to identify as some “maximilian-II-von-bayern” as the `@key` value indicates. The semantically more appropriate solution would have been to tag “König von Baiern” with the element `<rs>` which: 
+> contains a general purpose name or referring string. ([http://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-rs.html](http://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-rs.html))
+The rs-element usually uses a type attribute to make explicit what kind of entity it refers to. So for our example we could would tag:
 
-```xml
-<div>Daß auf den Antrag der Synode von <date>1848</date> der <rs type="person" ref="#maximilian-II-von-bayern">König von Baiern</rs> <hi rend="ul">die Trennung des Consistorialbezirks...</div>
+```html
+<div>Daß auf den Antrag der Synode von <date>1848</date> der <rs type="person" ref="#maximilian-II-von-bayern">König von Baiern</rs><hi rend="ul">die Trennung des Consistorialbezirks...</div>
 ```
 
-But why did we change the @key into @ref? And why do we need now the "#" before the actual value? Since this is not a tutorial about TEI, here the cheap answer: Because the TEI demands these things. Anyhow, it is important to know that you are completely free to name the values of `@ref` or `@key` as you like as long as you follow the general standards for valid XML attributes. But ideally you are following some naming conventions and use some meaningful strings like “#maximilian-II-von-bayern” and maybe not some anonymous identifiers like “xyz124431ads”. 
+But why did we change the `@key` into `@ref`? And why do we need now the "#" before the actual value? Since this is not a tutorial about TEI, here the cheap answer: Because the TEI demands these things. Anyhow, it is important to know that you are completely free to name the values of `@ref` or `@key` as you like as long as you follow the general standards for valid XML (xml:id) attributes. But ideally you are following some naming conventions and use some meaningful strings like “#maximilian-II-von-bayern” and maybe not some anonymous identifiers like “xyz124431ads”. 
 
 ## Indices
 
@@ -38,7 +41,7 @@ The second cornerstone of our index based search are **index documents** contain
 
 Ideally the further information in the index documents is stored in valid XML/TEI documents as well. Such a documents provides all necessary information about the index (eg. its creator, the documents it is related with, used naming conventions) in the TEI header and the actual content in the tei:body element. The index for persons used in the Thun-Project looks like this: 
 
-```xml
+```html
 <?xml version="1.0" encoding="UTF-8"?>
 <body>
     <div type="index_persons">
@@ -74,7 +77,7 @@ Ideally the further information in the index documents is stored in valid XML/TE
 
 Unfortunately there are more than one ways to encode the same or similar information. The following snippet provides a semantically enhanced example of how an index of person could look like. 
 
-```xml
+```html
 <person xml:id="pe295" n="Person 295">
     <persName>
         <surname>Beroaldo senior</surname>
@@ -100,17 +103,17 @@ So if you have to decided on how to structure your index documents I very much r
 
 ## Indices collection
 
-Getting back to our concret Thun-Demo application, we now have to think about a place or collection where to store the index documents in the database. Since the index files are closely related to the XML/TEI documents of the edited texts, it makes sense to keep them close to each other. Therefore let’s create in `/data` a new collection called `/data/indices/` and here we store our person index, which will name **listPers.xml.**
+Getting back to our concrete Thun-Demo application, we now have to think about a place or collection where to store the index documents in the database. Since the index files are closely related to the XML/TEI documents of the edited texts, it makes sense to keep them close to each other. Therefore let’s create in `/data` a new collection called `/data/indices/` and here we store our person index, which will name **listperson.xml.** You can download such a document [here](({{ site.baseurl }}/downloads/part-7/listperson.xml)
 
 ![image alt text]({{ site.baseurl }}/images/part-7/image_0.jpg)
 
 ## HTML and xQuery
 
-The next step should be already familiar to you. First we need an HTML file (`/pages/persons.html`) which calls our base template `/templates/pages.html` and an xQuery function (**app:listPers**) which transformed the data stored in listPers.xml in HTML code we can embed into **persons.html**. 
+The next step should be already familiar to you. First we need an HTML file (`/pages/persons.html`) which calls our base template `/templates/pages.html` and an xQuery function (**app:listPers**) which transformed the data stored in listperson.xml in HTML code we can embed into **persons.html**. 
 
 **/pages/persons.html**
 
-```xml
+```html
 <div class="templates:surround?with=templates/page.html&amp;at=content">
     <h1>Persons</h1>
     <div data-template="app:listPers"/>
@@ -119,9 +122,9 @@ The next step should be already familiar to you. First we need an HTML file (`/p
 
 And in **/modules/app.xql** we have to declare the aforementioned function **app:listPers** which is very similar to **app:toc**. 
 
-```
+```xquery
 declare function app:listPers($node as node(), $model as map(*)) {
-    for $person in doc(concat($config:app-root, '/data/indices/listPers.xml'))//tei:listPerson/tei:person
+    for $person in doc(concat($config:app-root, '/data/indices/listperson.xml'))//tei:listPerson/tei:person
         return
         <li>{$person/tei:persName}</li>
 };
@@ -136,13 +139,13 @@ What is left to do now, is to add a link to **/pages/persons.html** into the app
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
             <ul class="dropdown-menu">
                 <li>
-                    <a href="$app-root-href/index.html">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="$app-root-href/pages/toc.html">Table of Content</a>
+                    <a href="toc.html">Table of Content</a>
                 </li>
                 <li>
-                    <a href="$app-root-href/pages/persons.html">Persons</a>
+                    <a href="persons.html">Persons</a>
                 </li>
             </ul>
         </li>
@@ -156,7 +159,7 @@ Now we can browse to the person’s index of our digital edition.
 
 # Link index with documents
 
-Of course our index is just a list of all person names mentioned in the listPers.xml. And since there is no connection between this list of persons and our XML/TEI documents from which this list is actually derived, it is a rather useless list. So let’s change this.
+Of course our index is just a list of all person names mentioned in the listperson.xml. And since there is no connection between this list of persons and our XML/TEI documents from which this list is actually derived, it is a rather useless list. So let’s change this.
 
 We want to implement the following procedure. A user should be enabled to click on any name on this list to get some see a list of all documents in which this person was mentioned (i.e. tagged). Therefore we need a function which takes as a parameter the the xml:id of the person of interest to query all documents for matches. And we need some html page which will receive the xml:id, passes it to this function and then lists all potential hits. We will start with the latter.
 
@@ -171,14 +174,14 @@ Create a new html document called **/pages/hits.html** which contains the follow
 </div>
 ```
 
-Now we could start writing the **app:listPers_hits** function. But before we do this, we should rework the **app:listPers** function because we have to provide links from **persons.html **to **hits.html** which submits the xml:id as a URL parameter. This can be achieved like this:
+Now we could start writing the **app:listPers_hits** function. But before we do this, we should rework the **app:listPers** function because we have to provide links from **persons.html** to **hits.html** which submits the xml:id as a URL parameter. This can be achieved like this:
 
-**/modules/app:**
+**/modules/app app:listPers**
 
 ```
 declare function app:listPers($node as node(), $model as map(*)) {
     let $hitHtml := "hits.html?searchkey="
-    for $person in doc(concat($config:app-root, '/data/indices/listPers.xml'))//tei:listPerson/tei:person
+    for $person in doc(concat($config:app-root, '/data/indices/listperson.xml'))//tei:listPerson/tei:person
         return
         <li><a href="{concat($hitHtml,data($person/@xml:id))}">{$person/tei:persName}</a></li>
 };
@@ -208,11 +211,7 @@ declare function app:listPers_hits($node as node(), $model as map(*), $searchkey
  };
 ```
 
-Since the test corpus we are working with contains only a handful of documents from the whole Thun corpus, but **persList.xml** lists the persons from the whole corpus, we need to test our new index with a name we know for sure, that this person is mentioned in of our sample texts. Like "Brüggemann Theodor". Clicking on this name in persons.html should lead you now to the following view:
-
-[http://localhost:8080/exist/apps/thun-demo/pages/hits.html?searchkey=brueggemann-theodor](http://localhost:8080/exist/apps/thun-demo/pages/hits.html?searchkey=brueggemann-theodor)
-
-![image alt text]({{ site.baseurl }}/images/part-7/image_4.jpg)
+Let's try again, browse to [http://localhost:8080/exist/apps/thun-demo/pages/persons.html](http://localhost:8080/exist/apps/thun-demo/pages/persons.html) and click on e.g. *Thun-Hohenstein Leo (Leopold)*. Now we will be presented with a list of all documents in which a person was tagged an identified as *thun-hohenstein-leo*.
 
  As mentioned in the beginning of this document, strings referring to persons, places or other things you find important enough to tag them, should actually be tagged with `<rs>`. To make our little **app:listPers_hits** agnostic to the chosen markup, we can add another constraint on the "for" expression
 **modules/app.xql**:
@@ -239,7 +238,7 @@ declare function app:listPers_hits($node as node(), $model as map(*), $searchkey
     let $doc := document-uri(root($hit))
     return
 
-    <li><a href="{concat('show.html','?document=',functx:substring-after-last($doc, '/'))}">{$doc}</a>**</li>   
+    <li><a href="{concat('show.html','?document=',functx:substring-after-last($doc, '/'))}">{$doc}</a></li>   
  };
 ```
 

@@ -1,0 +1,104 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0        http://diglib.hab.de/rules/schema/tei/P5/v2.3.0/tei-p5-transcr.xsd">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Personenverzeichnis</title>
+                <respStmt>
+                    <resp>providing the content</resp>
+                    <name>Christof Aichner</name>
+                    <name>Tanja Kraler</name>
+                </respStmt>
+                <respStmt>
+                    <resp>converted to XML encoding</resp>
+                    <name>Peter Andorfer</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <date>2015-05-28</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Personenverzeichnis der Thun-Korrespondenz</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="index_persons">
+                <listPerson>
+                    <person xml:id="thun-hohenstein-leo">
+                        <persName>
+                            <surname>Thun-Hohenstein</surname>
+                            <forename>Leo (Leopold)</forename>
+                        </persName>
+                        <note>
+                            <p>Tetschen 1811–1888 Wien</p>
+                            <p>1848 Gubernialpräsident von Böhmen, 1849–1860 Minister für Kultus und Unterricht, ab 1861 Mitglied des Herrenhauses, Herausgeber der Zeitung "Das Vaterland"</p>
+                            <p>http://d-nb.info/gnd/118757393</p>
+                            <p>k_A</p>
+                        </note>
+                    </person>
+                    <person xml:id="rochleder-victor">
+                        <persName>
+                            <surname>Rochleder</surname>
+                            <forename>Victor</forename>
+                        </persName>
+                        <note>
+                            <p>k_A</p>
+                            <p>Bewerber für ein Amt im Ministerium für Kultus und Unterricht</p>
+                            <p>no gnd provided</p>
+                            <p>k_A</p>
+                        </note>
+                    </person>
+                    <person xml:id="windisch-graetz-alfred">
+                        <persName>
+                            <surname>Windisch-Graetz</surname>
+                            <forename>Alfred</forename>
+                        </persName>
+                        <note>
+                            <p>Brüssel 1787–1862 Wien</p>
+                            <p>Feldmarschall, führende Rolle bei der Niederschlagung der Aufstände 1848/49 in Wien und Ungarn</p>
+                            <p>http://d-nb.info/gnd/118769251</p>
+                            <p>k_A</p>
+                        </note>
+                    </person>
+                    <person xml:id="pillersdorf-franz">
+                        <persName>
+                            <surname>Pillersdorf</surname>
+                            <forename>Franz</forename>
+                        </persName>
+                        <note>
+                            <p>Brünn 1786–1862 Wien</p>
+                            <p>ab März 1848 Minister des Innern, ab Mai 1848 Ministerpräsident, Mitglied des österr. Reichstages</p>
+                            <p>http://d-nb.info/gnd/128823666</p>
+                            <p>k_A</p>
+                        </note>
+                    </person>
+                    <person xml:id="doblhoff-dier-anton">
+                        <persName>
+                            <surname>Doblhoff-Dier</surname>
+                            <forename>Anton</forename>
+                        </persName>
+                        <note>
+                            <p>Görz 1800–1872 Wien</p>
+                            <p>Politiker, 1848 Handelsminister, Juli 1848 Innen- und Unterrichtsminister sowie Ministerpräsident, 1849–1858 österr. Gesandter in den Niederlanden</p>
+                            <p>http://d-nb.info/gnd/101168128</p>
+                            <p>k_A</p>
+                        </note>
+                    </person>
+                    <person xml:id="czernin-von-und-zu-chudenitz-eugen">
+                        <persName>
+                            <surname>Czernin von und zu Chudenitz</surname>
+                            <forename>Eugen</forename>
+                        </persName>
+                        <note>
+                            <p>Wien 1796–1868 Schloss Petersburg, Böhmen</p>
+                            <p>Großgrundbesitzer, Industrieller, Intendant des Wiener Hoftheaters</p>
+                            <p>http://d-nb.info/gnd/102085779X</p>
+                            <p>k_A</p>
+                        </note>
+                    </person>
+                </listPerson>
+            </div>
+        </body>
+    </text>
+</TEI>
