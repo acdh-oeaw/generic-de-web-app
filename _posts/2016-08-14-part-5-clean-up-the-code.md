@@ -27,7 +27,7 @@ And even if you want to deploy your application on the same server with a new na
 
 # Remove hard coded links
 
-These malfunctions are clearly related with hard coded URLs we introduced in the last chapter. So let’s remove them. A task which is thanks to the devolpers of eXist-db not too dificult to manage, because they provided us with all the necessary variables we need to replace such changeable things like the name of the server or the name of the application. 
+These malfunctions are clearly related with hard coded URLs we introduced in the last chapter. So let’s remove them. A task which is thanks to the developers of eXist-db not too difficult to manage, because they provided us with all the necessary variables we need to replace such changeable things like the name of the server or the name of the application. Those variables are declared in `modules/config.xqm`. 
 
 ## Table of content (app:toc)
 
@@ -35,7 +35,9 @@ We create the table of content with the self created function *app:toc* and so f
 
 `for $doc in collection("/db/apps/thun-demo/data/editions")/tei:TEI`
 
-To remove the application’s name from this function we use the variable *$config:app-root* which, according to the inline comment to this variable/function "Determine[s] the application root collection from the current module load path." For our application this means that $config:app-root will resolve into `/db/apps/thun-demo/`. Since our XML/TEI documents are stored in `/db/apps/thun-demo/data/edition/` we have to add this last part. This we achieve with the xQuery function *concat* which concatenates two or more strings. Everything put together resolves in:
+To remove the application’s name from this function we use the variable *$config:app-root* which, according to the inline comment to this variable/function
+> Determine[s] the application root collection from the current module load path." 
+For our application this means that *$config:app-root* will resolve into `/db/apps/thun-demo/`. Since our XML/TEI documents are stored in `/db/apps/thun-demo/data/edition/` we have to add this last part. This we achieve with the xQuery function *concat()* which concatenates two or more strings. Everything put together resolves in:
 
 ```xquery
 declare function app:toc($node as node(), $model as map(*)) {
@@ -58,8 +60,7 @@ Now we also want to remove the other hard coded link in this function which is t
 ```
 
 To remove the hard coded link from above, we could basically do something similar as before. Unfortunately building the needed URL [http://localhost:8080/exist/apps/rita/pages/show.html](http://localhost:8080/exist/apps/rita/pages/show.html) is slightly more complicated than */db/apps/thun-demo/data/editions*. 
-
-Without going into detail, the following (bold) line of code does the juggling and creates the appropriate link without any hard coded parts in it.
+But since all our HTML pages are located in the same directory we can work with relative links meaning we don't have to care at all about e.g. the name of the server our application runs on. Keeping this in mind, we can modify **modules/app:toc** as follows:
 
 ```xquery
 (:~
@@ -68,8 +69,9 @@ Without going into detail, the following (bold) line of code does the juggling a
 declare function app:toc($node as node(), $model as map(*)) {
     for $doc in collection(concat($config:app-root, '/data/editions/'))//tei:TEI
         return
-        <li><a href="{concat(replace(concat($config:app-root, '/pages/show.html'), '/db/', '/exist/'),'?document=',functx:substring-after-last(document-uri(root($doc)), '/'))}">{document-uri(root($doc))}</a></li>   
-};
+        <li>
+          <a href="{concat("show.html?document=",functx:substring-after-last(document-uri(root($doc)), "/"))}">{document-uri(root($doc))}</a>
+        </li>
 ```
 
 To test my claim, we should browse to the table of content and follow one of the links. Although the link seems to be correct, we simply get a not very nice error message:
@@ -116,13 +118,13 @@ let $xsl := doc(concat($config:app-root, "/resources/xslt/xmlToHtml.xsl"))
 ...
 ```
 
-Now the creation of the table of content is showing the (right) content and sends the correct parameters to the right location of show.html which itself renders the XML/TEI document, no matter of the name of the application’s or the server’s name. 
+Now the creation of the table of content is showing the (right) content and sends the correct parameters to the right location of `show.html` which itself renders the XML/TEI document, no matter of the name of the application’s or the server’s name. 
 
 ![image alt text]({{ site.baseurl }}/images/part-5/image_5.jpg)
 
 # Conclusion and outlook
 
-To make our code independent from any hard coded urls we had to write several times very similar lines of code. For instance, to create the dynamic links from our table of content to the HTML representation of the chosen XML/TEI document, we had to replace ‘db’ against ‘exist’ in the first function (app:toc) only to revert this change in ‘app:XMLtoHTML’. This feels very much like useless and duplicated code. But we will keep the code as it is for the time being since all our requirements are fulfilled by the current code base and the duplicated parts of code are (still) very few. 
+In this 5th part of our little tutorial we removed any hardcoded links/references from our application. This allows us to pack the app and deploy it to any other eXist-db server without having to worry (too much) about breaking links.
 
 In the [next part]({{ site.baseurl }}{% post_url 2016-08-15-part-6-rename-the-app %}) of this series of tutorials, we will learn how to rename our application. This is extremely useful if you plan to use the code base written so far for similar digital edition projects.
 
