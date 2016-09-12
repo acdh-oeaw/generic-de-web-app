@@ -36,7 +36,7 @@ You wonder what this stylesheet does. Well, let’s find out.
 
 ## run transformation with xQuery function(s)
 
-To see the effects of this xslt document on one of our XML/TEI documents, we have to bring those two documents somehow together. In eXist-db there exists a function called **transform:transform** (see[here](http://exist-db.org/xquery/transform&location=java:org.exist.xquery.functions.transform.TransformModule&details=true) for further information) which does this for us. What is left for us to do, is to write a litter function around transform:transform which will be triggered by eXist-db templating system, whenever the page **show.html** (our first site created by our own) will be loaded. 
+To see the effects of this xslt document on one of our XML/TEI documents, we have to bring those two documents somehow together. In eXist-db there exists a function called **transform:transform** which does this for us. What is left for us to do, is to write a litter function around transform:transform which will be triggered by eXist-db templating system, whenever the page **show.html** (our first site created by our own) will be loaded. 
 
 To do so, add the following lines to **modules/app.xql**:
 
@@ -72,7 +72,7 @@ Now browse to [http://localhost:8080/exist/apps/thun-demo/pages/show.html](http:
 
 ![image alt text]({{ site.baseurl }}/images/part-4/image_0.jpg)
 
-As already mentioned, writing XSLT stylesheets is not in the scope of this HowTos. But to have a slightly more attractive (HTML) representation of your XML/TEI (well, actually of the TEI files used for this tutorial), I will added a few more lines of code to **resources/xslt/xmlToHtml.xsl**. You can find the xslt-stylessheet I used for the screenshots [here]({{ site.baseurl }}/downloads/part-3/xmlToHtml.xsl). Just download this file and replace our basic stylesheet stored in **resources/xslt** with it. 
+As already mentioned, writing XSLT stylesheets is not in the scope of this HowTos. But to have a slightly more attractive (HTML) representation of your XML/TEI (well, actually of the TEI files used for this tutorial), I will added a few more lines of code to **resources/xslt/xmlToHtml.xsl**. You can find the xslt-stylessheet I used for the screenshots [here]({{ site.baseurl }}/downloads/part-4/xmlToHtml.xsl). Just download this file and replace our basic stylesheet stored in **resources/xslt** with it. 
 
 ![image alt text]({{ site.baseurl }}/images/part-4/image_1.jpg)
 
