@@ -87,7 +87,7 @@ You should then see a **localhost** connection in the **Data Source Explorer**. 
 
 ## Pages directory
 
-This newly created pages directory will contain all our HTML documents.<a name="myfootnote1">1</a> But let’s create another HTML document, store it in the pages directory and add a link in the applications navigation bar. 
+This newly created pages directory will contain all our HTML documents.<sup id="a1">[1](#f1)</sup> But let’s create another HTML document, store it in the pages directory and add a link in the applications navigation bar. 
 
 ### show.html
 
@@ -393,6 +393,5 @@ We
 
 In the [third part]({{ site.baseurl }}{% post_url 2016-08-12-part-3-table-of-content %}) of this tutorial we will upload the XML/TEI files in our database and write our first xQuery function which will generate a very basic table of contents from the uploaded XML/TEI documents. To present this table of contents to the users of our web app, we will also learn how to integrate xQuery functions in HTML code. 
 
-
-<sup>[1](#myfootnote1)</sup>
-Usually the pages directory was meant to store all HTML-Documents except the index.html which serves as starting page of the application. I kept index.html in the root directory to not break the application’s default url redirecting/rewriting logic meaning when you enter [http://localhost:8080/exist/apps/thun-demo](http://localhost:8080/exist/apps/thun-demo), you will be automatically redirected to [http://localhost:8080/exist/apps/thun-demo/index.html](http://localhost:8080/exist/apps/thun-demo/index.html). Unfortunately this separation of HTML Documents lead to difficulties concerning resolving relevant links which produced to some coding overhead. But thanks to the comments of [Stefan Probst](http://dk-sciences-contexts.univie.ac.at/people/fellows/stefan-probst/) such a separation is not needed any more and now default functionality is broken. 
+<b id="f1">1</b>
+Usually the pages directory was meant to store all HTML-Documents except the index.html which serves as starting page of the application. I kept index.html in the root directory to not break the application’s default url redirecting/rewriting logic meaning when you enter [http://localhost:8080/exist/apps/thun-demo](http://localhost:8080/exist/apps/thun-demo), you will be automatically redirected to [http://localhost:8080/exist/apps/thun-demo/index.html](http://localhost:8080/exist/apps/thun-demo/index.html). Unfortunately this separation of HTML Documents lead to difficulties concerning resolving relevant links which produced to some coding overhead. But thanks to the comments of [Stefan Probst](http://dk-sciences-contexts.univie.ac.at/people/fellows/stefan-probst/) such a separation is not needed any more and now default functionality is broken. [↩](#a1)
