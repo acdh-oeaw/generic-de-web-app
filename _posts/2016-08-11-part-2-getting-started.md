@@ -101,7 +101,6 @@ Our first HTML document will be very minimalistic and just contain three lines o
 </div>
 ```
 
-
 In case you are wondering about the first line, this is used to load our application’s main template. eXist-db ships with its own template engine. See [here](http://exist-db.org/exist/apps/doc/development-starter.xml) for a general introduction and [here](http://exist-db.org/exist/apps/doc/templating.xml) to get more detailed information. Unfortunately, the documentation is partly outdated. Instead of using the HTML *class* attribute for referencing templates (and xQuery functions), one should now use the *data-template* attribute as it is already done in our automatically created *index.html*. 
 
 To admire our work, browse to [http://localhost:8080/exist/apps/thun-demo/pages/show.html](http://localhost:8080/exist/apps/thun-demo/pages/show.html) and you should see:
@@ -114,106 +113,28 @@ But when you now try to go back to the application’s start page, either by cli
 
 ## URL Redirecting
 
-### Adapt templates/page.html and controller.xql
+There are several ways to solve this issue. My old solution was to create some variable which will force to application resolve each path which starts with this variable from the same starting point. If you are interested in this solution, feel free to consult [Part-IIa]({% post_url 2016-08-11-part-2a-old-solution %}). But thanks to [Stephan Probst](http://dk-sciences-contexts.univie.ac.at/people/fellows/stefan-probst/) we can solve this problem in a much cleaner way.
+First we simply have to move **index.html** from the application's root directory into our new **/pages** directory. You can do this either by drag and drop in oXygen, by cut and paste in eXist-db **Collection Browser** or by creating an **index.html** in the pages directory, copy and paste the content from the **index.html** from the application's root directory and then delete this file. The result is always the same. You should be able to browse to [http://localhost:8080/exist/apps/thun-demo/pages/show.html](http://localhost:8080/exist/apps/thun-demo/pages/show.html) and navigate from there via the nav-bar to index.html.
+But when you now go back to [eXist-db' dashboard](http://localhost:8080/exist/apps/dashboard/index.html) and try to click on the **Thun Demo App** tile you will see nothing more then a HTTP ERROR 404 and the message that the document **/db/apps/thun-demo/index.html** was not found. 
 
-To fix this, we have to do two things. First, we have to remove the relative links in our application’s base template *templates/page.html*. Because when you open this document, you can see that the links to the start page *index.html* are described relative to our application’s root directory. 
+### Modify the application's controller
 
-```html
-...
+To fix this, we have to modify the application's controller. A controller is usually some code which matches URLs requested by users (by typing URLs into the browser or clicking on some links) to functionalities provided by the application. In a default eXist-db application like ours, the controller's code is stored in a document called **controller.xql** which is located in the application's root directory. 
+The only thing we have to do in this document is to look for the following line
 
-<a data-template="config:app-title" class="navbar-brand" href="./index.html">App Title</a>
-
-...
-
-
-<li class="dropdown" id="about">
- 	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
-	<ul class="dropdown-menu">
-		<li>
-			<a href="index.html">Home</a>
-		</li>
-	</ul>
-</li>
-
-...
-```
-
-Interestingly, the bootstrap css-stylesheets are found and rendered correctly (NOTE:  To be honest, the logo is rendered far too big and in the wrong place. We will deal with this later.) as is the eXist-db logo. Looking at the latter, we see that here the link is set as:
-
-`<img src="$shared/resources/images/powered-by.svg" alt="Powered by eXist-db"/>`
-
-Here obviously some variable **$shared** is used which resolves to the directory  `/db/apps/shared-resources/`.
-
-Exactly this directive: »whenever you find the string **"$shared"** in a URL, replace ›$shared‹ with `/db/apps/shared-resources/`« can be found in the document named *controller.xql* which is located in our application’s root-directory. Of course, in this document this directive is written in a less prosaic but more machine readable manner (lines 32–37): 
+**controller.xql**
 
 ```xquery
-else if (contains($exist:path, "/$shared/")) then
+else if ($exist:path eq "/") then
+    (: forward root path to index.xql :)
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
-        <forward url="/shared-resources/{substring-after($exist:path, '/$shared/')}">
-            <set-header name="Cache-Control" value="max-age=3600, must-revalidate"/>
-        </forward>
+        <redirect url="index.html"/>
     </dispatch>
 ```
 
-### $app-root-href
+and replace `<redirect url="index.html"/> with `<redirect url="pages/index.html"/>`. 
 
-Let’s use a similar method for our own purposes and write our own directive. A directive which declares something like: »whenever you meet a URL containing the string ›$app-root-href‹, please redirect us to our index.html page.« To achieve this, we add this code snippet into *controller.xql*, maybe after the first *else if* statement (i.e. around line 20):
 
-```xquery
-else if (contains($exist:path,"$app-root-href")) then
-    (: forward root path to index.html :)
-    <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
-        <redirect url="http://localhost:8080/exist/apps/thun-demo/index.html"/>
-    </dispatch>
-```
-
-Save the changes and open our main template document *templates/page.html*. In this document, we have to change the links referring to our *index.html*. Those links are found around line 22
-
-`<a data-template="config:app-title" class="navbar-brand" href="./index.html">App Title</a>`
-
-We change this to:
-
-`<a data-template="config:app-title" class="navbar-brand" href="$app-root-href/index.html">App Title</a>`
-
-and line 30
-
-`<a href="index.html">Home</a>`
-
-becomes:
-
-`<a href="$app-root-href/index.html">Home</a>`
-
-Save the changes in *templates/page.html* and then browse to our *pages.html* to check if the links are working. They should now.
-
-### Remove hard coded links
-
-But this solution is not perfect yet. The links will only work on your locally installed eXist-db instance because of the hard-coded link in the *controller.xql* document: 
-
-`<redirect url="http://localhost:8080/exist/apps/thun-demo/index.html/">`.
-
-And we don’t like hard coded links. To get rid of them, we can use the variables which were created by the **Deployment Editor** and which are already loaded by default into the *controller.xql* as you can see in the lines 3–7:
-
-```xquery
-
-declare variable $exist:path external;
-declare variable $exist:resource external;
-declare variable $exist:controller external;
-declare variable $exist:prefix external;
-declare variable $exist:root external;
-
-```
-
-As the names of those variables may not be totally self explanatory, I would recommend to read about their values [here](http://exist-db.org/exist/apps/doc/urlrewrite.xml), in the section »Variables«. 
-
-As we are interested in referring to our application’s root directory, we are going to use **$exist:controller** because this points to the directory in which the document *controller.xql* is located. And this is the application’s root directory. 
-
-So with the help of  **$exist:controller, $exist:path**, and some string manipulation, we replace the hardcoded value of the attribute ›url‹ in the ›redirect‹ element by
-
-`<redirect url="/exist/apps/{$exist:controller}{substring-after($exist:path, "$app-root-href")}"/>`
-
-This url still contains hard coded parts (»*/exist/apps/*«) but this part I would like to keep in my application anyway. 
-
-After saving this change in *controller.xql*, let’s browse to [http://localhost:8080/exist/apps/thun-demo/pages/show.html](http://localhost:8080/exist/apps/thun-demo/pages/show.html) to check if the links back to *index.html* are still working. 
 
 ### Adapt page.html template
 
@@ -393,5 +314,7 @@ We
 
 In the [third part]({{ site.baseurl }}{% post_url 2016-08-12-part-3-table-of-content %}) of this tutorial we will upload the XML/TEI files in our database and write our first xQuery function which will generate a very basic table of contents from the uploaded XML/TEI documents. To present this table of contents to the users of our web app, we will also learn how to integrate xQuery functions in HTML code. 
 
+---
+
 <b id="f1">1</b>
-Usually the pages directory was meant to store all HTML-Documents except the index.html which serves as starting page of the application. I kept index.html in the root directory to not break the application’s default url redirecting/rewriting logic meaning when you enter [http://localhost:8080/exist/apps/thun-demo](http://localhost:8080/exist/apps/thun-demo), you will be automatically redirected to [http://localhost:8080/exist/apps/thun-demo/index.html](http://localhost:8080/exist/apps/thun-demo/index.html). Unfortunately this separation of HTML Documents lead to difficulties concerning resolving relevant links which produced to some coding overhead. But thanks to the comments of [Stefan Probst](http://dk-sciences-contexts.univie.ac.at/people/fellows/stefan-probst/) such a separation is not needed any more and now default functionality is broken. [↩](#a1)
+Usually the pages directory was meant to store all HTML-Documents except the index.html which serves as starting page of the application. I kept index.html in the root directory to not break the application’s default url redirecting/rewriting logic meaning when you enter [http://localhost:8080/exist/apps/thun-demo](http://localhost:8080/exist/apps/thun-demo), you will be automatically redirected to [http://localhost:8080/exist/apps/thun-demo/index.html](http://localhost:8080/exist/apps/thun-demo/index.html). Unfortunately this separation of HTML Documents lead to difficulties concerning resolving relevant links which made some extra coding necessary. But thanks to the comments of [Stefan Probst](http://dk-sciences-contexts.univie.ac.at/people/fellows/stefan-probst/) such a separation is not needed any more.[↩](#a1)
