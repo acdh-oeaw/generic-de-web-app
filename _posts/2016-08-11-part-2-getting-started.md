@@ -87,7 +87,7 @@ You should then see a **localhost** connection in the **Data Source Explorer**. 
 
 ## Pages directory
 
-This newly created pages directory will contain all our HTML documents.<sup id="a1">[1](#f1)</sup> But let’s create another HTML document, store it in the pages directory and add a link in the applications navigation bar. 
+This newly created pages directory will contain all our HTML documents.<sup id="a1">[1](#f1)</sup> 
 
 ### show.html
 
@@ -113,7 +113,7 @@ But when you now try to go back to the application’s start page, either by cli
 
 ## URL Redirecting
 
-There are several ways to solve this issue. My old solution was to create some variable which will force to application resolve each path which starts with this variable from the same starting point. If you are interested in this solution, feel free to consult [Part-IIa]({% post_url 2016-08-11-part-2a-old-solution %}). But thanks to [Stephan Probst](http://dk-sciences-contexts.univie.ac.at/people/fellows/stefan-probst/) we can solve this problem in a much cleaner way.
+There are several ways to solve this issue. My old solution was to create some variable which will force the application to resolve each path which starts with this variable from the same starting point. If you are interested in this solution, feel free to consult [Part-IIa]({% post_url 2016-08-11-part-2a-old-solution %}). But thanks to [Stephan Probst](http://dk-sciences-contexts.univie.ac.at/people/fellows/stefan-probst/) we can solve this problem in a much cleaner way.
 First we simply have to move **index.html** from the application's root directory into our new **/pages** directory. You can do this either by drag and drop in oXygen, by cut and paste in eXist-db **Collection Browser** or by creating an **index.html** in the pages directory, copy and paste the content from the **index.html** from the application's root directory and then delete this file. The result is always the same. You should be able to browse to [http://localhost:8080/exist/apps/thun-demo/pages/show.html](http://localhost:8080/exist/apps/thun-demo/pages/show.html) and navigate from there via the nav-bar to index.html.
 But when you now go back to [eXist-db' dashboard](http://localhost:8080/exist/apps/dashboard/index.html) and try to click on the **Thun Demo App** tile you will see nothing more then a HTTP ERROR 404 and the message that the document **/db/apps/thun-demo/index.html** was not found. 
 
@@ -132,13 +132,13 @@ else if ($exist:path eq "/") then
     </dispatch>
 ```
 
-and replace `<redirect url="index.html"/> with `<redirect url="pages/index.html"/>`. 
-
+and replace `<redirect url="index.html"/>` with `<redirect url="pages/index.html"/>`. 
+After saving our changes and reloading [eXist-db' dashboard page](http://localhost:8080/exist/apps/dashboard/index.html) we can click again on the **Thun Demo App** tile but this time, we will be (re)directed from [http://localhost:8080/exist/apps/thun-demo/](http://localhost:8080/exist/apps/thun-demo/) (the link related to this tile) to [http://localhost:8080/exist/apps/thun-demo/pages/index.html](http://localhost:8080/exist/apps/thun-demo/pages/index.html).
 
 
 ### Adapt page.html template
 
-As we are lazy and don’t want to type (and remember) the whole url to our *show.html* page, let’s add a link to this page to our main template (*templates/page.html*):
+As we are lazy and don’t want to type (and remember) the whole url to our **show.html** page, let’s add a link to this page to our main template stored at **templates/page.html**:
 
 ```html
 
@@ -146,29 +146,29 @@ As we are lazy and don’t want to type (and remember) the whole url to our *sho
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
     <ul class="dropdown-menu">
         <li>
-            <a href="$app-root-href/index.html">Home</a>
+            <a href="index.html">Home</a>
         </li>
         <li>
-            <a href="$app-root-href/pages/show.html">show.html</a>
+            <a href="show.html">show.html</a>
         </li>
     </ul>
 </li>
 
 ```
 
-Save your changes and browse to [http://localhost:8080/exist/apps/thun-demo/index.html](http://localhost:8080/exist/apps/thun-demo/index.html). Click on **Home** where you should see the new link entry »show.html«. Following this should lead you to our 
+Save your changes and browse to [http://localhost:8080/exist/apps/thun-demo/pages/index.html](http://localhost:8080/exist/apps/thun-demo/pages/index.html). Click on **Home** where you should see the new link entry »show.html«. Following this should lead you to our 
 
 [http://localhost:8080/exist/apps/thun-demo/pages/show.html](http://localhost:8080/exist/apps/thun-demo/pages/show.html).
 
 ![image alt text]({{ site.baseurl }}/images/part-2/image_3.jpg)
 
-But wait a second! Why is the eXist-db logo so ridiculously big? Especially in comparison to the *index.html*? ![image alt text]({{ site.baseurl }}/images/part-2/image_4.jpg)
+But wait a second! Why is the eXist-db logo so ridiculously big?
 
 To find out what is going on or wrong, go to [http://localhost:8080/exist/apps/thun-demo/pages/show.html](http://localhost:8080/exist/apps/thun-demo/pages/show.html) and open your browser’s developer tool (F12 in Chrome). Here you should find an error message complaining about something like:
 
 »Failed to load resource: the server responded with a status of 404 (Document /db/apps/thun-demo/pages/resources/css/style.css not found)«.
 
-Inspecting our application’s code layout as well as our main template (*templates/pages.html*), the reason of this error becomes obvious. The path to *css/stlye.css* is referenced in *templates/pages.html* relative to the location of our *index.html* (which is situated in the application’s root directory):
+Inspecting our application’s code layout as well as our main template (**templates/pages.html**), the reason of this error becomes obvious. The path to **css/stlye.css** is referenced in **templates/pages.html** relative to the location of our **index.html** (which is now situated in the application’s root directory):
 
 `<link rel="stylesheet" type="text/css" href="resources/css/style.css"/>`
 
@@ -176,13 +176,13 @@ and without the use of any variable, like for instance the source of bootstrap�
 
 `<link rel="stylesheet" type="text/css" href="$shared/resources/css/bootstrap-3.0.3.min.css"/>.`
 
-And this means of course, that whenever we are on a html site which is not stored in the applications root directory (like `index.html`), the brwoser will always try to load this *style.css* from the wrong directory. 
+And this means of course, that whenever we are on a html site which is not stored in the applications root directory the browser will always try to load this *style.css* from the wrong directory. 
 
 ## Populating the Resources directory
 
-Let’s fix this. And while doing this, let’s also get rid of the dependency to eXist-db’s css and JavaScript libraries which are located in ›*db/apps/shared-resources*‹ because we can’t know for sure if another eXist-db instance, where we might want to deploy our application in future, will use the same libraries.
+Let’s fix this. And while doing this, let’s also get rid of the dependency to eXist-db’s css and JavaScript libraries which are located in ›**db/apps/shared-resources**‹ because we can’t know for sure if another eXist-db instance, where we might want to deploy our application in future, will use the same libraries.
 
-We will start with the latter. Looking into the header section of *templates/pages.html*, we see that our application relies on 
+We will start with the latter. Looking into the header section of **templates/pages.html**, we see that our application relies on 
 
 * bootstrap 3.0.3 (css and javascript) – remember the choice we made in the **Deployment Editor** –, 
 
@@ -190,11 +190,11 @@ We will start with the latter. Looking into the header section of *templates/pag
 
 * jQuery 1.7.1,
 
-* and some JavaScript library called *loadsource.js* which I think is responsible for opening a document stored in our database in eXide. 
+* and some JavaScript library called **loadsource.js** which  is responsible for opening a document stored in our database in eXide. 
 
 We don’t need the latter and we can replace the other files/libraries. 
 
-Go to the *resources* directory located in our application’s root directory. Currently, this directory contains only another directory called *css* which contains the aforementioned *style.css*. Create the following new directories (or collections to use eXist-db’s terminology) in this *resources directory*:
+Go to the **resources** directory located in our application’s root directory. Currently, this directory contains only another directory called **resources/css** which contains the aforementioned **style.css**. Create the following new directories (or collections to use eXist-db’s terminology) in this **resources directory**:
 
 * fonts
 
@@ -210,21 +210,25 @@ Your resources collection should now look like on the following screenshot taken
 
 Of course, we need to populate these collections with some documents.
 
-In *resources/css*, add your favorite [bootstrap library](http://getbootstrap.com/). We are using bootstrap-3.0.3.min.css which you can copy and paste from eXist-db’s shared *shared-resources* collection. 
+In **resources/fonts** copy the content of **shared-resources/resources/fonts**.
 
-In *resources/js*, create a collection *jquery* and one called *tablesorter*. In *resources/js/jquery*, add the [jQuery](https://jquery.com/) library of your choice (but it should be compatible with your chosen bootstrap library).
+In **resources/css**, add your favorite [bootstrap library](http://getbootstrap.com/). We are using bootstrap-3.0.3.min.css which you can copy and paste from eXist-db’s shared **shared-resources** collection. 
 
-In *resources/js*, add the bootstrap javascript libraries needed for bootstrap. For the time being, we are done and our resource collection should look like on the screenshot below.
+In **resources/js**, create a collection **jquery** and one called *tablesorter*. In **resources/js/jquery**, add the [jQuery](https://jquery.com/) library of your choice (but it should be compatible with your chosen bootstrap library). The tablesorter directory will be populated in soon to come HowTo.
+
+In **resources/js**, add the bootstrap javascript libraries needed for bootstrap. For the time being, we are done and our resource collection should look like on the screenshot below.
 
 ![image alt text]({{ site.baseurl }}/images/part-2/image_6.jpg)
 
 ## URL Forwarding
 
-After having our libraries in place, we have to set the matching links in *templates/pages.html* right. But before we do this, we will need to declare another rerouting variable in *controller.xql* which will forward any URL containing this variable to a defined collection which will serve as absolute root. 
+After having our libraries in place, we have to set the matching links in **templates/pages.html** right. But before we do this, we will need to declare some rerouting variable in our **controller.xql** which will forward any URL containing this variable to a defined collection which will serve as absolute root. 
 
 ### $app-root
 
-We can use the same logic as the people from eXist-db did with their ** $shared** variable, creating our **$app-root** variable which will point to our applications root directory. So after their code in **controller.xql**
+To create such a variable we have to add the following line of code to **controller.xql**
+
+After:
 
 ```xquery
 else if (contains($exist:path, "/$shared/")) then
@@ -238,8 +242,8 @@ else if (contains($exist:path, "/$shared/")) then
 we add:
 
 ```xquery
-(: Resource paths starting with $app-root are loaded from the application's resource collection :)
-else if (contains($exist:path,"**$app-root**")) then
+(: Resource paths starting with $app-root are loaded from the application's root collection :)
+else if (contains($exist:path,"$app-root")) then
 <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
     <forward url="{$exist:controller}/{substring-after($exist:path, '$app-root/')}">
         <set-header name="Cache-Control" value="no"/>
@@ -249,7 +253,7 @@ else if (contains($exist:path,"**$app-root**")) then
 
 ## templates/pages.html
 
-The last thing we need to do now is to change the links in our main template *templates/pages.html* so that they reference the libraries located in our application’s *resource* collection and not those stored in the eXist-db’s *shared-resources* app any more. This means we have to change our head element from:
+The last thing we need to do now is to change the links in our main template **templates/pages.html** so that they reference the libraries located in our application’s **resource** collection and not those stored in the eXist-db’s **shared-resources** app any more. This means we have to change our head element from:
 
 ```html
 <head>
@@ -280,11 +284,13 @@ to:
 </head>
 ```
 
+change
+
 The actual effects all this hard work might be not very astonishing because the only visible change is the shrunken and now again right aligned eXist-db logo in our [show.html](http://localhost:8080/exist/apps/thun-demo/pages/show.html).
 
 ![image alt text]({{ site.baseurl }}/images/part-2/image_7.jpg)
 
-To check out if our *templates/pages.html* template is really loading the bootstrap library from our application’s resource collection, let's change the bootstrap theme. To do this, you could go to [http://bootswatch.com/](http://bootswatch.com/), select the theme you like, click on download, copy the all the css text, go to the bootstrap file in our application’s *resource/css* collection (`resources/css/bootstrap-3.0.3.min.css`), open it and replace its content. Save your changes, go back to the browser and reload the page. If nothing went wrong, you should see some changes as on the screenshot below, showing our application styled with [http://bootswatch.com/superhero/](http://bootswatch.com/superhero/)
+To check out if our **templates/pages.html** template is really loading the bootstrap library from our application’s resource collection, let's change the bootstrap theme. To do this, you could go to [http://bootswatch.com/](http://bootswatch.com/), select the theme you like, click on download, copy the all the css text, go to the bootstrap file in our application’s *resource/css* collection (`resources/css/bootstrap-3.0.3.min.css`), open it and replace its content. Save your changes, go back to the browser and reload the page. If nothing went wrong, you should see some changes as on the screenshot below, showing our application styled with [http://bootswatch.com/superhero/](http://bootswatch.com/superhero/)
 
 ![image alt text]({{ site.baseurl }}/images/part-2/image_8.jpg)
 
@@ -304,9 +310,9 @@ We
 
 * customized the application layout to our (well, mine) needs,
 
-* created two variables which frees us from some default relative links,
+* we decoupled our application from eXist-db’s *shared-resources*,
 
-* we decoupled our application from eXist-db’s *shared-resources*, and
+* created a custom varibale in **controller.xql** to address our new **resources** directory, and 
 
 * we adapted our application’s base template *tamplates/page.html* in a way that it now reflects all our changes. 
 
