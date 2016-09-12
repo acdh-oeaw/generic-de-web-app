@@ -11,7 +11,7 @@ categories: digital-edition
 
 In this third part of our series of HowTos we will upload the XML/TEI files in our database and write our first xQuery function which will generate a very basic table of content from the uploaded XML/TEI documents. To present this table of content to the users of our web app, we will also learn how to integrate xQuery functions in HTML code. (Yes, this lines were copy-pasted from Part II).
 
-Part III of this tutorial builds upon the work done in [Part II]({{ site.baseurl }}{% post_url 2016-08-11-part-2-getting-started %}). In case you lost your laptop in the train, deleted your eXist-db instance or just didn’t follow Part III you will need the code created in Part II. 
+Part III of this tutorial builds upon the work done in [Part II]({{ site.baseurl }}{% post_url 2016-08-11-part-2-getting-started %}). In case you lost your laptop in the train, deleted your eXist-db instance or just didn’t follow Part III you will need [the code created in Part II]({{ site.baseurl }}/downloads/part-2/thun-demo-0.1.xar). 
 
 ## Download...
 
@@ -45,25 +45,27 @@ I tried this and by doing so, I noticed, that the eXist-db logo is not displayed
 
 Ok, but now let's really start uploading some XML/TEI documents to turn our humble web app into a digital edition web app. The only question left to answer is the question about where to upload/store the XML/TEI documents. 
 
-First you have to decide if you want to store your data next to your application’s or if you prefer a clear separation between data and code. The good thing is that we strive to build a highly self contained, small and not too complex application. And the even better thing is that our application is not responsible for any kind of long term preservation of the data. Therefor I see no really good arguments against storing the application's code and its data in the same place. 
+First you have to decide if you want to store your data next to your application’s code or if you prefer a clear separation between data and code. The good thing is that we strive to build a highly self contained, small and not too complex application. And the even better thing is that our application is not responsible for any kind of long term preservation of the data. Therefor I see no really good arguments against storing the application's code and its data in the same place. 
 
-Second, we have to figure out a smart directory layout for storing our data. This is not too complicated when you know in advance what kind of data you will have to deal with and what kind of functionalities you would like to provide. In our case of building a new digital edition for the Thun correspondence I can tell that we will be confronted with two different kind of datasets. One the one have we have an XML/TEI document for each letter. On the other hand we have a couple of index files, containing information about places and persons. 
+Second, we have to figure out a smart directory layout for storing our data. This is not too complicated when you know in advance what kind of data you will have to deal with and what kind of functionalities you would like to provide. In our case of building a new digital edition for the **Thun correspondence** I can tell that we will be confronted with two different kind of datasets. One the one hand have we have an XML/TEI document for each letter. On the other hand we have a couple of index files, containing information about places and persons. 
 
-Mapping this two types of documents in directories/collections resolves in a *data/* collection which is located in our application’s root collection and this *data/* collections contains two other collections called *data/editions/* and *data/indices/*. But looking at the following screenshots might makes things even easier to follow.
+Mapping this two types of documents in directories/collections resolves in a **data/** collection which is located in our application’s root collection and this **data/** collections contains two other collections called **data/editions/** and **data/indices/**. But looking at the following screenshots might makes things even easier to follow.
 
 ![image alt text]({{ site.baseurl }}/images/part-3/image_3.jpg)![image alt text]({{ site.baseurl }}/images/part-3/image_4.jpg)
 
-Now we can upload our XML/TEI documents from the Thun correspondence into the *data/editions/* collection. 
+Now we can upload our XML/TEI documents from the Thun correspondence into the **data/editions/** collection. You can upload data either using eXist-db's **Collection Browser** tile or with the help of oXygen. In case you are going to use the **Collection Browser** browse to `/db/apps/thun-demo/data/editions` click on the **Upload resources** icon.  
+Just in case you don't have any (play)data at hand, you can use the xml-documents stored in [this zip-archive]({{ site.baseurl }}/downloads/editions.zip).
 
 # Publish XML/TEI via exist-db’s (REST) API
 
-If our only goal was to publish our XML/TEI documents in the internet, then we would have accomplished our goal and could go all for a beer. This is because eXist-db ships with an API that exposes the content of our database by default to the public. The nice thing about this application programming interface is, that humans as well as computers can interact with it. So as long as we don´t restrict access to our data - and there is absolutely no reason why we should do this - our uploaded XML/TEI can be read and downloaded by the www. You don’t believe me? Well, than type the following url [http://localhost:8080/exist/rest/db/apps/thun-demo/data/editions](http://localhost:8080/exist/rest/db/apps/thun-demo/data/editions) into your browser and you see some xml representation of the content of our *data/editions* collection. 
+If our only goal was to publish our XML/TEI documents in the Internet, then we would have accomplished our goal and could go all for a beer. This is because eXist-db ships with an API that exposes the content of our database by default to the public. The nice thing about this application programming interface is, that humans as well as computers can interact with it. So as long as we don´t restrict access to our data - and there is absolutely no reason why we should do this - our uploaded XML/TEI can be read and downloaded.
+You don’t believe me? Well, than type the following url [http://localhost:8080/exist/rest/db/apps/thun-demo/data/editions](http://localhost:8080/exist/rest/db/apps/thun-demo/data/editions) into your browser and you see some xml representation of the content of our *data/editions* collection. 
 
 ![image alt text]({{ site.baseurl }}/images/part-3/image_5.jpg)
 
-Getting from this table of content or list view to the representation (or detail view) of one of the documents is accomplished by adding a slash ("/") and the document's name, the value of the** name** attribute of one of the <exist:resource> elements, to the current url. So for example the following url leads to the XML/TEI file (or a representation of this file) in your browser:
+Getting from this table of content or list view to the representation (or detail view) of one of the documents is accomplished by adding a slash ("/") and the document's name, the value of the **name** attribute of one of the `<exist:resource>` elements, to the current url. So for example the following url leads to the XML/TEI file (or a representation of this file) in your browser:
 
-[http://localhost:8080/exist/rest/db/apps/thun-demo/data/editions/dittrich-an-thun_1849-08-10_A3-XXI-D1.xml](http://localhost:8080/exist/rest/db/apps/thun-demo/data/editions/dittrich-an-thun_1849-08-10_A3-XXI-D1.xml)
+[http://localhost:8080/exist/rest/db/apps/thun-demo/data/editions/diepenbrock-an-thun_1849-08-30_A3-XXI-D5.xml](http://localhost:8080/exist/rest/db/apps/thun-demo/data/editions/diepenbrock-an-thun_1849-08-30_A3-XXI-D5.xml)
 
 ![image alt text]({{ site.baseurl }}/images/part-3/image_6.jpg)
 
@@ -77,9 +79,7 @@ To achieve this, we create a new html document, called **toc.html** and save it 
 
 ```html
 <div class="templates:surround?with=templates/page.html&amp;at=content">
-
     <h1>Table of Content</h1>
-
 </div>
 ```
 
@@ -87,35 +87,25 @@ We also want a link to our table of content page in our applications nav bar. So
 
 ```html
 <ul class="dropdown-menu">
-
     <li>
-
-        <a href="$app-root-href/index.html">Home</a>
-
+        <a href="index.html">Home</a>
     </li>
-
     <li>
-
-        <a href="$app-root-href/pages/show.html">show.html</a>
-
+        <a href="show.html">show.html</a>
     </li>
-
     <li>
-
-        <a href="$app-root-href/pages/toc.html">Table of Content</a>
-
+        <a href="toc.html">Table of Content</a>
     </li>
-
 </ul>
 ```
 
-Save your changes and check if everything works out. Browse to [http://localhost:8080/exist/apps/thun-demo/](http://localhost:8080/exist/apps/thun-demo/) click on **Home **and follow the "Table of Content" link which should lead you to this page: 
+Save your changes and check if everything works out. Browse to [http://localhost:8080/exist/apps/thun-demo/](http://localhost:8080/exist/apps/thun-demo/) click on **Home** and follow the "Table of Content" link which should lead you to this page: 
 
 ![image alt text]({{ site.baseurl }}/images/part-3/image_7.jpg)
 
 ## xQuery
 
-Impressive! Well not really yet. We should add some content. And for this we are going to write our first xQuery function. This function will browse through our *data/editions/* collection, fetch the names of all documents stored in this collection and present them in list. 
+Impressive! Well not really yet. We should add some content. And for this we are going to write our first xQuery function. This function will browse through our *data/editions/* collection, fetch the names of all documents stored in this collection and present them in form of a simple list. 
 
 To make sure that our function is going to the things we are expecting from it, it is a good idea to play around with a little bit while writing/developing it. For this we open eXist-db XML editor eXide:
 
@@ -123,13 +113,10 @@ To make sure that our function is going to the things we are expecting from it, 
 
 ```xquery
 xquery version "3.0";
-
 declare namespace tei="http://www.tei-c.org/ns/1.0";
 
 for $doc in collection("/db/apps/thun-demo/data/editions")/tei:TEI
-
 return
-
     <li>{document-uri(root($doc))}</li>
 ```
 
@@ -162,29 +149,24 @@ Now lets add the code snippet from our little play script between the curly brac
 
 ```xquery
 declare function app:toc($node as node(), $model as map(*)) {
-
     for $doc in collection("/db/apps/thun-demo/data/editions")/tei:TEI
-
         return
-
         <li>{document-uri(root($doc))}</li>   
-
 };
 ```
 
 Now eXide (or Oxygen) will complain about missing namespace definition for TEI. So let`s add a TEI namespace declaration to the the **app.xql** document right after the imported module namespaces. 
 
-declare namespace tei="[http://www.tei-c.org/ns/1.0](http://www.tei-c.org/ns/1.0)";
+```
+declare namespace tei="http://www.tei-c.org/ns/1.0";
+```
 
-Now the only thing we have to do is to link the **toc.html** with our **app:toc ** function. Therefore let’s open **toc.html** and add the following (bold) line to your already existing mark up. 
+Now the only thing we have to do is to link the **toc.html** with our **app:toc** function. Therefore let’s open **toc.html** and add the following (bold) line to your already existing mark up. 
 
 ```html
 <div class="templates:surround?with=templates/page.html&amp;at=content">
-
     <h1>Table of Content</h1>
-
-    **<div data-template="app:toc"/>**
-
+    <div data-template="app:toc"/>
 </div>
 ```
 
@@ -196,5 +178,5 @@ Save the changes and browse to [http://localhost:8080/exist/apps/thun-demo/pages
 
 Congrats, you wrote your first xQuery script in this session of our tutorial and you played with it  in a quite interactive way using eXide. And you also wrote your first xQuery function and called it with the help from eXist-db templating system. Oh, and by the way, you have also just created a very basic digital edition application. An application which publishes XML/TEI in a machine readable and yes - also human readable manner. Even reading the XML/TEI model of the encoded text is usually not big fun for most of your users (from the humanities domain). 
 
-In the [IV part]({{ site.baseurl }}{% post_url 2016-08-13-part-4-xslt-transformation %}) of this little series of tutorials we will engage the detail view of our applications. This means, we will write another xQuery function, which will fetch an XML/TEI document and transform it with the help of an XSLT-script we are also going to write in the next session into a very basic HTML document. 
+In the [4th part]({{ site.baseurl }}{% post_url 2016-08-13-part-4-xslt-transformation %}) of this little series of tutorials we will engage the detail view of our applications. This means, we will write another xQuery function, which will fetch an XML/TEI document and transform it with the help of an XSLT-script we are also going to write in the next session into a very basic HTML document. 
 

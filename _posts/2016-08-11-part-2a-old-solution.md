@@ -6,6 +6,11 @@ summary:    This post contains old text, describing a (deprecated) method on how
 categories: digital-edition
 ---
 
+# Disclaimer
+
+The following text was the first version of Part II and is kept as part of this blog mainly for historical reasons. (Meaning I put some effort into writing this text so I don't want to throw it away)
+
+...
 To fix this, we have to do two things. First, we have to remove the relative links in our application’s base template *templates/page.html*. Because when you open this document, you can see that the links to the start page *index.html* are described relative to our application’s root directory. 
 
 ```html
