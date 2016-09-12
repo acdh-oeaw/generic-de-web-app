@@ -8,7 +8,7 @@ categories: digital-edition
 
 # Introduction and requirements
 
-In the [last part]({{ site.baseurl }}{% post_url 2016-08-16-part-7-index-based-search %}) of this series of tutorials we implemented a basic index based search functionality. In this part now, we are going to build a full text search which will allow users to 
+In the [last part]({{ site.baseurl }}{% post_url 2016-08-16-part-7-index-based-search %}) of this series of tutorials we implemented a basic index based search functionality. The code we build so far can be downloaded [here]({{ site.baseurl }}/downloads/part-7/thun-demo-0.1). In this part now, we are going to build a full text search which will allow users to 
 
 1. search the content (the text) of all of our XML/TEI documents, 
 
@@ -26,9 +26,11 @@ Therefore we need to have to:
 
 # Create and configure a full text index
 
-Since the nitty gritty details of creating and configuring a (fulltext) index are described broadly in the [eXist-db documentation](http://exist-db.org/exist/apps/doc/lucene.xml), I won't spend much time on explaining the next steps described below. Only one things should be stressed. For creating a full text index, eXist-db uses "Apache Lucene a high-performance, full-featured text search engine library written entirely in Java" (see [https://lucene.apache.org/core/](https://lucene.apache.org/core/)) which is currently practically the tool of choice when it comes to indexing, searching and information retrieval. 
+Since the nitty gritty details of creating and configuring a (full text) index are described broadly in the [eXist-db documentation](http://exist-db.org/exist/apps/doc/lucene.xml), I won't spend much time on explaining the next steps described below. Only one things should be stressed. For creating a full text index, eXist-db uses 
+> Apache Lucene a high-performance, full-featured text search engine library written entirely in Java
+(see [https://lucene.apache.org/core/](https://lucene.apache.org/core/)) which is currently practically the tool of choice when it comes to indexing, searching and information retrieval. 
 
-To create and configure a full text index for our XML/TEI documents stored in **data/editions/** we have to rebuild (parts of) the structure of our application below eXist-db’s **db/system/** directory. Or, to be more precise, we have create an XML document named **collection.xconf** and store under **db/system/path/to/collection/you/would/like/to/index**. So to index all our documents stored in **db/apps/thun-demo/data/editions/ **we have to create a collection.xconf document at: **/db/system/config/db/apps/thun-demo/data/editions/collection.xconf**.
+To create and configure a full text index for our XML/TEI documents stored in **data/editions/** we have to rebuild (parts of) the structure of our application below eXist-db’s **db/system/** directory. Or, to be more precise, we have create an XML document named **collection.xconf** and store under `db/system/path/to/collection/you/would/like/to/index`. So to index all our documents stored in `db/apps/thun-demo/data/editions/` we have to create a collection.xconf document at: `/db/system/config/db/apps/thun-demo/data/editions/collection.xconf`.
 
 Doing so in eXide looks like on the screenshot below:
 
@@ -55,7 +57,7 @@ Important to know is, that we have now indexed the text of all TEI `<p>` element
 
 After we stored this document in the right place, we have to tell eXist-db to start the indexing routine. To do so, open the Collections tab from the [dashboard](http://localhost:8080/exist/apps/dashboard/index.html) browse to the collection you configured an index for (db/apps/thun-demo/data/editions/) and click on the ‘Reindex collection’ icon. Depending on the size and the amount of documents stored in this collection, this may take a while.![image alt text]({{ site.baseurl }}/images/part-8/image_1.jpg) 
 
-To check if everything worked and eXist-db really created an index on the documents stored in **db/apps/thun-demo/data/editions/** click on the the [dashboard](http://localhost:8080/exist/apps/dashboard/index.html) on the ‘Monitoring and Profiling for eXist’ (monex) or browse to [http://localhost:8080/exist/apps/monex/index.html](http://localhost:8080/exist/apps/monex/index.html). (It might be, that this eXist-db package is not installed by default. If so, then you have to install it via the ‘Package Manger’.) After you opened monex, click on ‘Indexes’ (or browse to[http://localhost:8080/exist/apps/monex/indexes.html](http://localhost:8080/exist/apps/monex/indexes.html)) where you should see a list of all indexed collections, where you should see an entry ‘/db/apps/thun-demo/data/editions’
+To check if everything worked and eXist-db really created an index on the documents stored in **db/apps/thun-demo/data/editions/** click on the the [dashboard](http://localhost:8080/exist/apps/dashboard/index.html) on the ‘Monitoring and Profiling for eXist’ (monex) or browse to  [http://localhost:8080/exist/apps/monex/index.html](http://localhost:8080/exist/apps/monex/index.html). (It might be, that this eXist-db package is not installed by default. If so, then you have to install it via the ‘Package Manger’.) After you opened monex, click on ‘Indexes’ (or browse to[http://localhost:8080/exist/apps/monex/indexes.html](http://localhost:8080/exist/apps/monex/indexes.html)) where you should see a list of all indexed collections, where you should see an entry ‘/db/apps/thun-demo/data/editions’
 
 ![image alt text]({{ site.baseurl }}/images/part-8/image_2.jpg)
 
@@ -63,7 +65,7 @@ To check if everything worked and eXist-db really created an index on the docume
 
 ## Update the index
 
-Once the index is configured and created, it will update automatically whenever someone changes or adds a document to the indexed collection. Only when you change something in the index configuration (collection.xconf) you will have to reindex the collection as described above.
+Once the index is configured and created, it will update automatically whenever someone changes or adds a document to the indexed collection. Only when you change something in the index configuration (`collection.xconf`) you will have to reindex the collection as described above.
 
 ## Deploy an Index
 
@@ -73,7 +75,7 @@ For a very simple solution just copy&paste the **/db/system/config/db/apps/thun-
 
 **/db/system/config/db/apps/thun-demo/data/editions/collection.xconf.** After this, the only thing left to do is to trigger the indexing as described above. 
 
-Implement full text search
+# Implement full text search
 
 ## ft_search.html
 
@@ -111,10 +113,10 @@ Then we add a link to this page in the base tempate **/templates/pages.html:**
 ```html
 ...
 <li>
-    <a href="$app-root-href/pages/persons.html">Persons</a>
+    <a href="persons.html">Persons</a>
 </li>
 <li>
-    <a href="$app-root-href/pages/ft_search.html">Fulltext Search</a>
+    <a href="ft_search.html">Fulltext Search</a>
 </li>
 ...
 ```
