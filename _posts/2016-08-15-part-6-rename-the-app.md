@@ -85,11 +85,16 @@ Since we took a lot of effort to remove all hard coded links from our applicatio
 </meta>
 ```
 
-Now we can download the application by clicking on **Application/Download** button in [eXide’s navigation menu](http://localhost:8080/exist/apps/eXide/index.html) (make sure you opened any file from the application). 
+After saving our changes we can browse now to the [application's start page](http://localhost:8080/exist/apps/thun-demo/pages/index.html) and we see first traces of our work as depicted below.
+
+![image alt text]({{ site.baseurl }}/images/part-6/image_2.jpg)
+
+But whereas the red circles show some progress, the circles colored differently show some artifacts of the application's previous name. But those will disappear the following step.
+First we can download the application by clicking on **Application/Download** button in [eXide’s navigation menu](http://localhost:8080/exist/apps/eXide/index.html) (make sure you opened any file from the application). 
 
 # Deploy and test
 
-Now we can install this packages and see if everything works as it should or if we still find traces of "thun-demo" in our brand new “rita-demo”. 
+And second we can install this packages and see if everything works as it should or if we still find traces of "thun-demo" in our brand new “rita-demo”. 
 
 Looks good:
 
@@ -107,9 +112,19 @@ If you got tired of editing raw XML documents already, which I hope you are not 
 
 # Conclusion and outlook
 
-Congrats! You are now in the possession of a 67 KB (without the XML/TEI documents) lightweight eXist-db package containing basic functionalities of a digital editions web application. And now you are also in possession of the necessary knowledge on how to deploy, rename, pack, and (re)distribute it. So if someone is ever going to ask you, if you could build a basic digital edition web application for him, you should be capable of doing so in maximum 15 minutes (grabbing a coffee already included). 
+Congrats! You are now in the possession of a lightweight eXist-db package containing basic functionalities of a digital editions web application. And now you are also in possession of the necessary knowledge on how to deploy, rename, pack, and (re)distribute it. So if someone is ever going to ask you, if you could build a basic digital edition web application for him, you should be capable of doing so in maximum 15 minutes (grabbing a coffee already included). 
 
 Of course the current application is very barebone. But in the upcoming tutorials we will add more and more features to it. While doing so, we will constantly reflect our actions to make sure, that our code will stay as reusable as reasonable and possible. 
 
-In the next tutorial we will tackle the topic of index or register based search functionalities.
+In the [next tutorial]({{ site.baseurl }}{% post_url 2016-08-16-part-7-index-based-search %}) we will tackle the topic of index or register based search functionalities.
+
+# Disclaimer
+
+Actually there are still traces of our thun-demo app in the code of the renamed rita-demo application (which can be downloaded as package [here]({{ site.baseurl }}/downloads/part-6/rita-demo-0.1.xar)). When you look for example into the code of `modules/app.xql` you will see that for example the **config module** is related to the namespace "http://www.digital-archiv.at/ns/**thun-demo**/config". There are basically two ways to fix this.
+
+* We could modify the build process of the package, providing some variables and some build templates. But this is quite a lot of work and also quite error prone. 
+* Alternatively we can replace the namespace by hand or even better by the use of a search & replace command. 
+
+You can download the rita-demo package with updated namespaces [here]({{ site.baseurl }}/downloads/part-6/rita-demo-0.1_new_ns.xar)
+
 
