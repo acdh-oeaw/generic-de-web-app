@@ -82,7 +82,9 @@ declare function app:listPers_hits($node as node(), $model as map(*), $searchkey
     for $hit in collection(concat($config:app-root, '/data/editions/'))//tei:TEI[.//tei:persName[@key=$searchkey] |.//tei:rs[@ref=concat("#",$searchkey)] |.//tei:rs[@key=contains(./@key,$searchkey)]]
     let $doc := document-uri(root($hit)) 
     return
-    <li><a href="{app:hrefToDoc($hit)}">{app:getDocName($hit)}</a></li>   
+    <li>
+        <a href="{app:hrefToDoc($hit)}">{app:getDocName($hit)}</a>
+    </li> 
  };
 ```
 
@@ -93,8 +95,11 @@ declare function app:toc($node as node(), $model as map(*)) {
     for $doc in collection(concat($config:app-root, '/data/editions/'))//tei:TEI
         return
         <li>
-            <a href="{concat(replace(concat($config:app-root, '/pages/show.html'), '/db/', '/exist/'),'?document=',functx:substring-after-last(document-uri(root($doc)), '/'))}">{document-uri(root($doc))}</a></li>
-	    <li>
-        <a href="{concat(replace(concat($config:app-root, '/pages/'), '/db/', '/exist/'),app:hrefToDoc($doc))}">{app:getDocName($doc)}</a></li>
+            <a href="{app:hrefToDoc($doc)}">{app:getDocName($doc)}</a>
+        </li>   
 };
 ```
+
+# Conclusion and outlook
+
+Congrats! You created a lightweight web application to publish digital editions. And especially due to the recent chapter, the code base of this application does not look too bad. Unfortunately we can't say the same about the [start page](http://localhost:8080/exist/apps/thun-demo/pages/index.html) of our application. But this will be the topic of the next chapter. 
