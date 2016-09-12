@@ -30,3 +30,7 @@ To build such a web application, all we need is 1) the open source xml database 
 As mentioned in the section above, we will also need some XML/TEI documents to play with. Since I have to rebuild an old application of mine anyway, I will use the documents of the online edition of the correspondence of [Leo von Thun Hohenstein](http://thun-korrespondenz.uibk.ac.at:8080/exist/apps/Thun-Collection/index.html). You can download some or all files using the applications [REST-API](http://thun-korrespondenz.uibk.ac.at:8080/exist/rest/db/files/thun/xml), but for the sake of convenience you can find a zip file containing some documents [here]({{ site.baseurl }}/downloads/editions.zip). 
 
 But now it is time to [get started]({{ site.baseurl }}{% post_url 2016-08-11-part-2-getting-started %}).
+
+## Disclaimer
+
+For the time being, this tutorial focuses on a windows-based environment. 
