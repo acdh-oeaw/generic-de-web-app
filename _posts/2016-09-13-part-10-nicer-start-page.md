@@ -112,7 +112,7 @@ The result looks as depicted below
 
 As you can see the readability/visibility of such texts highly depends on the images you are using. So it may need some fiddling and playing with all kind of CSS settings to achieve good results. For our thun-demo app I will remove the content of `<div calss="carousel-caption">`. Especially as I already credited Laura by the usage of a `title="by Sandra Lehecka"` attribute in the `<img>` element.
 
-## But some text on the page.
+# But some text on the page.
 
 After we covered the images, let's add some text to the start page. But since we don't want to repeat ourself and write down the same things (e.g. title of the application, short description) more than once, we will fetch those texts from the `repo.xml`. As you might remember from [Part 6]({{ site.baseurl }}{% post_url 2016-08-15-part-6-rename-the-app %}) this document which was created by eXist-db **Deployment Editor** stores (or can store) besides other data also information regarding the application's **description** or its **author**. Interesting though is that this file does not provide any title-fields. But this information can be found in **expath-pgk.xml**. So what we have to do now, is to fetch this info and present it in `pages/index.html`. 
 
@@ -192,6 +192,7 @@ Now we should be able to call this variable in **pages/index.html**:
         <p style="text-align:center" data-template="config:app-description"/>
     </div>
 ...
+```
 
 As we filled out the description form in a very minimalistic way, the current descriptions only contains "Thun Demo". Let's add some more. And since we are quite familiar with XML in general and the application's layout in specific we will modify the **repo.xml** directly.
 
@@ -218,3 +219,148 @@ Our start page **pages/index.html** should now provide this information:
 
 Since one can't use any (HTML)tags in the `<description>` element of **repo.xml** one would have to remove the `<p style="text-align:center" data-template="config:app-description"/>` element from **pages/index.html** and write some more elaborate description directly into the **pages/index.html**.
 
+# Add a button and a footer
+
+To improve the application's usability and spare our users from at least one click to get to the core of our application - the table of content exposing the edition's data - let's add a button to **pages/index.html** referencing **pages/toc.html**.
+
+```html
+...
+    <div class="container">
+        <!-- headline fetches application's title-->
+        <h1 style="text-align:center" data-template="config:app-title"/>
+        <!-- paragraph fetches application's description-->
+        <p style="text-align:center" data-template="config:app-description"/>
+        <h1 style="text-align:center">
+            <a href="toc.html" class="btn btn-info btn-lg">explore</a>
+        </h1>
+    </div>
+...
+```
+
+![image alt text]({{ site.baseurl }}/images/part-10/image_5.jpg)
+
+What's left to do is now to add a sticky footer whereas sticky means that the footer will always be at the bottom of the page, no matter how much (of little) content there is on the page. Since we want this footer to run through all our pages, we will add the necessary markup into our base template **templates/pages.html**. Since such a footer is possible not the most essential part of the application and more a matter of design and personal taste, I won't elaborate on the following code listing. Just be aware of the new resources like logos, images, custom css document which are referenced which means of course that those have to be stored in the according collections in our application's **resources collection**.
+
+## pages/index.html
+
+The modified templates/page.html could look as follows:
+
+```html
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title data-template="config:app-title">App Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta data-template="config:app-meta"/>
+        <link rel="shortcut icon" href="$shared/resources/images/exist_icon_16x16.ico"/>
+        <link rel="stylesheet" type="text/css" href="$app-root/resources/css/bootstrap-3.0.3.min.css"/>
+        <link rel="stylesheet" type="text/css" href="$app-root/resources/css/style.css"/>
+        <script type="text/javascript" src="$app-root/resources/js/jquery/jquery-2.2.1.min.js"/>
+        <script type="text/javascript" src="$app-root/resources/js/bootstrap-3.0.3.min.js"/>
+    </head>
+    <body id="body">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"/>
+                    <span class="icon-bar"/>
+                    <span class="icon-bar"/>
+                </button>
+                <a data-template="config:app-title" class="navbar-brand" href="./index.html">App Title</a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown" id="about">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="toc.html">Table of Content</a>
+                            </li>
+                            <li>
+                                <a href="persons.html">Persons</a>
+                            </li>
+                            <li>
+                                <a href="ft_search.html">Fulltext Search</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="main-content">
+            <div id="content" class="container"/>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-sm-4">
+                        <a href="https://acdh.oeaw.ac.at/acdh/" class="navlink" target="_blank">
+                            <img src="../resources/img/ACDH_kurz_Weiss.png" alt="ACDH" width="30%"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="https://github.com/csae8092/generic-de-web-app" class="navlink" target="_blank">
+                            <img src="../resources/img/GitHub-Mark-Light-64px.png" alt="github" width="17%"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="http://exist-db.org/" class="navlink" target="_blank">
+                            <img src="../resources/img/existdb.png" alt="eXist-db" width="30%"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+```
+
+## resources/css/style.css
+
+To turn the footer into a sticky footer, we have to add some css-rules. Credits and thanks to [Ksenia Zaytseva](http://www.oeaw.ac.at/acdh/en/zaytseva) who wrote most parts of it. 
+
+```css
+/* Application styles could go here */
+html{
+    height:100%;
+}
+body{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+}
+header{
+    flex:0 0 auto;
+    background-color:#333; /*#F8F8F8*/
+    color:#ffffff;
+}
+.main-content{
+    flex:1 0 auto;
+}
+footer{
+    flex:0 0 auto;
+    background-color:#333; /*#F8F8F8*/
+    color:#ffffff;
+    font-size:13px;
+    padding:20px;
+    /* position: absolute;*/
+    left:0;
+    right:0;
+    width:100%;
+    margin-top:10px;
+}
+footer .poweredby { float: right; margin: 33px 10px 0 0;}
+footer .poweredby img { width: 120px; }
+```
+
+Now our humble application looks as follows:
+
+![image alt text]({{ site.baseurl }}/images/part-10/image_6.jpg)
+
+# Conclusion and outlook
+
+Now we are in possession of an eXist-db application which can easily be packed, downloaded, redeployed and modified and therefore serve as a very solid starting point for building a small to medium sized framework for publishing a digital edition. 
+With this 10th tutorial we meet all requirements described in the [first part]({{ site.baseurl }}{% post_url 2016-08-10-part-1-definition-and-requirements %}) of this series of HowTos. In the future, we will add more posts sharing our ways on how to improve the current application. But since most of those improvements will depend very much from the actual data, we restrain our selfs from implementing those functionalities/features into the current application.
