@@ -90,21 +90,131 @@ In case you are interested in the exact meaning and usage of these elements plea
 
 As unpleasant the current result is, as predictable it was since the `<img>` elements reference images which do not (yet) exist under the used paths ($app-root/resources/img/ACDH_Panorama_Postkarte_motiv02.jpg). But this is fixed quickly by first creating a `img` directory in `resources` and then uploading images into `/resources/img/`. For this tutorial I will use two images created by [Sandra Lehecka](http://www.oeaw.ac.at/acdh/en/lehecka) but of course feel free to use your own material. Just make sure that the file names of the images match those referenced in the `img` element by the `src` attribute.
 
-![image alt text]({{ site.baseurl }}/images/part-10/image_0.jpg)
+![image alt text]({{ site.baseurl }}/images/part-10/image_1.jpg)
 
 If you want you can add some descriptions/credits/headlines to those images in the so far empty `<div class="carousel-caption"/>`. In case you want give credits to some images found on wikipedia you could add something like this
 
 ```html
 <div class="item active">
     <img src="$app-root/resources/img/1200px-Old_book_bindings.jpg" alt="First" width="1200" height="600"/>
-    **<div class="carousel-caption">
+    <div class="carousel-caption">
         <p>
             Von <a href="//commons.wikimedia.org/wiki/User:Brighterorange" title="User:Brighterorange">Tom Murphy VII</a> - <span class="int-own-work" lang="de">Eigenes Werk</span>, 
             <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, 
             <a href="https://commons.wikimedia.org/w/index.php?curid=295698">https://commons.wikimedia.org/w/index.php?curid=295698</a>
         </p>
-    </div>**
+    </div>
+</div>
+```
+The result looks as depicted below
+
+![image alt text]({{ site.baseurl }}/images/part-10/image_2.jpg)
+
+As you can see the readability/visibility of such texts highly depends on the images you are using. So it may need some fiddling and playing with all kind of CSS settings to achieve good results. For our thun-demo app I will remove the content of `<div calss="carousel-caption">`. Especially as I already credited Laura by the usage of a `title="by Sandra Lehecka"` attribute in the `<img>` element.
+
+## But some text on the page.
+
+After we covered the images, let's add some text to the start page. But since we don't want to repeat ourself and write down the same things (e.g. title of the application, short description) more than once, we will fetch those texts from the `repo.xml`. As you might remember from [Part 6]({{ site.baseurl }}{% post_url 2016-08-15-part-6-rename-the-app %}) this document which was created by eXist-db **Deployment Editor** stores (or can store) besides other data also information regarding the application's **description** or its **author**. Interesting though is that this file does not provide any title-fields. But this information can be found in **expath-pgk.xml**. So what we have to do now, is to fetch this info and present it in `pages/index.html`. 
+
+### Some default variables
+
+The kind people from eXist-db already provided two general variable which refer to the root elements of `repo.xml` and expath-pkg.xml. Those variables are declared in **modules/config.xqm**:
+
+```xquery
+declare namespace repo="http://exist-db.org/xquery/repo";
+declare namespace expath="http://expath.org/ns/pkg";
+...
+declare variable $config:repo-descriptor := doc(concat($config:app-root, "/repo.xml"))/repo:meta;
+declare variable $config:expath-descriptor := doc(concat($config:app-root, "/expath-pkg.xml"))/expath:package;
+```
+
+In the same document we find also the quite promising variable/function called **config:app-title**
+
+```xquery
+declare %templates:wrap function config:app-title($node as node(), $model as map(*)) as text() {
+    $config:expath-descriptor/expath:title/text()
+};
+```
+
+So let's try to call this variable from **pages/index.html** by adding the `<h1>` element as shown below.
+
+```html
+<div data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel"><!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"/>
+            <li data-target="#myCarousel" data-slide-to="1"/>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="$app-root/resources/img/ACDH_Panorama_Postkarte_motiv01.jpg" alt="First" width="1200" height="600" title="by Sandra Lehecka"/>
+                <div class="carousel-caption"/>
+            </div>
+            <div class="item">
+                <img src="$app-root/resources/img/ACDH_Panorama_Postkarte_motiv02.jpg" alt="a nice feature picture" width="1200" height="600" title="by Sandra Lehecka"/>
+                <div class="carousel-caption"/>
+            </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <!--<span class="sr-only">Previous</span>--></a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <!--<span class="sr-only">Next</span>--></a>
+    </div>
+    <div class="container">
+        <!-- headline fetches application's title-->
+        <h1 style="text-align:center" data-template="config:app-title"/>
+    </div>
 </div>
 ```
 
-But be aware that the readability/visibility of those texts highly depend on the images you are using. So it may need some fiddling and playing with all kind of CSS settings to achieve good results. 
+This renders a page looking like depicted below:
+
+![image alt text]({{ site.baseurl }}/images/part-10/image_3.jpg)
+
+Unfortunately there is no already declared variable for the application's description. But we can take **config:app-title** as an example an write some **config:app-description** in **modules/config.xqm**:
+
+```xquery
+declare %templates:wrap function config:app-description($node as node(), $model as map(*)) as text() {
+    $config:repo-descriptor/repo:description/text()
+};
+```
+
+Now we should be able to call this variable in **pages/index.html**:
+
+```html
+...
+    <div class="container">
+        <!-- headline fetches application's title-->
+        <h1 style="text-align:center" data-template="config:app-title"/>
+        <!-- paragraph fetches application's description-->
+        <p style="text-align:center" data-template="config:app-description"/>
+    </div>
+...
+
+As we filled out the description form in a very minimalistic way, the current descriptions only contains "Thun Demo". Let's add some more. And since we are quite familiar with XML in general and the application's layout in specific we will modify the **repo.xml** directly.
+
+```html
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>Thun Demo App is a lightweight prototype of a highly generic framework to publish digital editions like those of the Correspondence of Loe Thun von Hohenstein.</description>
+    <author/>
+    <website/>
+    <status>alpha</status>
+    <license>GNU-LGPL</license>
+    <copyright>true</copyright>
+    <type>application</type>
+    <target>thun-demo</target>
+    <prepare>pre-install.xql</prepare>
+    <finish/>
+    <permissions user="admin" group="dba" mode="rw-rw-r--"/>
+    <deployed>2016-09-12T15:37:36.516+02:00</deployed>
+</meta>
+```
+
+Our start page **pages/index.html** should now provide this information:
+
+![image alt text]({{ site.baseurl }}/images/part-10/image_4.jpg)
+
+Since one can't use any (HTML)tags in the `<description>` element of **repo.xml** one would have to remove the `<p style="text-align:center" data-template="config:app-description"/>` element from **pages/index.html** and write some more elaborate description directly into the **pages/index.html**.
+
