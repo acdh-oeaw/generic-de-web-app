@@ -1,15 +1,16 @@
 xquery version "3.0";
-
 module namespace app="http://www.digital-archiv.at/ns/thun-demo/templates";
-declare namespace repo="http://exist-db.org/xquery/repo";
-
-
+declare namespace tei="http://www.tei-c.org/ns/1.0";
+declare namespace functx = 'http://www.functx.com';
 import module namespace templates="http://exist-db.org/xquery/templates" ;
 import module namespace config="http://www.digital-archiv.at/ns/thun-demo/config" at "config.xqm";
 import module namespace kwic = "http://exist-db.org/xquery/kwic" at "resource:org/exist/xquery/lib/kwic.xql";
+declare function functx:substring-after-last
+  ( $arg as xs:string? ,
+    $delim as xs:string )  as xs:string {
+    replace ($arg,concat('^.*',$delim),'')
+ };
 
-declare namespace tei="http://www.tei-c.org/ns/1.0";
-declare namespace functx = "http://www.functx.com";
 
 (:~
  : This is a sample templating function. It will be called by the templating module if
@@ -26,78 +27,80 @@ declare function app:test($node as node(), $model as map(*)) {
 };
 
 (:~
- : grabs the text stored in the repo.xml in the repo:description element.
- :)
-declare function app:description($node as node(), $model as map(*)) {
-    doc(concat($config:app-root, "/repo.xml"))//repo:description/text()
-};
-
-
-(:~
- : see http://www.xqueryfunctions.com/xq/functx_substring-after-last.html
- :)
-declare function functx:substring-after-last
-  ( $arg as xs:string? ,
-    $delim as xs:string )  as xs:string {
-   replace ($arg,concat('^.*',$delim),'')
- };
- 
-(:~
-: returns the name of the document of the node passed to this function.
+ : Returns the name of the document where the passed in node is located. 
+ :
+ : @param $node the node which document's name should be returned
 :)
 declare function app:getDocName($node as node()){
-let $name := functx:substring-after-last(document-uri(root($node)), '/')
+    let $name := functx:substring-after-last(document-uri(root($node)), '/')
     return $name
 };
 
 (:~
- : href to document.
- :)
+ : returns a string which contains a link to show.html and a document's name
+ :
+ : @param $node the node from which the the document's will be derived.
+:)
 declare function app:hrefToDoc($node as node()){
-let $name := functx:substring-after-last($node, '/')
-let $href := concat('show.html','?document=', app:getDocName($node))
-    return $href
+    let $name := functx:substring-after-last($node, '/')
+    let $href := concat('show.html','?document=', app:getDocName($node))
+        return $href
 };
 
-
 (:~
- : a fulltext-search function
- :)
- declare function app:ft_search($node as node(), $model as map (*)) {
- if (request:get-parameter("searchexpr", "") !="") then
- let $searchterm as xs:string:= request:get-parameter("searchexpr", "")
- for $hit in collection(concat($config:app-root, '/data/editions/'))//tei:p[ft:query(.,$searchterm)]
-    let $href := app:hrefToDoc($hit)
-    let $score as xs:float := ft:score($hit)
-    order by $score descending
-    return
-    <tr>
-        <td>{$score}</td>
-        <td>{kwic:summarize($hit, <config width="40" link="{$href}" />)}</td>
-        <td>{app:getDocName($hit)}</td>
-    </tr>
+ : a basic full text search returning results in a KWIC-view
+:)
+declare function app:ft_search($node as node(), $model as map (*)) {
+if (request:get-parameter("searchexpr", "") !="") then
+let $searchterm as xs:string:= request:get-parameter("searchexpr", "")
+for $hit in collection(concat($config:app-root, '/data/editions/'))//tei:p[ft:query(.,$searchterm)]
+    	let $href := app:hrefToDoc(root($hit))
+    	let $document := document-uri(root($hit))
+    	let $score as xs:float := ft:score($hit)
+    	order by $score descending
+    	return
+    		<tr>
+        		<td>{$score}</td>
+        		<td>{kwic:summarize($hit, <config width="40" link="{$href}"/>)}</td>
+        		<td>{app:getDocName($hit)}</td>
+    		</tr>
  else
     <div>Nothing to search for</div>
- };
+};
 
 (:~
-: lists all documents which contain persons identiefied in searchkey paramter
-:)
+ : fetches all documents which contain the searched person
+ :)
+ 
+(: 
 declare function app:listPers_hits($node as node(), $model as map(*), $searchkey as xs:string?, $path as xs:string?)
 {
-    for $hit in collection(concat($config:app-root, '/data/editions/'))//tei:TEI[.//tei:persName[@key=$searchkey] |.//tei:rs[@ref=concat("#",$searchkey)] |.//tei:rs[@key=contains(./@key,$searchkey)]] 
+    for $hit in collection(concat($config:app-root, '/data/editions/'))//tei:TEI[.//tei:persName[@key=$searchkey] |.//tei:rs[@ref=concat("#",$searchkey)] |.//tei:rs[@key=contains(./@key,$searchkey)]]
+    let $doc := document-uri(root($hit)) 
     return
     <li><a href="{app:hrefToDoc($hit)}">{app:getDocName($hit)}</a></li>   
  };
+:)
+declare function app:listPers_hits($node as node(), $model as map(*), $searchkey as xs:string?, $path as xs:string?)
+{
+    for $hit in collection(concat($config:app-root, '/data/editions/'))//tei:TEI[.//tei:persName[@key=$searchkey] |.//tei:rs[@ref=concat("#",$searchkey)] |.//tei:rs[@key=contains(./@key,$searchkey)]]
+    let $doc := document-uri(root($hit)) 
+    return
+    <li>
+        <a href="{app:hrefToDoc($hit)}">{app:getDocName($hit)}</a>
+    </li> 
+ };
  
- (:~
- : creates a basic index of persons derived from the document stored in '/data/indieces/listPers.xml'
+(:~
+ : creates a basic person-index derived from the  '/data/indices/listperson.xml'
  :)
 declare function app:listPers($node as node(), $model as map(*)) {
     let $hitHtml := "hits.html?searchkey="
-    for $person in doc(concat($config:app-root, '/data/indices/listPers.xml'))//tei:listPerson/tei:person
+    for $person in doc(concat($config:app-root, '/data/indices/listperson.xml'))//tei:listPerson/tei:person
         return
-        <li><a href="{concat($hitHtml,data($person/@xml:id))}">{$person/tei:persName}</a></li>
+        <li>
+            <a href="{concat($hitHtml,data($person/@xml:id))}">{$person/tei:persName}</a>
+        </li>
 };
 
 (:~
@@ -106,12 +109,11 @@ declare function app:listPers($node as node(), $model as map(*)) {
 declare function app:toc($node as node(), $model as map(*)) {
     for $doc in collection(concat($config:app-root, '/data/editions/'))//tei:TEI
         return
-        <li><a href="{concat(replace(concat($config:app-root, '/pages/'), '/db/', '/exist/'),app:hrefToDoc($doc))}">{app:getDocName($doc)}</a></li>   
+        <li>
+            <a href="{app:hrefToDoc($doc)}">{app:getDocName($doc)}</a>
+        </li>   
 };
 
-(:~
- : perfoms an XSLT transformation
- :)
 declare function app:XMLtoHTML ($node as node(), $model as map (*), $query as xs:string?) {
 let $ref := xs:string(request:get-parameter("document", ""))
 let $xml := doc(replace(concat($config:app-root,"/data/editions/",$ref), '/exist/', '/db/'))
@@ -125,6 +127,7 @@ let $params :=
        <param name="{$p}"  value="{$val}"/>
    }
 </parameters>
+
 return 
     transform:transform($xml, $xsl, $params)
 };

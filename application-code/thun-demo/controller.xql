@@ -14,13 +14,7 @@ if ($exist:path eq '') then
 else if ($exist:path eq "/") then
     (: forward root path to index.xql :)
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
-        <redirect url="index.html"/>
-    </dispatch>
-
-else if (contains($exist:path,"$app-root-href")) then
-    (: forward root path to index.xql :)
-    <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
-        <redirect url="/exist/apps/{$exist:controller}{substring-after($exist:path, "$app-root-href")}"/>
+        <redirect url="pages/index.html"/>
     </dispatch>
     
 else if (ends-with($exist:resource, ".html")) then
@@ -42,13 +36,14 @@ else if (contains($exist:path, "/$shared/")) then
         </forward>
     </dispatch>
 
-(: Resource paths starting with $app-root are loaded from the applicatio's resource collection :)
+(: Resource paths starting with $app-root are loaded from the application's root collection :)
 else if (contains($exist:path,"$app-root")) then
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
         <forward url="{$exist:controller}/{substring-after($exist:path, '$app-root/')}">
             <set-header name="Cache-Control" value="no"/>
         </forward>
     </dispatch>
+
 else
     (: everything else is passed through :)
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">

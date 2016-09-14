@@ -27,3 +27,6 @@ footer{
     width:100%;
     margin-top:10px;
 }
+footer .poweredby { float: right; margin: 33px 10px 0 0;}
+footer .poweredby img { width: 120px; }
+

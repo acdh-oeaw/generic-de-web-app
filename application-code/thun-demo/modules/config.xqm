@@ -64,6 +64,10 @@ declare %templates:wrap function config:app-title($node as node(), $model as map
     $config:expath-descriptor/expath:title/text()
 };
 
+declare %templates:wrap function config:app-description($node as node(), $model as map(*)) as text() {
+    $config:repo-descriptor/repo:description/text()
+};
+
 declare function config:app-meta($node as node(), $model as map(*)) as element()* {
     <meta xmlns="http://www.w3.org/1999/xhtml" name="description" content="{$config:repo-descriptor/repo:description/text()}"/>,
     for $author in $config:repo-descriptor/repo:author

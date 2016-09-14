@@ -5,7 +5,7 @@ declare namespace repo="http://exist-db.org/xquery/repo";
 
 import module namespace config="http://www.digital-archiv.at/ns/thun-demo/config" at "modules/config.xqm";
 
-let $target-base-default := "C:/Users/pandorfer/ownCloud/GIT/Redmine/generic-de-web-app/application-code"
+let $target-base-default := "C:\Users\pandorfer\ownCloud\GIT\Redmine\generic-de-web-app\application-code"
 let $app-name := doc(concat($config:app-root, "/repo.xml"))//repo:target/text()
 return 
 

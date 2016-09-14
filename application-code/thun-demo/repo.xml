@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <meta xmlns="http://exist-db.org/xquery/repo">
-    <description>Thun-Demo</description>
+    <description>Thun Demo App is a lightweight prototype of a highly generic framework to publish digital editions like those of the Correspondence of Loe Thun von Hohenstein.</description>
     <author/>
     <website/>
     <status>alpha</status>
@@ -11,5 +11,5 @@
     <prepare>pre-install.xql</prepare>
     <finish/>
     <permissions user="admin" group="dba" mode="rw-rw-r--"/>
-    <deployed>2016-08-22T10:15:47.578+02:00</deployed>
+    <deployed>2016-09-12T15:37:36.516+02:00</deployed>
 </meta>

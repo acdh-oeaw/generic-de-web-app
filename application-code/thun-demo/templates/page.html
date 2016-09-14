@@ -9,10 +9,6 @@
         <link rel="stylesheet" type="text/css" href="$app-root/resources/css/style.css"/>
         <script type="text/javascript" src="$app-root/resources/js/jquery/jquery-2.2.1.min.js"/>
         <script type="text/javascript" src="$app-root/resources/js/bootstrap-3.0.3.min.js"/>
-        <!--scroll to top start-->
-            <link rel="stylesheet" href="$app-root/resources/js/scroll-to-top/css/ap-scroll-top.min.css"/>
-            <script src="$app-root/resources/js/scroll-to-top/js/ap-scroll-top.min.js"/>
-        <!--scroll to top end -->
     </head>
     <body id="body">
         <nav class="navbar navbar-default" role="navigation">
@@ -23,7 +19,7 @@
                     <span class="icon-bar"/>
                     <span class="icon-bar"/>
                 </button>
-                <a data-template="config:app-title" class="navbar-brand" href="$app-root-href/index.html">App Title</a>
+                <a data-template="config:app-title" class="navbar-brand" href="./index.html">App Title</a>
             </div>
             <div class="navbar-collapse collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav">
@@ -31,20 +27,31 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="$app-root-href/index.html">Home</a>
+                                <a href="index.html">Home</a>
                             </li>
                             <li>
-                                <a href="$app-root-href/pages/toc.html">Table of Content</a>
+                                <a href="toc.html">Table of Content</a>
                             </li>
                             <li>
-                                <a href="$app-root-href/pages/persons.html">Persons</a>
-                            </li>
-                            <li>
-                                <a href="$app-root-href/pages/ft_search.html">Fulltext Search</a>
-                            </li>
+                                <a href="persons.html">Persons</a>
+                            </li><!--<li>
+                                <a href="ft_search.html">Fulltext Search</a>
+                            </li>-->
                         </ul>
                     </li>
                 </ul>
+                <div class="pull-right">
+                    <form method="get" action="ft_search.html" class="navbar-form" id="pageform">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="searchexpr"/>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true" title="fulltext search over all documents"/>
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </nav>
         <section class="main-content">
@@ -55,34 +62,21 @@
                 <div class="row text-center">
                     <div class="col-sm-4">
                         <a href="https://acdh.oeaw.ac.at/acdh/" class="navlink" target="_blank">
-                            <img src="$app-root/resources/img/ACDH_kurz_Weiss.png" alt="ACDH" width="30%"/>
+                            <img src="../resources/img/ACDH_kurz_Weiss.png" alt="ACDH" width="30%"/>
                         </a>
                     </div>
                     <div class="col-sm-4">
-                        <a href="https://github.com/" class="navlink" target="_blank">
-                            <img src="$app-root/resources/img/GitHub-Mark-Light-64px.png" alt="github" width="17%"/>
+                        <a href="https://github.com/csae8092/generic-de-web-app" class="navlink" target="_blank">
+                            <img src="../resources/img/GitHub-Mark-Light-64px.png" alt="github" width="17%"/>
                         </a>
                     </div>
                     <div class="col-sm-4">
                         <a href="http://exist-db.org/" class="navlink" target="_blank">
-                            <img src="$app-root/resources/img/existdb.png" alt="eXist-db" width="30%"/>
+                            <img src="../resources/img/existdb.png" alt="eXist-db" width="30%"/>
                         </a>
                     </div>
                 </div>
             </div>
         </footer>
-        <!-- scroll-up-bottom -->
-            <script type="text/javascript">
-               // http://www.jqueryscript.net/animation/jQuery-Plugin-For-Fixed-Positioned-Scroll-To-Top-Button-ap-scroll-top.html
-               // Setup plugin with default settings
-               $(document).ready(function() {
-                   $.apScrollTop({
-                       'onInit': function(evt) {
-                           console.log('apScrollTop: init');
-                       }
-                   });
-               });
-            </script>
-        <!-- scroll-up-bottom end -->
     </body>
 </html>
