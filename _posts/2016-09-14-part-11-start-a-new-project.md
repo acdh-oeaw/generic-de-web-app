@@ -37,7 +37,7 @@ Having renamed everything, removed old data files and replaced the application's
 
 Either if you are developing an application or if you are e.g. working on (XML/TEI) documents it is usually a good thing save your files in some kind of version control system (e.g. GIT). This means that when you working with eXist-db you somehow need to get your data, your files, your application's code base OUT of eXist-db (or to be more precise of eXist-db's database) and on your local hard drive. eXide provides therefore a **Synchronize** function under **Application/Synchronize**. When you click on this, a new window opens where you have to fill in a **Target Directory** in which the documents of your application should be written. 
 
-![image alt text]({{ site.baseurl }}/images/part-11/image_2.jpg)
+![image alt text]({{ site.baseurl }}/images/part-11/image_3.jpg)
 
 When you try this out you will notice, that not all  documents from the root directory will be written to your hard drive. This becomes a problem if you want to build your application from your local drive because besides other files, the **build.xml** is missing. To fix this, you can crate a new document in the application's root directory and copy the following code into it. 
 **sync.xql**
@@ -71,4 +71,4 @@ try{
 Adapt then the value of the variable `$target-base-default` to your needs and run **Eval** (be sure you are logged in) and ideally all files (if you run the script the first time, otherwise only modified files) will be written into the `$target-base-default` directory.
 After you synced all documents to your local hard drive, you can open a comand line, browse into the directory which holds your application's code an run [ant](http://ant.apache.org/) to build your application. But be aware that you have to have ant installed for this. 
 
-[Here](({{ site.baseurl }}/downloads/part-10/glaser-text-app-0.1.xar) is the code of the new app.
+[Here]({{ site.baseurl }}/downloads/part-10/glaser-text-app-0.1.xar) is the code of the new app.
