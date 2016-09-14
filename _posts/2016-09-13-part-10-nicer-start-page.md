@@ -14,6 +14,8 @@ As promised in the [previous part]({{ site.baseurl }}{% post_url 2016-08-18-part
 * present this data in a hopefully slightly more appealing manner than it is done now,
 * and we will add some footer which present some other useful informations and references.
 
+And as always, you can download the current code of the application [here]({{ site.baseurl }}/downloads/part-9/thun-demo-0.1).
+
 # Playing with [Bootstrap](http://getbootstrap.com/)
 
 To improve the look of our application's start page we are going to implement some more element's and features provided by bootstrap. 
@@ -219,7 +221,9 @@ Our start page **pages/index.html** should now provide this information:
 
 Since one can't use any (HTML)tags in the `<description>` element of **repo.xml** one would have to remove the `<p style="text-align:center" data-template="config:app-description"/>` element from **pages/index.html** and write some more elaborate description directly into the **pages/index.html**.
 
-# Add a button and a footer
+# More improvements
+
+## Add a button, ... 
 
 To improve the application's usability and spare our users from at least one click to get to the core of our application - the table of content exposing the edition's data - let's add a button to **pages/index.html** referencing **pages/toc.html**.
 
@@ -238,6 +242,8 @@ To improve the application's usability and spare our users from at least one cli
 ```
 
 ![image alt text]({{ site.baseurl }}/images/part-10/image_5.jpg)
+
+## ...a footer, ...
 
 What's left to do is now to add a sticky footer whereas sticky means that the footer will always be at the bottom of the page, no matter how much (of little) content there is on the page. Since we want this footer to run through all our pages, we will add the necessary markup into our base template **templates/pages.html**. Since such a footer is possible not the most essential part of the application and more a matter of design and personal taste, I won't elaborate on the following code listing. Just be aware of the new resources like logos, images, custom css document which are referenced which means of course that those have to be stored in the according collections in our application's **resources collection**.
 
@@ -318,7 +324,7 @@ The modified templates/page.html could look as follows:
 </html>
 ```
 
-## resources/css/style.css
+### resources/css/style.css
 
 To turn the footer into a sticky footer, we have to add some css-rules. Credits and thanks to [Ksenia Zaytseva](http://www.oeaw.ac.at/acdh/en/zaytseva) who wrote most parts of it. 
 
@@ -360,7 +366,57 @@ Now our humble application looks as follows:
 
 ![image alt text]({{ site.baseurl }}/images/part-10/image_6.jpg)
 
+## ... and a search field.
+
+While we are already working on improving the application's usability we can implement another feature to spare our users from additional clicking. If users want to conduct a full text search they have to navigate through the main nav bar to '*pages/ft_search.html** first before they are enabled to enter any search expression. To ease this process, let's add a search field to our main nav bar, so it will show up in all the pages of our web app. To acchive this, we simply have to modify the nav barin our base template **templates/page.html** like in the code snippet below:
+
+```html
+<div class="navbar-collapse collapse" id="navbar-collapse-1">
+    <ul class="nav navbar-nav">
+        <li class="dropdown" id="about">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="toc.html">Table of Content</a>
+                </li>
+                <li>
+                    <a href="persons.html">Persons</a>
+                </li>
+                <li>
+                    <a href="ft_search.html">Fulltext Search</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="pull-right">
+        <form method="get" action="ft_search.html" class="navbar-form" id="pageform">
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="searchexpr"/>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true" title="fulltext search over all documents"></span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+```
+
+This will render as a search field in the top right corner as depicted in the following screenshot:
+
+![image alt text]({{ site.baseurl }}/images/part-10/image_7.jpg)
+
+Having a general search field, we basically don't need to link to ft_search.html any more in the nav bar since we would then provide to our users two ways to achieve the same things and this is something I personally always find a bit annoying. Therefore I will remove the link to this page from the nav bar. Alternatively we could think about implementing something like an **advanced search** where users can customize e.g. in which parts or elements of the XML/TEI documents they want to search for. But since such a feature very much depends on the actual data, it is not an easy thing to include such a feature in a web applications like ours which tries to be as generic as possible. 
+
 # Conclusion and outlook
 
 Now we are in possession of an eXist-db application which can easily be packed, downloaded, redeployed and modified and therefore serve as a very solid starting point for building a small to medium sized framework for publishing a digital edition. 
 With this 10th tutorial we meet all requirements described in the [first part]({{ site.baseurl }}{% post_url 2016-08-10-part-1-definition-and-requirements %}) of this series of HowTos. In the future, we will add more posts sharing our ways on how to improve the current application. But since most of those improvements will depend very much from the actual data, we restrain our selfs from implementing those functionalities/features into the current application.
+
+## Get the app
+
+In case you were following this tutorials only theoretically and you didn't wrote any line of code, you can download the packed application [here]({{ site.baseurl }}/downloads/part-10/thun-demo-0.1).
