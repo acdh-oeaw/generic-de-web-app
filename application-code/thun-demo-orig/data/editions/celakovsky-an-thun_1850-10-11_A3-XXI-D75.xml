@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?oxygen RNGSchema="http://thun-korrespondenz.uibk.ac.at/svn/thun/thun-korrespondenz/schema/thun-schema.rnc" type="compact"?> -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="http://digital-archiv.at:8081/exist/rest/db/files/thun/xml/" xml:id="celakovsky-an-thun_1850-10-11_A3-XXI-D75.xml">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>
+                    <persName key="celakovsky-frantisek-ladislav" role="sender:gelehrter">František Ladislav Čelakovský</persName> an <persName key="thun-hohenstein-leo" role="recipient">Leo
+                        Thun</persName>
+                    <lb/>
+                    <placeName>Prag</placeName>, <date when="1850-10-11">11.
+                        Oktober 1850</date>
+                </title>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Staatliches Gebietsarchiv Leitmeritz, Zweigstelle
+                            Tetschen-Bodenbach</institution>
+                        <repository>Familienarchiv Thun-Hohenstein, Linie Tetschen, Nachlass Leo
+                            Thun</repository>
+                        <idno>A3 XXI D75</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <p>František Čelakovský antwortet auf die an ihn ergangene Anweisung der
+                            Prager Statthalterei, wonach er einige Worte in dem von ihm verfassten
+                            böhmischen Gymnasiallesebuch ändern solle. Er lehnt insbesondere die
+                            Änderung des Wortes „Šváb“ (Schwaben) ab, da es für ihn weder einen
+                            stichhaltigen Grund noch Bedenken gegen die Verwendung dieses
+                            historischen Ausdrucks gebe. Er macht Leo Thun vielmehr darauf
+                            aufmerksam, dass ein Umdrucken der Bücher aus seiner Sicht mehr Schaden
+                            anrichte als nütze: Die Hälfte der Auflage sei bereits verkauft und
+                            zudem erregte bereits der Verkaufsstop große Aufmerksamkeit. Eine
+                            zusätzliche Änderung würde wohl nur zur Folge haben, dass die Presse
+                            noch mehr Kritik an dem Buch übe. Čelakovský spricht sich daher dafür
+                            aus, entweder den Begriff beizubehalten oder das gesamte Kapitel, in dem
+                            der Ausdruck verwendet wird, in der folgenden Auflage stillschweigend zu
+                            entfernen.</p>
+                    </msContents>
+                    <physDesc>
+                        <p>Das eh. Konzept zu diesem Brief findet sich in: Tschechisches
+                            Literaturarchiv [Literární archiv Památníku národního písemnictví],
+                            Nachlass Čelakovšký 250/42.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc docStatus="approved"/>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript">
+                <index>
+                    <term>Schulbücher</term>
+                    <term>Gymnasien</term>
+                    <term>Nationalitätenfrage</term>
+                </index>
+                <p>Hochgeborner Herr Graf!<lb/>Hochgebietender Herr Staatsminister!</p>
+                <p>Durch die k.k. Statthalterei ist mir am gestrigen Tage die Weisung zugekommen, in
+                    Bezug auf die vorzunehmenden Correcturen in dem 1. Theile des
+                        Gymnasiallesebuchs.<note xml:id="note_1">Damit ist wohl das von <persName key="celakovsky-frantisek-ladislav">Čelakovský</persName> herausgegebene
+                        Lesebuch „Všeslovanské počáteční čtení“ (Prag 1850) gemeint.</note>Mit
+                    großem Befremden sehe ich neben den drei mir bereits bekannt gewordenen Stellen
+                    noch eine vierte angemerkt, wo blos die Ausdrücke Šváb, švábský abzuändern
+                    seien. Ich muß es Euer Excellenz offen gestehen, daß ich mich vergebens nach
+                    einem stichhaltigen Grunde zu dieser Änderung umsehe, auch nicht einsehe,
+                    welches Bedenken gegen den Gebrauch des Namens in der Reiseskizze erhoben werden
+                    könnte. An ein Schimpfwort ist doch auch nicht im Entferntesten zu denken, weil
+                    dann der Name überhaupt und allgemein dafür gelten müßte, was doch nicht der
+                    Fall ist. Daß die ersten deutschen Ansiedler nach Gallizien
+                        [<region>Galizien</region>] aus <region>Schwaben</region> kamen, ist ja
+                    historisch, weshalb sie sowohl Pohlen [sic!] als Russen kaum anders als mit
+                    ihrem eigenen Namen bezeichnen konnten und es noch heutiges Tags thun. Zudem ist
+                    der Aufsatz von dem ehrenhaften <persName key="holowacky-jakob">Holowacky</persName> geschrieben, im Časopis Museum<note xml:id="note_2">
+                        „Časopis českého museum“ ist der Name der Zeitschrift des böhmischen
+                        Landesmuseums.</note> 1842 pag. 43 unter <persName key="safarik-pavel-josef">Šafařiks</persName> Redaction erschienen – Männer, denen doch nicht
+                    zuzumuthen ist, daß sie an läppisch verunglimpfenden Ausdrücken Gefallen fänden.
+                    Es scheint als habe, wer immer Euer Excellenz darüber referirte, das Wort
+                    übertrieben ängstlich aufgefaßt, und ich würde gegen das hohe Ministerium selbst
+                    verstoßen, wenn ich nicht darauf aufmerksam machen sollte, das Umdrucken müsse
+                    sich eher schädlich als nützlich erweisen. Mehr als die halbe Auflage des ersten
+                    Theils befindet sich bereits in den Händen des Publikums, und die Aufmerksamkeit
+                    ward ohnehin mehr als nöthig rege, als die Sistirung des Verkaufs anbefohlen
+                    wurde. Die Tagespresse, die bereits ihre hämischen Bemerkungen daran knüpfte,
+                    würde nach angestellter Vergleichung der Exemplare noch mehr Veranlassung dazu
+                    finden. Sollte dennoch eine mögliche Zweideutigkeit in dem Namen Šváb liegen,
+                    was ich jedoch hier nicht zugestehen kann, so wäre meiner Ansicht nach besser,
+                    bei der zweiten Auflage, die ohnedies nicht lange wird auf sich warten lassen,
+                    den ganzen Artikel stillschweigend wegzulassen.<lb/>Genehmigen Euer Excellenz
+                    den Ausdruck meiner tiefsten Ehrfurcht entgegenzunehmen, mit der ich
+                    verharre</p>
+                <p>Euer Excellenz </p>
+                <p>gehorsamster<lb/>F. L. Čelakovský</p>
+                <p>Prag, 11. Oktober 1850</p>
+            </div>
+        </body>
+    </text>
+</TEI>

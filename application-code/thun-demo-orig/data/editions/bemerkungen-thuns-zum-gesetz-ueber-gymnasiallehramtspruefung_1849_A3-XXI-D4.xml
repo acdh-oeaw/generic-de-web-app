@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?oxygen RNGSchema="http://thun-korrespondenz.uibk.ac.at/svn/thun/thun-korrespondenz/schema/thun-schema.rnc" type="compact"?> -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="http://digital-archiv.at:8081/exist/rest/db/files/thun/xml/" xml:id="bemerkungen-thuns-zum-gesetz-ueber-gymnasiallehramtspruefung_1849_A3-XXI-D4.xml">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Eigenhändige Bemerkungen Thuns zum provisorischen Gesetz über die
+                    Gymnasiallehramtsprüfung, <date when="1849">1849</date>
+                </title>
+                <author key="thun-hohenstein-leo">Leo Thun</author>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>
+                    <msDesc>
+                        <msIdentifier>
+                            <institution>Staatliches Gebietsarchiv Leitmeritz, Zweigstelle Tetschen-Bodenbach</institution>
+                            <repository>Familienarchiv Thun-Hohenstein, Linie Tetschen, Nachlass Leo Thun</repository>
+                            <idno>A3 XXI D4</idno>
+                        </msIdentifier>
+                        <msContents>
+                            <p>Eigenhändige schriftliche Bemerkungen von Leo Thun zum provisorischen
+                                Gesetz über die Prüfung der Kandidaten des Gymnasiallehramtes vom
+                                30. August 1849. Das Gesetz behandelt insbesondere den Unterricht in
+                                den lebenden Sprachen. Thun ist der Ansicht, dass die Lehrer zu
+                                einem vergleichenden Sprachstudium angeregt werden sollten. Seine
+                                Empfehlung geht daher dahin, zumindest eine klassische Sprache mit
+                                einer Landessprache zu kombinieren. Gleichzeitig soll die
+                                Lehrbefähigung für eine Landessprache an die Befähigung für die
+                                deutsche und die beiden klassischen Sprachen geknüpft werden.</p>
+                        </msContents>
+                        <physDesc>
+                            <p>Beilagen: Provisorisches Gesetz über die Prüfung der Kandidaten des
+                                Gymnasiallehramtes vom 30. August 1849 in gedruckter Version mit
+                                Anmerkungen Thuns sowie die Übergangsbestimmungen ebenfalls in
+                                gedruckter Version.</p>
+                        </physDesc>
+                    </msDesc>
+                </p>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc docStatus="approved"/>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript">
+                <index>
+                    <term>Gymnasien</term>
+                    <term>Lehramtsprüfungen</term>
+                    <term>Sprachenfrage</term>
+                </index>
+                <p>Soll der Unterricht in den lebenden Sprachen, d. i. der deutschen und der übrigen
+                    Landessprachen (jene oder diese mögen als Unterrichtssprache oder als 2.
+                    Landessprache gelehrt werden) gedeihen und für die Gesammtbildung der Jugend
+                    förderlich werden, so ist es unerläßlich, daß in Beziehung auf Grammatik – wohl
+                    auch Syntax – vergleichend vorgegangen werde, nämlich sowohl gegenüber der
+                    lateinischen und griechischen, als die deutsche und die 2 Landessprache unter
+                    einander vergleichend. Insbesondere, daß die Lehrer zu dem vergleichenden
+                    Sprachstudium genöthiget werden, daß die Bedingung, die allein die Herstellung
+                    zweckmäßiger Lehrbücher fördere und es möglich machen kann die Zahl der Lehrer,
+                    die in den unteren Klassen beschäftiget werden, zu vermindern.<lb/>Deshalb wäre
+                    wünschenswerth:<lb/>1. Kombination der vollen Befähigung für eine klassische
+                    Sprache und einer Landessprache, nebst Befähigung für das Untergymnasium für die
+                    2. klassische und 2. Landessprache. 2. Jedenfalls die volle Befähigung für nicht
+                    deutsche Landessprache zu knüpfen an Befähigung für Untergymnasium in der
+                    deutschen und beiden klassischen Sprachen.<lb/>Daher Vorschlag:<lb/>Deutsche
+                    Sprache und andere Landessprache in das philosophische Hauptgebieth und zu
+                    verlangen:<lb/>1. Wer sich nur für Sprache qualifizirt, muß die volle Befähigung
+                    für 2 Sprachen erwerben (es ist aber auf die volle Qualifikation aus einer
+                    Sprache und Geographie und Geschichte oder Mathematik zulässig.<lb/>2.
+                    Jedenfalls ist aber die volle Qualifikation aus einer Sprache unzertrennlich von
+                    Qualifikation fürs Untergymnasium aus mindestens noch zwei oder 3 Sprachen,
+                    nämlich: wer Lateinisch zum Hauptgegenstand wählt, dazu für Untergymnasium
+                    Griechisch und Deutsch und Unterrichtssprache, wenn sie eine andere als die
+                    Deutsche ist<lb/>wer Griechisch zum Hauptgegenstande wählt: dazu für
+                    Untergymnasium Lateinisch und Deutsch und Unterrichtssprache<lb/>wer Deutsch zum
+                    Hauptgegenstande wählt, dazu für Untergymnasium Lateinisch und Griechisch – oder
+                    eines von beiden und 2. Landessprache<lb/>wer eine andere Landessprache wählt,
+                    dazu für Untergymnasium Lateinisch oder Griechisch und Deutsch<lb/>(freilich
+                    wäre andererseits der Unterricht in der Literatur der Landessprache, auch
+                    allgemeine Geschichte oder wenigstens österreichische sehr zu wünschen)</p>
+            </div>
+        </body>
+    </text>
+</TEI>

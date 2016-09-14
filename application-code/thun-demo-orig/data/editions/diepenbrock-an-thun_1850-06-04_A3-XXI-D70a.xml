@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?oxygen RNGSchema="http://thun-korrespondenz.uibk.ac.at/svn/thun/thun-korrespondenz/schema/thun-schema.rnc" type="compact"?> -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="http://digital-archiv.at:8081/exist/rest/db/files/thun/xml/" xml:id="diepenbrock-an-thun_1850-06-04_A3-XXI-D70a.xml">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>
+                    <persName key="diepenbrock-melchior" role="sender:kleriker">Melchior
+                        Diepenbrock</persName> an <persName key="thun-hohenstein-leo" role="recipient">Leo Thun</persName>
+                    <lb/>
+                    <placeName>Breslau</placeName>,
+                        <date when="1850-06-04">4. Juni 1850</date>
+                </title>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Staatliches Gebietsarchiv Leitmeritz, Zweigstelle
+                            Tetschen-Bodenbach</institution>
+                        <repository>Familienarchiv Thun-Hohenstein, Linie Tetschen, Nachlass Leo
+                            Thun</repository>
+                        <idno>A3 XXI D70</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <p>Melchior Diepenbrock dankt für das Vertrauen, das Leo Thun ihm bei der
+                            Suche nach fähigen Kandidaten für Lehrerstellen entgegengebracht hatte
+                            und ist vollkommen damit einverstanden, dass der Minister noch weitere
+                            Erkundigungen einholen will. Diepenbrock kann diesen Schritt umso mehr
+                            verstehen, als die Auswahl der richtigen Lehrpersonen, eine wesentliche
+                            Vorrausssetzung für den Aufschwung des Unterrichtswesens in Österreich
+                            bilde. Im zweiten Teil des Briefs bedankt sich Diepenbrock für die Hilfe
+                            für Albert Koch. Thun hatte sich nämlich bereit erklärt, Koch bei der
+                            Suche nach einem geeigneten Ort für die Ausstellung des von Koch
+                            entdeckten Skeletts einer urzeitlichen Wasserschlange behilflich zu
+                            sein. Diepenbrock verspricht sich von der Ausstellung nicht nur
+                            wissenschaftliche Erkenntnisse, sondern vor allem biete das Skelett auch
+                            einen Beweis für den mosaischen Schöpfungsbericht und könne daher auch
+                            ungläubige Betrachter zum Glauben bekehren. Zuletzt empfiehlt
+                            Diepenbrock nochmals Franz Schmölders und Karl Grysar.</p>
+                    </msContents>
+                    <physDesc>
+                        <p>Unter dieser Signatur sind noch zwei weitere Briefe Diepenbrocks an Thun
+                                abgelegt:<lb/>
+                            <ref target="thun/thun-korrespondenz/tetschen/diepenbrock-an-thun_1850-05-28_A3-XXI-D70.xml">Melchior Diepenbrock an Leo Thun. Breslau, 28. Mai
+                                1850</ref>.<lb/>
+                            <ref target="thun/thun-korrespondenz/tetschen/diepenbrock-an-thun_1850-08-27_A3-XXI-D70b.xml">Melchior Diepenbrock an Leo Thun. Johannesberg bei Jauernig, 27.
+                                August 1850</ref>.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc docStatus="approved"/>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript">
+                <index>
+                    <term>Personalfragen</term>
+                    <term>Personalvermittlung</term>
+                    <term>Gymnasien</term>
+                </index>
+                <p>Breslau, den 4. Juni 1850</p>
+                <p>Eurer Excellenz</p>
+                <p>geehrtes Schreiben vom 1. dieses Monats will ich vor allem mit der aufrichtigsten
+                    Versicherung beantworten, daß es mir nicht nur nicht unangenehm, sondern
+                    vielmehr im allerhöchsten Grade erwünscht ist, wenn Hochdieselben über die
+                    Personalvorschläge, welche Ihr Vertrauen mir zu machen gestattet, auch noch
+                    anderweitige Erkundigungen einziehen. Die hohe Verantwortlichkeit Ihrer Stellung
+                    fordert dies, und auch meine individuelle Verantwortlichkeit wird dadurch
+                    erleichtert, was mir um so beruhigender, da ich doch nur wenige der genannten
+                    Personen selbst kenne und mich also auch auf fremdes Urtheil verlassen muß.
+                    Herrn Geheimer Rat <persName key="brueggemann-theodor">Brüggemanns</persName>
+                    frühere Äußerung, auf welche Eure Excellenz zurückdeuten, scheint mir auch durch
+                    etwas anderes veranlaßt, als durch diese sich von selbst verstehende, durch sich
+                    selbst gerechtfertigte Sorgfalt für möglichst zuverlässige, also möglichst
+                    vielseitige Renseignements. Ich meines Theils bitte Eure Excellenz hiermit
+                    förmlich, neben den von mir gegebenen, noch alle sonst erreichbaren
+                    Erkundigungen einziehen und meine Daten nur als unmaßgebliche Fingerzeige
+                    ansehen zu wollen. Ich begreife vollkommen die großen Schwierigkeiten, welche
+                    Eurer Excellenz auf dem Wege zur Regeneration des Studienwesens überall im Wege
+                    liegen, und wievielerlei Rücksichten da nothwendig werden, um nur das Mögliche
+                    zu erreichen und nicht am Unmöglichen zu scheitern.<lb/>Herr <persName key="koch-albert-carl">Dr. Koch</persName> war über die gnädige ihn und
+                    seinen antediluvianischen Pflegling Hydrarchus Zeuglodon betreffende Zusicherung
+                    Eurer Excellenz sehr erfreut und bittet mich, seinen respectvollsten Dank dafür
+                    auszudrücken. Nach Beendigung des Wollmarktes, mit Ende dieses Monats, wünscht
+                    er allerdings, seine Wanderung nach <placeName>Wien</placeName> antreten zu
+                    können. Daß der Anblick dieses Riesenskeletts aus einer vorfluthlichen Thierwelt
+                    geeignet ist, ernste Gedanken auch in den ungläubigsten Beschauern
+                    hervorzubringen, zumal Herrn <persName key="koch-albert-carl">Dr.
+                        Kochs</persName> fachkundige Erklärungen auf einer entschieden gläubigen
+                    Harmonie mit dem mosaischen Schöpfungsberichte beruhen, davon hat sein
+                    hie[si]ger Aufenthalt viele sehr auffallende Beweise geliefert, und schon aus
+                    diesem Grunde möchte ich wünschen, daß er wie ein anderer Prophet Jonas aus dem
+                    Bauche seines versteinerten Meerungeheuers auch den Wiener Niniviten seine in
+                    fossiler Lapidarschrift geschriebene Predigt von den Wundern Gottes vorhalte.
+                    Ich erlaube mir daher, die baldige Erfüllung seines Wunsches hinsichtlich der
+                    Einräumung eines passenden Locales Eurer Excellenz nochmals ergebenst zu
+                    empfehlen. Hier hatte ihm <persName key="henckel-von-donnersmark-carl-lazarus">Graf Henckel-Donnersmark</persName> seine geräumige Reitbahn eingeräumt;
+                    sollte nicht in <placeName>Wien</placeName> irgendein grosser Herr ein ähnliches
+                    Local für kurze Zeit zu einem Tempel der Wissenschaft zu weihen sich bestimmen
+                    lassen?<lb/>Wenn mein Hirtenbrief nach Ihrer freundlichen Versicherung einigen
+                    guten Eindruck gemacht hat, so habe ich Eurer Excellenz zunächst dafür zu
+                    danken, da Ihr werthes Vertrauen mich zunächst zu dessen rechtzeitiger Erlassung
+                    veranlaßt hat.<lb/>Über den <persName key="grysar-karl">Prof. Grysar</persName>
+                    in <placeName key="koeln">Cöln</placeName> habe ich soeben den <persName key="schmoelders-franz-august">Prof. Dr. Schmölders</persName>, der ihn
+                    genau kennt, befragt und von ihm erfahren, daß er ein ganz ausgezeichneter
+                    Latinist, ein sehr wackerer Mann, tüchtiger Pädagog, jedoch etwas eigensinnig
+                    und wenn auch nicht gerade sehr eifrig und prononcirt kirchlich, doch auch gewiß
+                    kein schlechter Katholik und als Professor jedenfalls sehr empfehlenswürdig
+                    sey.<lb/>Ich erlaube mir hierbei den <persName key="schmoelders-franz-august">Dr. Schmölders</persName> selbst nochmals zu empfehlen, dessen ruhiges,
+                    besonnenes, bescheidenes und durchaus tüchtiges Wesen und einnehmende
+                    Persönlichkeit ihn gewiß zu einer höchst schätzungswerthen Acquisition für
+                        <country key="oesterreich">Österreich</country> machen würde.<lb/>Ich
+                    schließe mit der erneuerten Versicherung ausgezeichnetster Hochachtung.</p>
+                <p>Eurer Excellenz</p>
+                <p>ergebenster Diener<lb/>Melchior Fb.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

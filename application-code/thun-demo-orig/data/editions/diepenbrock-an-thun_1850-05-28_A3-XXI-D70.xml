@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?oxygen RNGSchema="http://thun-korrespondenz.uibk.ac.at/svn/thun/thun-korrespondenz/schema/thun-schema.rnc" type="compact"?> -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="http://digital-archiv.at:8081/exist/rest/db/files/thun/xml/" xml:id="diepenbrock-an-thun_1850-05-28_A3-XXI-D70.xml">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>
+                    <persName key="diepenbrock-melchior" role="sender:kleriker">Melchior
+                        Diepenbrock</persName> an <persName key="thun-hohenstein-leo" role="recipient">Leo Thun</persName>
+                    <lb/>
+                    <placeName>Breslau</placeName>,
+                        <date when="1850-05-28">28. Mai 1850</date>
+                </title>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Staatliches Gebietsarchiv Leitmeritz, Zweigstelle
+                            Tetschen-Bodenbach</institution>
+                        <repository>Familienarchiv Thun-Hohenstein, Linie Tetschen, Nachlass Leo
+                            Thun</repository>
+                        <idno>A3 XXI D70</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <p>Fürstbischof Melchior Diepenbrock sendet Leo Thun Informationen über
+                            mögliche Kandidaten für eine Stelle als Gymnasiallehrer oder Direktor an
+                            österreichischen Schulen. In einem früheren Schreiben hatte Leo Thun
+                            diese Informationen erbeten. Diepenbrock sendet ihm nun ein Verzeichnis
+                            mit fähigen Kandidaten. Der Fürstbischof hatte sich hierzu auch bei
+                            Theodor Brüggemann informiert, um möglichst umfassend Auskunft geben zu
+                            können. Bei den Vorgeschlagenen wurde besondere Rücksicht auf deren
+                            kirchliche Haltung und deren Gesinnung sowie auf deren wissenschaftliche
+                            Leistungen genommen. Diepenbrock hofft, dass die Informationen den
+                            Plänen Thuns förderlich sein werden.<lb/>Die Beilage beinhaltet ein
+                            Verzeichnis Diepenbrocks über mögliche Kandidaten für die Direktorstelle
+                            am Theresianum und an anderen österreichischen Gymnasien sowie
+                            Kandidaten für eine Professur der Philologie.<lb/>Die Hinweise
+                            Diepenbrocks sind mit Bemerkungen Thuns versehen, welche wiederum auf
+                            dem Urteil Heinrich Grauerts beruhen.</p>
+                    </msContents>
+                    <physDesc>
+                        <p>Beilagen:<lb/>
+                            <ref target="#D70_1">Undatiertes Memorandum Bischof
+                                Diepenbrocks über mögliche Kandidaten für Direktorenstellen an
+                                österreichischen Gymnasien mit eigenhändigen Bemerkungen
+                                Thuns</ref>.<lb/>
+                            <ref target="#D70_2">Undatierter Lebenslauf von
+                                Professor Josef Kutzen</ref>.</p>
+                        <p>Unter dieser Signatur sind außerdem zwei weitere Briefe von Diepenbrock
+                                abgelegt:<note xml:id="note_1">Diese Briefe wurden jeweils separat
+                                aufgenommen.</note>
+                            <lb/>
+                            <ref target="thun/thun-korrespondenz/tetschen/diepenbrock-an-thun_1850-06-04_A3-XXI-D70a.xml">Melchior Diepenbrock an Leo Thun, Breslau, 4. Juni
+                                1850</ref>.<lb/>
+                            <ref target="thun/thun-korrespondenz/tetschen/diepenbrock-an-thun_1850-08-27_A3-XXI-D70b.xml">Melchior Diepenbrock an Leo Thun, Johannesberg bei Jauernig, 27.
+                                August 1850</ref>.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc docStatus="approved"/>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript">
+                <index>
+                    <term>Personalfragen</term>
+                    <term>Personalvermittlung</term>
+                    <term>Gymnasien</term>
+                    <term>Philologie</term>
+                    <term>Theresianische Ritterakademie</term>
+                </index>
+                <p>Eurer Excellenz</p>
+                <p>beehre ich mich, in ergebenster Erwiederung des werthen Schreibens vom 2. dieses
+                    Monats, <ref target="#D70_1">anliegend ein Verzeichnis</ref>
+                    <note xml:id="note_2">Siehe die Beilage.</note> einiger tüchtiger Männer für das
+                    Lehrfach zu übersenden, welches ich nach möglichst sorgfältiger Erkundigung
+                    zusammengestellt habe. Ich habe die Vorsicht gebraucht, auch noch das competente
+                    Urtheil des Geheimenraths <persName key="brueggemann-theodor">Dr.
+                        Brüggemann</persName>, der seit einer Reihe von Jahren das höhere
+                    katholische Studienwesen in <country>Preussen</country> leitet, über diese
+                    Männer zu vernehmen und die anderweitigen Vorschläge und Empfehlungen darnach zu
+                    berichtigen; doch stimmte es bei den meisten mit dem Gegebenen überein. Bei
+                    allen diesen Männern ist vorzüglich auch auf ihre kirchliche Gesinnung und
+                    Haltung, nicht minder jedoch auch auf ihre sonstige Tüchtigkeit Rücksicht
+                    genommen.<lb/>Unter den von Eurer Excellenz Bezeichneten konnte ich über
+                        <persName key="becker-jakob">Becker</persName> in
+                        <placeName>Hadamar</placeName>, <persName key="thomat">Thomat</persName> in
+                        <placeName key="muenchen">München</placeName>, <persName key="lichtenstein-karl">Lichtenstein</persName> in
+                        <placeName>Trauchburg</placeName> nichts Näheres erfahren; Dr. Dünzer
+                        [<persName key="duentzer-johann-heinrich">Düntzer</persName>], Bibliothekar
+                    in <placeName key="koeln">Cöln</placeName>, ist wohl als ein sehr
+                    kenntnisreicher Philologe bekannt, allein zur Leitung eines Mustergymnasiums
+                    hält man ihn wegen seiner unbedeutenden Persönlichkeit und großen Schüchternheit
+                    nicht für geeignet.<note xml:id="note_3">Randbemerkung Thuns nicht
+                        lesbar.</note>Auch nicht den Director <persName key="enger-robert">Enger</persName> in <placeName>Ostrowo</placeName>, den seine Kenntnis des
+                    Polnischen für diesen Posten vorzüglich empfohlen hat. <persName key="wentzel-eduard">Wentzel</persName> in <placeName>Glogau</placeName> ist
+                    allerdings ein tüchtiger Mann; allein er ist uns für die wichtige dortige
+                    Anstalt unentbehrlich; und auch an dem wackern <persName key="zastra-julius">Dr.
+                        Zastra</persName> in <placeName key="neisse">Neiße</placeName> würde ich ein
+                    schweres Opfer bringen. <persName key="schraut-johannes">Schraut</persName> in
+                        <placeName key="neuss">Neuß</placeName> bei <placeName key="koeln">Cöln</placeName> wird als ein gelehrter und energischer Mann gerühmt; doch
+                    will man an ihm ein zu ehrgeiziges, zu wenig religiöses Streben wahrgenommen
+                    haben; wenigstens in früherer Zeit.<lb/>Unter allen von mir Genannten bezeichnet
+                    Herr Geheimrath <persName key="brueggemann-theodor">Brüggemann</persName> den
+                        <persName key="stieve-friedrich">Dr. Stieve</persName> in <placeName key="muenster">Münster</placeName> als den bedeutendsten und zur Leitung des
+                        <orgName key="theresianische-ritterakademie">Theresianums</orgName>sowohl
+                    als eines Mustergymnasiums vorzüglich geeigneten, den er mit voller Überzeugung
+                    empfehlen könne.<lb/>
+                    <note xml:id="note_4">Anmerkung Diepenbrocks am unteren
+                        Blattrand: Ich will jedoch das Bedenken nicht unterdrücken, daß ein <hi rend="ul">Westfale, der sein Vaterland nicht verlassen</hi> hat, durch
+                        provinzielle Eigenthümlichkeit in Dialekt etc. leicht auf einer höheren
+                        Stelle, die ihn in vielseitige Berührung bringt, unschuldigen Anstoß erregen
+                        kann.</note>Doch zweifelt er, ob derselbe sein Vaterland werde verlassen
+                    wollen, und setzt hinzu: er hoffe, nein; denn er wisse ihn nicht zu
+                    ersetzen.<lb/>Ich habe nun Eurer Excellenz gewissenhaft mitgetheilt, was mir in
+                    der kurzen, anderweitig sehr in Anspruch genommenen Zeit zu erkundigen möglich
+                    gewesen. Möge es Ihnen und dem lieben theuern <country key="oesterreich">Österreich</country>, auf welches die Blicke aller Katholiken <country key="deutschland">Deutschlands</country> jetzt mit so viel Dank, Spannung
+                    und Theilnahme gerichtet sind, und welchem man so innig eine gründliche religiös
+                    wissenschaftliche Regeneration wünscht und Eurer Excellenz mühe- und
+                    dornenvolles Wirken dafür so freudig anerkennt – möge mein geringes Scherflein
+                    so schönem Ziele fördernd zu gut kommen!<lb/>Genehmigen Hochdieselben die
+                    erneuerte Versicherung der aufrichtigen Verehrung, womit ich zu geharren die
+                    Ehre habe</p>
+                <p>Eurer Excellenz</p>
+                <p>ganz ergebenster Diener<lb/>M. v. Diepenbrock<lb/>Fürstbischof</p>
+                <p>Breslau, den 28. Mai 1850</p>
+                <p>P.S. Möge doch unser geliebter junger <persName key="franz-joseph">Kaiser</persName> vor ähnlichen greulichen Frevelanschlägen bewahrt
+                    bleiben, wie sie unsern edelen König jetzt abermals getroffen und Gottlob! nur
+                    gestreift! Der Seuflohe [sic! richtig <persName key="sefeloge-max">Sefeloge</persName>] soll wirklich der Fürstenmörderverschwörung angehören;
+                    wie sehr ihn auch die democratische Partei für einen Wahnsinnigen auszugeben
+                    sich bemüht. „Es ist System in diesem Wahnsinn“, kann man mit Shakespeare sagen.
+                    Höchste Vorsicht thut gewiß Noth. Um Gottes Schutz wollen wir beten!</p>
+                <div xml:id="D70_1" type="enclosure">
+                    <p>A. Für die Direction des Theresianums oder auch eines
+                        Mustergymnasiums:<lb/>1) <persName key="stieve-friedrich">Stieve</persName>,
+                        Gymnasialdirector in <placeName key="muenster">Münster</placeName> in
+                            <region>Westfalen</region>, als ganz vorzüglich geeignet bezeichnet und
+                        empfohlen, ein Mann von ausgebreitetem Rufe und anerkannter Tüchtigkeit,
+                        zeichnete sich auch in den vorigjährigen Berliner Ministerialconferenzen der
+                        Gymnasiallehrer durch gediegenes Urtheil aus, wie die gedruckten
+                        Verhandlungen beweisen. Bewährte Männer, die ihn näher kennen, rühmen außer
+                        seiner Gelehrsamkeit, pädagogischen Erfahrung und Reife, auch seine
+                        Charakterfestigkeit, gesunde Frömmigkeit und ebenso imposante als
+                        ansprechende Persönlichkeit. Er ist seit einigen Jahren Wittwer und Vater
+                        von 6 Kindern.<lb/>2) <persName key="dillenburger-wilhelm">Dillenburger</persName>, früher Gymnasialdirector zu
+                            <placeName>Emmerich</placeName>, jetzt Schulrath in <placeName key="koenigsberg">Königsberg</placeName>, ein gewandter, erfahrener,
+                        tüchtiger Schul- und Geschäftsmann und aufrichtiger katholischer Christ,
+                        bekannt als Herausgeber des Horaz <note xml:id="note_5">Vgl. Wilhelm
+                            Dillenburger (Hg.), Q. Horatii Flacci opera omnia, Bonn 1843. </note>;
+                        und ebenso durch seine intelligente Theilnahme an den vorigjährigen Berliner
+                        Conferenzen; jedoch vielleicht mit weniger Energie ausgestattet als der
+                        vorige.<lb/>3) Gymnasialdirector <persName key="zastra-julius">Dr.
+                            Zastra</persName> in <placeName key="neisse">Neiße</placeName>, durch
+                        Wissen und pädagogischen Tact sowie durch gewinnendes Benehmen
+                        ausgezeichnet; dabei ein treuer katholischer Christ; für das <orgName key="theresianische-ritterakademie">Theresianum</orgName> vielleicht
+                        noch etwas jung.<lb/>4) Professor <persName key="kutzen-joseph">Dr.
+                            Kutzen</persName> dahier in <placeName>Breslau</placeName>, von dem ein
+                            <ref target="#D70_2">eigenhändiges Curriculum Vitae beiliegt</ref>; ein
+                        auch als Charakter und Christ sehr achtbarer Mann, jedoch der Oberleitung
+                        des <orgName key="theresianische-ritterakademie">Theresianums</orgName>
+                        vielleicht nicht völlig gewachsen; sonst in aller Weise sehr
+                        empfehlenswerth.</p>
+                    <p>B. Für eine Professur der Philologie:<lb/>1) <persName key="ritter-franz">Dr.
+                            Franz Ritter</persName>, Professor extraord. zu <orgName key="universitaet-bonn">Bonn</orgName>, ein tüchtiger Realphilolog,
+                        streng kirchlich gesinnt und deshalb vielleicht in <country key="preussen">Preußen</country> zurückgesetzt, ein sehr ausgezeichneter,
+                        empfehlenswerter Mann.<note xml:id="note_6">Randbemerkung Thuns: rasch,
+                            lebendig – geistreich aber etwas leichtfertig. Die letzte Bearbeitung
+                            des Tacitus wird gerühmt. Hat sich umgetauft.</note>
+                        <lb/>2) <persName key="koenighoff-johann">Könighoff</persName>, Lehrer am Gymnasium zu
+                            <placeName>Trier</placeName>, Verfasser einiger Schriften über
+                        Terenz.<lb/>3) <persName key="kreuser-johann-peter">Kreuser</persName>,
+                        Lehrer am Gymnasium zu <placeName key="koeln">Cöln</placeName>, Verfasser
+                        vieler philo[lo]gischen Schriften, auch in der christlichen Kunst,
+                        namentlich der Baukunst, sehr bewandert.<note xml:id="note_7">Randbemerkung
+                            Thuns: Genie, aber wunderliche Person – komische Figur
+                        geworden.</note>
+                        <lb/>4) <persName key="wedewer-hermann">Wedewer</persName>,
+                        Inspector einer höheren Anstalt in <placeName key="frankfurt">Francfurt a.
+                            M.</placeName>, Verfasser einer Schrift über Dante, Homer und das
+                            Nibelungenlied.<note xml:id="note_8">Vgl. Hermann Wedewer, Homer,
+                            Virgil, Tasso oder Das befreite Jerusalem in seinem Verhältniß zur
+                            Ilias, Odyssee und Aeneis, Münster 1843.</note>
+                        <note xml:id="note_9">Randbemerkung Thuns: Ein Schüler Grauerts, lieber junger Mann, aber
+                            ohne wissenschaftliche Bedeutung ist herausgekommen.</note>
+                        <lb/>5)
+                            <persName key="lohmar-wilhelm">Lohmar</persName>, Gymnasiallehrer zu
+                            <placeName>Trier</placeName>, sehr tüchtiger Philologe.<note xml:id="note_10">Randbemerkung Thuns: soll tüchtig sein.</note>
+                        <lb/>6)
+                            <persName key="kuschel-johann">Dr. Kuschel</persName>, Kollaborator am
+                        katholischen Gymnasium zu <placeName>Breslau</placeName>, echt kirchlich
+                        gesinnt und tüchtiger Pädagoge.<note xml:id="note_11">Randbemerkung Thuns:
+                            Griesar [<persName key="grysar-karl">Grysar</persName>]? Von <persName key="grauert-heinrich">Grauert</persName> sehr gelobt.</note>
+                    </p>
+                    <p/>
+                    <p>&lt;<persName key="grauert-heinrich">Grauerts</persName> Ansicht:<lb/>Ad 1)
+                        Geistreich, lebendig, aber etwas rasch; leichtfertige Ausführung ungenügend
+                        begründeter Ideen. - Dadurch hat er sich in einigen literarischen Leistungen
+                        geschadet. – Seine letzte Bearbeitung des Tacitus wird aber gelobt. – Hat
+                        übrigens in <placeName>Bonn</placeName> ein Haus gekauft.<lb/>Ad 3) Ein
+                        Genie, aber treibt wunderliches Zeug, sodaß er zu einer komischen Figur
+                        geworden ist.<lb/>Ad 4) Ein Schüler <persName key="grauert-heinrich">Grauerts</persName>; ein lieber junger Mann, aber kein bedeutender
+                        Philolog; ist auch aus solchen Studien herausgekommen.<lb/>Ad 5) Dem Ruf
+                        nach tüchtig.&gt;<note xml:id="note_12">Eigenhändige Bemerkungen
+                        Thuns</note>
+                    </p>
+                </div>
+                <div xml:id="D70_2" type="enclosure">
+                    <p>
+                        <persName key="kutzen-joseph">Joseph Kutzen</persName>, zu
+                            <placeName>Frankenstein</placeName> in <region>Schlesien</region>
+                        geboren, durch beide Eltern aus <region key="boehmen">Deutsch-Böhmen</region> stammend, gebildet auf dem Gymnasium zu
+                            <placeName>Glatz</placeName> und den Universitäten zu <orgName key="universitaet-breslau">Breslau</orgName> und <orgName key="universitaet-berlin">Berlin</orgName>, an der ersteren zum Doktor
+                        der Philosophie promovirt, lehrte in dem <hi rend="ul">öffentlichen</hi>
+                        Dienste seit 1829 und zwar 4 Jahre an dem katholischen Gymnasium zu
+                            <placeName>Breslau</placeName> besonders Geschichte, Geographie und das
+                        Deutsche, seit 1832 die beiden ersten Fächer als Privatdocent, seit 1835 als
+                        außerordentlicher und seit 1843 als ordentlicher Professor an der <orgName key="universitaet-breslau">Breslauer Universität</orgName>, an welcher
+                        er während der Zeit seiner Lehrthätigkeit viel über dreitausend Zuhörer
+                        hatte. Außerdem 4 Jahre Custos an der königlichen und Universitätsbibliothek
+                        zu <placeName>Breslau</placeName>, 13 Jahre Mitglied der königlichen
+                        Prüfungscommission für die Candidaten und Lehrer sämmtlicher höherer
+                        Lehranstalten der Provinzen <region>Schlesien</region> und
+                            <region>Posen</region> und 4 Jahre Direktor dieser Behörde; ferner 5
+                        Jahre außerordentliches Mitglied der Prüfungscommission für die Aspiranten
+                        des höheren Militärdienstes und eben solange des Provinzialschulcollegiums
+                        zu <placeName>Breslau</placeName>.<lb/>In Bezug auf Erziehungs-, Lehr- und
+                        wissenschaftliche Beschäftigung in <hi rend="ul">Privat</hi>verhältnissen,
+                        innerhalb der Jahre 1826 bis 1840 drei Jahre mit der Erziehung des ältesten
+                        Sohnes des <persName key="henckel-von-donnersmark-carl-lazarus">Grafen
+                            Lazarus Henckel von Donnersmark</persName> (katholische Linie), 4 Jahre
+                        des jüngsten Bruders des jetzigen Standesherrn <persName key="schaffgotsch-zu-warmbrunn">Grafen Schaffgotsch zu
+                            Warmbrunn</persName>, 2 Jahre des <persName key="sulkowski-august">Fürsten August Sulkowski</persName> (<region key="posen">Posener</region> Linie), ferner mehrere Jahre hindurch mit
+                        geschäftlichen Verträgen für eine Zahl Mitglieder des schlesischen Adels und
+                        für einen großen Kreis dem höheren Gewerbe-, besonders dem Kaufmannsstande
+                        angehörender junger Männer und mit der Systematisirung und vollständigen
+                        Einrichtung der an 40.000 Bänden starken Majoratsbibliothek der Grafen
+                        Schaffgotsch betraut.</p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

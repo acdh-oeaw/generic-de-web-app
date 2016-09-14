@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?oxygen RNGSchema="http://thun-korrespondenz.uibk.ac.at/svn/thun/thun-korrespondenz/schema/thun-schema.rnc" type="compact"?> -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="http://digital-archiv.at:8081/exist/rest/db/files/thun/xml/" xml:id="diepenbrock-an-thun_1850-08-27_A3-XXI-D70b.xml">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>
+                    <persName key="diepenbrock-melchior" role="sender:kleriker">Melchior
+                        Diepenbrock</persName> an <persName key="thun-hohenstein-leo" role="recipient">Leo Thun</persName>
+                    <lb/>
+                    <placeName>Johannesberg bei
+                        Jauernig</placeName>, <date when="1850-08-27">27. August 1850</date>
+                </title>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Staatliches Gebietsarchiv Leitmeritz, Zweigstelle
+                            Tetschen-Bodenbach</institution>
+                        <repository>Familienarchiv Thun-Hohenstein, Linie Tetschen, Nachlass Leo
+                            Thun</repository>
+                        <idno>A3 XXI D70</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <p>Fürstbischof Diepenbrock erteilt Leo Thun Auskunft über Johann
+                            Capellmann. Sein Vetter, der preußische Oberregierungsrat Ferdinand von
+                            Woringen, gab ihm die nötigen Informationen zu Cappelmann. Jener hatte
+                            ihn nämlich zum Lehrer und beurteilt ihn als tüchtigen und fähigen Mann.
+                            Capellmann möchte den preußischen Staatsdienst verlassen, weshalb
+                            Diepenbrock sich bereits an Geheimrat Matthias Aulike in dieser
+                            Angelegenheit gewandt hat. Diepenbrock bedauert, dass er Thun in Prag
+                            nicht treffen konnte, seine Verpflichtungen in Breslau hinderten ihn
+                            daran.</p>
+                    </msContents>
+                    <physDesc>
+                        <p>Unter dieser Signatur sind noch zwei weitere Briefe Diepenbrocks an Thun
+                                abgelegt:<lb/>
+                            <ref target="thun/thun-korrespondenz/tetschen/diepenbrock-an-thun_1850-05-28_A3-XXI-D70.xml">Melchior Diepenbrock an Leo Thun. Breslau, 28. Mai
+                                1850</ref>.<lb/>
+                            <ref target="thun/thun-korrespondenz/tetschen/diepenbrock-an-thun_1850-06-04_A3-XXI-D70a.xml">Melchior Diepenbrock an Leo Thun. Breslau, 4. Juni 1850</ref>.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc docStatus="approved"/>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript">
+                <index>
+                    <term>Personalfragen</term>
+                    <term>Personalvermittlung</term>
+                </index>
+                <p>Eurer Excellenz</p>
+                <p>beehre ich mich auf das geehrte heute erhaltene Schreiben vom 24. dieses
+                    ergebenst zu erwiedern, daß ich mich zufällig im Stande befinde, über den
+                        <persName key="capellmann-johann-aloys">Dr. Capellmann</persName> in
+                        <placeName key="koblenz">Coblenz</placeName> schon heute die befriedigendste
+                    Auskunft zu geben, indem mein hier auf Besuch befindlicher Vetter, der
+                    preussische Oberregierungsrath <persName key="woringen-ferdinand">von
+                        Worringen</persName>, den <persName key="capellmann-johann-aloys">Dr.
+                        Capellmann</persName>, der sein eigener Lehrer war, genau kennt und ihm das
+                    Zeugnis eines sehr tüchtigen, ernsten, religiös gesinnten und allgemein
+                    geachteten, bei seinen Schülern stets vorzüglich beliebten Lehrers gibt. Was den
+                    Wunsch seiner baldigen Entlassung aus preussischen Dienstesverhältnissen
+                    anbelangt, so habe ich die möglichste Erfüllung desselben auch gleich heute dem
+                    Geheimen Rath <persName key="aulike-matthias">Aulike</persName>, Dirigenten der
+                    katholischen Abtheilung im preussischen Cult- und Unterrichtsministerio, einen
+                    mir persönlich befreundeten trefflichen Manne bestens empfohlen, weil Geheimer
+                    Rath <persName key="brueggemann-theodor">Brüggemann</persName> seiner leidenden
+                    Gesundheit wegen in diesem Augenblicke ich weiß nicht in welchem Bade abwesend
+                    ist.<lb/>Eure Excellenz in <placeName>Prag</placeName> zu begrüßen hatte ich
+                    auch meinerseits mir vorgesetzt; es traf sich jedoch, daß zu den zur selben Zeit
+                    in <placeName>Breslau</placeName> angeordneten geistlichen Exercizien eine so
+                    große Zahl von würdigen Geistlichen sich eingefunden hatte, daß ich es für
+                    angemessen hielt, selbst dorthin zu gehen, die Versammelten persönlich zu
+                    begrüßen und die frommen Übungen durch einen feierlichen Gottesdienst, wobei
+                    alle aus meiner Hand die heilige Communion in der Domkirche empfingen, auf eine
+                    würdige Weise zu beschließen. Nur eine so wichtige Rücksicht konnte mich von der
+                    Reise nach <placeName>Prag</placeName> abhalten; da ich auch Seiner Eminenz dem
+                    Herrn Cardinal, meinem so hochverehrten Gönner und Freunde, meinen innigsten
+                    Segenswunsch für seinen neuen, so hochwichtigen und schwierigen Wirkungskreis
+                    gern persönlich dargebracht hätte.<lb/>Ich habe die Ehre mit vollkommenster
+                    Hochachtung unwandelbar zu geharren</p>
+                <p>Eurer Excellenz</p>
+                <p>ganz ergebenster<lb/>M. v. Diepenbrock Fürstbischof</p>
+                <p>Johannesberg bei Jauernig in österr. Schlesien, den 27. August 1850</p>
+            </div>
+        </body>
+    </text>
+</TEI>
