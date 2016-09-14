@@ -14,7 +14,7 @@ As promised in the [previous part]({{ site.baseurl }}{% post_url 2016-08-18-part
 * present this data in a hopefully slightly more appealing manner than it is done now,
 * and we will add some footer which present some other useful informations and references.
 
-And as always, you can download the current code of the application [here]({{ site.baseurl }}/downloads/part-9/thun-demo-0.1).
+And as always, you can download the current code of the application [here]({{ site.baseurl }}/downloads/part-9/thun-demo-0.1.xar).
 
 # Playing with [Bootstrap](http://getbootstrap.com/)
 
@@ -247,7 +247,7 @@ To improve the application's usability and spare our users from at least one cli
 
 What's left to do is now to add a sticky footer whereas sticky means that the footer will always be at the bottom of the page, no matter how much (of little) content there is on the page. Since we want this footer to run through all our pages, we will add the necessary markup into our base template **templates/pages.html**. Since such a footer is possible not the most essential part of the application and more a matter of design and personal taste, I won't elaborate on the following code listing. Just be aware of the new resources like logos, images, custom css document which are referenced which means of course that those have to be stored in the according collections in our application's **resources collection**.
 
-## pages/index.html
+### pages/index.html
 
 The modified templates/page.html could look as follows:
 
@@ -419,4 +419,4 @@ With this 10th tutorial we meet all requirements described in the [first part]({
 
 ## Get the app
 
-In case you were following this tutorials only theoretically and you didn't wrote any line of code, you can download the packed application [here]({{ site.baseurl }}/downloads/part-10/thun-demo-0.1).
+In case you were following this tutorials only theoretically and you didn't wrote any line of code, you can download the packed application [here]({{ site.baseurl }}/downloads/part-10/thun-demo-0.1.xar).

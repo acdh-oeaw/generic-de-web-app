@@ -8,7 +8,7 @@ categories: digital-edition
 
 # Introduction and requirements
 
-In the [last part]({{ site.baseurl }}{% post_url 2016-08-16-part-7-index-based-search %}) of this series of tutorials we implemented a basic index based search functionality. The code we build so far can be downloaded [here]({{ site.baseurl }}/downloads/part-7/thun-demo-0.1). In this part now, we are going to build a full text search which will allow users to 
+In the [last part]({{ site.baseurl }}{% post_url 2016-08-16-part-7-index-based-search %}) of this series of tutorials we implemented a basic index based search functionality. The code we build so far can be downloaded [here]({{ site.baseurl }}/downloads/part-7/thun-demo-0.1.xar). In this part now, we are going to build a full text search which will allow users to 
 
 1. search the content (the text) of all of our XML/TEI documents, 
 

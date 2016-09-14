@@ -9,7 +9,7 @@ categories: digital-edition
 # Introduction and requirements
 
 Even those humanities scholars who are usually rather skeptic about digital humanities and digital editions estimate well designed search functionalities like a fulltext search (we will address this topic in the [next tutorial]({{ site.baseurl }}{% post_url 2016-08-17-part-8-full-text-search %})) or of course an index based search. Whereas a fulltext search is something new in comparison to traditional (printed) editions an index of persons, places, terms of interest, and other things is one of the most genuine parts of a printed scholarly edition. Therefore a well planned transformation of this core asset from the printed to the digital domain will most likely help to make digital editions a sincerely respected alternative to printed ones. 
-As usually you can download the [latest code base]({{ site.baseurl }}/downloads/part-6/thun-demo-0.1) from the [previous tutorial]({{ site.baseurl }}{% post_url 2016-08-15-part-6-rename-the-app %})).
+As usually you can download the [latest code base]({{ site.baseurl }}/downloads/part-6/thun-demo-0.1.xar) from the [previous tutorial]({{ site.baseurl }}{% post_url 2016-08-15-part-6-rename-the-app %})).
 
 ## Markup
 
