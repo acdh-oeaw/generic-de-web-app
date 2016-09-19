@@ -100,6 +100,31 @@ declare function app:toc($node as node(), $model as map(*)) {
 };
 ```
 
+# make app:XMLtoHTML fit for the future
+
+As we are working on **moduels/app.xql** anyway, we can also attack another issue. Currently the function app:XMLtoHTML is rather static, meaning that the not the stylesheet we want to apply on our XML document is hard coded but also the directory in where our XML document is supposed to be. Albeit this function suffices for our needs so far, it could be handy if we were able to dynamically tell the function the name of the directory where to look for the XML documents as well as which stylesheet should be used. Luckily these features are easy to implemented. We simply have to declare additional variables for the directory and the name of the stylesheet. Those variables retrieve their values from URL parameters. And since we don't want to change any other of our already written code, we add some default values to those variables. The rewritten **app:XMLtoHTML** function expresses this in valid xQuery:
+
+```xquery
+declare function app:XMLtoHTML ($node as node(), $model as map (*), $query as xs:string?) {
+let $ref := xs:string(request:get-parameter("document", ""))
+let $xmlPath := concat(xs:string(request:get-parameter("directory", "editions")), '/')
+let $xml := doc(replace(concat($config:app-root,'/data/', $xmlPath, $ref), '/exist/', '/db/'))
+let $xslPath := concat(xs:string(request:get-parameter("stylesheet", "xmlToHtml")), '.xsl')
+let $xsl := doc(replace(concat($config:app-root,'/resources/xslt/', $xslPath), '/exist/', '/db/'))
+let $params := 
+<parameters>
+   {for $p in request:get-parameter-names()
+    let $val := request:get-parameter($p,())
+    where  not($p = ("document","directory","stylesheet"))
+    return
+       <param name="{$p}"  value="{$val}"/>
+   }
+</parameters>
+return 
+    transform:transform($xml, $xsl, $params)
+};
+```
+
 # Conclusion and outlook
 
 Congrats! You created a lightweight web application to publish digital editions. And especially due to the recent chapter, the code base of this application does not look too bad any more. Unfortunately we can't say the same about the [start page](http://localhost:8080/exist/apps/thun-demo/pages/index.html) of our application. But this will be the topic of the next chapter. 
