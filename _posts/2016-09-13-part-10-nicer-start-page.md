@@ -412,6 +412,31 @@ This will render as a search field in the top right corner as depicted in the fo
 
 Having a general search field, we basically don't need to link to ft_search.html any more in the nav bar since we would then provide to our users two ways to achieve the same things and this is something I personally always find a bit annoying. Therefore I will remove the link to this page from the nav bar. Alternatively we could think about implementing something like an **advanced search** where users can customize e.g. in which parts or elements of the XML/TEI documents they want to search for. But since such a feature very much depends on the actual data, it is not an easy thing to include such a feature in a web applications like ours which tries to be as generic as possible. 
 
+# One last thing
+
+Already in the [3rd Part]({{ site.baseurl }}{% post_url 2016-08-12-part-3-table-of-content %}) I mentioned **eXist-db's REST(like)-API**. But for the time being, only people well familiar with eXist-db might know that the data of our application can be fetched that easily. Therefore, lets add a new nav bar entry, linking to our `data/editions` collection. To accomplish this, just add the following code snippet into the nav bar in our base template located at **templates/page.html**.
+
+```html
+
+<ul class="dropdown-menu">
+    <li>
+        <a href="index.html">Home</a>
+    </li>
+    <li>
+        <a href="toc.html">Table of Content</a>
+    </li>
+    <li>
+        <a href="persons.html">Persons</a>
+    </li>
+    <li>
+        <a href="../data/editions">API</a>
+    </li>
+    <!--<li>
+            <a href="ft_search.html">Fulltext Search</a>
+        </li>-->
+</ul>
+```
+
 # Conclusion and outlook
 
 Now we are in possession of an eXist-db application which can easily be packed, downloaded, redeployed and modified and therefore serve as a very solid starting point for building a small to medium sized framework for publishing a digital edition. 
