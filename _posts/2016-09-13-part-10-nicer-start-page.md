@@ -8,7 +8,7 @@ categories: digital-edition
 
 # Introduction and requirements
 
-As promised in the [previous part]({{ site.baseurl }}{% post_url 2016-08-18-part-9-code-refactoring %) of our tutorial we will now improve the look as well as the functionality of our start page a little bit. Therefore we will 
+As promised in the [previous part]({{ site.baseurl }}{% post_url 2016-08-18-part-9-code-refactoring %}) of our tutorial we will now improve the look as well as the functionality of our start page a little bit. Therefore we will 
 
 * add some nice cover images, 
 * fetch basic information about the application like it's title and it's description,
