@@ -127,4 +127,4 @@ return
 
 # Conclusion and outlook
 
-Congrats! You created a lightweight web application to publish digital editions. And especially due to the recent chapter, the code base of this application does not look too bad any more. Unfortunately we can't say the same about the [start page](http://localhost:8080/exist/apps/thun-demo/pages/index.html) of our application. But this will be the topic of the next chapter. 
+Congrats! You created a lightweight web application to publish digital editions. And especially due to the recent chapter, the code base of this application does not look too bad any more. Unfortunately we can't say the same about the [start page](http://localhost:8080/exist/apps/thun-demo/pages/index.html) of our application. But this will be the topic of the [next chapter]({{ site.baseurl }}{% post_url 2016-09-13-part-10-nicer-start-page %}). 
