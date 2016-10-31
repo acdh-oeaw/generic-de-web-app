@@ -92,9 +92,11 @@ declare function app:listPers($node as node(), $model as map(*)) {
 declare function app:toc($node as node(), $model as map(*)) {
     for $doc in collection(concat($config:app-root, '/data/editions/'))//tei:TEI
         return
-        <li>
-            <a href="{app:hrefToDoc($doc)}">{app:getDocName($doc)}</a>
-        </li>   
+        <tr>
+            <td>
+                <a href="{app:hrefToDoc($doc)}">{app:getDocName($doc)}</a>
+            </td>
+        </tr>   
 };
 
 (:~
