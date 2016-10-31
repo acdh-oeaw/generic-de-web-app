@@ -83,7 +83,11 @@ declare function app:listPers($node as node(), $model as map(*)) {
     let $hitHtml := "hits.html?searchkey="
     for $person in doc(concat($config:app-root, '/data/indices/listperson.xml'))//tei:listPerson/tei:person
         return
-        <li><a href="{concat($hitHtml,data($person/@xml:id))}">{$person/tei:persName}</a></li>
+        <tr>
+            <td>
+                <a href="{concat($hitHtml,data($person/@xml:id))}">{$person/tei:persName}</a>
+            </td>
+        </tr>
 };
 
 (:~

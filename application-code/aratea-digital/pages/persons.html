@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div class="templates:surround?with=templates/page.html&amp;at=content">
+    <script src="$app-root/resources/js/tablesorter/js/jquery.tablesorter.js"/>
+    <script src="$app-root/resources/js/tablesorter/js/jquery.tablesorter.widgets.js"/>
+    <script src="$app-root/resources/js/tablesorter/js/jquery.tablesorter.pager.js"/>
+    <link rel="stylesheet" type="text/css" href="$app-root/resources/js/tablesorter/css/theme.bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="$app-root/resources/js/tablesorter/css/jquery.tablesorter.pager.css"/>
+    <script> $(function() { $("table").tablesorter({ theme : "bootstrap", widthFixed: false,
+        headerTemplate : '{content} {icon}', widgets : [ "uitheme", "filter", "zebra" ], filter_cssFilter: "form-control", }) }); 
+    </script>
     <h1>Persons</h1>
-    <div data-template="app:listPers"/>
+    <table>
+        <thead>
+            <tr>
+                <th>persons' name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-template="app:listPers"/>
+        </tbody>
+    </table>
 </div>
