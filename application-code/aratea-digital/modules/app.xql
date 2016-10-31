@@ -68,11 +68,16 @@ let $href := concat('show.html','?document=', app:getDocName($node))
  :)
 declare function app:listPers_hits($node as node(), $model as map(*), $searchkey as xs:string?, $path as xs:string?)
 {
-    for $hit in collection(concat($config:app-root, '/data/editions/'))//tei:TEI[.//tei:persName[@key=$searchkey] |.//tei:rs[@ref=concat("#",$searchkey)] |.//tei:rs[@key=contains(./@key,$searchkey)]]
+    (:for $hit in collection(concat($config:app-root, '/data/editions/'))//tei:TEI[.//tei:persName[@key=$searchkey] |.//tei:rs[@ref=concat("#",$searchkey)] |.//tei:rs[@key=contains(./@key,$searchkey)]]:)
+    for $hit in collection(concat($config:app-root, '/data/'))//tei:TEI[.//*[@key=$searchkey] | .//@ref=concat("#",$searchkey)]
     let $doc := document-uri(root($hit)) 
+    let $params := if (contains($doc, '/editions/'))
+        then ""
+        else
+            "&amp;directory=descriptions"
     return
     <li>
-        <a href="{app:hrefToDoc($hit)}">{app:getDocName($hit)}</a>
+        <a href="{concat(app:hrefToDoc($hit),$params)}">{app:getDocName($hit)}</a>
     </li> 
  };
  
