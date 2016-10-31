@@ -1,0 +1,360 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="5.0" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/rules/schema/ER/v0.4/europeana-regia.xsd" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Description of <ref type="altMS" target="http://gallica.bnf.fr/ark:/12148/btv1b8452179s"> Amiens, BM MS 222</ref>
+                </title>
+                <respStmt>
+                    <resp>Catalogued by:</resp>
+                    <name type="person">Ivana Dobcheva</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Digital edition according to TEI P5</edition>
+                <respStmt>
+                    <resp>TEI-P5 coded by </resp>
+                    <name type="person">Ivana Dobcheva</name>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <date type="issued" when="2016-09-24">24.09.2016</date>
+                <publisher>
+                    <name type="org"/>
+                    <!--<ptr target=""/>-->
+                </publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change who="ID" when="2016-10-16">Added facsimile.</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f1.image" n="VD"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f2.image" n="VS"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f3.image" n="Ir"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f4.image" n="Iv"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f5.image" n="1r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f6.image" n="1v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f7.image" n="2r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f8.image" n="2v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f9.image" n="3r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f10.image" n="3v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f11.image" n="4r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f12.image" n="4v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f13.image" n="5r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f14.image" n="5v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f15.image" n="6r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f16.image" n="6v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f17.image" n="7r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f18.image" n="7v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f19.image" n="8r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f20.image" n="8v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f21.image" n="9r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f22.image" n="9v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f23.image" n="10r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f24.image" n="10v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f25.image" n="11r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f26.image" n="11v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f27.image" n="12r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f28.image" n="12v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f29.image" n="13r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f30.image" n="13v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f31.image" n="14r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f32.image" n="14v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f33.image" n="15r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f34.image" n="15v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f35.image" n="16r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f36.image" n="16v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f37.image" n="17r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f38.image" n="17v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f39.image" n="18r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f40.image" n="18v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f41.image" n="19r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f42.image" n="19v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f43.image" n="20r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f44.image" n="20v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f45.image" n="21r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f46.image" n="21v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f47.image" n="22r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f48.image" n="22v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f49.image" n="23r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f50.image" n="23v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f51.image" n="24r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f52.image" n="24v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f53.image" n="25r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f54.image" n="25v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f55.image" n="26r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f56.image" n="26v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f57.image" n="27v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f58.image" n="27v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f59.image" n="28r"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f60.image" n="28v"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f61.image" n="Ir*"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f62.image" n="Iv*"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f63.image" n="HS"/>
+        <graphic url="http://www.gallica.bnf.fr/ark:/12148/btv1b8452179s/f64.image" n="HD"/>
+    </facsimile>
+    <text>
+        <body>
+            <msDesc xml:id="amiens_222" xml:lang="eng">
+                <msIdentifier>
+                    <settlement>Amiens</settlement>
+                    <repository>BM</repository>
+                    <idno>222</idno>
+                    <msName/>
+                </msIdentifier>
+                <head>
+                    <title>Composite manual with texts by Bede</title>
+                    <origPlace ref="#">North-east France</origPlace>
+                    <origDate notBefore="0801" notAfter="0850">s. IX<hi rend="sup">1</hi>
+                    </origDate>
+                </head>
+                <physDesc>
+                    <objectDesc form="codex">
+                        <supportDesc material="perg">
+                            <support>
+                                <p>
+                                    <material>Parchment</material>
+                                </p>
+                            </support>
+                            <extent>
+                                <measure type="leavesCount" quantity="30">i + 28 + i</measure>
+                                <dimensions type="leaf" unit="mm">
+                                    <height>240</height>
+                                    <width>194</width>
+                                </dimensions>
+                            </extent>
+                            <foliation>Foliated in arabic numerals by a modern hand in ink.</foliation>
+                            <collation>
+                                <formula>I<hi rend="sup">8(-1)</hi> (ff.1-7), II<hi rend="sup">1</hi> (f.8), III<hi rend="sup">8</hi> (ff.9-16), IV<hi rend="sup">1</hi> (f. 17), V<hi rend="sup">8(+3)</hi> (ff.18-28)</formula>. A folium missing after f. 1. Folium 8 was once after f. 17, both single leaves after third quire. Probably during the rebinding f. 18 was attached to the next quire (its strip is visible between ff. 26v and 27r). Folia 27 and 28 are single leaves bound around the last quire (their strips are visible before f. 18r).</collation>
+                        </supportDesc>
+                        <layoutDesc>
+                            <layout columns="1" ruledLines="28">
+                                <p>Written in one column; mostly 28 long lines (exception on ff. 9r-v and 10v written in 27 lines; ff. 11r and 14v - 26 lines). Capitalis rustica used for headings - in part one using the same braunish ink as for the text; in part 3 it is in red with yellow (possibly gold) filling colour. Hollow initials, in part 1 left blank or coloured red, in part 2 left blank, and in part 3 executed completely with yellow paint as a background. </p>
+                            </layout>
+                            <layout columns="2" ruledLines="38">
+                                <p>The <title>De signis coelis</title> on <locus from="18r" to="18v">f. 18</locus> is written in two columns, ca. 38 lines. The layout here is messier, the scribe probably trying to fit the text on the folio, often writing two lines of text on one ruled line.</p>
+                            </layout>
+                        </layoutDesc>
+                    </objectDesc>
+                    <handDesc>
+                        <handNote script="carolmin">
+                            <p>Two main hands writing in carolingian minuscule. Hand A wrote part 1 with Bede, <title>DTR</title>; Hand B wrote parts 2 and 3, where one notice also similar initials. In part 2 however the script and rubrication are more hasty. Hand B also wrote the marginal note in part 1, f. <locus from="16r">16r</locus>. Hand B use complete word-division; ligatures &amp; and e-caudata, st, ct; abbreviations -ur, -m and -n; punctuation: <quote>·</quote> and <quote>;</quote>. Hand A writes for the most with word-division; to the abbreviations used by Habd B adds -us; writes sporadic 'N'; punctuation: <quote>·</quote> / <quote>.,</quote> / <quote>,&#x00A8;</quote> and <quote>;</quote>.</p>
+                        </handNote>
+                    </handDesc>
+                    <decoDesc>
+                        <decoNote>
+                            <locus from="18r" to="18v">f. 18r-v</locus> crude pen-drawings of the constellation figures. The figures were drawn in the insufficient space left between the chapters, inbetween the two columns, and in the inner and outher margins. The latter are now cut off either completely or in part.</decoNote>
+                        <decoNote>On f. <locus>19r</locus> there is one <term>rota</term> with four semicircles on the rim, which illustrate the first chapter of Bede's <title>DNR</title> and more specifically the expression <quote>quadriformiratione</quote>.</decoNote>
+                    </decoDesc>
+                    <bindingDesc>
+                        <binding>
+                            <p>The original wooden boards were removed in <date when="1794">1794</date>. Later in <date when="1825">1825</date>
+                                <rs type="person">M. Le Prince</rs> rebounded them in green leather<locus from="VD"/>.</p>
+                        </binding>
+                    </bindingDesc>
+                </physDesc>
+                <history>
+                    <origin>
+                        <p>The manuscript was thought to originated from <rs type="place" ref="#corbie">Corbie</rs>. According to David Ganz, who studies the manuscripts produced at Corbie, Amien 222 may have been in Corbie in the 9th c., but it was not written there (see <bibl>Contreni, John J. ‘John Scottus and Bede’. In <title level="m">History and Eschatology in John Scottus Eriugena and His Time</title>. Ed. Michael Dunne and J. J. McEvoy, 91–140 (here p. 97, n. 15). Leuven University Press, 2002.</bibl> B. Bischoff (<bibl><abbr>Bischoff, Katalog I</abbr>, p. 14</bibl>) considered it to be written in <origPlace ref="ne_france" resp="Bischoff, Katalog I">North-east Francia</origPlace> in the <origDate notBefore="0867" notAfter="0900">last third of the ninth century</origDate>.</p>
+                    </origin>
+                    <provenance>
+                        <p>Unclear.</p>
+                    </provenance>
+                    <acquisition>
+                        <p/>
+                    </acquisition>
+                </history>
+                <additional>
+                    <listBibl>
+                        <head>Selected bibliography:</head>
+                        <bibl><abbr>Bischoff, Katalog I</abbr>, p. 14.</bibl>
+                        <bibl><abbr>Borst (1994)</abbr>, p. 158, n. 83.</bibl>
+                        <bibl>Contreni, John J. “Bede’s Scientific Works in the Carolingian Age.” In <title>Bède Le Vénérable</title>. Ed. by Stéphane Lebecq, Michel Perrin, and Olivier Szerwiniak, 247–59. Villeneuve d’Ascq: Institut de Recherches Historiques du Septentrion, 2005. <ptr target="http://hleno.revues.org/348"/>.</bibl>
+                        <bibl>Coyecque, Ernest. <title level="m">Catalogue général des manuscrits des bibliothèques publiques de France; Départements</title>. Vol. 19. Paris: Plon, 1893, p. 105.<ptr target="https://archive.org/stream/cataloguegnr191893fran"/>
+                        </bibl>
+                        <bibl><abbr>Dell'Era (1979)</abbr>.</bibl>
+                        <bibl><abbr>Haffner</abbr> p. 174.</bibl>
+                        <bibl>Jones, Charles. “Manuscripts of Bede’s ‘De Natura Rerum.’” <title level="j">Isis</title> 27 (1937): 430–40, p. 431.</bibl>
+                        <bibl>Le Bourdellès, Hubert. “La diffusion des&#160;Aratea&#160;dans la culture du nord-ouest de la France pendant le haut Moyen-Age, et le débat idéologique sur la mythologie d’après un texte inédit.” In <title level="m">L’Art du haut Moyen Age dans le Nord-Ouest de la France: Actes du Colloque de St Riquier (22-24 septembre 1987)</title>. Ed. by Dominique Poulan and Michel Perrin, 201–12. Greifswald: Reineke, 1993.</bibl>
+                        <bibl><abbr>Le Bourdellès (1985)</abbr>.</bibl>
+                        <bibl>Jeudy, Colette, and Yves-François Riou. Les manuscrits classiques latins des bibliothèques publiques de France: catalogue. Vol. I. Paris: CNRS, 1989, pp. 33-4.</bibl>
+                        <bibl>Contreni, John J. “John Scottus and Bede.” In <title level="m">History and Eschatology in John Scottus Eriugena and His Time: Proceedings of the Tenth International Conference of the Society for the Promotion of Eriugenian Studies, Maynooth and Dublin, August 16-20, 2002</title>. Ed. by Michael Dunne and J. J. McEvoy, 91–140. Leuven University Press, 2002, p. 97.</bibl>
+                        <bibl><abbr>Sternbilder des Mittelalters</abbr>, pp. 76, 185-7, Plates 24-25.</bibl>
+                        <bibl>Kendall, Calvin B., and Faith Wallis, trans. <title level="m">Bede: On the Nature of Things and on Times</title>. Liverpool: Liverpool University Press, 2010, pp. 39, 44, and 65.</bibl>
+                        <bibl>Lipp, Frances. <title level="u">The Carolingian Commentaries on Bede's De natura rerum</title>. Yale University (unpublished dissertation), 1961.</bibl>
+                        <bibl>Lippincott, Kristen. Amiens, Bibliothèque municipale, 222<ptr target="http://www.kristenlippincott.com/assets/Uploads/MSS-descriptions-ps-Bede-de-signis-Amiens-222-15-Nov-2012.pdf"/>.</bibl>
+                    </listBibl>
+                </additional>
+                <msPart>
+                    <msIdentifier>
+                        <idno>Part 1</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <textLang mainLang="lat"/>
+                        <msItem>
+                            <locus from="1r" to="17v">1r-17v</locus>
+                            <author ref="#bede">Bede</author>
+                            <rubric>Bedae de computo<note> (added probably later)</note>
+                            </rubric>
+                            <note>Acephalous and anourous <title ref="#DTR">De temporum ratione</title> (from mid of cap. 6 till mid of cap. 23).</note>
+                            <incipit>die occursum equinoctii et ante triduum hoc est quintodecimo KLdarum earunndem</incipit>
+                            <explicit>
+                                <locus from="17v">17v</locus>Est namque aetiam uetus argumentum non solummodo de KLdarum uerum et de quorumlibet inter KLdarum dierum luna uel feria dinoscenda repertum                             
+                            </explicit>
+                            <note>F. 8 displaced, originally following f. 17: (<locus from="8r">8r:</locus>) <quote>aliquanto <gap/>ndum sed maiorum tamen nobis <gap reason="omitted"/>
+                                </quote> so that the logical <foreign>explicit</foreign> is on f. <locus from="8v">8v:</locus>
+                                <quote>
+                                    <gap reason="omitted"/>&amp; sic ex ordine recurrens luna suam cuique litterae restituit aetatem<gap reason="lacuna"/>
+                                </quote>
+                            </note>
+                            <msItem>
+                                <locus from="16r">16r</locus>
+                                <note>Marginal note with <rs type="person" role="author" ref="#cicero">Cicero</rs>'s Aratea vv. 329-331, 319-328 on the zodiacal signs.</note>
+                                <incipit>primus adest aries obscura lumine labens</incipit>
+                                <explicit>ex in squamiferi serpentes ludere pisces.</explicit>
+                            </msItem>
+                            <msItem>
+                                <locus from="16r">16r</locus>
+                                <title>Nomina feriarum</title>
+                                <note>Marginal note continues with a short text on the days of the week named after roman dieties.</note>
+                                <incipit>prima dies phoebi sacrata numine fulget. <!--Vindicat et lucens feriam sibi luna secundam. Inde dies rutilat iam tercia martis honore, mercurius quartam splendentem possidet alter. Iuppiter ecce sequens quintam sibi iure dica<subst><del>b</del><add>u</add></subst>it. Concordat ueneri magne cum nomine sexta. Emicat alta dies saturno septima summa.--></incipit>
+                                <explicit>Emicat alta dies saturno septima summa.</explicit>
+                                <bibl>Ed. Riese, Anthologia Latina sive Poesis Latinae supplementum, Vol. I, 2. Leipzig: Teubner, 1894 (here p. 38, no. 488).<ptr target="http://d-nb.info/364874198"/>
+                                </bibl>
+                            </msItem>
+                        </msItem>
+                    </msContents>
+                </msPart>
+                <msPart>
+                    <msIdentifier>
+                        <idno>Part 2</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus from="18r" to="18v">18r-18v</locus>
+                            <title ref="#de_signis_coeli">De signis coelis<note> (missing cap. 1-16 and 41)</note>
+                            </title>
+                            <incipit>Andromeda habet stellas in capite splendidam I</incipit>
+                            <explicit>et ideo anticanis uocatur eo quod contratia sit ca<supplied>ni.</supplied>
+                            </explicit>
+                            <note>Written by a different but similar hand probably within the same scriptorium. (Very similar initials)</note>
+                            <decoNote>Crude drawings of the constellations in the little space left between paragraphs, between the two columns or in the margin where they were partly cut out by later trimming.</decoNote>
+                            <bibl>
+                                <abbr>Dell'Era (1979)</abbr>, pp. 288-296.</bibl>
+                        </msItem>
+                    </msContents>
+                </msPart>
+                <msPart>
+                    <msIdentifier>
+                        <idno>Part 3</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus from="19r" to="27r">19r-27r</locus>
+                            <author ref="#bede">Bede</author>
+                            <title ref="#DNR">De natura rerum</title>
+                            <msItem>
+                                <locus from="19r">19r</locus>
+                                <note>Separate unidentified gloss preceding the DNR:</note>
+                                <quote>Astianax astu ciuitas est, Anax uero rex dicitur. Unde astianax illius ciuitatis rex qui fuit iulius<gap reason="omitted"/> Nutritiua in arboribus. Sensualis in animalibus, intellectualis in hominibus</quote>
+                            </msItem>
+                            <msItem>
+                                <locus from="19r">19r</locus>
+                                <note>Prolog:</note>
+                                <rubric rend="rustics red">Versus Bedae pr<ex>esbuter</ex>i</rubric>
+                                <incipit>Naturas rerum uarias labentis et aeui</incipit>
+                            </msItem>
+                            <msItem>
+                                <locus from="19r">19r</locus>
+                                <note>List of the chapters in three columns.</note>
+                                <rubric rend="rustics red">Incipiunt capitula</rubric>
+                                <incipit>I De quadrifario opere dei <lb/>II De mundi formatione</incipit>
+                                <explicit>LI Diuisio terrae.</explicit>
+                            </msItem>
+                            <msItem>
+                                <locus from="19r" to="27r">19r-27r</locus>
+                                <note>Text:</note>
+                                <rubric rend="rustics red">De quadriformi ratione operum dei</rubric>
+                                <incipit>Operatio diuina quae saecula creauit et gubernat quadrifatione non facta sed aeterna sunt</incipit>
+                                <explicit>atque inde africa a meridie usque ad occidentem protenditur.</explicit>
+                                <decoNote>Initials coloured with yellow; rubrics for the chapters in <foreign>capitalis rustica</foreign> in red and yellow.</decoNote>
+                            </msItem>
+                            <msItem>
+                                <locus from="19r" to="26v">19r-26v</locus>
+                                <note>Marginal glosses:</note>
+                                <incipit>A. XV KL aprili in prima parte arietis quia aries XXXta partes habet, in VI enim primis partibus totus mundus factus est</incipit>
+                                <explicit>Dicunt ueraciter ante solistitium XLmo Vto die fieri sine umbra similer post solistitium dicunt uero quod cunctae horę continentes in XC diebus uertuntur ad meridiem.</explicit>
+                                <bibl>Lipp, Frances R. <title>The Carolingian Commentaries on Bede's 'De Natura Rerum'</title>. Ph.D. dissertation, Yale Univeristy, 1961, pp. 63-67.</bibl>
+                            </msItem>
+                            <bibl>Bede. <title>Opera didascalica</title>. Ed. Charles Jones. CCSL, 123 A. Turnhout: Brepols, 1975 (here p. 192-234).</bibl>
+                        </msItem>
+                        <msItem>
+                            <locus from="27v">27v</locus>
+                            <author>Sisebut</author>
+                            <title>Carmen de eclipsibus<note> (vv. 31-44)</note>
+                            </title>
+                            <msItem>
+                                <locus from="27v">27v</locus>
+                                <note>Prolog (?):</note>
+                                <quote>Decies octies maior est sol quam terra sicut sisebutus gottorum rex confirmat scribens uersibus heroicis suo magistro sancto isidoro spalense ciuitatis episcopo quare sol ultra terram non tangit lunam quando deficit.</quote>
+                            </msItem>
+                            <incipit>Bis nouies cluiat quam terreus orbis <lb/>Non circumcingit terrestres lumine moetas</incipit>
+                            <explicit>Fratre caret uacuaquę exsanguis deficit horae.</explicit>
+                            <note>In the outer margine list of roman numerals in four columns entitled <quote>Numerus in litteras latinas</quote>.</note>
+                            <bibl>Fontaine, J. <title>Isidore de Séville. Traité de la nature; suivi de l'épître en vers du roi Sisebut à Isidore</title>. Bordeaux: Féret et fils, 1960 (here pp. 329-335).</bibl>
+                        </msItem>
+                        <msItem>
+                            <note>Verse:</note>
+                            <incipit>Bissena mensum uertigine uoluitur annus</incipit>
+                            <explicit>Personas idus decurrens atque Kalendas</explicit>
+                            <filiation>This short verse is transmitted in a series of manuscripts; among others in <ref type="altMs">St. Gall, Stiftsbibliothek, Cod. Sang. 250, p. 65</ref>, <ref type="altMs">Karlsruhe, Badische Landesbibliothek, Aug. 167 (the "karlsruhe Bede"), f. 13v</ref>. The latter MS has no Aratea, but it belongs to the same small group of DNR manuscripts (six MS from the 9th c. including <ref type="altMs">Berlin, SBB MS Phill. 1832</ref>, and Amiens, BM, MS 222.</filiation>
+                            <bibl>Ed. Riese, Anthologia Latina sive Poesis Latinae supplementum, Vol. I, 2. Leipzig: Teubner, 1894 (here p. 140, no. 680).<ptr target="http://d-nb.info/364874198"/>
+                            </bibl>
+                            <bibl>
+                                <abbr>PL</abbr> 94, col. 603 (assigned to Bede).</bibl>
+                        </msItem>
+                        <msItem>
+                            <locus from="27v" to="28v">27v-28r</locus>
+                            <note>Anonymous text on time:</note>
+                            <incipit>Intuentum quit sit status quid cursus postremo quid finis. Status est natura uel temporum ordo</incipit>
+                            <explicit>nemo horas et momenta et ceteros temporum articulos distinguet quia omnia praesentia simul.</explicit>
+                            <!--<filiation>Similar to the commentary to Martianus Capella found in <ref type="altMs">Leiden, UB, MS VLQ 48</ref>.</filiation>-->
+                            <quote type="full_text">Intuentum quit sit status quid cursus postremo quid finis. Status est natura uel temporum ordo <unclear>qui in se</unclear> semper per acto naturali circulo reuertitur ut partes in horam, horę in diem, dies in mensem, <supplied>m</supplied>enses in annum, anni in lunares solaresque circulos et cetera. Et ideo status dicitur quia semper sine ulla ordinis motatione currit per eosdem curriculos atque recurrit. Nam cursus ille temporum quem hic appellat per omnia motabilis est. Per VI enim huius mundi aetates gesta uariantur humana.                    
+                                <pb n="28r"/>De isto cursu chronica scripsit quę sunt secunda pars huius libri. Finem uero temporum elegantissime exposuit. cum de vii et viii aetate in fine sui operis disserte lucideque tracauit. <ref type="medieval" cRef="dtr_praefatio">Immo ipse labentibus curriculis temporum finem cum uoluerit imponet </ref>et reliqua. Quem finem deus tempori imponet  non per omnia patet facile. Si enim cęli et siderum cursibus quae hęc notissima tempora efficiunt profecto cęlum cum suius planetis aut penitus deficient quod absit aut sine ulla motatione de loco <subst>
+                                    <del>ad</del>
+                                    <add>in</add>
+                                </subst> locum stabilia erit. Nam si cursum suum egerint anni erunt. Si quis autem contenderit rara et aperta disputatione totum mundum in omnibus partibus stabilem atque nullo modo mobilem, non ualde resisto. Sed crediderim facilius pulcherrimum omnium esse semper cursum. Non paruum enim pulchritudinis addit rotunditati uolubilitas, cum manifesta ratio prodit naturam, firmamenti stare sine uolubilitate non posse. Namque cęlum igne et aqua ut philosophi dicunt conditum. ignis in alta uolat, undas ubi maruit, quę duo in se contraria uolubile efficiunt cęlum; sed quia non est sursum et deorsum in uniuerso. Non enim est altior plaga illa mundi quę super terras et ad quam igne <unclear>auibus</unclear> caeli uolare uidetur, quam illa quę subtus est et ad quam labitur aqua. Ideo VII planetae contra mundum uadunt ut his motibus sibimet ad uersantibus ostendatur corporeum istum mundum ubique altum ubique esse imum semperque uolubilem adsque centro. Attendamus ergo quid sit quod dixit labentibus temporum curriculis finem cum uoluerit imponet. Sed labentibus temporum curriculis id est his quę intemporibus aguntur ut manente semper mundo et naturali concursu et tempore quamuis melius motata omnia caduca atque labentia, id est omnes humani actus et cognitationes finem accipiant. Cum enim deus omnia momentibus erit, nemo laborabit qui a nemo indigebit, nemo contentet quia nullus aduersarius erit, nemo cogitabit ignarus quia nullus nisi sapiens, nemo horas et momenta et ceteros temporum articulos distinguet quia omnia pręsentia simul.</quote>
+                        </msItem>
+                        <msItem>
+                            <locus from="28r" to="28v">28r-v</locus>
+                            <note>Short text on the pleiades etc. similar to Commentary on Martianus Capella:</note>
+                            <incipit>Feruntur VII pliades esse quarum hęc sunt uocabula Terope, meropios, cileno, maia, altione</incipit>
+                            <explicit>Ipse sunt furię a lecto tesipherie megera quarum una tenet colum, altera fusum, tertia rumpit fila.</explicit>
+                            <quote type="full_text">Feruntur VII pliades esse quarum hęc sunt uocabula Terope, meropios, cileno, maia, altione <pb/>tegere, electra. Dictae autem pliades A ПOTOY ПACTOC. hoc est a pluralitate sui uel a pluuia uel a matre ut sint filię athlantis et pliadis. Prima enim fit natiuitatis euocatio. Secunda uitę sors quemadmodum quisque uiuat. Tertia mortis sine certa conditione. Triae enim sunt genera mortis acerba, inmatura, debita. Ipse sunt furię a lecto tesipherie megera quarum una tenet colum, altera fusum, tertia rumpit fila.</quote>
+                        </msItem>
+                        <msItem>
+                            <locus from="28v">28v</locus>
+                            <note>Short text on the days in the months followed by a table.</note>
+                            <rubric rend="rustics red">Incipit computatio grecorum</rubric>
+                            <incipit rend="rustics">Ianuaris Augustus et December IIII Nonas habent et XVIIII KL post idus et dies XXXI</incipit>
+                            <explicit rend="rustics">Omnes ergo menses VIII Idus habent.</explicit>
+                            <msItem>
+                                <note>Table with three columns:</note>
+                                <rubric rend="rustics red">Hi sunt concurrentes <gap reason="illegible"/> ad inveniendam epactam <gap reason="illegible"/>
+                                </rubric>
+                                <note>In the middle column with now blemished ink one <foreign>argumenta</foreign>
+                                    <quote>si uis scire quota sit luna in kl hoc argumentum potest <unclear>inuenere</unclear>
+                                    </quote> followed by list of the months SEPT V, OCTB V, DECB VII and so on till AGS XIIII.</note>
+                            </msItem>
+                            <note>In the margin another computistical table.</note>
+                        </msItem>
+                    </msContents>
+                </msPart>
+            </msDesc>
+        </body>
+    </text>
+</TEI>

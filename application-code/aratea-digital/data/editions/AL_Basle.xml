@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Aratus Latinus. Transcription from <ref target="http://www.e-codices.unifr.ch/en/list/one/ubb/AN-IV-0018">Basel UB, AN IV 18</ref> (ff. 2r-9v)</title>
+            <respStmt>
+               <resp>Transcribed and catalogued by </resp>
+               <name type="person">Ivana Dobcheva</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>Digital edition according to TEI P5</edition>
+            <respStmt>
+               <resp>TEI-P5 coding by </resp>
+               <name type="person">Ivana Dobcheva</name>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>
+               <name type="person">Peter Andorfer</name>
+               <ptr target="http://www.digital-archiv.at/"/>
+            </publisher>
+            <date when="2016-03-03" type="issued">03.03.2016</date>
+            <availability status="restricted">
+               <licence target="http://creativecommons.org/licenses/by-sa/3.0/de/" notBefore="2013-03-01">
+                  <p>Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="basle_aniv18" xml:lang="eng">
+               <msIdentifier>
+                  <settlement>Basle</settlement>
+                  <repository>Universitätsbibliothek</repository>
+                  <idno>AN IV 18</idno>
+               </msIdentifier>
+               <head>
+                  <title>Aratus Latinus and Germanicus' Aratea</title>
+                  <origPlace ref="#fulda">Fulda (?)</origPlace>
+                  <origDate notBefore="0801" notAfter="0833">s. IX, first third.</origDate>
+               </head>
+               <msContents>
+                  <textLang mainLang="lat" />
+                  <msItem>
+                     <locus from="Ar">Ar</locus>
+                     <note>Title: <quote>Liber astronomie cladii cesaris</quote> and a  shelf mark <quote>XLVI. or.</quote></note>
+                  </msItem>
+                  <msItem>
+                     <locus from="Av" to="1r">Av-1r</locus>
+                     <note>blank.</note>
+                  </msItem>
+                  <msItem>
+                     <locus from="1v">1v</locus>
+                     <note>Celestial map, planipshere.</note>
+                     <note> (the folio was removed from the manuscript when the binding was restored in 1987 and is now stored separately.)
+                     </note>
+                  </msItem>
+                  <msItem>
+                     <locus from="2r" to="9v">2r-9v</locus>
+                     <title ref="#al">Aratus Latinus</title>
+                     <msItem>
+                        <locus from="2r" to="3r"></locus>
+                        <rubric>AL, Alia descriptio praefationis</rubric>
+                        <incipit>Subtus terra ubi adorantur signa vii nauis centaurus in qua bestia</incipit>
+                        <explicit>necnon sagittarium pisces caetus orionem.</explicit>
+                     </msItem>
+                     <msItem>
+                        <locus from="3v" to="6r">3v-6r</locus>
+                        <note>AL, I Arati ea quae videntur</note>
+                        <rubric>Ostensionem quoque de quibus uidentur oportet fieri</rubric>
+                        <incipit>Ad austrum ex aduerso habens septentrionem</incipit>
+                        <explicit>ut nihil te latere possit quorum ab ei dicta sunt.</explicit>
+                     </msItem>
+                     <msItem>
+                        <locus from="6r">6r</locus>
+                        <note>AL, II (Eratosthenis "De circa exornatione stellarum et ethymologia de quibus videntur", no division from the previous text)</note>
+                        <incipit>erat ost<add>h</add>enis de circa exornacione stellarum &amp; ethymologia de quibus uidentur. haec autem sunt ad aquilonem septentrione maior</incipit>
+                        <explicit>in amba semispheria aquilo aries taurus gemini.</explicit>
+                     </msItem>
+                     <msItem>
+                        <locus from="6r" to="7v">6r-7v</locus>
+                        <note>AL, III (no division from the previous text)</note>
+                        <incipit>quibus aratis uidentur quedam sunt secundum cęli stellarum ecce sicut uidentur dicta sunt</incipit>
+                        <explicit>ubi &amp; illud aliud quia simili modo in ipsum suggerunt.</explicit>
+                     </msItem>
+                     <msItem>
+                        <locus from="8r" to="9v">8r-9v</locus>
+                        <note>AL, VII.1</note>
+                        <rubric>Inuolutio spherae</rubric>
+                        <incipit>Hic est stellarum ordo utrorum que circulorum septentriones duplices</incipit>
+                        <explicit>mars uero &amp; honorifica uenus deorum <lb/>mercurius quoque &amp; saturnis exigent <lb/>circuli uias per septenarium numerum <lb/>figuram indicant <lb/>circulorum.</explicit>
+                        <note>The last four lines written by a different contemporary hand with a pailer ink.</note>
+                     </msItem>
+                  </msItem>
+                  <msItem>
+                     <locus from="10r" to="10v">10r-v</locus>
+                     <note>blank.</note>
+                  </msItem>
+                  <msItem>
+                     <locus from="11r" to="45v">11r-45v</locus>
+                     <author ref="#germanicus">Germanics</author>
+                     <title ref="#germanicus_aratea">Aratea</title><note>, with Scholia Basileensia</note>
+                     <msItem>
+                        <locus from="11r" to="43r">11r-43r</locus>
+                        <note>vv. 1- 582 :</note>
+                        <incipit>Ab ioue principium magno deduxit aratus</incipit>
+                        <explicit>quod sine n<subst><del>o</del><add>u</add></subst>be caua solis uia forte latebit.</explicit>
+                     </msItem>
+                     <msItem>
+                        <locus from="11r" to="40v">11r-40v</locus>
+                        <title ref="#scholia_basileensia">Scholia Basillensia</title>
+                        <incipit>Quaeritur quare ab<del>uio</del> ioue coepit &amp; non a musis ut homerus</incipit>
+                        <explicit>Ostenditur autem unus inter circulos caeli lacteus uocatur <gap/> effusum est lacte facta est circuli albi species.</explicit>
+                     </msItem>
+                     <msItem>
+                        <locus from="43r" to="45v">43r-45v</locus>
+                        <note>Fragment IV:</note>
+                        <incipit>Iuppiter est illo laeto magis hic ubique solus</incipit>
+                        <explicit>haec eadem tibi signa dabunt non inrita pisces.</explicit>
+                     </msItem>
+                     <finalRubric>Clavdi caesaris arati phenomena explicit feliciter. Deo gratias.</finalRubric>
+                  </msItem>   
+                  <msItem>
+                     <locus from="46r" to="46v">46r-v</locus>
+                     <note>pen trials and provenance evidence (see provenance).</note>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>
+                           <p><material>Parchment</material></p>
+                        </support>
+                        <extent>
+                           <measure type="leavesCount" quantity="45">iii + 45 + iii</measure>
+                           <note></note>
+                           <dimensions type="leaf" unit="mm">
+                              <height>225</height>
+                              <width>145</width>
+                           </dimensions>
+                        </extent>
+                        <foliation>Modern foliation 2-46.</foliation>
+                        <collation>The old parchment binding is now Ar-v (title on Ar); the originally first folio with the planisphere is now stored separately; I<hi rend="sup">10(-1)</hi> (ff. 2-10), II <hi rend="sup">6(+1)</hi> (ff. 8-17), III<hi rend="sup">6</hi> (ff. 18-23), IV<hi rend="sup">8</hi> (ff. 24-31), V<hi rend="sup">6</hi> (ff. 32-37), VI<hi rend="sup">8</hi> (ff. 38-45). Tere are quiremarks marking the quire with which begins the text of Germanicus (ff. 10-17) as <quote>I</quote> (further quiremarks on f. 23v <quote>II</quote>, f. 31v <quote>III</quote> and on f. 37v <quote>IIII</quote>. This strongly suggests that the two Aratean texts were transmitted separately at least at the beginning.</collation>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="1" ruledLines="33">
+                           <p></p>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <scriptDesc>
+                     <summary></summary>
+                     <scriptNote script="carolmin">
+                        <p>Most of the text is written in carolingian manuscule from several hands (2r-9v, 14v-45v) with insular features such as pointed shafts, 11v-13r (f. 12r blank) written in a narrow pointed anglo-saxon minuscule; ff. 11r, partly 12v and 13v, and 14r written in a hybride carolingian script showing insular features (insular f, r, s, and con- and et abbreviation).</p>
+                     </scriptNote>                     
+                  </scriptDesc>  
+               </physDesc>
+               <history>
+                  <origin>
+                     <p>Judging by the characteristics of the script Bischoff (<bibl>Bischoff, Festlandischen Handschriften, Vol. 1, p. 57.</bibl>) supposed the manuscript was produced in a German centre under insular influence in the <origDate notBefore="0801" notAfter="0833">first third of the ninth century</origDate>. The attributon to Fulda is suggested also by the authors of <bibl>Sternbilder des Mittelalters, pp. 202-207</bibl> who compare the iconography of the illustration with those in other manuscripts produced in the centre in the third decade of the ninth century. According to them resposible for the production was Hrabanus Maurus, who had seen an exemplar of Germanicus in the royal court (perhaps <ref type="altMs">Leiden MS VLQ 79</ref> or its exemplar) and procured a copy for his students. According to the authors he did this shortly after completing his book on computus, i.e. after 820, as an aid for the study of computus. Although this idea is very tempting and probable, I see no real evidence for the personal connection of Hrabanus with the manuscript. Based on textual comparison between his works and Aratea texts, reveals only that he used the "De signis coeli" for producing the section on constellation in his "De computo".</p>
+                  </origin>
+                  <provenance>
+                     <p>On f. <locus from="45v">45v</locus> opening of a letter: <quote>Honorabili domino ac patri suo Q dei gratia fuldensis ecclesie abbati H decanus totusque eiusdam ecclesiam conuentus paratam ac duotam obedienia.</quote> On f. <locus from="46r">46r</locus> again almost the same text: <quote>Honorabili domino ac Patri suo N. dei gratia suus Fuldensis ecclesie abbati <gap/> decanus totusque eiusdem ecclesiae conuentus paratam et devotam obedientiam</quote>. Both notes suggest that the manuscript was at <rs type="place" ref="#fulda" role="provenance">Fulda</rs> by the <date notBefore="1101" notAfter="1300">12th-13th c.</date></p>
+                  </provenance>
+               </history>
+               <additional>
+                  <listBibl>
+                     <head>Selected bibliography:</head>
+                     <bibl>B. Bischoff, Festlandischen Handschriften, Vol. 1, p. 57.</bibl>
+                     <bibl>M. Haffner, pp. 121-124.</bibl>
+                     <bibl>F. Mütherich, "Die Fuldaer Buchmalerei in der Zeit des Hrabanus Maurus," in  Studies in Carolingain Manuscript Illumination, London: The Pindar Press, 2004, pp. 374-416, esp. p. 390.</bibl>
+                     <bibl>Escher, Die Miniaturen in den Basler Bibliotheken, Museen und Archiven, Basel 1917, p. 32-34.</bibl>
+                     <bibl><abbr>Sternbilder des Mittelalters</abbr>, pp. 202-207. <note>Present the hypothesis that the manuscript was copied under the initiative of Hrabanus Maurus, who was head master in the school of Fulda. He had seen an exemplar of Germanicus in the royal court (perhaps Leiden MS VLQ79 or its exemplar) and ordered or made a copy for the use of his students. According to the authors he did this shortly after completing his book on computus, as an aid Hilfsmittel for the computus (?) Althoughthis idea is very tempting, I see no real evidences to support the attribution to Fulda and to Hrabanus. It is likely but in no way can this be proved.</note></bibl>
+                     <bibl>Lippincott, online description <ptr target="http://www.kristenlippincott.com/assets/Uploads/MSS-DESCRIPTIONS-Germanicus-Basel-Univ-AN-IV-15-Nov-2012.pdf"/></bibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+        <editorialDecl>
+           <normalization><p> Original spelling and capitalization are preserved. Ligatured forms are not retained except &amp; which is encoded. Abbreviation are silently expanded. Punctuation has been for the most cases represented as in the source. Deletions and insertions are encoded.</p></normalization>
+        </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <pb n="2r" facs="http://www.e-codices.unifr.ch/en/ubb/AN-IV-0018/2r/"/>
+         <lb/><div type="section" xml:id="alia_descriptio">
+            <head>
+               <title>Alia descriptio praefationis</title>
+            </head>
+           <p><lb/>Subtur terra ubi adornantur signa VII nauis 
+              <lb/>centaurus in quo bestia sacrarium piscis 
+              <lb/>grandis· Inuisibilis fauonius· aequinoctialis 
+              <lb/>autem circulus aequum hab&amp; quod super 
+              <lb/>terra &amp; subterra In quo ador<add>n</add>antur signa XV equus 
+              <lb/>serpentarius in quo serpens· ylidris in qua urceus
+              <lb/>corueus ante canis aquila delfinus orionem tela del
+              <lb break="no"/>>toton andromeda laepus ca&amp;us canis unde fieri tota 
+              <lb/>signa numero xxx absque eorum inlustrissimis exor
+              <lb break="no"/>natis stellis· quomodo super bootem septentrionem 
+              <lb/>super agitatorem sex hedos· super taurum
+              <lb/>uergilias· super uirginem spicas pr&amp;uindemia· super 
+              <lb/>canem sirius· &amp; si qua horum similia. signalis uero 
+              <lb/>circulus hab&amp; signa xii· cancerum leonem uirginem
+              <lb/>librem scorpionem· sagittarium· capricornem· aqua
+              <lb break="no"/>ri· pisces· ari&amp;em taurum gemin<subst><del>e</del><add>o</add></subst>s· unde fieri omnia
+              <lb/>signa xii. sunt autem &amp; erraticae stellae absque sole 
+              <lb/>&amp; luna V saturnus· ioues· mars· uenerus· mercurius.
+              <lb/>horum autem narrationem aratus fecit· incipiens 
+              <lb/>a septentrione &amp; percircuens totum <subst><del>e</del><add>o</add></subst>rientem in circuitu 
+              <lb/>usque ad signalem· inde quoque transiens &amp; incipiens 
+              <lb/>ab orionem· pro eo quod splendidus hic a solare· fauonias 
+              <lb/>omnes pertransit usque santarcticum· deinceps 
+              <lb/>transit ad cetera.haec ergo cum ita habeant iam tran
+              <lb break="no"/>sit ad incidentes circulos incidim ab eis signa similiter.
+              <lb/>septentrionalis circul<subst><del>o</del><add>u</add></subst>s incidit signa duo· bootis cubitos 
+              <lb/>caephei pectus· sicut ait de istis aratus· aestiuus solistiti
+              <lb break="no"/>lis incidit signa x· agitatoris genua· serpentari 
+              <lb/>humeros· serpentis collum· cycni caput &amp; subcerbical 
+              <lb/>equi scapulas· persei collum· sinistrum tibiam· andromedae 
+              <lb/>manu dextera &amp; geminum capita· cancerum medium 
+              <lb/>leonem dimidium simulque serpentarii humeros· serpen
+              <lb break="no"/>tis collum ęquinoctialis circulus incidit signa V· <subst><del>&amp;</del><add>ae</add></subst>qui capud 
+              <pb n="2v" facs="http://www.e-codices.unifr.ch/en/ubb/AN-IV-0018/2v"/>
+              <lb/>&amp; collum serpentarii genua· aquari collum· urceum 
+              <lb/>genua orationem medium andromedae quod sinistrum· piscis sum
+              <lb break="no"/>mitatem mediam· tauri genua· uirginis pedem· uergilias 
+              <lb/>medias· scorpionis pars· simul piscis caudam· uirginis pes·
+              <lb/>antecanis. hyemalis circulus incidit signa X· heridanum· 
+              <lb/>nauis puppem· centauri scapulam· canis maiori posteriores 
+              <lb/>pedes· caeti caudam· laepus medium· scorpionis aculeum· 
+              <lb/>sagittari sagittam· capricornem medium· aquari pedes· 
+              <lb/>unde sunt qui non inciduntur circuli quattuor· quae 
+              <lb/>autem ab eis inciduntur signa XXXVII. quoniam de his nobis
+              <lb/>cancero oriente totus orion laepus· occidit corona· piscis 
+              <lb/>medius· ab spino serpentarius usque humeris· serpens 
+              <lb/>usque ad collum· arcturi· custus paulo minus. leone orien
+              <lb break="no"/>te oritur antecanis totus· aquari caput· canis anterio
+              <lb break="no"/>res pedes· occidit autem residua quae cum cancero praeoc
+              <lb/>cidentia bootes reliquum coronae serpentarius ser
+              <lb break="no"/>pens eius· piscis· aquila· caetus· ingeniculo totus· 
+              <lb/>absque tibia sinistra usque ad genuculum. uirgine orien
+              <lb break="no"/>te oritur· antecanis totus· laepus· aquari caput· canis 
+              <lb/>anteriores pedes· occidit autem residua· quae cum cancero 
+              <lb/>praeocccidentia bootes reliquum· corona serpentarius 
+              <lb/>serpens· aquarius· usque ad urceum· canis maiori 
+              <lb/>retrorsi pedes· nauis puppe· occidit autem fidicula 
+              <lb/>delfinus· tela· cycnus usque ad caudam· fluuii priores 
+              <lb/>partes· equi collum. uergilias oritur bootes totus· 
+              <lb/>capricornius totus aquarius· corbus· dextera tibia 
+              <lb/>ingenu coronae summum· cauda· <del>androme</del> centauri· 
+              <lb/>simul urceus· cor<subst><del>p</del><add>u</add></subst>us· occidit equi residuum· cycni mai
+              <lb break="no"/>oris cauda· andromedae caput· caetus usque ad lum
+              <lb break="no"/>bos caephei caput humeri manus·scorpione oriente 
+              <lb/>oritur· coronae residuum medium· aquari cauda 
+              <lb/>centa<add>u</add>ri corpus &amp; caput &amp; bestiam ten&amp; in propria manu 
+              <lb/>serpentari caput· prima frons ingenu totus absque 
+              <lb/>caput &amp; sinistra manu· occidit uero totus fluuius· 
+              <pb n="3r" facs="http://www.e-codices.unifr.ch/en/ubb/AN-IV-0018/3r"/>
+              <lb/>orionem nihilominus· caeti lumbos· andromeda· delto
+              <lb break="no"/>ton· sagittario oriente oritur ingeniculo· caput et si
+              <lb break="no"/>nistra manu fidicula· caepheum· occidit autem canis totus 
+              <lb/>orion· laepus caetus· agitator absque tibia  sinistra &amp; ma
+              <lb break="no"/>nu in qua sex <add>h</add>edos· perseus absque dextro pede· nauis 
+              <lb/>puppe antecanis·capricornę· oriente oritur serpen
+              <lb break="no"/>tari co<add>r</add>pus· serpentis residuum ingeniculo caput· aquila 
+              <lb/>tela sacrarium· delfinus· cycnus· occidit agitatoris residu
+              <lb break="no"/>um caput manu sinistra in qua sex hedos· nauis tota 
+              <lb/>aquarium usque ad urceum· centauri r&amp;rorsi pedes aquario·
+              <lb/>oriente oritur equi caput· &amp; pedes anteriores cassiepia 
+              <lb/>simul· occidit autem centauri posteriora· aquarius 
+              <lb/>&amp; urceus usque ad corbum· piscium orientium oritur fauo
+              <lb break="no"/>nius piscis· non totus andromedae dextera pars· occidit 
+              <lb/>autem· totus centaurus serpens· aquaria urceus· simul 
+              <lb/>corbus ari&amp;e· oriente oritur caput &amp; humeri persei· 
+              <lb/>andromedae sinistra pars deltoton simul· occidit autem 
+              <lb/>sacrarium arcturi custus· tauro· oriente oritur perseus 
+              <lb/>totus· agitatoris pedi sinistri summitatem· sinistra 
+              <lb/>manus· in sex hedos· caeti lumbos· occidit autem sep
+              <lb break="no"/>tentrioni custus cum sua portione· geminum orientium 
+              <lb/>oritur fluuius orion· occidit uero &amp; serpentari
+              <lb/>us usque ad genua· eratosthenes de exornatione
+              <lb/>&amp; propri&amp;ate sermonum quibus uidentur &amp; ipparchi
+              <lb/>de magnitudine &amp; positione de inerrantium
+              <lb/>stellarum secundum qualiter sunt circumuenientia 
+              <lb/>secundum ipparchum &amp; eratosthenen· septentrio
+              <lb/>maior· septentrio minor· serpens inter ambas
+              <lb/>septentriones· bootes corona ingeniculo· serpen
+              <lb break="no"/>tarius· inter amba semispheria· caepheus cass
+              <lb break="no"/>epia· andromeda· triangulum· perseus· agitorem· in fa
+              <lb break="no"/>uonio signale· aquarius inter ambobus· semispheriis
+              <lb/>urceus· corbus nauis centaurus· &amp; bestia quam
+              <lb/>ten&amp; in dextera· sacrarium· necnon sagittarium pisces
+              <lb/>caetus· orionem·</p></div>
+         <pb n="3v" facs="http://www.e-codices.unifr.ch/en/ubb/AN-IV-0018/3v/"/>
+         <lb/><div xml:id="arati_ea_quae">
+            <p><hi rend="caps">Ostensionem quoque de quibus 
+               <lb/>uidentur oportet fieri</hi>
+               <lb/>ad austrum exaduerso habens septen
+               <lb break="no"/>trionem· a dextris orientem· a sinistris
+               <lb/>occidentem· naturalis autem positio sphe
+               <lb break="no"/>rae mundi haec est· quod sit medio caelo cancer super 
+               <lb/>solistitio aestiuo orientales partes· super aequinoctia
+               <lb break="no"/>lem occidentalem· ari&amp;em draconis caput deorsum
+               <lb/>In id quod terminat· circuit autem sub quo terminatur·
+               <lb/>ipsa quoque secundum narrationem positio de quibus
+               <lb/>arati uidentur talis est· quod habeat medio cęlo capri
+               <lb break="no"/>cornium· super hyemalem solistitium orientalem arie
+               <lb break="no"/>tem super aequinoctialem occidentales plagas· draconis 
+               <lb/>caput· sursum apud arcticum ubimiscentur occasu erit 
+               <lb/>&amp; orientis alterutri· hab&amp; quidem &amp; polo<add>s</add> duo· arcticum 
+               <lb/>totum spatiosum qui&amp; aquilus dicitur· arcticum inuisi 
+               <lb break="no"/>bilem qui&amp; australis dicitur hab&amp; quidem &amp; circulos 
+               <lb/>maximos quttuor· absque illum qui terminat in quo 
+               <lb/>dictum est· habens aequinoctialem signum candidum 
+               <lb/>paruos autem quattuor· arcticum totum sublimem· in qua 
+               <lb/>adornantur signa quattuor· arcturi duo· cępheus 
+               <lb/>a pectore draco· aestiuus solistitius plus habens 
+               <lb/>quod super terra· aequum autem quod subtus terra· in quo
+               <lb/>adornantur signa· octo· bootem corona ingeniculo lyra 
+               <lb/>cassiępia agitator cycnus perseus· hyemalesolistitium 
+               <lb/>plus habens qu<add>o</add>d subtus terra· aequ<add>u</add> autem quod super 
+               <lb/>terra in quo adfirmantur signa octo· bootem corona 
+               <lb/>ingeniculo lyra cassiepia agitator cycnus perseus· 
+               <lb/>hyemale solistitium plus habens quod super terra· 
+               <lb/>aequum autem quod subtus terra in quo adfirmantur 
+               <lb/>signa sec heridanum· nauis· centaurus· in quo bestia 
+               <lb/>sacrarium piscis maior inuisibilis australis· aequi
+               <lb/>noctialis autem circulos aequum hab&amp; <del>quod super</del>
+               <pb n="4r" facs="http://www.e-codices.unifr.ch/en/ubb/AN-IV-0018/4r/"/>
+               <lb/>quod super terra &amp; quod subtus terra in quo adfirmantur 
+               <lb/>signa XV· equus· serpentarius in quo serpens ylidris 
+               <lb/>in quo urceus coruus antecanis aquila delfinus 
+               <lb/>orion tela deltoton andromeda 
+               <lb/>laepus caetus canis· unde fieri omnia signa numero <num value="31">trigin
+               <lb break="no"/>ta unum</num> queque eorum Inlustrissimos alter utrum consti
+               <lb break="no"/>tutos quomodo super bootem septentrio· super agitatore· 
+               <lb/>sex hedos· super t<add>a</add>u<del>a</del>rum uirgiliae· super uirginem 
+               <lb/>spica praeuindemia· super <add>ca</add>nem sirius· &amp; si qua horum 
+               <lb/>similia· zodiacus autem circulus hab&amp; signa XII· 
+               <lb/>cancer leonem uirginem libri scorpionem· sagittarium· 
+               <lb/>capricornium· aquari<add>um</add> pisces· ari&amp;em taurum geminos·
+               <lb/>unde fieri omnia signa XLII &amp; erraticę stillae extra 
+               <lb/>sole &amp; luna quinque saturnus iouis mars· uenere 
+               <lb/>mercurius· horum quidem narrationem· fecit aratus 
+               <lb/>incipiens a septentriones &amp; pertransiens omnes ori
+               <lb break="no"/>entales Incircu<add>i</add>tu usque ad signalem· Itaque transiens 
+               <lb/>&amp; incooans ab orionem· eo quod splendidus hic eaquę 
+               <lb/>a signale fauonias omnes percurrit usque ad arc
+               <lb/>tarticum· sic quoque transit adc&amp;era· haec ergo cum 
+               <lb/>ita habeant· iam transgreditur super incidentes 
+               <lb/>circulos &amp; quae inciduntur sub ipsi signa· simili
+               <lb/>modo ergo apud orientales &amp; cum occidentales 
+               <lb/>eorum ut nihil relinquamus· quorum ad exorna
+               <lb break="no"/>tionem uerumtamen intellegendum hoc quia 
+               <lb/>pe<add>r</add> latitudinem aratus de his uerbum fecit· non omnia 
+               <lb/>perfecte suscipiens perfactura· sed quędam 
+               <lb/>reliquit quae circa sphera uidentur· ego quippe 
+               <lb/>ea quae de relicta sunt abeo restituam ut nihil de re
+               <lb break="no"/>lictum sit de quibus contemplantur· factae sunt  autem 
+               <lb/>tres dissensiones circa orientales &amp; cumoccidentales 
+               <lb/>quidam enim adfati sunt negotiationem fieri arati 
+               <lb/>a principio iam orienti signo· Alii ueri iam mediante
+               <pb n="4v" facs="http://www.e-codices.unifr.ch/en/ubb/AN-IV-0018/4v/"/>
+               <lb/>quidam autem a tota oriente· hoc quidem non st&amp;it· a prin
+               <lb break="no"/>cipio enim usque ad calce de signo congredi&amp;ur· cum orien
+               <lb break="no"/>tales quoque &amp; occidentales incessanter quemammodum 
+               <lb/>est in sphera intuere igitur arcticus circulus incidit 
+               <lb/>signa duo· bootis cubitum caephei pectus· sicut refert de his 
+               <lb/>aratus· aestiuum solistitium incidit signa <num value="10">X</num>· agitatoris 
+               <lb/>genua· serpentarii humeros· serpentis collum· cycni 
+               <lb/>caput· &amp; subcerbical· equi terga persei humerum sinistrum 
+               <lb/>&amp; tibia· andromedae manu sinistra geminum capita 
+               <lb/>cancer medius· leonem simulque serpentarii humeros 
+               <lb/>serpentis cerbicem· aequinoctialis circulus incidit 
+               <lb/>signa XII equi caput &amp; cerbicem· serpentarii genua· 
+               <lb/>ylidris collum urceum coruum orionem medium antecanis 
+               <lb/>caput andromedae pectus· aquilam mediam sinistri pis
+               <lb/>c<subst><del>e</del><add>i</add></subst>s caudam· ari&amp;em medium tauri genua· uirginis 
+               <lb/>pedem· libr<subst><del>e</del><add>a</add></subst>m mediam· scorpii pars· simulque piscis cauda 
+               <lb/>cancri pes· scorpioni<add>s</add> pars· andromedę pectus· 
+               <lb/>sinistrum antecanis· hyemalis circulus incidit signa 
+               <lb/>x· heridanum· nauis· puppem· centauri scapulas· canis 
+               <lb/>maioris r&amp;rorsos pedes· caeti cauda· lępus medium scor
+               <lb/>pii aculeum· sagittarii arcum· capricornem medium· 
+               <lb/>aquarii pedes· unde fieri incidentia <add>signa</add> quattuor· 
+               <lb/>quae autem inciduntur ab eis signa <num value="37">xxxvii</num>· iamque de his 
+               <lb/>a nobis dictum transgredi ad orientales &amp; cum
+               <lb/>occidentales· cancer oriente oritur totus orion 
+               <lb/>fluuius· occidit· autem· corona· piscis medius ad spi
+               <lb break="no"/>num serpentarius· usque humeros· serpens usque 
+               <lb/>ad collum· septentrioni custus abque modicum·
+               <lb/>leone oriente oritur antecanis totus· lępus aquarii 
+               <lb/>caput· canis anteriores pedes· occidunt residua 
+               <lb/>cum cancero peccora· occidit bootes· reliquum coro
+               <lb break="no"/>nae· serpentarius· serpens· piscis· aquila· totus· 
+               <lb/>ingenua absque tibia sinistra usque geniculo uirginis· 
+               <pb n="5r" facs="http://www.e-codices.unifr.ch/en/ubb/AN-IV-0018/5r/"/>
+               <lb/>orientis oritur ylidris usque ad urceum· cani<add place="above">s maioris</add> posterio
+               <lb break="no"/>res pedes· nauis puppe· occidit autem fidicula 
+               <lb/>delfinus· tela· cycni cauda· fluuii prior pars· equi 
+               <lb/>principium libri orientis oritur sagittarius totus 
+               <lb/>nauis tota· ylidris· urceus· coruus· dextera tibia 
+               <lb/>ingenu usque ad genuculum semis coronae extre
+               <lb break="no"/>mum caudae centauri simulque cor<add place="above">uus occidit</add> autem equi reli
+               <lb break="no"/>quum cycni magni cauda· andromedae caput· caetus 
+               <lb/>usque ad crura caephei uero caput humeri manu
+               <lb/>scorpione oriente oritur coronae residuum 
+               <lb/>semis· ylidri· centauri corpus &amp; caput &amp; bestia 
+               <lb/>quam ten&amp; in dextera manu serpentarii caput 
+               <lb/>&amp; prima campes· ingenu totus absque caput &amp; si
+               <lb break="no"/>nistra manu· occidit autem totus fluuius incolo 
+               <lb/>absque modicum· ca&amp;i lumbos· andromeda deltoton 
+               <lb/>cassiepia· caepheus a capite usque ad lumbos 
+               <lb/>absque deltoton· sagittarius oriente oritur 
+               <lb/>serpentarios· colubrę residuum ingeni<del>n</del>culo 
+               <lb/>sinistrum caput sinistra manu· fidicula caephe
+               <lb break="no"/>us· occidit autem incolo laepus· agitator absque 
+               <lb/>tibia &amp; sinistra manus in qua sex hedos· capri
+               <lb/>cornem orientem oritur perseus· uerumtamen 
+               <lb/>antecanis nauis tota· ylidris usque ad urceum· 
+               <lb/>centauri r&amp;rorsi pedes· aquario oriente oritur 
+               <lb/>equi caput· &amp; pedes anteriores· cassiepia simulque 
+               <lb/>occidit &amp;iam centauri posteriora· ylidris autem 
+               <lb/>&amp; urceus usque ad coruus· simulque urceus·
+               <lb/>pisces orientes oritur fauonius· piscis non totus 
+               <lb/>andromedae dextera pars· occidit autem centaurus 
+               <lb/>totus ylidris coruus simulque coruus· ari&amp;em 
+               <lb/>orientem oritur caput &amp; humeros persei andromedae 
+               <lb/>sinistra pars· deltoton simulque occidit autem 
+               <lb/>sacrarium tauro oriente oritur perseus agitatoris· 
+               <pb n="5v" facs="http://www.e-codices.unifr.ch/en/ubb/AN-IV-0018/5v/"/>
+               <lb/>pedis sinistri summitas sinistra manu in qua sex hedos· 
+               <lb/>caeti femora &amp;· occidit autem arcturi custus cum prima 
+               <lb/>sua portio aries gemines orientes oritur· fluuius 
+               <lb/>caetus incolo· occidit autem serpentarius usque ad ge
+               <lb break="no"/>nicula· quae omnia oport&amp; in sphera intuere ut dictum est 
+               <lb/>haec sunt sequenter &amp; terra est in spherae modum· 
+               <lb/>habens medio axem positam qui contine<del>n</del>t eam inmo
+               <lb break="no"/>bilem· habens fines indiuisas· quam in aquilonio polo 
+               <lb/>&amp; fauonio· hab&amp; autem zonas V aquilum totum spatio
+               <lb break="no"/>sum inhabitauilem siccum· saturnus aestiuus plus 
+               <lb/>habens super terra· aequum autem quod suptus terra 
+               <lb/>in circuitu habitauilem temperatam iobis aequinoc
+               <lb break="no"/>tialis· aequum habens quod super terra <gap reason="erasure" extent="3" unit="chars"/> quod subtus 
+               <lb/>terra inhabitauilem adustum· mars hyemalis 
+               <lb/>plus habens quod subtus terra· aequum uero quod sub
+               <lb break="no"/>tus terra in circuitu habitauilem temperatum· uene
+               <lb break="no"/>re fauonium inuisibilem siccum inhabitabilem· mercurii 
+               <lb/>qui ergo in ipsa semisspher<add>i</add>a habitantes aquilonii 
+               <lb/>&amp; fauoniis quibusdam hi sunt hyemales· qui uero 
+               <lb/>in utraque semispheria habitant super terra &amp; subtus 
+               <lb/>terra· ipsis sunt anguipedes· igitur septentriona
+               <lb break="no"/>lis zona habet <num value="66">LXVI</num>· aestiuus autem <num value="60">LX</num>· aequinoctia
+               <lb break="no"/>lis <num value="66">LXVI</num>· ex utraque parte aequinoctialis circuli cir
+               <lb break="no"/>culos <num value="4">IIII</num>· hic enim mediam illam incidit &amp; totam 
+               <lb/>spheram· hyemalis autem <num value="60">LX</num> antarcticus autem 
+               <lb/><num value="66">LXVI</num>· unde fieri terrae quod super terra est <num value="60">sexagesi
+               <lb break="no"/>mum</num> quam fieri totam terram in circuitu <num value="66">sexagies 
+               <lb/>sex</num>· potest autem seagesimum hoc· stadiis quinque 
+               <lb/>colligere· ergo in id ipsum totam terram stadiorum 
+               <lb/>dena milia <num value="35">XXV</num>· &amp; hoc uerbum a patribus terminatum 
+               <lb/>secundum alcaicum· &amp; <del>t</del>ita habere constat·quae ergo 
+               <lb/>demonstrata sunt mihi de quibus uidentur mei· 
+               <lb/>collectio haec est· si autem constiterit ratio &amp; c&amp;erorum 
+               <pb n="6r" facs="http://www.e-codices.unifr.ch/en/ubb/AN-IV-0018/6r/"/>
+               <lb/>huius facturae adimplebo uerbum ut dixi secundum factoris 
+               <lb/>fundamentum· ut nihil te latere possit· quorum ab eo 
+               <lb/>dicta sunt eratost<add>h</add>enis de circaexornatione stellarum 
+               <lb/>&amp; ethymologia de quibus uidentur· haec autem sunt 
+               <lb/>ad aquilonem septentrio<del>ne</del> maior septentrio minor 
+               <lb/>serpens inter ursasque septentriones· caepheus perseus 
+               <lb/>andromeda cassiepia cycnus fidicula ingenu corona 
+               <lb/>arcturi custus agitator deltoton equus tela aquila 
+               <lb/>serpentarius antecanis cancer leo uirgo librem scorpio 
+               <lb/>sagittarius capricornium aquarius pisces taurus 
+               <lb/>gemini fauinii incolo cętus delfinus ylidris in qua 
+               <lb/>urceus &amp; coruus canis bestia centaurus laepus nauis 
+               <lb/>fluuius pisces V stellae erraticae· ipparchus de mag
+               <lb break="no"/>nitudine &amp; positione errantius stellarum· constat autem 
+               <lb/>in aquilonio semispherio haec· septentrio maior 
+               <lb/>septentrio minor coluber inter ambas septentriones 
+               <lb/>bootes corona ingenu serpentarius· ambabque semi
+               <lb/>spheriis caepheus cassiepia andromeda triangulum 
+               <lb/>perseus· agitator· in fauonio autem signale aquarius 
+               <lb/>in utraque semispheria urceus coruus centaurus 
+               <lb/>bestia quam hab&amp; centaurus in manu dextra sacra
+               <lb break="no"/>rius· sub sagittario corona inrigator piscis cae
+               <lb break="no"/>tus incolo inutrque semispheria laepus antecanis 
+               <lb/>in aquilonio autem &amp; in signale circulo aquilo can
+               <lb break="no"/>cer leo uirgo fauonium librem scorpio sagittarius
+               <lb/>capricornem in amba semispheria aquilo aries taurus 
+               <lb/>gemini quibus arati<del>s</del> uidentur quedam sunt secundum cęli 
+               <lb/>stellarum ecce sicut uidentur dicta sunt· de sub cęlo autem &amp; qui
+               <lb break="no"/>bus olim dicta sunt transgrediamur item uidentur 
+               <lb/>secundum astron<subst><add>o</add><del>d</del></subst>micum poni locum de quibus &amp; recen
+               <lb break="no"/>sare consideraui quum mathematicis constat in duobus 
+               <lb/>conditoris conscriptio quaedam in quibus uidentur· &amp; in 
+               <lb/>stellarum ratione exposita quaedam in alia mittere
+               <pb n="6v" facs="http://www.e-codices.unifr.ch/en/ubb/AN-IV-0018/6v/"/>
+               <lb/>tibi proueni haec quae uidentur arati derigere· &amp; meam conscien
+               <lb break="no"/>tienciam· umquam de hac directione tradita· exemplum uero
+               <lb/>utens me· signis quoque &amp; indiciis de sex centesimo &amp; duplo
+               <lb/>&amp; utrum &amp; stellantium pauimento· scriptum autem si uideris 
+               <lb/>uersum minus positum aliquid de quibus predictum est signo 
+               <lb/>&amp; sub paginem hoc in fronte <gap/> scire oport&amp;· quia secundum
+               <lb/>signum· scriptę scripturę ad alias qu<subst><del>i</del><add>a</add></subst>sque creditas· horum 
+               <lb/>autem expositio in memoria ueniunt &amp; tamquam non in pec
+               <lb break="no"/>cato· in quo autem est secundum pauimento intuenda adque
+               <lb/>narranda· hyemalium quae quidem melius secus pauimento
+               <lb/>ferentur· hoc adducitur in praefatione illius· ipso incoan
+               <lb break="no"/>te ad anclidem unum de socios qui uerbum fecerat· quidam
+               <lb/>autem putauerunt sic quidam uero non aestimant· hoc arati
+               <lb/>esse prouerb<add>i</add>um quod principium a ioue incoamus· sed haec
+               <lb/>auferentes prouerbia alia praecipiunt· ista sunt autem
+               <lb/>anclidis ostensio sacrum praepositum· Itaque caelestem 
+               <lb/>uitam peragens &amp; cetera· quidam tamen sic &amp; alii aliter
+               <lb/>profanant· hii quidem ut apatus faciunt· per totam
+               <lb/>creaturam· ad quedam locum depinxerunt hos uer
+               <lb break="no"/>siculos ut cognoscatur· adquem est eorum suggestio·
+               <lb/>hoc quidem est bene compositum facturae consu&amp;uto·
+               <lb/>&amp;enim homerus <del>h</del>ubi dicit nuncupare hos apices
+               <lb/>alterotris· hoc est uocare &amp; in aliis inquibus non est ma
+               <lb break="no"/>nifestum scire prout scias quisnam· quantum enim
+               <lb/>potest nunc hoc scire quisnam· &amp; rursus nuncu
+               <lb break="no"/>pare &amp; zacynthum extentum decorum esse prout
+               <lb/>nuncupatur quisnam· absque nisi &amp; homerum·
+               <lb/>nuncupare quidem clamare aliquem quia &amp; nun
+               <lb break="no"/>tiatio praefationis quid faciat adloquitur· ante
+               <lb/>septuaginta annos dicit adnuntiatum quasi nihil
+               <lb/>dicat· quom ergo recalumniantes inquid <add>&amp;</add> aput nos
+               <lb/>praefationem habens quaedam litigiosa quid faciat·
+               <lb/>dicitur enim in ipsa praefatione quia iuppiter stellas
+               <pb n="7r" facs="http://www.e-codices.unifr.ch/en/ubb/AN-IV-0018/7r/"/>
+               <lb/>hominibus signa constituit· sic quoque &amp; facturam· indicio
+               <lb/>fugiens hominis malitiam ueniens in caelum stella fieri·
+               <lb/>unde iam non iu<add>p</add>piter omnes stellas constituit· sunt
+               <lb/>quidem bene composita eorum uerba· stellas enim consti
+               <lb break="no"/>tuit &amp; fundauit deus· nomina uero &amp; signa postea &amp; astro
+               <lb break="no"/>logiam peritissimi addiderunt eis· &amp; fabulas condide
+               <lb break="no"/>runt <gap reason="erasure" extent="10" unit="chars"/> proprias· nihiltamen prob&amp; condi
+               <lb break="no"/>torem &amp; factorem dicere deum· dicionem autem quadam
+               <lb/>ab ipsis nuncupari quibus stellarum rationem dixerunt
+               <lb/>quia sicut fabulas hoc dicit aratus· uerbum quidem cur
+               <lb break="no"/>rit sed h<subst><del>o</del><add>u</add></subst>manus· similimodo  &amp; de corona ariadnes
+               <lb/>hanc enim per dionysum quasi exornatam in carmine
+               <lb/>suo· &amp; ille coronam manifeste quod fabulationem primus
+               <lb/>reddidit d&amp;alem constitutionem stellarum homines
+               <lb/>conmittunt· non qualem iuppiter praecipit· istas enim
+               <lb/>appellationes &amp; significationes stellarum postea
+               <lb/>aliquando· berossus ait <del>inpro</del> in procreatione ita signi
+               <lb break="no"/>ficans· exposuit· nihil ad constitutionem mundi ab eo
+               <lb/>factam· talia <del>p</del> quippe aliqua eudorus dicit· amplius·
+               <lb/>quidem nos artificiose exposuimus anni creationem
+               <lb/>dicitur autem similimodo quod quasi praefatus antigonus·
+               <lb/>hanc expositionem arati traditam· nondum ess&amp; astro
+               <lb break="no"/>logus refert dare eudoii rescriptu· &amp; iub&amp; hoc per car
+               <lb break="no"/>mine adnuntiare quasi factorem manentem·       
+               <lb/>inperitum autem astrologiae hanc excepit gloriam·
+               <lb/>ipparchus quoque bithyneus aput aratum &amp; eudoxum
+               <lb/>&amp; dionysum· manifeste quidem potius thrax &amp; posito
+               <lb break="no"/>nius in praedicatione homeri &amp; arati de mathematicis·
+               <lb/>sunt quidem omnes beniuoli efficer&amp; enim aratum
+               <lb/>demonstrate perfectum astrologum· &amp;si nihil dif
+               <lb break="no"/>ferri dixisse de eudoxum qui ea ipsa communicanti
+               <lb/>per commentum dianae nihil aratione excessisse·
+               <lb/>inpossibile enim quend<del>d</del><add place="inline">a</add>m hoc facere non pręceptorem
+               <pb n="7v" facs="http://www.e-codices.unifr.ch/en/ubb/AN-IV-0018/7v/"/>
+               <lb/>esse· tan<add place="above">ta</add> quidem apud eos qui sine praefatione conan
+               <lb break="no"/>tur facturam declarare quid<subst><del>e</del><add>a</add></subst>m autem aiunt &amp; hoc
+               <lb/>postea repositum· ab eodem praenomi<add place="above">nato</add> antigono impe
+               <lb break="no"/>ratori priori amico arati· de praefacione autem quod ess&amp;
+               <lb/>arati· &amp; quoniam in macedoniam est inuentum in antigo
+               <lb/>ni bibliothecam· quidam in membranis· quidam
+               <lb/>in tabulas· alii uero in samo de carmine hoc inuentum
+               <lb/>esse ubi &amp; illud aliud quia similimodo in ipsum sugge
+               <lb/>runt·
+            </p>
+            <gap reason="left_blank" extent="24" unit="lines"/>
+         </div> 
+         <pb n="8r" facs="http://www.e-codices.unifr.ch/en/ubb/AN-IV-0018/8r/"/>          
+             <lb/><div xml:id="involutio_spherae">
+                <head><title>In uolvtio spherae</title></head>
+             <lb/><p>Hic est stellarum ordo utrorumque circulorum· septen
+             <lb break="no"/>triones duplices· ad austrum uertunt figura
+             <lb/>auersis caudibus inuicem sibi aduersantur· obliquus
+             <lb/>autem uacat ne uagare possit draco· hic quoque ambas
+             <lb/>diuidit genibus· in dextro pede hab&amp; quidem continentem
+             <lb/>serpentarium· iuxta quod in fronte scorpionis adtingit
+             <lb/>pedem· maiori autem r&amp;ro stat custus· septentrioni pedi
+             <lb break="no"/>bus quidem eius uirginalis uterus habens igneam manibus
+             <lb/>frugis spicam· inter stellas autem haec adimpl&amp;ur figura
+             <lb/>simul quippe septentriones a dextris iuxta coronam
+             <lb/>desuper serpentem prae manibus habens serpentarium septen
+             <lb break="no"/>trionem circumdatus· item r&amp;rorsis autem uestigiis adiac&amp;
+             <lb/>leo mediis quidem aestiuis solistitiis cancer gemini quoque
+             <lb/>item apud diuinis iacent pedibus· caput autem sub ipsa agitato
+             <lb break="no"/>ris pedes· tauri cornua dextera confirmantur· leo autem
+             <lb/>ab humero usque ad urna nutritor quem ipse stellis conlocauit
+             <lb/>bene· solium tenens caelestem uirga regia· heduli autem h<subst><del>a</del><add place="above">u</add></subst>ic
+             <lb/>desuper optinent locum fructus a principio manibus portant
+             <lb/>escam· septentrionis autem minoris in ultimum pedem caepheus
+             <lb/>trianguli ordinem contin&amp;ur· cycinum manu dextera
+             <lb/>adpręhendens· ala autem sub ipsa equus extendit pedem
+             <lb/>mediis autem regionibus pisces uidentur stellarumque quarum
+             <lb/>primis &amp; nunc dicitur quanta existimantur &amp; adimpl&amp;ur
+             <lb/>locus antea iac&amp; cassiępia caepheo· ipse quidem perseus
+             <lb/>uelox cum sit pedes ponit super dorsum agitatoris· equo connex
+             <lb break="no"/>us andromedae caput tenens· ipsum autem aequum uterus
+             <lb/>cani stella· inter cycnum quidem <add place="above">&amp;</add>ipsum ingeniculo lyra
+             <lb/>constituitur in medio eorum· item ad orientem quoque delfinus
+             <lb/>adest· equi autem caput iuxta extollitur desuper aquarius
+             <lb/>capricornium ten&amp; cauda ab ipsa inuestigatur caput·
+             <lb/>delfinus autem super tela· aquileos caudam draconis dupli
+             <lb break="no"/>cis manibus tenens· serpentarius in proximo habens
+             <pb n="8v" facs="http://www.e-codices.unifr.ch/en/ubb/AN-IV-0018/8v/"/>
+             <lb/>tenaciter membra· coronam coniungens rursus inuestigauilem·
+             <lb/>his ergo aquilonius definit locus· ad australem quippe ordinem
+             <lb/>properemus sub ipso aculeum scoprionis sacrarium tamen uergiliae
+             <lb/>que sub <add place="above">ip</add>sas scorpionis corpus· anteriora centauri uidentur
+             <lb/>membra· de quo pessima bestia incipit esse· anteriori autem
+             <lb/>sagittarii pessimus· sub australi circulo conuoluitur· hinc
+             <lb/>iam gallus circulus nuncap<subst><del>i</del><add>a</add></subst>tur australis piscis alter erit
+             <lb/>uidendus· aquariam autem sub ipsam uiginem leonemqu<subst><del cert="medium">s</del><add>e</add></subst> me
+             <lb break="no"/>dio apud ipsum cancer optineuit· caudam autem r&amp;ri taurus
+             <lb/>erit summum habens· campestrem quoque sub ipsa &amp; bonum signum
+             <lb/>magis urna coruus quidem apud centa<add>u</add>ri membra uidebis autem
+             <lb/>a sinistris incolum fluui in pedibus que sub ipsis uelocissimus laepus
+             <lb/>quasi splendidum lucorem iugulam fugit canem· canis
+             <lb/>autem r&amp;rorsis uagatur pedibus pedalius stella refulgens
+             <lb/>fulgoribus membris contrectat &amp; repl&amp; locis· tauri autem
+             <lb/>pessimo ad pedem protendit manu splendidus in astris splendi
+             <lb break="no"/>dus orio<subst><del>r</del><add>n</add></subst> magnus geminis protendens manu porrigens·
+             <lb/>antecanis autem manu dextera est <del>ia</del> iuxta· aries uero
+             <lb/>sub ipso piscium corpora· erga quibus iacit caetus in primis
+             <lb/>ecce conexio piscium communem habent stellam tantoque ordi
+             <lb break="no"/>ne fingitur natura· deorum mortalium· partim autem
+             <lb/>uidentur namque sine matre minerua decreuit mortalibus
+             <lb/>aut solis prodigiosam stellarum positionem per dei argumentum
+             <lb/>omnia breuiter dicere mortalium non adinueni&amp; sensus
+             <lb/>ab initio mundi a saeculi cursus quem non pensauit suae facturae natura</p>
+             <lb/><note place="margin">ari<lb/>ies</note> <p>Primum autem ordinem ari&amp;is praecedit circulus
+             <lb/>pro eo quod in iudicio omnia conuicta habent· conuenit enim
+             <lb/>in id ipso hoc conuincere· a quo &amp; pro quo aries nominatus
+             <lb/>mortalibus Iudicare ergo positus tempestatum tranquillita
+             <lb break="no"/>tes· iudicare autem spatium diei noctisque aequitatem unde
+             <lb/>mundum mundo recu<subst><del>bu</del><add>pe</add></subst>rauit· cum enim mortalis sit
+             <lb/>partem deorum hab&amp;· pro quo &amp;iam iudicio &amp; hunc nomi
+             <lb break="no"/>nauerunt dii ari&amp;em· iudicium enim pertransiit aequaliter
+             <pb n="9r" facs="http://www.e-codices.unifr.ch/en/ubb/AN-IV-0018/9r/"/>
+             <lb/>ad mane &amp; ad uesperum currensi in circuit<subst><del cert="low">i</del><add>o</add></subst> per acere
+             <lb/>omnem cursum· <note place="margin">taurum</note> Iac&amp; quidem post ipsum taurus quasi
+             <lb/>laboriosus figura similis illi tamquam in cerbice conti
+             <lb break="no"/>nentem qualem condec&amp; iugum directis aratris sul
+             <lb break="no"/>cis diuidit terras in stellarum ordo qui olim quondam dimi
+             <lb break="no"/>catur taurus· sed &amp; hic mortalis sic uocatur uniuersorum
+             <lb/>finium custor·</p>
+             <lb/><note place="margin">gemini</note><p>gemini autem iacent ordine manifesto eo quod fruc
+             <lb break="no"/>tus adcreuerit duplex uirides autem supra terra
+             <lb/>incoant findi naturam &amp; duplices folias addidit germi
+             <lb break="no"/>nantes ad serenitatem sacre disciplinae·</p>
+             <lb/><note place="margin">cancer</note> <p>hic mutatio aelimenti recipienda est· cancer existens
+             <lb/>temporibus canceris· quod maximum fructum demons
+             <lb break="no"/>tret mortalibus a quo constituitur ordine manifesto·
+             <lb/><note place="margin">leo</note> hab&amp; autem numerum in parte quinta leo nigrescit
+             <lb/>enim iamque &amp; figuratur· calidis igne<del>m</del> conbustis
+             <lb/>solis in missionibus· quę germinant terrae desuper
+             <lb/>crescunt· hic amittens tempora accedit leo·</p>
+             <lb/><note place="margin">uirgo</note> <p>Proxime istius uirginis iac&amp; figura primum enim
+             <lb/>in hac stella sol uix incorrupta terrae cuncta obseruantur
+             <lb/>genera· quaecumque finem acceptura corruptionis denomi
+             <lb break="no"/>natur omnibus uirginis uita·</p>
+             <lb/><note place="margin">libri</note> <p>Libri autem quod triticum in domibus brutorum· terrigenis
+             <lb/>manibus coaceruatum laboribus terraenis tot collegitur·
+             <lb/>tunc in opaci<subst><del>i</del><add>s</add></subst> conditas escas tribuit innumerabiles nutri
+             <lb break="no"/>menta quando ue<subst><del>i</del><add>r</add></subst>giliae incolo continent sementem· hic
+             <lb/>adcommodat semen terrae in ulnis· &amp; sine certamen ad sum
+             <lb break="no"/>mum introducitur·</p>
+             <lb/><note place="margin">scorpio</note> <p>Hinc iam scorpio conlocatus est· spargitur <gap reason="damage"/>
+             <lb/>triticum inedibus tellis ut maior fructus adcres
+             <lb break="no"/>cat mortalibus· post quod circulum uid&amp;ur multis modis·</p>
+             <lb/><note place="margin">sagittarius</note> <p>Bonum signum non malum hic est sagitta
+             <lb break="no"/>rius a terra autem fructus uelut sagittae
+             <pb n="9v" facs="http://www.e-codices.unifr.ch/en/ubb/AN-IV-0018/9v/"/>
+             <lb/>mittitur· hinc ostendit in uteris non occulta· nouasque
+             <lb/>desuper germire in sertas· hic ex duplici<del>i</del> forma corpo
+             <lb break="no"/>ris uisibiles membra·</p>
+                <p><hi rend="smallcaps">capricornius</hi>
+             <lb/>Monstruosum sidus capricornius nuncupatus bene sorti
+             <lb break="no"/>tus nomine hoc inter mortalibus anteriora quippe capre
+             <lb/>aspicitur forma· cauda posterior in maribus piscis·
+             <lb/>quaedam uero in terris ponitur uirentibus quaedam autem
+             <lb/>in f<subst><del>r</del><add>l</add></subst>uctibus natat itinere rubro· in hoc enim aspicitur morta
+             <lb break="no"/>lis natura· hab&amp; autem humoris spiritum &amp; ari<add>di</add>tatis escas·</p>
+             <lb/><note place="margin">aqua<lb/>rius</note> <p>Pessimo autem ordine desuper minuens aqua nubem praemi
+             <lb break="no"/>tit arcus inducere cauernis quod conterit tempestate
+             <lb/>mundi gelidam· ex humore autem fontibus subrip&amp; undas
+             <lb/>articulis· distorqu&amp; habitatum excursu or<subst><del cert="low">r</del><add>b</add></subst>em tegit·
+                <lb/>polumque caeli inebrians· naturalis iter per longa curricula
+             <lb/>propter quod bene sortitus nomine hoc aquarius pestifero
+             <lb/>ordine truculentus· totus aethere obliquam accepit nubem
+             <lb/>inducit multam tempestatem &amp; spiramina brutis· ostendit
+             <lb/>quibus signis innotescit circulus·</p>
+             <lb/><note place="margin">piscis</note> <p>Postquam circuit circulum inuoluens spiramenta uen
+             <lb break="no"/>tis inmutans habitum lucore duplo reu<add>o</add>lutum domibus
+             <lb/>ostentat morem· non enim pura quidem transuersa
+             <lb/>nec faciem rectam in ordine uoluitur caelum quaedam
+             <lb/>aquilonio latere innuit polo· alius autem australis iu
+             <lb break="no"/>b&amp;ur inicere uiolenti signa uidentur per circuitum caeli·
+             <lb/>e<subst><del>t</del><add place="inline">o</add></subst> quod spiramentis quae in profundo caelantur ostendit
+             <lb/>piscis· omnis enim in fundo cadens· uentus concitat 
+                <lb/>undam significans brutis· hyeme constitutum
+             <lb/>conuertit in tempestatem inuolutio a terra
+             <lb/><gap reason="damage" extent="1" unit="chars"/>quarum spargit decursus· demonstrant tempo
+             <lb break="no"/>ra hyemis tempestatum natura· hic duplicibus utitur
+             <lb/>temporum curricula uentorum habentes ordinem
+             <lb/>innumerabilem quorum priora iuppiter a sole menses
+             <lb/>condidit· mars uero &amp; honorifica uenus deorum
+             <lb/><handShift/>mercurius quoque &amp; saturnus exigent
+             <lb/>circuli uias per septenarium numerum
+             <lb/>figuram indicant <gap reason="erasure"/>
+             <lb/>circulorum·
+          </p>
+       </div>
+      </body>
+  </text>
+</TEI>

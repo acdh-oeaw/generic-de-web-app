@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<register xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <work xml:id="ad_boreae">
+        <title>De sideribus</title>
+        <author ref="priscianus">Ps. Priscianus</author>
+        <incipit>Ad boreae partes Arctoi uertuntur et Anguis</incipit>
+        <explicit>Hinc sequitur Pistrix simul Eridanique fluenta.</explicit>
+        <bibl>Anthologia Latina, I, 2, p. 139, no. 679.</bibl>
+    </work>
+    <work xml:id="al" ref="http://d-nb.info/gnd/4200734-3">
+        <title>Aratus Latinus</title>
+        <incipit>Ostensionem quoque de quibus uidentur oportet fieri</incipit>
+        <explicit>in annum umquam reliquimus continentem in coelo signum.</explicit>
+        <bibl>Maass, pp. 102-306.</bibl>
+    </work>
+    <work xml:id="anonymus_sangallensis">
+        <title>Anonymus Sangallensis</title>
+        <incipit>Herodius dicit helicem licaonis fuisse filiam</incipit>
+        <explicit>absides eius ultima in capricorno est.</explicit>
+    </work>
+    <work xml:id="aratea_avienus" ref="http://d-nb.info/gnd/4122863-7">
+        <title>Aratea</title>
+        <author ref="#avienus">Avienus</author>
+    </work>
+    <work xml:id="aratea_cicero" ref="http://d-nb.info/gnd/4340121-1">
+        <title>Aratea</title>
+        <author ref="#cicero">Cicero</author>
+        <incipit>E quibus hunc subter possis cognoscere fultum</incipit>
+        <explicit>Hanc autem totam properant depellere Pisces.</explicit>
+        <bibl>Cicéron, Les Aratea. Ed. by Victor Buescu. Paris: Les Belles Lettres, 1941.</bibl>
+        <bibl>Marcus Tullius Cicero. Aratea. Fragments Poétiques. Ed. by Jean Soubiran. Les belles lettres, 1972.</bibl>
+        <bibl>Online PHI Latin Texts<ptr target="http://latin.packhum.org/loc/474/60/0#0"/></bibl>
+    </work>
+    <work xml:id="arati_ea_quae" type="al">
+        <title>Arati ea quae videntur</title>
+        <note>Part from Aratus Latinus and Revised Aratus Latinus</note>
+        <incipit>Ostensionem quoque de quibus videntur oportet fieri</incipit>
+        <explicit>ut nihil te latere possit, quorum ab eo dicta sunt.</explicit>
+        <bibl>Maass, pp. 102-126.</bibl>
+    </work>
+    <work xml:id="astronomica" ref="http://d-nb.info/gnd/4263686-3">
+        <title>Astronomica</title>
+        <author ref="http://d-nb.info/gnd/118577077">Manilius</author>
+        <incipit>Carmine divinas artes et conscia fati</incipit>
+        <explicit>totus et accenso mundus flagraret Olympo.</explicit>
+        <bibl></bibl>
+    </work>
+    <work xml:id="bissena_mensum">
+        <title></title>
+        <summary>17 verses on the Roman calendar its months, weeks and days.</summary>
+        <incipit>Bissena mensium uertigine uoluitur annis</incipit>
+        <explicit>personas idus decurrens atque kalendas.</explicit>
+        <bibl>Ed. in Baker and Lapidge 1995, p. 384.</bibl>
+    </work>    
+    <work xml:id="collatio_alexandri" ref="http://d-nb.info/gnd/4600438-5">
+        <title>The Collatio Alexandri et Dindimi</title>
+        <summary>Consists of five fictive letters (three by Alexander, two answers from Dindimus, king of the Brahmans of India. Was probably originally written in Greek, although no Greek text has survived. According to Ross the two other Alexander texts, the Epitome and the Epistola, were intended to appear together, while the Collatio was added to them later. The Collatio was regarded as a useful tract on the ascetic like and so makes a frequent appearance in collection of moral and religious character (p. 128). Judging by the growing number of manuscripts from the twelfth century onwards shows that the interest in the texts was growing presenting the Indians as good pagans par excellence in the later Middle Ages (p. 278).
+        </summary>
+        <incipit>Sepe ad aures meas fando peruenit rationem uitae</incipit>
+        <explicit>quia donata repudias, aut invidiae, quod a meliore praestantur.</explicit>
+        <bibl>Pritchard, T. "The Collatio Alexandri et Dindimi: A Revised Text," Classica et Mediaevalia 46 (): 255-283 (not using this manuscript).</bibl>
+        <bibl>Steinmann, M. "Die Collatio Alexandri et Dindimi – eine annotierte Arbeitsbibliographie," Göttinger Forum für Altertumswissenschaft 4 (2001) 51-84<ref target="https://www.academia.edu/5469687/ARTIKEL_Die_Collatio_Alexandri_et_Dindimi_-_eine_annotierte_Arbeitsbibliographie"></ref></bibl>
+       <bibl>Cary, G. "A Note on the Medieval History of the Collatio Alexandri cum Dindimo," Classica et Mediaevalia, 15 (1954): 124-9.</bibl>
+        <bibl>Ross, D. J. A. "A Check-list of MSS of Three Alexander Texts: The Julius Valerius Epitome, the Epistola ad Aristotelem and the Collatio cum Dindimo" Scriptorium 10 (1956): 127-132.</bibl>
+    </work>
+    <work xml:id="commentary_calcidius" ref="http://d-nb.info/gnd/109324514X">
+        <title>Commentary in Plato's Timeus</title>
+        <author ref="http://d-nb.info/gnd/118669036">Calcidius</author>
+        <incipit>Timaeus Platonis et a ueteris difficilis habitus atque existimatus est ad intellegendum</incipit>
+        <explicit></explicit>
+        <bibl>Chalcidius. Commentaire Au Timée de Platon. Edited by Béatrice Bakhouche. Histoire Des Doctrines de L’antiquité Classique 42. Paris: Vrin, 2011.</bibl>
+        <bibl>Timaeus a Calcidio translatus commentarioque instructus in societatem operis coniuncto. Edited by Jan H. Waszink. London: The Warburg Insitute, 1962.</bibl>
+    </work>
+    <work xml:id="commentarium_somnium" ref="http://d-nb.info/gnd/4245343-4">
+        <title>Commentarium in Ciceronis somnium Scipionis</title>
+        <author ref="#macrobius">Macrobius</author>
+        <incipit>Inter Platonis et Ciceronis libros quos de re publica uterque constituit</incipit>
+        <explicit>quo universa philosophiae continetur integritas.</explicit>
+        <bibl>Ambrosii Theodosii Macrobii Commentarii in somnium Scipionis Macrobius, Ambrosius Theodosius. Leipzig: Teubner, 1963.</bibl>
+        <bibl>Corpus corporum<ptr target="http://mlat.uzh.ch/?c=16&amp;w=Macrob.InSoSci"/></bibl>
+    </work>
+    <work xml:id="de_arithmetica" ref="http://d-nb.info/gnd/4248505-8">
+        <title>De arithmetica libri iduo</title>
+        <author ref="#boethius">Boethius</author>
+        <incipit>&lt;Praefatio Boetii DOMINO SUO PATRICIO SYMMACHO BOETIUS.&gt; In dandis accipiendisque muneribus ita recte officia inter eos praecipue</incipit>
+        <bibl>PL 63, 1079 - 1167A<ptr target="http://www.documentacatholicaomnia.eu/03d/0480-0524,_Boethius,_De_Arithmetica,_LT.pdf"/>.</bibl>
+    </work>
+    <work xml:id="de_musica" ref="http://d-nb.info/gnd/4355784-3">
+        <author ref="#boethius">Boethius</author>
+        <title ref="http://d-nb.info/gnd/4355784-3">De institutione musica </title>
+    </work>
+    <work xml:id="de_geometria">
+        <title></title>
+        <bibl>Pl 63, 1352 - 1364D<ptr target="http://www.documentacatholicaomnia.eu/02m/0480-0524,_Boethius._Severinus,_Liber_De_Geometria,_MLT.pdf"/>.</bibl>
+    </work>
+    <work xml:id="de_architectura" ref="http://d-nb.info/gnd/4099392-9">
+        <title>De architectura</title>
+        <author ref="#vitruvius">Vitruvius</author>
+        <incipit>Cum divina tua mens et numen, imperator Caesar, imperio potiretur orbis terrarum invictaque virtute</incipit>
+        <explicit>uti totum corpus omnia architecturae membra in decem voluminibus haberet explicata.</explicit>
+        <bibl>Vitruvius: Ten Books on Architecture. Translated by Ingrid D. Rowland. Cambridge University Press, 1999.</bibl>
+        <bibl>Vitruvius.<title level="m"> De L’architecture</title>. Edited by Jean Soubiran. Second edition. Paris: Les belles lettres, 2003.</bibl>
+        <bibl>Online text in <ref target="http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Vitruvius/home.html">LacusCurtius</ref>.</bibl>
+    </work>
+    <work xml:id="de_astronomia">
+        <title>De astronomia</title>
+        <author ref="#hyginus">Hyginus</author>
+        <incipit>Etsi te studio grammaticae artis inductum</incipit>
+        <explicit>cum sol ab aestiuo circulo redit<gap/></explicit>
+        <bibl>Hygini. De astronomia. Ed. by Ghislaine Viré. Leipzig: Teubner, 1992.</bibl>
+        <bibl>Hygin. L'astronomie. Ed. by Le Boeuffle. Paris: Les belles lettres, 1983.</bibl>
+        <bibl>Online on PHI Latin Texts <ptr target="http://latin.packhum.org/loc/899/1/0#0"/></bibl>
+    </work>
+    <work xml:id="de_creatione_mundi">
+        <title>De creatione mundi</title>
+        <author ref="#wandalbert_von_pruem">Wandalbert von Prüm</author>
+        <incipit>De uno et trino deo Simplex, purus et unus</incipit>
+        <explicit>Vitae fonsque fovebit.</explicit>
+        <bibl><abbr>PL</abbr> 121, 0635A</bibl>
+    </work>
+    <work xml:id="de_die_natali">
+        <title ref="http://d-nb.info/gnd/4326614-9">De die natali</title>
+        <author ref="#censorinus">Censorinus</author>
+        <bibl>M. Olsen, L'étude des auteurs classiques latins aux xie et xiie siècles, IV. 2, p. 114, 332.</bibl>
+<!--        mentioned also St Gall 250 (s. ix2); Paris 1614 s. ix1 Tours, Bruxelles 5413-5422 (s. ix3/3 NE France), bern 87-->
+    </work>
+    <work xml:id="de_figuris_numerorum">
+        <title>De figuris numerorum</title>
+        <author ref="#priscianus">Priscianus</author>
+        <incipit></incipit>
+        <explicit></explicit>
+        <bibl>Entry in <ref target="http://www.mirabileweb.it/title/de-figuris-numerorum-priscianus-caesariensis-fl-sa-title/19717">Mirabile</ref>.</bibl>
+    </work>
+    <work xml:id="de_gubernatione_dei">
+        <title ref="http://d-nb.info/1000898628">De gubernatione dei</title>
+    </work>
+    <work xml:id="de_nominibus_mensium">
+        <title>De nominibus duodecim mensium</title>
+        <author ref="#wandalbert_von_pruem">Wandalbert von Prüm</author>
+        <incipit>Nominibus mensum quae sit rationis origo</incipit>
+        <incipit>Quem primum mensem servari Iulius anni</incipit>
+        <explicit>Maxima Agrippinae veteris quis moenia praesunt.</explicit>
+    </work>
+    <work xml:id="de_nuptiis">
+        <title>De nuptiis Philologiae et Mercirii</title>
+        <author ref="#martianus_capella">Martianus Capella</author>
+        <incipit>Tu quem psallentem thalamis, quem matre Camena progenitum perhibent, copula sacra deum</incipit>
+        <explicit>secute nugis, nate ignosce lectitans.</explicit>
+        <bibl>Martianus Capella. De nuptiis philologiae et mercurii. Edited by James Willis. Leipzig: Teubner, 1983.</bibl>
+        <bibl>Martianus Capella. <title>Martianus Capella and the Seven Liberal Arts</title>. Vol. 2, <title>The Marriage of Philology and Mercury</title>. Translated by William H. Stahl and Richard Johnson. New York: COlumbia University Press, 1977.</bibl>
+        <idno type="gnd">4285130-0</idno>
+    </work>
+    <work xml:id="de_nuptiis_VIII">
+        <title>De nuptiis Philologiae et Mercurii. Book VIII. De astronomia</title>
+        <author ref="#martianus_capella">Martianus Capella</author>
+        <incipit>Quae dum geruntur et deorum sacer senatus illos numerorum concinentium repugnantiumque admiratur anfractus</incipit>
+        <explicit>importat radius Solis affulgens, qui eos percutiens aut in sublime<gap/></explicit>
+        <bibl>Martianus Capella. De nuptiis philologiae et mercurii. Edited by James Willis. Leipzig: Teubner, 1983.</bibl>
+        <bibl>Martianus Capella. <title>Martianus Capella and the Seven Liberal Arts</title>. Vol. 2, <title>The Marriage of Philology and Mercury</title>. Translated by William H. Stahl and Richard Johnson. New York: COlumbia University Press, 1977.</bibl>
+    </work>    
+    <work xml:id="de_ordine_ac_positione">
+        <title>De ordine ac positione stellarum in signis</title>
+        <incipit>Est quidem hic ordo et positio siderum, quae fixa caelo plurium coaceruatione stellarum</incipit>
+        <explicit>Anticanis habet stellas III.</explicit>
+        <bibl>Dell’Era, Antonio. Una “caeli descriptio” d’età carolingia. Quaderni della Facoltà di magistero dell’Università di Palermo. Serie di filologia latina. Palermo, 1974.</bibl>
+        <bibl><abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1251">pp. 1251-60</ref>.</bibl>
+    </work>
+    <work xml:id="de_orthographia_bedae">
+        <title>De orthographia</title>
+        <author ref="#bede">Bede</author>
+        <incipit></incipit>
+        <explicit></explicit>
+        <bibl>Bede. Opera Didascalica. Edited by Charles Jones. CCSL, 123 A. Turnhout: Brepols, 1975. Pp. 7-57.</bibl>
+    </work>
+    <work xml:id="de_ponderibus">
+        <title>Carmen de ponderibus et mensuris</title>
+        <author ref="#remius_favinus">Remius Favinus</author>
+        <incipit></incipit>
+        <explicit></explicit>
+        <idno type="gnd">4246722-6</idno>
+    </work>
+    <work xml:id="de_signis_coeli">
+        <title>De signis coeli</title>
+        <author ref="#bede">Ps. Bede</author>
+        <incipit>Helix, quae et Arcturus maior. Habet autem in capite stellas obscuras VII</incipit>
+        <explicit>Candido colore et ualde splendens peragit CCCXLVIII diebus signiferum cursum suum complens.</explicit>
+        <bibl>Dell'Era, Antonio. "Una rielaborazione dell'Arato latino," in:<title> Studi Medievali</title> 20 (1979): 269–301.</bibl>
+    </work>
+    <work xml:id="de_signis_coeli_revision">
+        <title>De signis (interpolated version)</title>
+        <incipit>Quinam tamen multa dicunt et alii aliter narrasse celum diuersis proferentes uocabulis sed ipse magis axe continetur quam se continui indemetipso reuoluitur. Habet autem undique inponderata per medium terre in circuitum celi equalem deductum</incipit>
+        <explicit></explicit>
+    </work>    
+    <work xml:id="DT">
+        <title>De temporibus</title>
+        <author ref="#bede">Bede</author>
+        <incipit></incipit>
+        <explicit></explicit>
+        <bibl>Bede. Opera Didascalica. Edited by Charles Jones. CCSL, 123 C. Turnhout: Brepols, 1980. Pp. 585-611.</bibl>
+        <bibl>Calvin B. Kendall, and Faith Wallis, trans. Bede: On the Nature of Things  and On Times. Liverpool: Liverpool University Press, 2010.</bibl>
+        <idno type="gnd">7745328-1</idno>
+    </work>
+    <work xml:id="DTR">
+        <title>De temporum ratione</title>
+        <author ref="#bede">Bede</author>
+        <incipit></incipit>
+        <explicit></explicit>
+        <bibl>Bede. Opera Didascalica. Edited by Charles Jones. CCSL, 123 B. Turnhout: Brepols, 1977. Pp. 263-460.</bibl>
+        <bibl>Wallis, Faith, trans. Bede: The Reckoning of Time. Liverpool: Liverpool University Press, 1999.</bibl>
+        <idno type="gnd">4568817-5</idno>
+    </work>
+    <work xml:id="DNR">
+        <title>De natura rerum</title>
+        <author ref="#bede">Bede</author>
+        <incipit>Naturas rerum uarias labentis et aeui perstrinxi titulis, tempora lata citis</incipit>
+        <explicit>atque inde Africa a meridie usque ad occidentem extenditur.</explicit>
+        <bibl>Bede. Opera Didascalica. Edited by Charles Jones. CCSL, 123 A. Turnhout: Brepols, 1975. Pp. 173-234.</bibl>
+        <bibl>Calvin B. Kendall, and Faith Wallis, trans. Bede: On the Nature of Things  and On Times. Liverpool: Liverpool University Press, 2010.</bibl>
+        <bibl>Entry in <ref target="http://www.mirabileweb.it/title/de-natura-rerum-beda-venerabilis-n-672-673-ca-m-26-title/2313">Mirabile</ref>.</bibl>
+        <idno type="gnd">7745329-3</idno>
+    </work>
+    <work xml:id="excerptum_de_astrologia">
+        <title>Excerptum de astrologia</title>
+        <incipit>Duo sunt extremi vertices mundi</incipit>
+        <explicit>ad ipsum usque decurrit accipiens.</explicit>
+        <bibl><abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1243">pp. 1243-50.</ref>.</bibl>
+    </work>
+    <work xml:id="flores_epitaphii">
+        <title ref="http://d-nb.info/gnd/4489022-9">Flores epitaphii sanctorum </title>
+        <author>Theofridus Epternacensis</author>
+        <note>Composed 1098-1105 in the Abbey Echternach, dedicated to Archbishop Bruno of Trier.</note>
+    </work>
+    <work xml:id="fragmenta_censorini">
+        <title ref="">Fragmenta Censorini</title>
+        <author ref="#censorinus">Ps. Censorinus</author>
+        <bibl>Censorinus. De die natali liber. Accedit anonymi cuiusdam epitoma disciplinarum (fragmentum censorini). Ed. by Klaus Sallmann. Leipzig: Teubner, 1983.</bibl>
+        <!--        Fragmenta pp. 61-86. II de caeli positione pp. 62-64; De stellis fixis et <vag>antibus pp. 64-67.-->
+    </work>
+    <work xml:id="germanicus_aratea" ref="http://d-nb.info/gnd/4265735-0">
+        <author>Germanicus</author>
+        <title>Aratea</title>
+        <incipit>Ad ioue principium magno deduxit aratus</incipit>
+        <explicit>Haec eadem tibi signa dabunt non inrita pisces.</explicit>
+    </work>
+    <work xml:id="filocalus_calendar" ref="https://en.wikipedia.org/wiki/Chronography_of_354">
+        <title>Filocalus calendar</title>
+        <bibl>Divjak, Johannes und Wolfgang Wischmeyer (Eds.): <title>Das Kalenderhandbuch von 354 - Der Chronograph des Filocalus</title>. 2 Vols. Vienna: Holzhausen, 2014.<ptr target="http://www.oapen.org/search?identifier=512258"></ptr></bibl>
+    </work>
+    <work xml:id="haec_pictura">
+        <title>Haec pictura docet quicquid recitauit Hyginus</title>
+        <incipit>Haec pictura docet quicquid recitauit Hyginus</incipit>
+        <explicit></explicit>
+        <bibl>Ed. Riese, <title>Anthologia latina</title>, II, pp. 221-3, no. 761.</bibl>
+        <bibl>Leiden VLO 15</bibl>
+    </work>
+    <work xml:id="historia_naturalis">
+        <author ref="#pliny">Gaius Plinius Secundus</author>
+        <title ref="http://d-nb.info/gnd/4196444-5">Naturalis historia </title>
+        <incipit></incipit>
+        <explicit></explicit>
+        <bibl></bibl>
+    </work>
+    <work xml:id="horologium">
+        <title>Horologium</title>
+        <author ref="#wandalbert_von_pruem">Wandalbert von Prüm</author>
+        <note>short opening and six sections each addressing two months (having equal shadow values)</note>
+        <incipit>Quos cursu solis iungunt sua tempora menses</incipit>
+        <explicit>Humani ignaris monstrat quas corporis umbra.</explicit>
+        <incipit>Linea quae Iani prima est pariterque Decembris</incipit>
+        <explicit>Hinc centro torrens ternos sibi sexta retentat</explicit>
+        <bibl>PL 121 0631D <ptr target="http://mlat.uzh.ch/"/></bibl>
+    </work>
+    <work xml:id="iqsvm">
+        <title>In quo signo versetur mars</title>
+        <incipit>In quo signo uersetur Mars: annis ab initio mundi per senarium divisis et annorum hunc numerum excedentium mensibus</incipit>
+        <explicit>Sin autem prima partitio duodenario concludatur, in Virgine memoratum semper inueniri planetam.</explicit>
+        <bibl>David Juste, "Neither Observation nor Astronomical Tables: An Alternative Way of Computing the Planetary Longitudes in the Early Western Middle Ages," in Studies in the History of the Exact Sciences in Honour of David Pingree, Leiden-Boston, MA 2004, pp. 181-222, with editioin in the appendix (<ref target="http://librarun.org/book/62528/231">pp. 216-217</ref>).</bibl>
+        <bibl>Entry in <ref target="http://www.mirabileweb.it/title/in-quo-signo-versetur-mars-title/169852">Mirabile</ref>.</bibl>
+        <note>The work  offers a method to calculate the longitude of the five planets without the need of observation or manipulation of astronomical tables.  Since one knew the position of the planets during Creation, one needed just to calculate the time elapsed since Creation and do the neccessary multiplication.</note>
+    </work>    
+    <work xml:id="laterculus">
+        <title ref="http://d-nb.info/gnd/4283730-3">Laterculus</title>
+        <author ref="#polemius_silvius">Polemius Silvius</author>
+    </work>
+    <work xml:id="letter_wicthede">
+        <title>Letter to Wicthede</title>
+        <author ref="#bede">Bede</author>
+        <incipit></incipit>
+        <explicit></explicit>
+        <bibl>Bede. Opera Didascalica. Edited by Charles Jones. CCSL, 123 C. Turnhout: Brepols, 1980. Pp. 631-642.</bibl>
+        <bibl>Wallis, Faith, trans. Bede: The Reckoning of Time. Liverpool: Liverpool University Press, 1999. Pp. 417-424.</bibl>
+    </work>
+    <work xml:id="libellus_annalis">
+        <title>Annalis libellus<note> (also called <foreign>Veroneser Jahrbüchlein von 793</foreign></note></title>
+        <bibl><abbr>Borst, Schriften</abbr>, Vol. 2, pp. 660-772.</bibl>
+    </work>
+    <work xml:id="libri_computi">
+        <title>Libri computi<note> (also called the Aachen encyclopedia of 809 or the Seven-book computus)</note></title>
+        <bibl><abbr>Borst, Schriften</abbr>, Vol. 3, pp. 1054-1334.</bibl>
+    </work>
+    <work xml:id="liber_calculationis">
+        <title>Liber calculationis<note> (also called the Salzburg encyclopedia of 818 or the Three-book computus)</note></title>
+        <note>Assenbled by Arno of Salzburg.</note>
+        <bibl><abbr>Borst, Schriften</abbr>, Vol. 3, pp. 1367-1451.</bibl>
+    </work>
+    <work xml:id="martrologium">
+        <title>Martyrologium</title>
+        <author ref="#wandalbert_von_pruem">Wandalbert von Prüm</author>
+        <note>Consists of one opening letter (Praefatio) addressed to Otrich and the text of the martyrologium.</note>
+        <incipit>Domino Otrio Wandalbertus salutem dicit. Veteri et perantiquo praecepto monemur</incipit>
+        <incipit>Dies 1 Primum nunc Iani vocitatum nomine mensem </incipit>
+    </work>
+    <work xml:id="partitiones_duodecim_versuum_aeneidos">
+        <title>Partitiones duodecim versuum Aeneidos principalium</title>
+        <author ref="#pricisnus">Priscianus</author>
+        <incipit></incipit>
+        <explicit></explicit>
+        <bibl></bibl>
+    </work><work xml:id="pliny_excerpt_order">
+        <title>De positione et cursu septem planetarum</title>
+        <incipit>Inter caelum et terram certis discreta spatiis semptem sidera pendent</incipit>
+        <explicit>Dein morata in coitu solis biduo cum tardissime a tricesima luce ad easdem vices exit.</explicit>
+        <note>Excerpt from Pliny, <title>Historia naturalis</title>, Lib. II.</note>
+        <bibl>Eastwood, Bruce, and Gerd Graßhoff. "Planetary Diagrams for Roman Astronomy in Medieval Europe, Ca. 800-1500." <title level="j">Transactions of the American Philosophical Society</title> 94, no. 3 (2004): I-158, here 22-27.<ptr target="https://www.jstor.org/stable/20020363"/></bibl>
+        <bibl><abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1260">pp. 1260-63</ref>.</bibl>
+    </work>
+    <work xml:id="pliny_excerpt_intervals">
+        <title>De intervallis earum</title>
+        <incipit>Intervalla eorum a terra multi indagare temptarunt</incipit>
+        <explicit>Ita septem tonis effici quam diapason armoniam vocant.</explicit>
+        <note>Excerpt from Pliny, <title>Historia naturalis</title>, Lib. II.</note>
+        <bibl>Eastwood, Bruce, and Gerd Graßhoff. "Planetary Diagrams for Roman Astronomy in Medieval Europe, Ca. 800-1500." <title level="j">Transactions of the American Philosophical Society</title> 94, no. 3 (2004): I-158, here 27-30.<ptr target="https://www.jstor.org/stable/20020363"/></bibl>
+        <bibl><abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1263">pp. 1263-65</ref>.</bibl>
+    </work>
+    <work xml:id="pliny_excerpt_absidibus">
+        <title>De absidibus earum</title>
+        <incipit>Tres autem quas supras solem diximus sitas</incipit>
+        <explicit>sicut in rotis radios ut subiecta figura demonstrat.</explicit>
+        <note>Excerpt from Pliny, <title>Historia naturalis</title>, Lib. II.</note>
+        <bibl>Eastwood, Bruce, and Gerd Graßhoff. "Planetary Diagrams for Roman Astronomy in Medieval Europe, Ca. 800-1500." <title level="j">Transactions of the American Philosophical Society</title> 94, no. 3 (2004): I-158, here 30-35.<ptr target="https://www.jstor.org/stable/20020363"/></bibl>
+        <bibl><abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1265">pp. 1265-69</ref>.</bibl>
+    </work>
+    <work xml:id="pliny_excerpt_latitudes">
+        <title>De cursu earum per zodiacum circulum</title>
+        <incipit>Cur autem magnitudines suas et colores mutent</incipit>
+        <explicit>Sed inter omnia haec sidera martis maxime inobservabilis est cursus.</explicit>
+        <note>Excerpt from Pliny, <title>Historia naturalis</title>, Lib. II.</note>
+        <bibl>Eastwood, Bruce, and Gerd Graßhoff. "Planetary Diagrams for Roman Astronomy in Medieval Europe, Ca. 800-1500." <title level="j">Transactions of the American Philosophical Society</title> 94, no. 3 (2004): I-158, here 35-40.<ptr target="https://www.jstor.org/stable/20020363"/></bibl>
+        <bibl><abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1270">pp. 1270-1273</ref>.</bibl>
+    </work>
+    <work xml:id="pliny_excerpt_presagiis">
+        <title>De presagiis tempestatum</title>
+        <incipit></incipit>
+        <explicit></explicit>
+        <bibl></bibl>
+    </work>
+    <work xml:id="scholia_basileensia">
+        <title>Scholia Basileensia</title>
+        <incipit>Quaeritur quare ab Ioue coepit et non a musis ut Homerus</incipit>
+        <explicit>Effusum est lac et facta est circuli albi species.</explicit>
+        <bibl>Dell’Era, Antonio. "Gli Scholia Basileensia a Germanico," in <title>Atti Della Accademia Nazionale Dei Lincei: Memorie, Classe di Scienze morali, storiche e filologiche</title>. Ser. VIII, vol. XXIII. Romе, 1979, pp. 301-379.
+        </bibl>
+    </work>
+    <work xml:id="scholia_strozziana">
+        <title>Scholia Strozziana</title>
+        <incipit>Caelum circulis V distinguitur, quorum II extremi maxime frigide, australi humilimus et aquilonius excelsissimus</incipit>
+        <explicit>Immo et ceteri pisces, sed hi tantum apparent, quia exiliunt, ceteri in imo gurgitis descendunt.</explicit>
+        <bibl>Dell’Era, Antonio. "Una miscellanea astronomica medievale: gli "Scholia Strozziana" a germanico," in <title>Atti Della Accademia Nazionale dei Lincei: Memorie, Classe di Scienze morali, storiche e filologiche</title>. Ser. VIII, vol. XXIII. Romе, 1979, pp. 147-267.
+        </bibl>
+    </work>
+    <work xml:id="somnium_scipionis" ref="http://d-nb.info/gnd/4254901-2">
+        <title>Somnium Scipionis</title>
+        <author ref="#cicero">Cicero</author>
+    </work>
+    <work xml:id="visio_wettini_walafridi">
+        <title ref="http://d-nb.info/gnd/4128533-5">Visio Wettini</title>
+        <author ref="#walafrid_strabo">Walafrid Strabo</author>
+        <bibl><ptr target="http://www.geschichtsquellen.de/repOpus_04577.html"/></bibl>
+        <bibl>E. Dümmler, MGH Poetae, 2, 1884, pp. 301-334<ptr target="http://www.mgh.de/dmgh/resolving/MGH_Poetae_2_S._301"/></bibl>
+    </work>
+    <work xml:id="visio_wettini">
+        <title>Visio Wettini</title>
+        <author ref="#haito">Haito</author>
+        <bibl><ptr target="http://www.geschichtsquellen.de/repOpus_02568.html"/></bibl>
+        <bibl>E. Dümmler, MGH Poetae, 2, 1884, pp. 267-275<ptr target="http://www.mgh.de/dmgh/resolving/MGH_Poetae_2_S._267"/></bibl>
+    </work>
+</register>

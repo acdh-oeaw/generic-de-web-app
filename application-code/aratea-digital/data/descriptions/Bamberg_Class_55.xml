@@ -1,0 +1,491 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="5.0" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/rules/schema/ER/v0.4/europeana-regia.xsd" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Description of <ref type="altMs" target="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html">Bamberg, Staatsbibliothek, MS Class. 55</ref>
+                </title>
+                <respStmt>
+                    <resp>Catalogued by:</resp>
+                    <name type="person">Ivana Dobcheva</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Digital edition according to TEI P5</edition>
+                <respStmt>
+                    <resp>TEI-P5 coded by </resp>
+                    <name type="person">Ivana Dobcheva</name>
+                    <name type="org"/>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>
+                    <name type="org"/>
+                    <!--<ptr target=""/>-->
+                </publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>           
+        <!--
+            <revisionDesc>
+				<change who="" date=""></change>
+			</revisionDesc>
+		-->
+    </teiHeader>
+    <facsimile>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=1r+" n="1r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=1v+" n="1v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=2r+" n="2r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=2v+" n="2v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=3r+" n="3r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=3v+" n="3v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=4r+" n="4r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=4v+" n="4v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=5r+" n="5r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=5v+" n="5v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=6r+" n="6r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=6v+" n="6v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=7r+" n="7r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=7v+" n="7v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=8r+" n="8r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=8v+" n="8v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=9r+" n="9r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=9v+" n="9v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=10r+" n="10r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=10v+" n="10v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=11r+" n="11r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=11v+" n="11v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=12r+" n="12r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=12v+" n="12v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=13r+" n="13r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=13v+" n="13v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=14r+" n="14r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=14v+" n="14v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=15r+" n="15r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=15v+" n="15v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=16r+" n="16r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=16v+" n="16v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=17r+" n="17r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=17v+" n="17v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=18r+" n="18r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=18v+" n="18v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=19r+" n="19r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=19v+" n="19v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=20r+" n="20r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=20v+" n="20v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=21r+" n="21r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=21v+" n="21v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=22r+" n="22r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=22v+" n="22v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=23r+" n="23r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=23v+" n="23v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=24r+" n="24r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=24v+" n="24v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=25r+" n="25r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=25v+" n="25v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=26r+" n="26r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=26v+" n="26v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=27r+" n="27r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=27v+" n="27v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=28r+" n="28r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=28v+" n="28v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=29r+" n="29r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=29v+" n="29v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=30r+" n="30r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=30v+" n="30v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=31r+" n="31r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=31v+" n="31v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=32r+" n="32r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=32v+" n="32v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=33r+" n="33r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=33v+" n="33v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=34r+" n="34r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=34v+" n="34v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=35r+" n="35r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=35v+" n="35v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=36r+" n="36r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=36v+" n="36v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=37r+" n="37r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=37v+" n="37v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=38r+" n="38r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=38v+" n="38v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=39r+" n="39r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=39v+" n="39v"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=40r+" n="40r"/>
+        <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?nativeno=40v+" n="40v"/>
+    </facsimile>
+    <text>
+        <body>
+            <msDesc xml:id="paris_bnf_13955" xml:lang="eng">
+                <msIdentifier>
+                    <settlement>Bamberg</settlement>
+                    <repository>Staatliche Bibliothek</repository>
+                    <idno>Class. 55</idno>
+                    <altIdentifier type="former">
+                        <idno>H J.IV.22</idno>
+                    </altIdentifier>
+                </msIdentifier>
+                <head>
+                    <title>Composite manuscript of geometrical, astronomical and computistical texts</title>
+                    <origPlace ref="#reims">North-east France, Reims (?)</origPlace>
+                    <origDate notBefore="0901" notAfter="1000">s. X</origDate>
+                </head>
+                <physDesc>
+                    <objectDesc form="codex">
+                        <supportDesc material="perg">
+                            <support>
+                                <p>
+                                    <material>Parchment</material>
+                                </p>
+                            </support>
+                            <extent>
+                                <measure type="leavesCount" quantity="42">i + 40 fols. + i</measure>
+                                <dimensions type="leaf" unit="mm">
+                                    <height>258</height>
+                                    <width>205</width>
+                                </dimensions>
+                            </extent>
+                            <foliation>Modern foliation with arabis numerals in the upper right corner.</foliation>
+                            <collation>
+                                <formula>I-V<hi rend="sup">8</hi> (ff. 1-8, 9-16, 17-24, 25-32, 33-40).</formula>
+                            </collation>
+                            <condition>
+                                <p>Lower margins on ff. 2, 8-24, 26, 29, 33-35, 37, and 39, probably originally blank, cut out.</p>
+                            </condition>
+                        </supportDesc>
+                        <layoutDesc>
+                            <layout columns="1" writtenLines="27">Written in one column with around 27 long lines.
+                         <dimensions type="written" unit="mm">
+                                    <height>190</height>
+                                    <width>150</width>
+                                </dimensions>
+                            </layout>
+                        </layoutDesc>
+                    </objectDesc>
+                    <handDesc>
+                        <handNote>Both booklets seem to have been written by a single hand (Hand C by Hoffmann) with slightly later addition on f. 1r by two other hands (Hand A on the first 17 lines and Hand B finishing the page). Hoffmann identified Hand C also in Bamberg Class. 11, Hand A in Class. 26 and probably Hand B in Class. 45.</handNote>
+                    </handDesc>
+                    <bindingDesc>
+                        <binding>
+                            <p>White leader binding from the Dombibliothek (according to Suckale-Redlefsen dated to 1611). Two metal clasps. On the upper margin of the last folio (40v) a rusty spot, which might suggest the manuscript had once a chain attached.</p>
+                        </binding>
+                    </bindingDesc>
+                </physDesc>
+                <history>
+                    <origin>The manuscript has been labeled as a ninth-century by Leonardi, Fischer and Borst, and as a tenth-century by B. Bischoff (Katalog I, p. 49). H. Hoffmann (Bamberg Handschriften, p. 136), who could recognise all three hands working in the manuscript also in other Reims manuscripts, considered it a production of the Reims scriptorium from the end of tenth century.</origin>
+                    <provenance>Upon establishing the new Diocese of Bamberg in 1007, Henry II arranged for territorial and intellectual support for the new foundation. Almost half of todays collection can be traced based on palaeographical features to the scriptoria in Reims, Wurzburg, Reichenau, Mainz, Regensburg, Lorsch, Cluny and Corvey. Class. 55 belong  to the group of books produced in Reims and, with high probability, belonging to the personal library of Gerbert. There are three scenarios how the manuscript arrived in Bamberg: a) it was acquired by the magister scholarum Meinhard, who studied at Reims and facilitated the book exchange between the two scriptoria; b) Gerbert's books were taken upon his death by Otto III and later donated to Bamberg by Henry II; c) Gerbert's manuscripts were brought from Rome to Bamberg by Leo of Vercelli. Hoffmann considered the last option as most probable. (Bamberg Handschirften, 26-30).</provenance>
+                </history>
+                <additional>
+                    <listBibl>
+                        <head>Selected Bibliography:</head>
+                        <bibl>Leitschuh, Friedrich and Hans Fischer. <title>Katalog der Handschriften der Königlichen Bibliothek zu Bamberg</title>. Vol. I,2. Bamberg, 1906. Here pp. <ref target="http://bilder.manuscripta-mediaevalia.de/bilder/hs-bilder/k/HSK0600_1093.jpg">61</ref>-<ref target="http://bilder.manuscripta-mediaevalia.de/bilder/hs-bilder/k/HSK0600_1098.jpg">66</ref>.</bibl>
+                        <bibl>Suckale-Redlefsen, Gude. Die Handschriften des 8. bis 11. Jahrhunderts der Staatsbibliothek Bamberg. Wiesbaden: Harrassowitz, 2004. Here pp. <ref target="http://www.manuscripta-mediaevalia.de/dokumente/html/hsk0627a">61</ref>-62</bibl>
+                        <bibl>Menso Folkerts, "Mittelalterliche Mathematik: das Quadrivium." In <title>Zählen Messen Rechnen. 1000 Jahre Mathematik in Handschriften und frühen Drucken</title>, 12-29. Petersberg: Imhof, 2008.</bibl>
+                        <bibl><abbr>Leonardi</abbr>, 8.</bibl>
+                        <bibl><abbr>Bischoff, Katalog I</abbr>, 49.</bibl>
+                        <bibl>Hoffmann, Hartmut. Bamberger Handschriften des 10. und des 11. Jahrhunderts. Hannover, Hahnsche Buchhandlung, 1995, esp. <ref target="http://www.mgh.de/dmgh/resolving/MGH_Schriften_39_S._26">26-30</ref> and <ref target="http://www.mgh.de/dmgh/resolving/MGH_Schriften_39_S._136">136</ref>.</bibl>
+                        <bibl>Borst, Arno. <title>Das Buch der Naturgeschichte: Plinius und seine Leser im Zeitalter des Pergaments</title>. Heidelberg: Winter, 1994. Here p. 185.</bibl>
+                        <bibl><abbr>Munk Olsen, Catalogue 2</abbr>, p. 250.</bibl>
+                        <bibl><abbr>Munk Olsen, L’ étude 3,1</abbr>, p. 38.</bibl>
+                        <bibl>Toneatto, Lucio. <title>Codices Artis Mensoriae: i manoscritti degli antichi opuscoli latini d'agrimensura (V - XIX sec.)</title>. Spoleto 1995. Here pp. 888-894.</bibl>
+                    </listBibl>
+                </additional>
+                <msPart>
+                    <msIdentifier>
+                        <idno>Booklet 1</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus from="1r">1r</locus>
+                            <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?seite=0005&amp;signatur=Msc.Class.55"/>
+                            <author>Gerbert</author>
+                            <title>Regulae de numerorum abaci rationibus</title>
+                            <incipit>Si multiplicaueris singularem numerum per decenum dabis unicuique digito x et omni articulo c</incipit>
+                            <explicit>Si multiplicaueris decenum per decenum millenum dabis digitum centum milia et articulis mille milia.</explicit>
+                            <bibl>
+                                <abbr>Bubnov 1899</abbr>, pp. 8-11.</bibl>
+                            <note>Copied in two stages by two hands.</note>
+                        </msItem>
+                        <msItem>
+                            <locus from="1v" to="16r">1v-16r</locus>
+                            <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?seite=0006&amp;signatur=Msc.Class.55"/>
+                            <author ref="#boethius">Ps-Boethius</author>
+                            <title>Geometria I</title>
+                            <note>Six blank lines left for rubrication.</note>
+                            <incipit>Geometria est disciplina magnitudinis immobilis formarumque</incipit>
+                            <explicit>M. Propositio dispositio distributio descriptio demonastratio et conclusio.</explicit>
+                            <finalRubric rend="rustics">Explicit Anicii Manilii Seuerini Boethii liber V artis <sic>geumetriae</sic> de greco in latinum translatus ab euclide peritissimo <sic>geumetrico</sic>.</finalRubric>
+                            <decoNote>Diagrams and geometrical figures.</decoNote>
+                            <bibl>
+                                <note>There is no complete edition of the <title>Geometry I</title>; the partial editions are listed in </note>M. Folkerts. "Die Altercatio in der Geometrie I des Pseudo-Boethius. Ein Beitrag zur Geometrie im mittelalterlichen Quadrivium." In: <title>Fachprosa-Studien. Beiträge zur mittelalterlichen Wissenschafts- und Geistesgeschichte</title>, ed. G.Keil, 84-114 (esp. pp.88-89). Berlin: Erich Schmidt, 1982. Reprinted in Folkerts, <title>Essays on early medieval mathematics</title>, VII. Aldershot: Variorum, 2003.</bibl>
+                            <bibl>
+                                <note>See also </note>Stevens Wesley. "Marginalia in the Latin Euclid." In <title>Scientia in Margine</title>, ed. D. Jacquart and Ch. Burnett, 117-138, Geneva: Librairie Droz, 2005.</bibl>
+                            <bibl>
+                                <abbr>Borst, Schriften</abbr>, Vol. 1 <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,1_S._211">211-12</ref>.</bibl>
+                        </msItem>
+                        <msItem>
+                            <locus from="16v">16v</locus>
+                            <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?seite=00036&amp;signatur=Msc.Class.55"/>
+                            <note>Blank. Probatio pennae.</note>
+                        </msItem>
+                    </msContents>
+                </msPart>
+                <msPart>
+                    <msIdentifier>
+                        <idno>Booklet 2</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus from="17r" to="19v">17r-19v</locus>
+                            <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?seite=00037&amp;signatur=Msc.Class.55"/>
+                            <title>Excerpts from <title ref="#libri_computi">Libri computi</title>, Lib. V, 3-6:</title>
+                            <msItem>
+                                <locus from="17r" to="17v">17r-v</locus>
+                                <author ref="#pliny">Pliny the Elder</author>
+                                <title ref="#pliny_excerpt_order">De positione et cursu septem planetarum</title>
+                                <rubric>De positione et cursu septem planetarum</rubric>
+                                <incipit>Inter caelum et terram certis discreta spatiis semptem sidera pendent</incipit>
+                                <explicit>cum tardissime a tricesima luce ad easdem uices exit.</explicit>
+                            </msItem>
+                            <msItem>
+                                <locus from="17v">17v</locus>
+                                <author ref="#pliny">Pliny the Elder</author>
+                                <title ref="#pliny_excerpt_intervals">De intervallis eorum</title>
+                                <rubric>De interuallis eorum</rubric>
+                                <incipit>Interualla eorum a terra multi indagare temptarunt</incipit>
+                                <explicit>Ita septem tonis effici quam diapasson armoniam uocant.</explicit>
+                            </msItem>
+                            <msItem>
+                                <locus from="17v">In the outer margin of f. 17v</locus>
+                                <note>Excerpt from the <title ref="#libri_computi">Libri computi</title>, Lib. V, 11 added later by a younger hand.</note>
+                                <rubric>
+                                    <supplied>D</supplied>imensio caelestium <supplied>s</supplied>patiorum secundum quosdam</rubric>
+                                <incipit>A terra ad lunam tonum <supplied>esse</supplied> pronuntiant</incipit>
+                                <explicit>duo I totidem miliaria.</explicit>
+                                <bibl>
+                                    <abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1280">p. 1280</ref>.</bibl>
+                            </msItem>
+                            <msItem>
+                                <locus from="17v" to="18v">17v-18v</locus>
+                                <author ref="#pliny">Pliny the Elder</author>
+                                <title ref="#pliny_excerpt_absidibus">De absidibus earum</title>
+                                <rubric>De asbsidibus earum</rubric>
+                                <incipit>Tres autem quas supra solme dicimus sitas</incipit>
+                                <explicit>sicut in rotis radios ut subiecta figura demonstrat.</explicit>
+                            </msItem>
+                            <msItem>
+                                <locus from="18v" to="19v">18v-19v</locus>
+                                <author ref="#pliny">Pliny the Elder</author>
+                                <title ref="#pliny_excerpt_latitudes">De cursu earum per zodiacum circulum</title>
+                                <rubric>De cursu earum per zodiacum circulum</rubric>
+                                <incipit>Cur autem magnitudines suas et colores mutent</incipit>
+                                <explicit>sed inter omnia haec sidera martis maxime inobservabilis est cursus.</explicit>
+                            </msItem>
+                        </msItem>
+                        <msItem>
+                            <locus from="19v" to="21r">19v-21r</locus>
+                            <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?seite=00042&amp;signatur=Msc.Class.55"/>
+                            <title ref="#excerptum_de_astrologia">Excerptum de astrologia</title>
+                            <note>Excerpted as part of the <title ref="#libri_computi">Libri computi</title>, Lib. V, 1.</note>
+                            <rubric>Excerptum de astrologia</rubric>
+                            <incipit>Duo sunt extremi uertices mundi quos appelant polos</incipit>
+                            <explicit>ad ipsum usque decurrit accipiens.</explicit>
+                        </msItem>
+                        <msItem>
+                            <locus from="21r" to="24v">21r-24v</locus>
+                            <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?seite=00045&amp;signatur=Msc.Class.55"/>
+                            <title ref="#de_ordine_ac_positione">De ordine ac positione stellarum in signis</title>
+                            <note>Excerpted as part of the <title ref="#libri_computi">Libri computi</title>, Lib. V, 2.</note>
+                            <rubric>De ordine ac positione stellarum in signis</rubric>
+                            <incipit>Est quidem hic ordo et positio siderum quae fixa caelo</incipit>
+                            <explicit>Anticanis habet stellas III.</explicit>
+                            <note>Not collated by Dell'Era. Has all chapters from Dell'Era's edition.</note>
+                        </msItem>
+                        <msItem>
+                            <locus from="25r" to="29r">25r-29r</locus>
+                            <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?seite=00053&amp;signatur=Msc.Class.55"/>
+                            <note>Excerpts from the <title ref="#libri_computi">Libri computi</title>, Lib. VI, 1-7:</note>
+                            <msItem>
+                                <locus from="25r">25r</locus>
+                                <rubric>De ratione unciarum</rubric>
+                                <incipit>Scripulus - sex siliquae <lb/>Dimidia sextula - duo scripuli et siliquae xii</incipit>
+                                <explicit>Assis siue as - Duodecim unciae</explicit>
+                                <note>Text in two columns with signs for each <foreign>uncia</foreign>
+                                </note>
+                                <bibl>
+                                    <abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1305">pp. 1305-07</ref>.</bibl>
+                            </msItem>
+                            <msItem>
+                                <locus from="25r" to="25v">25r-v</locus>
+                                <rubric>De probatione auri et argenti</rubric>
+                                <incipit>Omne aurum purum cuiuslibet ponderis omni argento</incipit>
+                                <explicit>XII denarios significare libram sicut prima lectionis huius fronte praefixum est.</explicit>
+                                <bibl>
+                                    <abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1307">pp. 1307-08</ref>.</bibl>
+                            </msItem>
+                            <msItem>
+                                <locus from="25v" to="26r">25v-26r</locus>
+                                <rubric>De mensura caerae et metalli in operibus fusilibus</rubric>
+                                <incipit>In fundendis operibus cuius ponderis metallum quodlibet ad certum</incipit>
+                                <explicit>auri librae XVIIII et duo decies octo denarii quod sunt unciae III et den<ex>arii</ex> XVI.</explicit>
+                                <bibl>
+                                    <abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1309">pp. 1309-10</ref>.</bibl>
+                            </msItem>
+                            <msItem>
+                                <locus from="26r" to="27r">26r-27r</locus>
+                                <rubric>Ambrosii macrobii Theodosii de mensura et magnitudine terrae et circuli per quem solis iter est</rubric>
+                                <incipit>In omni orbe uel sphera medietas centrum uocatur</incipit>
+                                <explicit>ambitum stadiorum habere trecenties centena milia et insuper centum septuaginta milia.</explicit>
+                                <bibl>
+                                    <abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1310">pp. 1310-13</ref>.</bibl>
+                            </msItem>
+                            <msItem>
+                                <locus from="27r" to="28r">27r-28r</locus>
+                                <rubric>Item eiusdem de mensurae magnitudine solis</rubric>
+                                <incipit>His dictis quibus mensura quam terrae uel ambitus uel diametros habet</incipit>
+                                <explicit>Ergo ex his dicendum solem octies terra esse maiorem.</explicit>
+                                <bibl>
+                                    <abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1313">pp. 1313-16</ref>.</bibl>
+                            </msItem>
+                            <msItem>
+                                <locus from="28r" to="28v">28r-v</locus>
+                                <rubric>Felicis Capellae de mensura lunae</rubric>
+                                <incipit>Luna item circuli sui sexcensimam obtinet portionem</incipit>
+                                <explicit>Ipsum uero circulum centies maiorem esse tellure.</explicit>
+                                <bibl>
+                                    <abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1316">pp. 1316-18</ref>.</bibl>
+                            </msItem>
+                            <msItem>
+                                <locus from="28v" to="29r">28v-29r</locus>
+                                <rubric>Eiusdem argumentum quo magnitudo terrae deprehensa est</rubric>
+                                <incipit>Eratostenes philosophus idemque geometra subtilissimus magnitudinem terreni orbis nosse uolens</incipit>
+                                <explicit>nullam humanae coniecturae dimensionem admittit.</explicit>
+                                <bibl>
+                                    <abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1318">pp. 1318-20</ref>.</bibl>
+                            </msItem>
+                        </msItem>
+                        <msItem>
+                            <locus from="29r" to="32r">29r-32r</locus>
+                            <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?seite=00061&amp;signatur=Msc.Class.55"/>
+                            <note>Excerpts from the <title ref="#libri_computi">Libri computi</title>, Lib. VII, 2-4:</note>
+                            <msItem>
+                                <locus from="29r" to="30v">29r-30v</locus>
+                                <rubric>De mensuris et ponderibus</rubric>
+                                <incipit>Mensura est iuxta isidorum quicquid pondere capacitate longitudine</incipit>
+                                <explicit>apud germanos unam restam efficiunt.</explicit>
+                                <bibl>
+                                    <abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1322">pp. 1322-26</ref>.</bibl>
+                            </msItem>
+                            <msItem>
+                                <locus from="30v" to="31r">30v-31r</locus>
+                                <rubric>De ponderibus</rubric>
+                                <incipit>Ponderum pars minima calculus est qui constat ex granis</incipit>
+                                <explicit>Centenarius autem dicitur eo quod centum libris constet.</explicit>
+                                <bibl>
+                                    <abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1326">pp. 1326-28</ref>.</bibl>
+                            </msItem>
+                            <msItem>
+                                <locus from="31r" to="32r">31r-32r</locus>
+                                <rubric>De mensuris in liquidis</rubric>
+                                <incipit>Mensurarum in liquidis coclear est pars minima</incipit>
+                                <explicit>Duo gomor chorum reddunt duo chori chulleum quod sunt modia LX.</explicit>
+                                <bibl>
+                                    <abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1329">pp. 1329-32</ref>.</bibl>
+                            </msItem>
+                        </msItem>
+                        <msItem>
+                            <locus from="32r" to="34v">32r-34v</locus>
+                            <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?seite=00067&amp;signatur=Msc.Class.55"/>
+                            <note>World chronicle excerpted from the <title ref="#libri_computi">Libri computi</title>, Lib. I, 5:</note>
+                            <rubric>Adbreuiatio chronicae</rubric>
+                            <incipit>Adam cum esset centum triginta annorum genuit seth</incipit>
+                            <explicit>Sunt autem totoius summae ab origine mundi anni usque in praesentem annum IIIIDCCLXI.</explicit>
+                            <bibl>
+                                <abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1108">pp. 1108-10</ref>.</bibl>
+                        </msItem>
+                        <msItem>
+                            <locus from="35r" to="39r">35r-39r</locus>
+                            <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?seite=00073&amp;signatur=Msc.Class.55"/>
+                            <note>Excerpt from the <title ref="#libri_computi">Libri computi</title>, Lib. III, 2-4 and 9-10:</note>
+                            <msItem>
+                                <locus from="35r">35r</locus>
+                                <rubric>De anno et partibus eius</rubric>
+                                <incipit>Annus solaris habet quattuor tempora menses XII</incipit>
+                                <explicit>Unum momentum habet ostentum I et dimidium.</explicit>
+                                <bibl>
+                                    <abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1186">p. 1186.</ref>.</bibl>
+                            </msItem>
+                            <msItem>
+                                <locus from="35r" to="35v">35r-v</locus>
+                                <rubric>Quot atomos habeat annus uel pares eius</rubric>
+                                <incipit>Ostentum habet atomos CCCLXVI. momentum habet atomos DLXIIII</incipit>
+                                <explicit>punctos XLIIICC horas VIII DCXL partes proprias CCCLX.</explicit>
+                                <bibl>
+                                    <abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1187">pp. 1187-89</ref>.</bibl>
+                            </msItem>
+                            <msItem>
+                                <locus from="35r">35r-36r</locus>
+                                <rubric>Quot modis soleat annus nominari</rubric>
+                                <incipit>Primus modus est de luna qui quinquifariae accipitur</incipit>
+                                <explicit>ubi primum statuta fuerunt et DXXXII annis impletur.</explicit>
+                                <bibl>
+                                    <abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1189">p. 1189</ref>.</bibl>
+                            </msItem>
+                            <msItem>
+                                <locus from="36r" to="39r">36r-39r</locus>
+                                <rubric>Qualiter per quattuor annos bissextus adcrescat</rubric>
+                                <incipit>Primo igitur anno praeparationis bissexti prima hora noctis</incipit>
+                                <explicit>prima hora noctis quae praecedit XV KL martii arietem possit ingredi.</explicit>
+                                <bibl>
+                                    <abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1192">p. 1192</ref>.</bibl>
+                                <bibl>Jones, Charles. <title>Bedae Opera de temporibus</title>, Cambridge (Mass.): The Medieval Academy of America, 1943, 649-653.</bibl>
+                            </msItem>
+                            <msItem>
+                                <locus from="39r">39r</locus>
+                                <incipit>Anni ad incarnatione domini anno praesenti sund DCCXCIII</incipit>
+                                <explicit>et ideo bissextus dicitur quis bis VI KL martii habet.</explicit>
+                            </msItem>
+                        </msItem>
+                        <msItem>
+                            <locus from="39v" to="40v">39v-40v</locus>
+                            <graphic url="http://bsbsbb.bsb.lrz.de/~db/0000/sbb00000113/images/index.html?seite=00082&amp;signatur=Msc.Class.55"/>
+                            <note>Excerpt from the <title ref="#libri_computi">Libri computi</title>, Lib. IIII, 31a, 32a, 33a, and 28a:</note>
+                            <msItem>
+                                <locus from="39v">39v</locus>
+                                <rubric>Argumentum quot horis luna in unaquaue nocte luceat</rubric>
+                                <incipit>II. I. III <gap reason="omitted"/> Si uis scire quot horas luna in unaquaue lucet nocte</incipit>
+                                <explicit>ante ascenderat interum discendit computandi ratio.</explicit>
+                                <bibl>
+                                    <abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1237">pp. 1237-39</ref>.</bibl>
+                            </msItem>
+                            <msItem>
+                                <locus from="39v" to="40r">39v-40r</locus>
+                                <rubric>Expositio de eadem re</rubric>
+                                <incipit>Traditur autem secundum quosdam argumentum qui horam quattuor punctis</incipit>
+                                <explicit>id est hora dodrantem pro punctis III semisse pro II quadrante pro I.</explicit>
+                                <bibl>
+                                    <abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1239">pp. 1239-40</ref>.</bibl>
+                            </msItem>
+                            <msItem>
+                                <locus from="40r" to="40v">40r-v</locus>
+                                <rubric>De accensione lunae</rubric>
+                                <incipit>Si quis nosse desiderat qua hora luna renouetur et quando hoc</incipit>
+                                <explicit>In decimae horae noctis primo puncto finem accipit.</explicit>
+                                <bibl>
+                                    <abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1240">pp. 1240-42</ref>.</bibl>
+                            </msItem>
+                            <msItem>
+                                <locus from="40v">40v</locus>
+                                <incipit>Ianuarius et december hora prima et undecima pedes XXXII</incipit>
+                                <explicit>Iunius et iulius <gap reason="omitted"/> hora VI pedes III.</explicit>
+                                <bibl>
+                                    <abbr>Borst, Schriften</abbr>, Vol. 3, <ref target="http://www.mgh.de/dmgh/resolving/MGH_QQ_zur_Geistesgesch._21,3_S._1232">pp. 1232-34</ref>.</bibl>
+                            </msItem>
+                        </msItem>
+                    </msContents>
+                </msPart>
+            </msDesc>
+        </body>
+    </text>
+</TEI>

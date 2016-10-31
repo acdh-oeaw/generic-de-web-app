@@ -1,0 +1,226 @@
+<TEI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tei-c.org/ns/1.0"
+    xml:id="edoc_ed000223_fg_personenregister" xml:base="http://diglib.hab.de/edoc/ed000223/">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Person index</title>
+                <respStmt>
+                    <resp/>
+                    <name>Ivana Dobcheva</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p></p>
+            </publicationStmt>
+            <sourceDesc>
+                <p> </p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+                <listPerson> 
+                    <person xml:id="ademar_de_chabannes">
+                        <persName xml:id="gnd_118643835" ref="http://d-nb.info/gnd/118643835">Adémar de Chabannes</persName>
+                        <bibl><ptr target="https://en.wikipedia.org/wiki/Ad%C3%A9mar_de_Chabannes"/></bibl>
+                    </person>
+                    <person xml:id="alcuinus_flaccus">
+                        <persName xml:id="gnd_118502026" ref="http://d-nb.info/gnd/118502026">Alcuinus, Flaccus</persName>
+                        <persName>Alcuin</persName>
+                    </person>
+                    <person xml:id="astronomus">
+                        <persName xml:id="gnd_119017962" ref="http://d-nb.info/gnd/119017962">Astronomus</persName>
+                    </person>
+                    <person xml:id="augustinus_aurelius">
+                        <persName xml:id="gnd_118505114" ref="http://d-nb.info/gnd/118505114" xml:lang="lat">Augustinus, Aurelius</persName>
+                    </person>
+                    <person xml:id="ausonius">
+                        <persName xml:id="gnd_118505165" ref="http://d-nb.info/gnd/118505165">Ausonius</persName>
+                    </person>
+                    <person xml:id="avienus">
+                        <persName xml:id="gnd_11881060X" ref="http://d-nb.info/gnd/11881060X">Avienus &lt;Rufinus Festus&gt;</persName>
+                    </person>
+                    <person xml:id="balbus">
+                        <persName xml:id="gnd_119554852" ref="http://d-nb.info/gnd/119554852">Balbus</persName>
+                    </person>
+                     <person xml:id="bede">
+                         <persName xml:id="gnd_118508237" ref="http://d-nb.info/gnd/118508237" xml:lang="lat">Beda &lt;Venerabilis&gt;</persName>
+                    </person>
+                    <person xml:id="berno">
+                        <persName xml:id="gnd_118656473" ref="http://d-nb.info/gnd/118656473">Berno &lt;of Reichenau&gt;</persName>
+                    </person>
+                    <person xml:id="boethius">
+                        <persName xml:id="gnd_11851282X" ref="http://d-nb.info/gnd/11851282X">Boethius &lt;Anicius Manlius Severinus&gt;</persName>
+                        <persName>Ps.-Boethius</persName>
+                    </person>
+                    <person xml:id="boniface">
+                        <persName type="gnd_118513249" ref="http://d-nb.info/gnd/118513249">Saint Boniface</persName>
+                        <bibl><ptr target="https://en.wikipedia.org/wiki/Saint_Boniface"/></bibl>
+                    </person>
+                    <person xml:id="calcidius">
+                        <persName xml:id="gnd_118669036" ref="http://d-nb.info/gnd/118669036">Calcidius</persName>
+                    </person>
+                    <person xml:id="censorinus">
+                        <persName xml:id="gnd_118667661" ref="http://d-nb.info/gnd/118667661">Censorinus</persName>
+                    </person>
+                    <person xml:id="christina_from_sweden">
+                        <persName xml:id="gnd_118520652">Christina &lt;Queen of Sweden&gt;</persName>
+                    </person>
+                    <person xml:id="cicero">
+                        <persName xml:id="gnd_118520814" ref="http://d-nb.info/gnd/118520814">Marcus &lt;Tullius Cicero&gt;</persName>
+                    </person>
+                    <person xml:id="columella">
+                        <persName xml:id="gnd_118521675" ref="http://d-nb.info/gnd/118521675">Columella</persName>
+                        <persName>Columella, Lucius Iunius Moderatus</persName>
+                    </person>
+                    <person xml:id="fulbert_of_chartres">
+                        <persName xml:id="gnd_118703528" ref="http://d-nb.info/gnd/118703528">Fulbertus &lt;Carnotensis&gt;</persName>
+                        <persName>Fulbert of Charters</persName>
+                    </person>
+                    <person xml:id="fulgentius">
+                        <persName xml:id="gnd_118703544" ref="http://d-nb.info/gnd/118703544">Fulgentius &lt;Fabius Planciades&gt;</persName>
+                    </person>
+                    <person xml:id="gerbert">
+                        <persName xml:id="gnd_11861438X" ref="http://d-nb.info/gnd/11861438X">Gerbertus &lt;de Aurillac&gt;</persName>
+                        <persName>Silvester II., Papa</persName>
+                    </person>
+                    <person xml:id="germanicus">
+                        <persName xml:id="gnd_118538748" ref="http://d-nb.info/gnd/118538748">Germanicus &lt;Caesar&gt;</persName>
+                    </person>
+                    <person xml:id="hadoard">
+                        <persName xml:id="gnd_102501424" ref="http://d-nb.info/gnd/102501424">Hadoardus</persName>
+                        <affiliation><rs type="place" ref="#corbie">Corbie</rs>, Abbey of St. Peter</affiliation>
+                    </person>
+                    <person xml:id="haito">
+                        <persName xml:id="gnd_103086854" ref="http://d-nb.info/gnd/103086854">Haito &lt;Augiensis&gt;</persName>
+                        <persName>Hatto bishop of Basel and Reichenau</persName>
+                    </person>
+                    <person xml:id="heiric">
+                        <persName xml:id="gnd_119215888" ref="http://d-nb.info/gnd/119215888">Heiric of Auxerres</persName>
+                        <note type="references"><ref target="http://en.wikipedia.org/wiki/Heiric_of_Auxerre">Wikipedia</ref></note>
+                    </person>
+                    <person xml:id="hermannus_contractus">
+                        <persName xml:id="gnd_118549693" ref="http://d-nb.info/gnd/118549693">Hermannus &lt;Contractus&gt;</persName>
+                        <persName>Hermannus Augiensis</persName>
+                    </person>
+                    <person xml:id="hincmar">
+                        <persName xml:id="gnd_118551280" ref="http://d-nb.info/gnd/118551280">Hincmar of Reims</persName>
+                    </person>
+                    <person xml:id="hucbaldus">
+                        <persName xml:id="gnd_118707566">Hucbaldus &lt;de Sancto Amando&gt;</persName>
+                        <persName>Hucbaldus de Sancto Amando</persName>
+                    </person>
+                    <person xml:id="hyginus">
+                        <persName xml:id="gnd_11896903X">Hyginus &lt;Gaius, Julius&gt;</persName>
+                    </person>
+                    <person xml:id="ellinger">
+                        <persName xml:id="gnd_10094051X" ref="http://d-nb.info/gnd/10094051X">Ellinger, Abbot</persName>
+                    </person>
+                    <person xml:id="flavius_mallius_theodorus">
+                        <persName xml:id="gnd_102158088" ref="http://d-nb.info/gnd/102158088">Flavius &lt;Mallius Theodorus&gt;</persName>
+                    </person>
+                    <person xml:id="hugo_grotius">
+                        <persName xml:id="gnd_118542702" ref="http://d-nb.info/gnd/118542702">Hugo &lt;Grotius&gt;</persName>
+                    </person>
+                    <person xml:id="isaac_vossius">
+                        <persName xml:id="gnd_119288842">Isaac &lt;Vossius&gt;</persName>
+                    </person>
+                    <person xml:id="isidore">
+                        <persName xml:id="gnd_118555995" ref="http://d-nb.info/gnd/118555995" xml:lang="lat">Isidorus &lt;Hispalensis&gt;</persName>
+                        <persName>Isidore of Seville</persName>
+                    </person>
+                    <person xml:id="iulius_frontinus">
+                        <persName xml:id="gnd_118536443" ref="	http://d-nb.info/gnd/118536443">Iulius &lt;Sextus Frontinus&gt;</persName>
+                    </person>
+                    <person xml:id="iulius_vistor">
+                        <persName xml:id="gnd_102396701" ref="http://d-nb.info/gnd/102396701">Iulius &lt;Victor&gt;</persName>
+                        <persName>Iulius Victor</persName>
+                    </person>
+                    <person xml:id="jerome">
+                        <persName xml:id="gnd_118550853" ref="http://d-nb.info/gnd/118550853">Jerome</persName>
+                        <persName>Ps-Jerome</persName>
+                    </person>
+                    <person xml:id="judith">
+                        <persName xml:id="gnd_104292210" ref="http://d-nb.info/gnd/104292210">Empress Judith</persName>
+                    </person>
+                    <person xml:id="louis_pious">
+                        <persName xml:id="gnd_118640658" ref="http://d-nb.info/gnd/118640658">Emperor Louis the Pious</persName>
+                    </person>
+                    <person xml:id="macrobius">
+                        <persName xml:id="gnd_118640763">Macrobius &lt;Ambrosius Theodosius&gt;</persName>
+                        <persName>Macrobius Ambrosius Theodosius</persName>
+                    </person>
+                    <person xml:id="marius_plotius_sacerdos">
+                        <persName xml:id="gnd_102405239" ref="http://d-nb.info/gnd/102405239">Marius Plotius Sacerdos</persName>
+                        <bibl>R. A. Kaster, Guardians of Language: The Grammarian and Society in Late Antiquity (Berkeley: University of California Press, 1988) pp. 352-3.</bibl>
+                    </person>
+                    <person xml:id="martianus_capella">
+                        <persName xml:id="gnd_118578278" ref="http://d-nb.info/gnd/118578278">Martianus Capella</persName>
+                    </person>
+                    <person xml:id="notker_labeo">
+                        <persName xml:id="gnd_118588869" ref="http://d-nb.info/gnd/118588869">Notker Labeo</persName>
+                        <affiliation><rs type="place" ref="http://www.geonames.org/2658822">St. Gall</rs></affiliation>
+                    </person>
+                    <person xml:id="odbert">
+                        <persName ref="http://oxfordindex.oup.com/view/10.1093/gao/9781884446054.article.T063211">Odbert from Saint-Bertin</persName>
+                        <occupation>Abbot of Saint-Bertin (986-1007)</occupation>
+                        <occupation>illuminator</occupation>
+                        <occupation>copist</occupation>
+                    </person>
+                    <person xml:id="polemius_silvius">
+                        <persName xml:id="gnd_119032694" ref="http://d-nb.info/gnd/119032694">Polemius Silvius</persName>
+                    </person>
+                    <person xml:id="pliny">
+                        <persName xml:id="gnd_118595083" ref="http://d-nb.info/gnd/118595083">Gaius Plinius Secundus</persName>
+                    </person>
+                    <person xml:id="priscianus">
+                        <persName xml:id="gnd_118596624" ref="http://d-nb.info/gnd/118596624">Priscianus</persName>
+                    </person>
+                    <person xml:id="remius_favinus">
+                        <persName xml:id="gnd_102405026" ref="http://d-nb.info/gnd/102405026">Remius &lt;Favinus&gt;</persName>
+                    </person>
+                    <person xml:id="salvianus_massiliensis">
+                        <persName xml:id="gnd_118605208" ref="http://d-nb.info/gnd/118605208">Salvianus &lt;Massiliensis&gt;</persName>
+                    </person>
+                    <person xml:id="sextus_festus">
+                        <persName xml:id="gnd_118683489" ref="http://d-nb.info/gnd/118683489">Sextus Pompeius Festus</persName>
+                    </person>
+                    <person xml:id="susius">
+                        <persName xml:id="gnd_135617855">Iacobus &lt;Susius&gt;</persName>
+                        <persName>Suys, Jacobus van</persName>
+                        <occupation>humanist</occupation>
+                        <birth>1565</birth>
+                        <death>1621</death>
+                    </person>
+                    <person xml:id="theodorus_priscianus">
+                        <persName xml:id="gnd_102407606" ref="http://d-nb.info/gnd/102407606">Theodorus &lt;Priscianus&gt;</persName>
+                    </person>
+                    <person xml:id="theofridus_epternacensis">
+                        <persName xml:id="gnd_119133326" ref="http://d-nb.info/gnd/119133326">Theofridus &lt;Epternacensis&gt;</persName>
+                    </person>
+                    <person xml:id="vitruvius">
+                        <persName xml:id="gnd_118627252" ref="http://d-nb.info/gnd/118627252">Vitruvius</persName>
+                    </person>
+                    <person xml:id="walafrid_strabo">
+                        <persName xml:id="gnd_118628550" ref="http://d-nb.info/gnd/118628550">Walafrid Strabo</persName>
+                    </person>
+                    <person xml:id="wandalbert_von_pruem">
+                        <persName xml:id="gnd_118629034" ref="http://d-nb.info/gnd/118629034">Wandalbert von Prüm</persName>
+                    </person>
+                    <person xml:id="werner_von_habsburg">
+                        <persName xml:id="gnd_139142975">Werner &lt;von Habsburg&gt;</persName>
+                        <persName>Werner I. bishop of Strasbourg</persName>
+                        <occupation>bishop of Strasbourg (1001-1028)</occupation>
+                    </person>
+                    <person xml:id="wolfger">
+                        <persName xml:id="gnd_100965148" ref="http://d-nb.info/gnd/100965148">Wolfger von Prüfening</persName>
+                        <persName>Wolfgerus &lt;Pruveningensis&gt;</persName>
+                        <floruit>ca.1100-ca.1173</floruit>
+                        <affiliation><rs type="place" ref="#pruefening">Prüfening</rs></affiliation>
+                        <occupation>monk</occupation>
+                        <occupation>librarian</occupation>
+                    </person> 
+                </listPerson>
+        </body>
+    </text>
+</TEI>

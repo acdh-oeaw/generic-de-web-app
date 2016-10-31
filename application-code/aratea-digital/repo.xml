@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>A collection of digital editions and manuscript descriptions of medieval transmissions of Aratus‘ (ca. 315/310-240 BC) didactic poem the Phaenomena. The data will be provided by Ivana Dobcheva, doctoral student at Central European University.</description>
+    <author>Peter Andorfer</author>
+    <website/>
+    <status>alpha</status>
+    <license>GNU-LGPL</license>
+    <copyright>true</copyright>
+    <type>application</type>
+    <target>aratea-digital</target>
+    <prepare>pre-install.xql</prepare>
+    <finish/>
+    <permissions user="admin" password="" group="dba" mode="rw-rw-r--"/>
+</meta>

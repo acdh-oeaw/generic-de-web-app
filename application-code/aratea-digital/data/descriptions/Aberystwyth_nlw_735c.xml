@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI version="5.0" 
+    xmlns="http://www.tei-c.org/ns/1.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/rules/schema/ER/v0.4/europeana-regia.xsd" 
+    xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Description of <ref type="mss" target="http://hdl.handle.net/10107/4387889">Aberystwyth NLW, MS 735 C</ref></title>
+                <respStmt>
+                    <resp>Catalogued by:</resp>
+                    <name type="person">Ivana Dobcheva</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Digital edition according to TEI P5</edition>
+                <respStmt>
+                    <resp>TEI-P5 coded by </resp>
+                    <name type="person">Ivana Dobcheva</name>
+                    <name type="org"></name>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>
+                    <name type="org"></name>
+                    <!--<ptr target=""/>-->
+                </publisher>
+            </publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+        </fileDesc>           
+        <!--
+            <revisionDesc>
+				<change who="" date=""></change>
+			</revisionDesc>
+		-->
+    </teiHeader>
+    <facsimile>
+        <graphic url="https://viewer.library.wales/4387889#?cv=3&amp;z" n="1r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=4&amp;z" n="1v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=5&amp;z" n="2r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=6&amp;z" n="2v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=7&amp;z" n="3r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=8&amp;z" n="3v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=9&amp;z" n="4r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=10&amp;z" n="4v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=11&amp;z" n="5r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=12&amp;z" n="5v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=13&amp;z" n="6r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=14&amp;z" n="6v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=15&amp;z" n="7r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=16&amp;z" n="7v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=17&amp;z" n="8r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=18&amp;z" n="8v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=19&amp;z" n="9r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=20&amp;z" n="9v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=21&amp;z" n="10r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=22&amp;z" n="10v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=23&amp;z" n="11r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=24&amp;z" n="11v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=25&amp;z" n="12r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=26&amp;z" n="12v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=27&amp;z" n="13r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=28&amp;z" n="13v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=29&amp;z" n="14r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=30&amp;z" n="14v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=31&amp;z" n="15r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=32&amp;z" n="15v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=33&amp;z" n="16r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=34&amp;z" n="16v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=35&amp;z" n="17r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=36&amp;z" n="17v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=37&amp;z" n="18r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=38&amp;z" n="18v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=39&amp;z" n="19r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=40&amp;z" n="19v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=41&amp;z" n="20r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=42&amp;z" n="20v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=43&amp;z" n="21r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=44&amp;z" n="21v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=45&amp;z" n="22r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=46&amp;z" n="22v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=47&amp;z" n="23r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=48&amp;z" n="23v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=49&amp;z" n="24r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=50&amp;z" n="24v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=51&amp;z" n="25r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=52&amp;z" n="25v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=53&amp;z" n="26r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=54&amp;z" n="26v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=55&amp;z" n="27r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=56&amp;z" n="27v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=57&amp;z" n="28r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=58&amp;z" n="28v"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=59&amp;z" n="29r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=95&amp;z" n="47r"/>
+        <graphic url="https://viewer.library.wales/4387889#?cv=96&amp;z" n="47v"/>
+    </facsimile>
+    <text>
+        <body>
+            <msDesc xml:id="nlw_735c" xml:lang="eng">
+                <msIdentifier>
+                    <settlement>Aberystwyth</settlement>
+                    <repository>National Library of Wales</repository>
+                    <collection></collection>
+                    <idno>735 C</idno>
+                </msIdentifier>
+                <head>
+                    <title>Texts on astronomy</title>
+                    <origPlace ref="#limoges">Limoges area</origPlace>
+                    <origDate notBefore="0986" notAfter="1160">ca. 1000; ca. 1150</origDate>
+                </head>                
+                <physDesc>
+                    <objectDesc form="codex">
+                        <supportDesc material="perg">
+                            <support>
+                                <p><material>Parchment</material></p>
+                            </support>
+                            <extent>
+                                <measure type="leavesCount" quantity="49">i + 47 + i</measure>
+                                <dimensions type="leaf" unit="mm">
+                                    <height>235</height>
+                                    <width>165</width>
+                                </dimensions>
+                            </extent>
+                            <foliation>Modern foliation with pencil in the upper right corner: 1-47. Previous pagination with pencil marking every recto again in the upper right corner: 1-93.</foliation>
+                            <collation>The manuscript comprises two codicological units. Part 1: <formula>I<hi rend="sup">6</hi> (ff.1-6), II<hi rend="sup">4</hi> (ff.7-10), III<hi rend="sup">8</hi> (ff.11-18), IV<hi rend="sup">8(-6)</hi> (ff.19-20, lost 6 folia after f. 20), V<hi rend="sup">6</hi>(ff. 21-26)</formula>. Part 2: <formula>I-II<hi rend="sup">8</hi> (ff.27-34 and 35-42), III<hi rend="sup">6</hi> (ff. 43-48)</formula>. Judging by the abrupt end of the final paragraph, the last quire is missing several folios.</collation>
+                            <condition>
+                                <p>A large hole on f. 45 extending for 18 lines occured probably by the production of the parchment (text is written around it).</p>
+                            </condition>
+                        </supportDesc>
+                        <layoutDesc>
+                            <layout columns="2" ruledLines="43 44">
+                                <p>ff. 1r-3r and 24v written in 2 columns, around 44 long lines. Rustic used for headings; Capitalis for incipit and explicit. Initials for opening paragraphs or sections. Red colour used to highlight incipit/explicit and fill up the initials and the majuscle at the beginning of sentences. The verses in Germanicus' <title>Aratea</title> begin with versals</p>
+                            </layout>
+                            <layout columns="1" ruledLines="44">
+                                <p>ff. 5v-47v written in 1 columns, around 44 long lines.</p>
+                            </layout>
+                        </layoutDesc>
+                    </objectDesc>
+                    <handDesc>
+                        <handNote>In Part 1 there are three main hands: Hand A copied ff.1r-16v and 21r-23r, Hand B ff.16v-20v, Hand C finished the text on ff. 23v-24v. Folio 2va, line 13 to the end of the page was copied by a firth hand.</handNote>
+                        <handNote>Part 2 was copied by one main hand. Exceptions on ff. 38r-39r and 42v where two other hands join in for short sessions.</handNote>
+                    </handDesc>
+                    <scriptDesc>
+                        <scriptNote script="carolmin">
+                            <p>Both codicological part are written in caroline minuscule; Part 2 exihibts insular features.</p>
+                        </scriptNote>                     
+                    </scriptDesc>
+                    <bindingDesc>
+                        <binding notBefore="1601" notAfter="1700"><p>According to a note on the first garde folio the manuscript was rebbacked in the original blind-tooled 17th century English binding at N.L.W.</p></binding>
+                    </bindingDesc>
+                </physDesc>
+                    <history>
+                        <origin>
+                            <p>Part 1 was copied around <origDate notBefore="0986" notAfter="1015">1000</origDate> in the <origPlace ref="#limoges">Limoges</origPlace> area (MsGurk) and came from the circle of <rs type="person" ref="#ademar_de_chabannes">Adémar de Chabannes</rs> (989-1034).</p> 
+                            <p>Part 2 was copied possibly in <origPlace>Wels</origPlace> (McGurk/Bischoff) in the <origDate notBefore="1141" notAfter="1160">mid 12th c.</origDate></p>
+                        </origin>
+                    <provenance>
+                        <p>The manuscript must have been in London in the 17th c., where it got its new binding.</p>
+                    </provenance>
+                    <acquisition>
+                        <p>Arrived in the National Library of Wales in 1913 from Thomas Lloyd's family home.</p>
+                    </acquisition>
+                    </history>
+                <additional>
+                    <listBibl>
+                        <head>Selected bibliography:</head>
+                        <bibl><abbr>Sternbilder des Mittelalters</abbr>, pp. 179-184, plates 1-23.</bibl>
+                        <bibl>P. McGurk, "Germanici Caesaris Aratea cum scholiis; a new illustrated witness from Wales," <title level="j">National Library of Wales Journal</title>, xviii (1973-4), 197-216.<ptr target="http://welshjournals.llgc.org.uk/browse/viewobject/llgc-id:1284625/article/000038144"/></bibl>
+                        <bibl><abbr>Munk Olsen, L’ étude 4,2</abbr>, pp. 116, 200, 289.</bibl>
+                        <bibl><abbr>Le Boeuffle (2002)</abbr>, p. LII.</bibl>
+                        <bibl><abbr>Le Boeuffle (1975)</abbr>.</bibl>
+                        <bibl><abbr>Dell'Era (1979)</abbr>.</bibl>                        
+                        <bibl><abbr>Blume (2000)</abbr>, p. 274.</bibl>
+                        <bibl><abbr>Eastwood (1981)</abbr>.</bibl>
+                        <bibl><abbr>Eastwood (2002)</abbr>, pp. 281-</bibl>
+                        <bibl><abbr>Haffner</abbr>, 58.</bibl>
+                        <bibl><abbr>Dekker</abbr>, chapter 3.1 and 3.2 and pp. 227-8 esp.</bibl>
+                        <bibl><abbr>Mütherich (1989)</abbr>, pp. 32 and 34.</bibl>
+                    </listBibl>
+                </additional>
+                <msPart>
+                    <msIdentifier>
+                        <idno>Part 1:</idno>
+                    </msIdentifier>
+                    <head>ff. 1-26</head>
+                    <msContents>
+                        <textLang mainLang="lat"/>
+                        <msItem>
+                            <locus from="1r" to="2v">1r-2v</locus>
+                            <author ref="#boniface">Boniface</author>
+                            <title>Carmina acrosticha</title>
+                            <incipit>De veritate. Vincere me <sic>nulli</sic> possunt sed p<ex>er</ex>dere multi</incipit>
+                            <explicit>Falsior inter nos probatur nulla sororum.</explicit>
+                            <finalRubric>Explicit de VIII viciies principalis.</finalRubric>
+                            <bibl>MGH Poetae lat. aevi carol., pp. 6-14</bibl>
+                        </msItem>
+                        <msItem>
+                            <locus from="3r">3r</locus>
+                            <note>Verse from the so called <title>Appendix Vergiliana</title>, <title>De est et non</title>.</note>
+                            <rubric>Versus prisciani eloquentissimi viri de est et non incipiunt</rubric>
+                            <incipit>Est et non cuncti monosyllaba nota frequentant</incipit>
+                            <explicit>Qualis uita hominum duo quam monosyllaba uersant.</explicit>
+                            <listBibl>
+                                <bibl>Appendix Vergiliana. Ed. W. V. Clausen et al. Oxford: Clarendon, 1966.<ptr target="http://latin.packhum.org/loc/692/13/0#0"/></bibl>
+                                <bibl>Anthologia Latina, p. 96-7, n. 645, vv. 1-25.</bibl>
+                            </listBibl>
+                            <note>Last five verses written in a pailer ink.</note> 
+                            <decoNote>In the lower half of the page schema with 3 trios of contrasting
+                                conditions in 9 lines "summum bonum, magnum bonum, bonum" , "creat et non creatur, creatur et non moritur, creatur et moritur" and "movet et non movetur, movetur tempore et non loco, movetur tempore et loco". From each of these nine conditions begins a line with text, which cross each other, so that from everygroup of three conditions the first, second and third are joined to one point.<gap/></decoNote>
+                        </msItem>  
+                        <msItem>
+                            <locus from="3v" to="4r">3v-4r</locus>
+                            <decoNote>Two drawings of the two hemispheres (divided by the colures) with the constellations and a band for the zodiacal ones. On f. 3v the illustrator left two unfinished circle diagrams, the one to the right having seven concentric circles. On f. 4r two figures, presumably Aratus receiving a crown from the muse Urania.</decoNote>
+                        </msItem>
+                        <msItem>
+                            <locus from="4v">4v</locus>                            
+                            <note>Verses with heading <quote>De circulo superiori</quote>, <quote>De circulo saturni</quote>, <quote>De circulo phetontis id est iovis</quote>, <quote>De circulo <unclear>maultis</unclear> id est martis</quote>, <quote>De circulo elyos id est solis</quote>, <quote>De circulo veneris id est luciferi</quote>, <quote>De circulo stilbontis id est mercurii</quote>, and <quote>De circulo lunae</quote>.</note>
+                            <incipit>De cirylo superiori. Aplanes supera<ex>m</ex> centron dixere priores</incipit>                            
+                            <explicit>De circulo lunae. Primo luna gradu terrae confinialisque (?)</explicit>
+                            <filiation>Rheims MS. 1263, 98v-99 (based on P. McGurk's description).</filiation>
+                            <bibl>Catalogue général des manuscrits des bibliothèques publiques de France : Départements, Reims, vol. 39, 1. Paris 1904, p. 360.</bibl>
+                            <decoNote>Drawing of the zodiacal band in a circle, within which are drawn further circle with the planets. The circles for the Sun, Venus and Mercury crossing each other.</decoNote>
+                        </msItem>
+                        <msItem>
+                            <locus from="5r">5r</locus>
+                            <decoNote>Unfinished drawings of the two hemispheres with the constellations this time the two circles are joined not at the side like in the previous drawing on f. 3v-4r, but are positioned so that the upper circle has its south pole up and north pole down, while the lower circle its north pole up and south down.</decoNote>
+                            <note>Around the drawings short texts almost illegible <quote>Sub pedibus nostris <unclear>antarcticus iste iacebis</unclear><gap reason="illegible"/> Circulus hic nostris iugit subiectus <unclear>ocellis</unclear>. Contrariet et <gap reason="illegible"/> et gentes frigora uentos.</quote></note>
+                        </msItem>
+                        <msItem>
+                            <locus from="5v" to="7r">5v-7r</locus>
+                            <author>Ps-Cicero</author>
+                            <title>In Sallustium</title>
+                            <rubric>Controversia ciceronis in salustium incipit</rubric>
+                            <incipit>Ea demum magna uoluptas est C. Sallusti, aequalem ac parem uerbis uitam agere</incipit>
+                            <explicit>sed ut ea dicam, si qua ego honeste effari possim.</explicit>
+                            <bibl>Loeb 462, pp. 372-391.</bibl>
+                        </msItem>
+                        <msItem>
+                            <locus from="7r" to="7v">7r-v</locus>
+                            <author>Ps-Sallustius</author>
+                            <title>In Ciceronem</title>
+                            <rubric>Salustii in Ciceronem</rubric>
+                            <incipit>Grauiter &amp; iniquo animo maledicta tua paterer, M. Tulli, si te scirem iudicio magis quam morbo</incipit>
+                            <explicit>neque in hac neque in ill parte fidem habens.</explicit>
+                            <finalRubric>Finit controversia S.</finalRubric>
+                        </msItem>
+                        <msItem>
+                            <locus from="7v">7v</locus>
+                            <author>Ps. Priscianus</author>
+                            <title ref="#ad_boreae">De sideribus</title>
+                            <rubric>Incipit epitome phenomenon id est apparatio sive apparencia Prisciani grammatici versibus XII de sideribus</rubric>
+                            <incipit>Ad boreę partes arcti uertuntur et anguis</incipit>
+                            <explicit>Celsior his saturnus tardior omnibus astris.</explicit>
+                        </msItem>
+                        <msItem>
+                            <locus from="7v" to="9v">7v-9v</locus>
+                            <author ref="cicero">Cicero</author>
+                            <title ref="#somnium_scipionis">Somnium Scipionis</title>
+                            <rubric>Somnivm scipionis M. Tulli Ciceronis excerptum ex libro VI. de re pvblica</rubric>
+                            <incipit>Cum in afficam uenissem a manilio consule ad quartam legionem tribunus</incipit>
+                            <explicit>Ille discessit, ego somno solutus.</explicit>
+                            <finalRubric>Explicit</finalRubric>
+                            <msItem>
+                                <locus from="9v">9v</locus>
+                                <author ref="#macrobius">Macrobius</author>
+                                <title ref="#commentarium_somnium">Commentarium in Ciceronis somnium Scipionis</title>
+                                <note>Four lines from the openning and closing of Book One.</note>
+                                <rubric>Macrobii Ambrosii Theodosii viri clarissimi ex illvstris commentum ex Cicerone in somnivm scipionis</rubric>
+                                <quote>Inter platonis et ciceronis libros quos de re publica <gap reason="omitted"/> quod ille rem publicam ordinauit, hic retulit. Sed hic inhibita continuatione <gap reason="omitted"/> disputationem sequencium reseruimus.</quote>
+                                <finalRubric>Explicit liber I M. A. T. v<ex>iri</ex> c<ex>lari</ex> et ill<ex>ustris</ex> de somnio scipionis.</finalRubric>
+                            </msItem>
+                            <msItem>
+                                <note>Another three lines from the opening and closing of Book Two (cap. 1, §1 and cap. 17, §17).</note>
+                                <rubric>Incipit secundus</rubric>
+                                <quote>Superiore commentario eustachi luce michi dileccior filiusque ad stelliferae spere cursum et subiectarum septem sermo processerat. Nunc iam de musico earum modulamini disputetur. Vere igitur pronunciandum est, nichil hoc opere perfeccius quo uniuersa philosophia continetur.</quote>
+                            </msItem>
+                        </msItem>
+                        <msItem>
+                            <locus from="10r" >10r</locus>
+                            <note>blank.</note>
+                        </msItem>
+                        <msItem>
+                            <locus from="10v">10v</locus>
+                            <note>Drawing of planisphere with five concentric circles for the celestial zones and another band for the Zodiac. Skillful depictions of the constellations within the circles.</note>
+                            <incipit></incipit>
+                        </msItem>
+                        <msItem>
+                            <locus from="11r" >11r</locus>
+                            <note>blank.</note>
+                        </msItem>
+                        <msItem>
+                            <locus from="11v" to="24v">11v-24v</locus>
+                            <author ref="#germanicus">Germanicus</author>
+                            <title ref="#germanicus_aratea">Aratea<note> (Family O)</note></title>
+                            <note>vv. 1-232 and 433-582.</note>
+                            <rubric>T. Claudii Caesaris Arati phoenomena</rubric>
+                            <incipit>Ab ioue principium magno deducit aratus</incipit>
+                            <explicit><locus to="23r">(23r)</locus>Quod sine nube caua solis uia forta latebit.</explicit>
+                            <msItem>
+                                <locus from="11v" to="21v">11v-21v</locus>
+                                <title ref="#scholia_basileensia">Scholia Basileensia</title>
+                                <incipit>Quertur quare ab ioue cepit et non a musis ut omerus.</incipit>
+                                <explicit>aeffusum est lacte facta est circuli albi species.</explicit>
+                            </msItem>
+                            <msItem>
+                                <locus from="23r" to="24v">23r-24vb</locus>
+                                <note>Fragment IV:</note>
+                                <incipit>Iuppiter est illo laeto magis hic ubique solis</incipit>
+                                <explicit>haec eadem tibi signa dabunt non irrita pisces.</explicit>
+                            </msItem>
+                            <finalRubric>T. Claudii Cesaris phenomena explicit feliciter deo gratias.</finalRubric>
+                            <decoNote>Illustrations of the constellations (on ff. <locus from="12r">12r</locus>, <locus from="13r" to="15r">13r-15r</locus>, <locus from="16r">16r</locus>, <locus from="17r" to="17v">17r-v</locus>, <locus from="18v" to="21v">18v-21v</locus>) and on <locus from="11v">f. 11v</locus> Aratus and Urania pointing to a globe, <locus from="12r">f. 12r</locus> Zeus with an eagle.</decoNote>
+                        </msItem>
+                        <msItem>
+                            <locus from="25r">25r</locus>
+                            <note>Drawing of a planisphere this time the constellations are marked with labels within the celestial circles.</note>
+                        </msItem>
+                        <msItem>
+                            <locus from="25v" to="26v"></locus>
+                            <note>blank.</note>
+                        </msItem>
+                    </msContents>
+                </msPart>
+                <msPart>
+                    <msIdentifier>
+                        <idno>Part 2:</idno>
+                    </msIdentifier>
+                    <head>ff. 27-47</head>
+                    <msContents>
+                        <msItem>
+                            <locus from="27r" to="47v"></locus>
+                            <author ref="#hyginus">Hyginus</author>
+                            <title ref="#de_astronomia">De astronomia</title>
+                            <rubric>Iginvs M. Fabio plvrimam salvtem</rubric>
+                            <incipit>Et si te studio grammatice artis inductum non solum</incipit>
+                            <explicit>annum voluerunt esse cum sol ab estivo circulo redeat.</explicit>
+                            <finalRubric>Deo gratias.</finalRubric>
+                            <decoNote>Marginal drawing on <locus from="47r">f. 47r</locus> of the planets.</decoNote>
+                            <note>Most of Book one, two and three with decorated initials. Interlienar gloss to most of Book one.</note>
+                        </msItem>
+                    </msContents>
+                </msPart>
+            </msDesc>
+        </body>
+    </text>
+</TEI>
+
