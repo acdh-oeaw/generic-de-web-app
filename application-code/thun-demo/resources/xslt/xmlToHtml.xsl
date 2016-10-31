@@ -46,7 +46,7 @@
                                                 <xsl:attribute name="title">
                                                     <xsl:value-of select="name()"/>
                                                 </xsl:attribute>
-                                                <xsl:apply-templates select="."/>
+                                                <xsl:value-of select="."/>
                                             </abbr>
                                             <br/>
                                         </xsl:for-each><!--<xsl:apply-templates select="//tei:msIdentifier"/>-->
@@ -142,7 +142,7 @@
                             </xsl:for-each>
                         </xsl:element>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8" id="transcribed_text">
                         <h3>
                             <xsl:apply-templates select="//tei:div[@type='titelblatt']"/>
                         </h3>
@@ -174,7 +174,7 @@
                 var replaced = path.replace("exist/apps/", "exist/rest/db/apps/");
                 current_html = window.location.pathname.substring(window.location.pathname.lastIndexOf("/") + 1)
                 var source_dokument = replaced.replace("pages/"+current_html, "data/editions/"+params['document']);
-                console.log(source_dokument)
+                // console.log(source_dokument)
                 $( "#link_to_source" ).attr('href',source_dokument);
                 $( "#link_to_source" ).text(source_dokument);
             </script>
@@ -183,27 +183,7 @@
     #####################
     ###  Formatierung ###
     #####################
---><!-- opener    -->
-    <xsl:template match="tei:opener">
-        <p>
-            <xsl:apply-templates/>
-        </p>
-    </xsl:template><!-- salute -->
-    <xsl:template match="tei:salute">
-        <h4>
-            <xsl:apply-templates/>
-        </h4>
-    </xsl:template><!-- closer -->
-    <xsl:template match="tei:closer">
-        <p>
-            <xsl:apply-templates/>
-        </p>
-    </xsl:template><!--dateline-->
-    <xsl:template match="tei:dateline">
-        <p align="right">
-            <xsl:apply-templates/>
-        </p>
-    </xsl:template><!-- resp -->
+--><!-- resp -->
     <xsl:template match="tei:respStmt/tei:resp">
         <xsl:apply-templates/>&#160;
     </xsl:template>
@@ -331,8 +311,5 @@
         <xsl:element name="strike">
             <xsl:apply-templates/>
         </xsl:element>
-    </xsl:template>
-    <xsl:template match="tei:w">
-        <xsl:value-of select="./text()"/>
     </xsl:template>
 </xsl:stylesheet>

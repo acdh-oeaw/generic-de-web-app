@@ -10,6 +10,5 @@
     <target>thun-demo</target>
     <prepare>pre-install.xql</prepare>
     <finish/>
-    <permissions user="admin" group="dba" mode="rw-rw-r--"/>
-    <deployed>2016-09-12T15:37:36.516+02:00</deployed>
+    <permissions xmlns:repo="http://exist-db.org/xquery/repo" password="" user="admin" group="dba" mode="rw-rw-r--"/>
 </meta>

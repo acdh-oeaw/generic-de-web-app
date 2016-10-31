@@ -29,6 +29,10 @@ declare variable $config:app-root :=
         substring-before($modulePath, "/modules")
 ;
 
+declare %templates:wrap function config:app-description($node as node(), $model as map(*)) as text() {
+    $config:repo-descriptor/repo:description/text()
+};
+
 declare variable $config:data-root := $config:app-root || "/data";
 
 declare variable $config:repo-descriptor := doc(concat($config:app-root, "/repo.xml"))/repo:meta;
@@ -62,10 +66,6 @@ declare function config:expath-descriptor() as element(expath:package) {
 
 declare %templates:wrap function config:app-title($node as node(), $model as map(*)) as text() {
     $config:expath-descriptor/expath:title/text()
-};
-
-declare %templates:wrap function config:app-description($node as node(), $model as map(*)) as text() {
-    $config:repo-descriptor/repo:description/text()
 };
 
 declare function config:app-meta($node as node(), $model as map(*)) as element()* {

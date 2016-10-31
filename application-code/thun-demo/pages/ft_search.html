@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div class="templates:surround?with=templates/page.html&amp;at=content">
-    <div>
-        <form method="get" class="form-inline" id="pageform">
-            <div class="form-group">
-                <div class="input-group">
-                    <input type="text" class="form-control" name="searchexpr"/>
-                </div>
-                <button type="submit" class="btn btn-primary">Go!</button>
-            </div>
-        </form>
-    </div>
+    <h1>
+        <span id="hitcount"/> for
+        <strong>
+            <span id="searchexpr"/>
+        </strong>
+    </h1>
     <hr/>
     <table>
         <thead>
@@ -23,4 +19,16 @@
             <tr data-template="app:ft_search"/>
         </tbody>
     </table>
+    <script>
+        $( document ).ready(function() {       
+            var hits = ($('td.KWIC').children('p').length);
+            if (hits == 1){
+                $("#hitcount").text(hits+" Hit ");
+            }
+            else {
+                $("#hitcount").text(hits+" Hits ");
+            }
+            $("#searchexpr").text(decodeURIComponent($.urlParam("searchexpr")));
+        });     
+    </script>
 </div>
