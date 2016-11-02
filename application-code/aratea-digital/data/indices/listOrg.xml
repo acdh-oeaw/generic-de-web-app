@@ -1,37 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title>List of organisations</title>
-         </titleStmt>
-         <publicationStmt>
-            <p>Publication Information</p>
-         </publicationStmt>
-         <sourceDesc>
-            <p>Information about the source</p>
-         </sourceDesc>
-      </fileDesc>
-  </teiHeader>
-  <text>
-      <body>
-         <listOrg>
-            <org xml:id="saint_germain_abbey">
-               <orgName xml:id="gnd_041182413" ref="http://www.geonames.org/6696091">Abbaye de Saint-Germain-des-Prés</orgName>
-            </org>
-            <org xml:id="tegernsee_abbey">
-               <orgName xml:id="gnd_809501-2" ref="http://www.geonames.org/2823679">Abbey Tegernsee</orgName>
-            </org>
-            <org xml:id="corvey">
-               <orgName xml:id="gnd_2071959-0" ref="http://www.geonames.org/10942877">Corvey Abbey</orgName>
-            </org>
-            <org xml:id="saint-bertin">
-               <orgName xml:id="gnd_1086389638" ref="http://www.geonames.org/2977845">Abbey of Saint-Omer-Saint-Bertin</orgName>
-            </org>
-         </listOrg>
-      </body>
-  </text>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>List of organisations </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Information about the source</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listOrg>
+                <org xml:id="saint_germain_abbey">
+                    <orgName xml:id="gnd_041182413" ref="http://www.geonames.org/6696091">Abbaye de Saint-Germain-des-Prés</orgName>
+                </org>
+                <org xml:id="tegernsee_abbey">
+                    <orgName xml:id="gnd_809501-2" ref="http://www.geonames.org/2823679">Abbey Tegernsee</orgName>
+                </org>
+                <org xml:id="corvey">
+                    <orgName xml:id="gnd_2071959-0" ref="http://www.geonames.org/10942877">Corvey Abbey</orgName>
+                </org>
+                <org xml:id="saint-bertin">
+                    <orgName xml:id="gnd_1086389638" ref="http://www.geonames.org/2977845">Abbey of Saint-Omer-Saint-Bertin</orgName>
+                </org>
+            </listOrg>
+        </body>
+    </text>
 </TEI>

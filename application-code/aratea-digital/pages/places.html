@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="templates:surround?with=templates/page.html&amp;at=content">
+    <script src="$app-root/resources/js/tablesorter/js/jquery.tablesorter.js"/>
+    <script src="$app-root/resources/js/tablesorter/js/jquery.tablesorter.widgets.js"/>
+    <script src="$app-root/resources/js/tablesorter/js/jquery.tablesorter.pager.js"/>
+    <link rel="stylesheet" type="text/css" href="$app-root/resources/js/tablesorter/css/theme.bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="$app-root/resources/js/tablesorter/css/jquery.tablesorter.pager.css"/>
+    <script src="$app-root/resources/js/historyjs/native.history.js"/>
+    <script> $(function() { $("table").tablesorter({ theme : "bootstrap", widthFixed: false,
+        headerTemplate : '{content} {icon}', widgets : [ "uitheme", "filter", "zebra" ], filter_cssFilter: "form-control", }) }); 
+    </script>
+    <h1>Places</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>places' name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-template="app:listPlace"/>
+        </tbody>
+    </table>
+    <script>
+        $( document ).ready(function() {
+        var fetched_param = decodeURIComponent($.urlParam("place"));
+        if (fetched_param != "null"){
+        $.tablesorter.setFilters( $('table'), [ fetched_param], true );
+        $('table').trigger('search', true);
+        }
+        $("td input").bind("keyup", function(e) {
+        var searchstring = $(this).val();
+        History.pushState({searchstring: "place"}, "looking for "+searchstring, "?place="+searchstring);   
+        });
+        });
+    </script>
+</div>

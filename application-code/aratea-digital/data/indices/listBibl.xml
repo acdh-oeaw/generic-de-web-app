@@ -1,301 +1,323 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title>Bibliography</title>
-         </titleStmt>
-         <publicationStmt>
-            <p>Publication Information</p>
-         </publicationStmt>
-         <sourceDesc>
-            <p>Information about the source</p>
-         </sourceDesc>
-      </fileDesc>
-  </teiHeader>
-  <text>
-      <body>
-         <list type="bibliography">
-            <head>Used Literature:</head>
-            <item>
-               <label>MGH</label>
-               <bibl>Monumenta Germaniae historica. Hannoverae (usw.) 1826ff.</bibl>
-            </item>
-            <item>
-               <label>MGH SS</label>
-               <bibl>Monumenta Germaniae historica. Scriptores</bibl>
-            </item>
-            <item>
-               <label>MGH LL</label>
-               <bibl>Monumenta Germaniae historica. Leges</bibl>
-            </item>
-            <item>
-               <label>MGH Legum sectio</label>
-               <bibl>Monumenta Germaniae historica. Legum sectio (Quartreihe) Auetores antiquissimi</bibl>
-            </item>
-            <item>
-               <label>MGH Auct. antiqu.Scriptores rerum merovingicarum.</label>
-               <bibl>Monumenta Germaniae historica. Auct. antiqu.Scriptores rerum merovingicarum.</bibl>
-            </item>
-            <item>
-               <label>MGH Epp.</label>
-               <bibl>Monumenta Germaniae historica. Epistolae</bibl>
-            </item>
-            <item>
-               <label>MGH Epp. aevi carol.</label>
-               <bibl>Monumenta Germaniae historica. Epistolae aevi carolini 1–5.</bibl>
-            </item>
-            <item>
-               <label>MGH Poetae lat. aevi carol.</label>
-               <bibl>Monumenta Germaniae historica. Poetae latini aevi carolini</bibl>
-            </item>
-            <item xml:id="opac_245743928">
-               <label>Anthologia Latina</label>
-               <bibl>Anthologia Latina, I:2,  ed. Alexander Riese. Leipzig: Teubner, 1870.</bibl>
-            </item>
-            <item>
-               <label>MGH Gesta pontificum</label>
-               <bibl>Monumenta Germaniae historica. Gesta pontificum romanorum.</bibl>
-            </item>
-            <!-- <item><label>MG Scr. rer. merov.</label> -->
-            <item xml:id="opac_03583188X">
-               <label>PL</label>
-               <bibl>Patrologia latina ed. J. P. Migne. - Paris 1844ff.<ptr type="opac" cRef="03583188X"/></bibl>
-            </item>
-            <item xml:id="opac_129085561">
-               <label>Rev. Bén.</label>
-               <bibl>Revue Bénédictine. - Maredsous 1884ff. <ptr type="opac" cRef="129085561"/></bibl>
-            </item>
-            <item xml:id="opac_032029322">
-               <label>MBK</label>
-               <bibl>Mittelalterliche Bibliothekskataloge Deutschlands und der Schweiz. Hrsg. von der Bayerischen Akademie der Wissenschaften. 1–3. - München 1918 ff. <ptr type="opac" cRef="032029322"/></bibl>
-            </item>            
-            <item xml:id="gbv_248323156">
-               <label>Bischoff, Katalog I</label>
-               <bibl type="book">
-                  <title level="m">Katalog der festländischen Handschriften des neunten Jahrhunderts: (mit Ausnahme der wisigotischen)</title>
-                  <author><forename>Bernhard</forename><surname>Bischoff</surname></author>
-                  <biblScope unit="volume">1. Aachen-Lambach</biblScope>
-                  <pubPlace>Wiesbaden</pubPlace>
-                  <publisher>Harrassowitz</publisher>
-                  <date>1998</date>
-               </bibl>
-            </item>
-            <item xml:id="gbv_380960613">
-               <label>Bischoff, Katalog II</label>
-               <bibl type="book">
-                  <title level="m">Katalog der festländischen Handschriften des neunten Jahrhunderts: (mit Ausnahme der wisigotischen)</title>
-                  <author><forename>Bernhard</forename><surname>Bischoff</surname></author>
-                  <pubPlace>Wiesbaden</pubPlace>
-                  <biblScope unit="volume">2. Laon - Paderborn</biblScope>
-                  <publisher>Harrassowitz</publisher>
-                  <date>2004</date>
-               </bibl>
-            </item>
-            <item xml:id="gbv_780971183">
-               <label>Bischoff, Katalog III</label>
-               <bibl type="book">
-                  <title level="m">Katalog der festländischen Handschriften des neunten Jahrhunderts: (mit Ausnahme der wisigotischen)</title>
-                  <author><forename>Bernhard</forename><surname>Bischoff</surname></author>
-                  <respStmt>
-                     <resp>contributor</resp>
-                     <persName><forename>Birgit</forename><surname>Ebersperger</surname></persName>
-                  </respStmt>
-                  <pubPlace>Wiesbaden</pubPlace>
-                  <biblScope unit="volume">3. Padua - Zwickau</biblScope>
-                  <publisher>Harrassowitz</publisher>
-                  <date>2014</date>
-               </bibl>
-            </item>
-            <item xml:id="gbv_867389354">
-               <label>Sternbilder des Mittelalters</label>
-               <bibl>Blume, Dieter, Mechthild Haffner, and Wolfgang Metzger. Sternbilder des Mittelalters: der gemalte Himmel zwischen Wissenschaft und Phantasie. Vol. I, 1: Text und Katalog der Handschriften. Berlin: Akademie Verlag, 2012.</bibl>
-            </item>
-            <item>
-               <label>Dell'Era (1979)</label>
-               <bibl>Dell'Era, Antonio. "Una rielaborazione dell'Arato latino." In <title>Studi Medievali</title> ser. 3, 20:1 (1979): 269-302.</bibl>
-            </item>
-            <item xml:id="gbv_037279076">
-               <label>Jeudy and Riou</label>
-               <bibl>Jeudy, Colette and Yves-François Riou. <title>Les manuscrits classiques latins des bibliothèques publiques de France</title>, Vol. I. Agen - Évreux. Paris: CNRS, 1989.</bibl>
-            </item>
-            <item xml:id="gbv_141461403">
-               <label>Lachmann, I</label>
-               <bibl>Die Schriften der römischen Feldmesser, Vol. 1, ed. by F. Blume, K. Lachmann and A. Rudorff. Berlin: G. Reimer, 1848.</bibl>
-            </item>
-            <item xml:id="gbv_134278801">
-               <label>Bubnov 1899</label>
-               <bibl>Gerberti postea Silvestri II papae Opera mathematica 972-1003. Ed. Nicolai Bubnov. Berlin: Friedländer, 1899.</bibl>
-            </item>
-            <item xml:id="gbv_515357618">
-               <label>Borst, Schriften</label>
-               <bibl>Borst, Arno. <title>Schriften zur Komputistik im Frankenreich von 721 bis 818</title>. 3 Vols. (MGH: Quellen zur Geistesgeschichte des Mittelalters, 21, 1-3) Hannover: Hahn, 2006.</bibl>
-            </item>
-            <item xml:id="gbv_745435025">
-               <label>Leonardi</label>
-               <bibl>Leonardi, Claudio. "I codici di Marziano Capella," <title level="j">Aevum</title> 34 (1960): 1-99 and 411-524.</bibl>
-            </item>
-            <item xml:id="gbv_026216299">
-               <label>Ganz, Corbie</label>
-               <bibl type="book">
-                  <title level="m">Corbie in the Carolingian renaissance</title>
-                  <author><forename>David</forename><surname>Ganz</surname></author>
-                     <pubPlace>Sigmaringen</pubPlace>
-                     <publisher>Thorbecke</publisher>
-                     <date>1990</date>
-               </bibl>
-            </item>
-            <item xml:id="gbv_02103494X">
-               <label>Maass</label>
-               <bibl type="book">
-                     <title level="m">Commentariorum in Aratum reliquiae</title>
-                     <author><forename>Ernst</forename><surname>Maass</surname></author>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Bibliography </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Information about the source</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <list type="bibliography">
+                <head>Used Literature:</head>
+                <item>
+                    <label>MGH</label>
+                    <bibl>Monumenta Germaniae historica. Hannoverae (usw.) 1826ff.</bibl>
+                </item>
+                <item>
+                    <label>MGH SS</label>
+                    <bibl>Monumenta Germaniae historica. Scriptores</bibl>
+                </item>
+                <item>
+                    <label>MGH LL</label>
+                    <bibl>Monumenta Germaniae historica. Leges</bibl>
+                </item>
+                <item>
+                    <label>MGH Legum sectio</label>
+                    <bibl>Monumenta Germaniae historica. Legum sectio (Quartreihe) Auetores antiquissimi</bibl>
+                </item>
+                <item>
+                    <label>MGH Auct. antiqu.Scriptores rerum merovingicarum.</label>
+                    <bibl>Monumenta Germaniae historica. Auct. antiqu.Scriptores rerum merovingicarum.</bibl>
+                </item>
+                <item>
+                    <label>MGH Epp.</label>
+                    <bibl>Monumenta Germaniae historica. Epistolae</bibl>
+                </item>
+                <item>
+                    <label>MGH Epp. aevi carol.</label>
+                    <bibl>Monumenta Germaniae historica. Epistolae aevi carolini 1–5.</bibl>
+                </item>
+                <item>
+                    <label>MGH Poetae lat. aevi carol.</label>
+                    <bibl>Monumenta Germaniae historica. Poetae latini aevi carolini</bibl>
+                </item>
+                <item xml:id="opac_245743928">
+                    <label>Anthologia Latina</label>
+                    <bibl>Anthologia Latina, I:2,  ed. Alexander Riese. Leipzig: Teubner, 1870.</bibl>
+                </item>
+                <item>
+                    <label>MGH Gesta pontificum</label>
+                    <bibl>Monumenta Germaniae historica. Gesta pontificum romanorum.</bibl>
+                </item><!-- <item><label>MG Scr. rer. merov.</label> -->
+                <item xml:id="opac_03583188X">
+                    <label>PL</label>
+                    <bibl>Patrologia latina ed. J. P. Migne. - Paris 1844ff.<ptr type="opac" cRef="03583188X"/>
+                    </bibl>
+                </item>
+                <item xml:id="opac_129085561">
+                    <label>Rev. Bén.</label>
+                    <bibl>Revue Bénédictine. - Maredsous 1884ff. <ptr type="opac" cRef="129085561"/>
+                    </bibl>
+                </item>
+                <item xml:id="opac_032029322">
+                    <label>MBK</label>
+                    <bibl>Mittelalterliche Bibliothekskataloge Deutschlands und der Schweiz. Hrsg. von der Bayerischen Akademie der Wissenschaften. 1–3. - München 1918 ff. <ptr type="opac" cRef="032029322"/>
+                    </bibl>
+                </item>
+                <item xml:id="gbv_248323156">
+                    <label>Bischoff, Katalog I</label>
+                    <bibl type="book">
+                        <title level="m">Katalog der festländischen Handschriften des neunten Jahrhunderts: (mit Ausnahme der wisigotischen)</title>
+                        <author>
+                            <forename>Bernhard</forename>
+                            <surname>Bischoff</surname>
+                        </author>
+                        <biblScope unit="volume">1. Aachen-Lambach</biblScope>
+                        <pubPlace>Wiesbaden</pubPlace>
+                        <publisher>Harrassowitz</publisher>
+                        <date>1998</date>
+                    </bibl>
+                </item>
+                <item xml:id="gbv_380960613">
+                    <label>Bischoff, Katalog II</label>
+                    <bibl type="book">
+                        <title level="m">Katalog der festländischen Handschriften des neunten Jahrhunderts: (mit Ausnahme der wisigotischen)</title>
+                        <author>
+                            <forename>Bernhard</forename>
+                            <surname>Bischoff</surname>
+                        </author>
+                        <pubPlace>Wiesbaden</pubPlace>
+                        <biblScope unit="volume">2. Laon - Paderborn</biblScope>
+                        <publisher>Harrassowitz</publisher>
+                        <date>2004</date>
+                    </bibl>
+                </item>
+                <item xml:id="gbv_780971183">
+                    <label>Bischoff, Katalog III</label>
+                    <bibl type="book">
+                        <title level="m">Katalog der festländischen Handschriften des neunten Jahrhunderts: (mit Ausnahme der wisigotischen)</title>
+                        <author>
+                            <forename>Bernhard</forename>
+                            <surname>Bischoff</surname>
+                        </author>
+                        <respStmt>
+                            <resp>contributor</resp>
+                            <persName>
+                                <forename>Birgit</forename>
+                                <surname>Ebersperger</surname>
+                            </persName>
+                        </respStmt>
+                        <pubPlace>Wiesbaden</pubPlace>
+                        <biblScope unit="volume">3. Padua - Zwickau</biblScope>
+                        <publisher>Harrassowitz</publisher>
+                        <date>2014</date>
+                    </bibl>
+                </item>
+                <item xml:id="gbv_867389354">
+                    <label>Sternbilder des Mittelalters</label>
+                    <bibl>Blume, Dieter, Mechthild Haffner, and Wolfgang Metzger. Sternbilder des Mittelalters: der gemalte Himmel zwischen Wissenschaft und Phantasie. Vol. I, 1: Text und Katalog der Handschriften. Berlin: Akademie Verlag, 2012.</bibl>
+                </item>
+                <item>
+                    <label>Dell'Era (1979)</label>
+                    <bibl>Dell'Era, Antonio. "Una rielaborazione dell'Arato latino." In <title>Studi Medievali</title> ser. 3, 20:1 (1979): 269-302.</bibl>
+                </item>
+                <item xml:id="gbv_037279076">
+                    <label>Jeudy and Riou</label>
+                    <bibl>Jeudy, Colette and Yves-François Riou. <title>Les manuscrits classiques latins des bibliothèques publiques de France</title>, Vol. I. Agen - Évreux. Paris: CNRS, 1989.</bibl>
+                </item>
+                <item xml:id="gbv_141461403">
+                    <label>Lachmann, I</label>
+                    <bibl>Die Schriften der römischen Feldmesser, Vol. 1, ed. by F. Blume, K. Lachmann and A. Rudorff. Berlin: G. Reimer, 1848.</bibl>
+                </item>
+                <item xml:id="gbv_134278801">
+                    <label>Bubnov 1899</label>
+                    <bibl>Gerberti postea Silvestri II papae Opera mathematica 972-1003. Ed. Nicolai Bubnov. Berlin: Friedländer, 1899.</bibl>
+                </item>
+                <item xml:id="gbv_515357618">
+                    <label>Borst, Schriften</label>
+                    <bibl>Borst, Arno. <title>Schriften zur Komputistik im Frankenreich von 721 bis 818</title>. 3 Vols. (MGH: Quellen zur Geistesgeschichte des Mittelalters, 21, 1-3) Hannover: Hahn, 2006.</bibl>
+                </item>
+                <item xml:id="gbv_745435025">
+                    <label>Leonardi</label>
+                    <bibl>Leonardi, Claudio. "I codici di Marziano Capella," <title level="j">Aevum</title> 34 (1960): 1-99 and 411-524.</bibl>
+                </item>
+                <item xml:id="gbv_026216299">
+                    <label>Ganz, Corbie</label>
+                    <bibl type="book">
+                        <title level="m">Corbie in the Carolingian renaissance</title>
+                        <author>
+                            <forename>David</forename>
+                            <surname>Ganz</surname>
+                        </author>
+                        <pubPlace>Sigmaringen</pubPlace>
+                        <publisher>Thorbecke</publisher>
+                        <date>1990</date>
+                    </bibl>
+                </item>
+                <item xml:id="gbv_02103494X">
+                    <label>Maass</label>
+                    <bibl type="book">
+                        <title level="m">Commentariorum in Aratum reliquiae</title>
+                        <author>
+                            <forename>Ernst</forename>
+                            <surname>Maass</surname>
+                        </author>
                         <pubPlace>Berlin</pubPlace>
                         <publisher>Weidmann</publisher>
                         <date>1898</date>
-               </bibl>
-            </item>
-            <item xml:id="gbv_014057301">
-               <label>Censorinus</label>
-               <bibl>
-                  <title level="m">De die natali liber ad Q. Caerellium: accedit anonymi cuiusdam epitoma
+                    </bibl>
+                </item>
+                <item xml:id="gbv_014057301">
+                    <label>Censorinus</label>
+                    <bibl>
+                        <title level="m">De die natali liber ad Q. Caerellium: accedit anonymi cuiusdam epitoma
                      disciplinarum (Fragmentum Censorini)</title>
-                  <author>Censorinus</author>
-                  <editor><forename>Klaus</forename><surname>Sallmann</surname></editor>
-                     <pubPlace>Leipzig</pubPlace>
-                     <publisher>Teubner</publisher>
-                     <date>1983</date>                  
+                        <author>Censorinus</author>
+                        <editor>
+                            <forename>Klaus</forename>
+                            <surname>Sallmann</surname>
+                        </editor>
+                        <pubPlace>Leipzig</pubPlace>
+                        <publisher>Teubner</publisher>
+                        <date>1983</date>
+                    </bibl>
+                </item>
+                <item xml:id="gbv_226672271">
+                    <label>Haffner</label>
+                    <bibl>Haffner, Mechthild. <title>Ein antiker Sternbilderzyklus und seine Tradierung in Handschriften vom frühen Mittelalter bis zum Humanismus: Untersuchungen zu den Illustrationen der “Aratea” des Germanicus</title>. Hildesheim: Olms, 1997.</bibl>
+                </item>
+                <item xml:id="gbv_728854651">
+                    <label>Dekker</label>
+                    <bibl>Dekker, Elly. Illustrating the Phaenomena: Celestial Cartography in Antiquity and the Middle Ages. Oxford: OUP, 2012.</bibl>
+                </item>
+                <item xml:id="gbv_335075983">
+                    <label>Eastwood (2002)</label>
+                    <bibl>Eastwood, Bruce Stansfield. “Origins and Contents of the Leiden Planetary Configuration (ms. Voss. Q.79, F. 93v): An Artistic Astronomical Schema of the Early Middle Ages.” In Eastwood, <title>The Revival of Planetary Astronomy in Carolingian and Post-Carolingian Europe</title>, 1–47, 2002.</bibl>
+                </item>
+                <item xml:id="gbv_219269947">
+                    <label>Le Boeuffle (1975)</label>
+                    <bibl>Germanicus. <title>Les phénomènes d’Aratos</title>. Edited by André  Le Boeuffle. Paris: Les Belles Lettres, 1975.</bibl>
+                </item>
+                <item xml:id="gbv_373332904">
+                    <label>Le Boeuffle (2002)</label>
+                    <bibl>Hyginus. <title>L’astronomie</title>. Edited by André LeBoeuffle. 2nd ed. Paris: Les Belles Lettres, 2002.</bibl>
+                </item>
+                <item xml:id="gbv_234448075">
+                    <label>Martin (1956)</label>
+                    <bibl>Martin, Jean. <title>Histoire du texte des Phénomènes d’Aratos</title>. Paris: Klincksieck, 1956.</bibl>
+                </item>
+                <item xml:id="gbv_037939718">
+                    <label>Munk Olsen, Catalogue 1</label>
+                    <bibl>Munk Olsen, Birger. <title>L’ étude Des Auteurs Classiques Latins Aux XIe et XIIe Siècles</title>. Vol. I. Catalogue des manuscrits classiques latins copiés du IXe. au XIIe siècle: Apicius - Juvénal. Paris: CNRS, 1982.</bibl>
+                </item>
+                <item xml:id="gbv_029350735">
+                    <label>Munk Olsen, Catalogue 2</label>
+                    <bibl>Munk Olsen, Birger. <title>L’ étude Des Auteurs Classiques Latins Aux XIe et XIIe Siècles</title>. Vol. II. Catalogue des manuscrits classiques latins copiés du IXe au XIIe siècle: Livius - Vitruvius, Florilèges - Essais de plume. Paris: CNRS, 1985.</bibl>
+                </item>
+                <item xml:id="gbv_029350751">
+                    <label>Munk Olsen, L’ étude 3,1</label>
+                    <bibl>Munk Olsen, Birger. <title>L’ étude Des Auteurs Classiques Latins Aux XIe et XIIe Siècles</title>. Vol. III. Les classiques dans les bibliothèques médiévales. Paris: CNRS, 1987.</bibl>
+                </item>
+                <item xml:id="gbv_612772179">
+                    <label>Munk Olsen, L’ étude 4,1</label>
+                    <bibl>Munk Olsen, Birger. <title>L’ étude Des Auteurs Classiques Latins Aux XIe et XIIe Siècles</title>. Vol. IV,1. La réception de la littérature classique: travaux philologiques. Paris: CNRS, 2009.</bibl>
+                </item>
+                <item xml:id="gbv_788943057">
+                    <label>Munk Olsen, L’ étude 4,2</label>
+                    <bibl>Munk Olsen, Birger. <title>L’ étude Des Auteurs Classiques Latins Aux XIe et XIIe Siècles</title>. Vol. IV,2. La réception de la littérature classique: manuscrits et textes. Paris: CNRS, 2014.</bibl>
+                </item>
+                <item xml:id="gbv_31137770X">
+                    <label>Blume (2000)</label>
+                    <bibl>Blume, Dieter. <title>Regenten des Himmels. Astrologische Bilder in Mittelalter und Renaissance</title>. Berlin: Akademie Verlag, 2000.</bibl>
+                </item>
+                <item xml:id="gbv_13619060X">
+                    <label>Saxl, Verzeichnis 1</label>
+                    <bibl>Saxl, Fritz. <title>Verzeichnis Astrologischer Und Mythologischer Illustrierter Handschriften Des Lateinischen Mittelalters</title>. Vol. 1: Handschriften in römischen Bibliotheken. Heidelberg: Winter, 1915.
                </bibl>
-            </item>
-            <item xml:id="gbv_226672271">
-               <label>Haffner</label>
-               <bibl>Haffner, Mechthild. <title>Ein antiker Sternbilderzyklus und seine Tradierung in Handschriften vom frühen Mittelalter bis zum Humanismus: Untersuchungen zu den Illustrationen der “Aratea” des Germanicus</title>. Hildesheim: Olms, 1997.</bibl>
-            </item>
-            <item xml:id="gbv_728854651">
-               <label>Dekker</label>
-               <bibl>Dekker, Elly. Illustrating the Phaenomena: Celestial Cartography in Antiquity and the Middle Ages. Oxford: OUP, 2012.</bibl>
-            </item>
-            <item xml:id="gbv_335075983">
-               <label>Eastwood (2002)</label>
-               <bibl>Eastwood, Bruce Stansfield. “Origins and Contents of the Leiden Planetary Configuration (ms. Voss. Q.79, F. 93v): An Artistic Astronomical Schema of the Early Middle Ages.” In Eastwood, <title>The Revival of Planetary Astronomy in Carolingian and Post-Carolingian Europe</title>, 1–47, 2002.</bibl>
-            </item>
-            <item xml:id="gbv_219269947">
-               <label>Le Boeuffle (1975)</label>
-               <bibl>Germanicus. <title>Les phénomènes d’Aratos</title>. Edited by André  Le Boeuffle. Paris: Les Belles Lettres, 1975.</bibl>
-            </item>
-            <item xml:id="gbv_373332904">
-               <label>Le Boeuffle (2002)</label>
-               <bibl>Hyginus. <title>L’astronomie</title>. Edited by André LeBoeuffle. 2nd ed. Paris: Les Belles Lettres, 2002.</bibl>
-            </item>
-            <item xml:id="gbv_234448075">
-               <label>Martin (1956)</label>
-               <bibl>Martin, Jean. <title>Histoire du texte des Phénomènes d’Aratos</title>. Paris: Klincksieck, 1956.</bibl>
-            </item>
-            <item xml:id="gbv_037939718">
-               <label>Munk Olsen, Catalogue 1</label>
-               <bibl>Munk Olsen, Birger. <title>L’ étude Des Auteurs Classiques Latins Aux XIe et XIIe Siècles</title>. Vol. I. Catalogue des manuscrits classiques latins copiés du IXe. au XIIe siècle: Apicius - Juvénal. Paris: CNRS, 1982.</bibl>
-            </item>
-            <item xml:id="gbv_029350735">
-               <label>Munk Olsen, Catalogue 2</label>
-               <bibl>Munk Olsen, Birger. <title>L’ étude Des Auteurs Classiques Latins Aux XIe et XIIe Siècles</title>. Vol. II. Catalogue des manuscrits classiques latins copiés du IXe au XIIe siècle: Livius - Vitruvius, Florilèges - Essais de plume. Paris: CNRS, 1985.</bibl>
-            </item>
-            <item xml:id="gbv_029350751">
-               <label>Munk Olsen, L’ étude 3,1</label>
-               <bibl>Munk Olsen, Birger. <title>L’ étude Des Auteurs Classiques Latins Aux XIe et XIIe Siècles</title>. Vol. III. Les classiques dans les bibliothèques médiévales. Paris: CNRS, 1987.</bibl>
-            </item>
-            <item xml:id="gbv_612772179">
-               <label>Munk Olsen, L’ étude 4,1</label>
-               <bibl>Munk Olsen, Birger. <title>L’ étude Des Auteurs Classiques Latins Aux XIe et XIIe Siècles</title>. Vol. IV,1. La réception de la littérature classique: travaux philologiques. Paris: CNRS, 2009.</bibl>
-            </item>
-            <item xml:id="gbv_788943057">
-               <label>Munk Olsen, L’ étude 4,2</label>
-               <bibl>Munk Olsen, Birger. <title>L’ étude Des Auteurs Classiques Latins Aux XIe et XIIe Siècles</title>. Vol. IV,2. La réception de la littérature classique: manuscrits et textes. Paris: CNRS, 2014.</bibl>
-            </item>
-            <item xml:id="gbv_31137770X">
-               <label>Blume (2000)</label>
-               <bibl>Blume, Dieter. <title>Regenten des Himmels. Astrologische Bilder in Mittelalter und Renaissance</title>. Berlin: Akademie Verlag, 2000.</bibl>
-            </item>
-            <item xml:id="gbv_13619060X">
-               <label>Saxl, Verzeichnis 1</label>
-               <bibl>Saxl, Fritz. <title>Verzeichnis Astrologischer Und Mythologischer Illustrierter Handschriften Des Lateinischen Mittelalters</title>. Vol. 1: Handschriften in römischen Bibliotheken. Heidelberg: Winter, 1915.
+                </item>
+                <item xml:id="gbv_06898913X">
+                    <label>Saxl, Verzeichnis 2</label>
+                    <bibl>Saxl, Fritz. <title>Verzeichnis Astrologischer Und Mythologischer Illustrierter Handschriften Des Lateinischen Mittelalters</title>. Vol. 2: Die Handschriften der National-Bibliothek in Wien. Heidelberg: Winter, 1927.
                </bibl>
-            </item>
-            <item xml:id="gbv_06898913X">
-               <label>Saxl, Verzeichnis 2</label>
-               <bibl>Saxl, Fritz. <title>Verzeichnis Astrologischer Und Mythologischer Illustrierter Handschriften Des Lateinischen Mittelalters</title>. Vol. 2: Die Handschriften der National-Bibliothek in Wien. Heidelberg: Winter, 1927.
+                </item>
+                <item xml:id="gbv_068989148">
+                    <label>Saxl, Verzeichnis 3,1</label>
+                    <bibl>Saxl, Fritz. <title>Verzeichnis Astrologischer Und Mythologischer Illustrierter Handschriften Des Lateinischen Mittelalters</title>. Vol. 3,1: Handschriften in englischen Bibliotheken. Heidelberg: Winter, 1953.
                </bibl>
-            </item>
-            <item xml:id="gbv_068989148">
-               <label>Saxl, Verzeichnis 3,1</label>
-               <bibl>Saxl, Fritz. <title>Verzeichnis Astrologischer Und Mythologischer Illustrierter Handschriften Des Lateinischen Mittelalters</title>. Vol. 3,1: Handschriften in englischen Bibliotheken. Heidelberg: Winter, 1953.
+                </item>
+                <item xml:id="gbv_068989156">
+                    <label>Saxl, Verzeichnis 3,2</label>
+                    <bibl>Saxl, Fritz. <title>Verzeichnis Astrologischer Und Mythologischer Illustrierter Handschriften Des Lateinischen Mittelalters</title>. Vol. 3,2: Handschriften in englischen Bibliotheken. Heidelberg: Winter, 1953.
                </bibl>
-            </item>
-            <item xml:id="gbv_068989156">
-               <label>Saxl, Verzeichnis 3,2</label>
-               <bibl>Saxl, Fritz. <title>Verzeichnis Astrologischer Und Mythologischer Illustrierter Handschriften Des Lateinischen Mittelalters</title>. Vol. 3,2: Handschriften in englischen Bibliotheken. Heidelberg: Winter, 1953.
+                </item>
+                <item xml:id="gbv_136190685">
+                    <label>McGurk, Catalogue 4</label>
+                    <bibl>Saxl, Fritz and Patrick McGurk. <title>Catalogue of astrological and mythological illuminated manuscripts of the Latin Middle ages</title>. Vol. 4: Astrological manuscripts in Italian libraries (other than Rome). London : Warburg Inst., 1966.
                </bibl>
-            </item>
-            <item xml:id="gbv_136190685">
-               <label>McGurk, Catalogue 4</label>
-               <bibl>Saxl, Fritz and Patrick McGurk. <title>Catalogue of astrological and mythological illuminated manuscripts of the Latin Middle ages</title>. Vol. 4: Astrological manuscripts in Italian libraries (other than Rome). London : Warburg Inst., 1966.
-               </bibl>
-            </item>
-            <item>
-               <label>Lott, Transmission</label>
-               <bibl>Lott, Elisabeth S. “The Textual Tradition of the Aratea of Germanicus Caesar: Missing Links in the « µ » Branch.” <title level="j">Revue d’histoire des textes</title> 11 (1981): 147-158.<ptr target="http://www.persee.fr/doc/rht_0373-6075_1983_num_11_1981_1235"/></bibl>
-            </item>
-            <item xml:id="gbv_481373446">
-               <label>Ullman, Geometry</label>
-               <bibl>Ullman, Berthold Louis. "Geometry in the Mediaeval Quadrivium." In <title>Studi di bibliografia e di storia in onore di Tammaro De Marinis</title>. Vol. 4. Verona: Mardersteig, 1964.</bibl>
-            </item>
-            <item>
-               <label>Reeve (1980)</label>
-               <bibl>Reeve, Michael D. “Some Astronomical Manuscripts.” <title level="j">Classical Quarterly</title> 30:2 (1980): 508-522.</bibl>
-            </item>
-            <item xml:id="gbv_125467818">
-               <label>Bischoff, Kommentar</label>
-               <bibl>Bischoff, Bernhard, ed. <title>Kommentar zum Aratus des Germanicus Ms. Voss. Lat. Q. 79, Bibliotheek der Rijksuniversiteit Leiden</title>. Luzern: Faksimile-Verl., 1989.</bibl>
-            </item>
-            <item>
-               <label>Obbeama (1989)</label>
-               <bibl>Obbema, Pieter F. J. “Die Handschrift.” In Aratea. Faksimile Der Handschrift Ms. Voss. Lat. Q.79 Der Rijksuniversiteit Leiden, 2:9–29. Luzern: Faksimile-Verl., 1989.</bibl>
-            </item>
-           <item>
-              <label>Mütherich (1989)</label>
-              <bibl>Mütherich, Florentine. “Die Bilder.” In Aratea. Faksimile Der Handschrift Ms. Voss. Lat. Q.79 Der Rijksuniversiteit Leiden, 2:31–78. Luzern: Faksimile-Verl., 1989.</bibl>
-            </item>
-            <item xml:id="gbv_039732185">
-               <label>Gain (1976)</label>
-             <bibl>Germanicus. <title>The Aratus Ascribed to Germanicus Caesar</title>. Ed. by David Bruce Gain. London: Athlone Press, 1976.</bibl>
-            </item>
-            <item xml:id="gbv_018081266">
-               <label>Mostert (1989)</label>
-              <bibl>Mostert, Marco. The Library of Fleury. A Provisional List of Manuscripts. Hilversum: Verloren, 1989.</bibl>
-            </item>
-            <item>
-               <label>Eastwood (1983)</label>
-               <bibl>Eastwood, Bruce Stansfield. "Origins and Contents of the Leiden Planetary (MS. Voss. Q. 79, Fol.93v). An Artistic and Astronomical Schema of the Early Middle Ages." <title level="j">Viator</title> 14 (1983): 1-40.</bibl>
-            </item>
-             <item>
-               <label>Eastwood (1981)</label>
-                <bibl>Eastwood, Bruce Stansfield. "Notes on the Planetary Configuration in Aberystwyth N.L.W. Ms. 735 C, f. 4v." <title>The National Library of Wales Journal</title> 22 (1981): 129-140.</bibl>
-            </item>
-            <item xml:id="gbv_024191620">
-               <label>Le Bourdellès (1985)</label>
-               <bibl>Le Bourdellès, Hubert. <title level="m">L’Aratus Latinus: étude sur la culture et la langue latines dans le Nord de la France au VIIIe siècle. Travaux et recherches</title>. Lille: Université de Lille III, 1985.</bibl>
-            </item>
-            <item xml:id="gbv_147844118">
-               <label>Borst (1994)</label>
-                 <bibl>Borst, Arno. <title level="m">Das Buch der Naturgeschichte: Plinius und seine Leser im Zeitalter des Pergaments</title>. Heidelberg: Winter, 1994.</bibl>
-            </item>
-            <item xml:id="gbv_13554579X">
-               <label>Becker</label>
-              <bibl>Becker, Gustavus. <title>Catalogi bibliothecarum antiqui</title>. Bonn: Max Cohen et filius, 1885.</bibl>
-            </item>
-           <!--   <item xml:id="">
+                </item>
+                <item>
+                    <label>Lott, Transmission</label>
+                    <bibl>Lott, Elisabeth S. “The Textual Tradition of the Aratea of Germanicus Caesar: Missing Links in the « µ » Branch.” <title level="j">Revue d’histoire des textes</title> 11 (1981): 147-158.<ptr target="http://www.persee.fr/doc/rht_0373-6075_1983_num_11_1981_1235"/>
+                    </bibl>
+                </item>
+                <item xml:id="gbv_481373446">
+                    <label>Ullman, Geometry</label>
+                    <bibl>Ullman, Berthold Louis. "Geometry in the Mediaeval Quadrivium." In <title>Studi di bibliografia e di storia in onore di Tammaro De Marinis</title>. Vol. 4. Verona: Mardersteig, 1964.</bibl>
+                </item>
+                <item>
+                    <label>Reeve (1980)</label>
+                    <bibl>Reeve, Michael D. “Some Astronomical Manuscripts.” <title level="j">Classical Quarterly</title> 30:2 (1980): 508-522.</bibl>
+                </item>
+                <item xml:id="gbv_125467818">
+                    <label>Bischoff, Kommentar</label>
+                    <bibl>Bischoff, Bernhard, ed. <title>Kommentar zum Aratus des Germanicus Ms. Voss. Lat. Q. 79, Bibliotheek der Rijksuniversiteit Leiden</title>. Luzern: Faksimile-Verl., 1989.</bibl>
+                </item>
+                <item>
+                    <label>Obbeama (1989)</label>
+                    <bibl>Obbema, Pieter F. J. “Die Handschrift.” In Aratea. Faksimile Der Handschrift Ms. Voss. Lat. Q.79 Der Rijksuniversiteit Leiden, 2:9–29. Luzern: Faksimile-Verl., 1989.</bibl>
+                </item>
+                <item>
+                    <label>Mütherich (1989)</label>
+                    <bibl>Mütherich, Florentine. “Die Bilder.” In Aratea. Faksimile Der Handschrift Ms. Voss. Lat. Q.79 Der Rijksuniversiteit Leiden, 2:31–78. Luzern: Faksimile-Verl., 1989.</bibl>
+                </item>
+                <item xml:id="gbv_039732185">
+                    <label>Gain (1976)</label>
+                    <bibl>Germanicus. <title>The Aratus Ascribed to Germanicus Caesar</title>. Ed. by David Bruce Gain. London: Athlone Press, 1976.</bibl>
+                </item>
+                <item xml:id="gbv_018081266">
+                    <label>Mostert (1989)</label>
+                    <bibl>Mostert, Marco. The Library of Fleury. A Provisional List of Manuscripts. Hilversum: Verloren, 1989.</bibl>
+                </item>
+                <item>
+                    <label>Eastwood (1983)</label>
+                    <bibl>Eastwood, Bruce Stansfield. "Origins and Contents of the Leiden Planetary (MS. Voss. Q. 79, Fol.93v). An Artistic and Astronomical Schema of the Early Middle Ages." <title level="j">Viator</title> 14 (1983): 1-40.</bibl>
+                </item>
+                <item>
+                    <label>Eastwood (1981)</label>
+                    <bibl>Eastwood, Bruce Stansfield. "Notes on the Planetary Configuration in Aberystwyth N.L.W. Ms. 735 C, f. 4v." <title>The National Library of Wales Journal</title> 22 (1981): 129-140.</bibl>
+                </item>
+                <item xml:id="gbv_024191620">
+                    <label>Le Bourdellès (1985)</label>
+                    <bibl>Le Bourdellès, Hubert. <title level="m">L’Aratus Latinus: étude sur la culture et la langue latines dans le Nord de la France au VIIIe siècle. Travaux et recherches</title>. Lille: Université de Lille III, 1985.</bibl>
+                </item>
+                <item xml:id="gbv_147844118">
+                    <label>Borst (1994)</label>
+                    <bibl>Borst, Arno. <title level="m">Das Buch der Naturgeschichte: Plinius und seine Leser im Zeitalter des Pergaments</title>. Heidelberg: Winter, 1994.</bibl>
+                </item>
+                <item xml:id="gbv_13554579X">
+                    <label>Becker</label>
+                    <bibl>Becker, Gustavus. <title>Catalogi bibliothecarum antiqui</title>. Bonn: Max Cohen et filius, 1885.</bibl>
+                </item><!--   <item xml:id="">
                <label></label>
                <bibl></bibl>
             </item>
@@ -355,7 +377,7 @@
                <label></label>
                <bibl></bibl>
             </item>-->
-         </list>
-      </body>
-  </text>
+            </list>
+        </body>
+    </text>
 </TEI>

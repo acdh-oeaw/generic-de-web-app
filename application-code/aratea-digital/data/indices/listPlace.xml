@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>List of places</title>
+                <title>List of places </title>
             </titleStmt>
             <publicationStmt>
                 <p>Publication Information</p>
@@ -18,7 +17,7 @@
     </teiHeader>
     <text>
         <body>
-            <listPlace >
+            <listPlace>
                 <place xml:id="aachen">
                     <placeName ref="http://www.geonames.org/3247449">Aachen</placeName>
                 </place>
@@ -51,7 +50,9 @@
                 </place>
                 <place xml:id="lotharingia">
                     <placeName ref="http://d-nb.info/gnd/4036377-6">Lotharingia</placeName>
-                    <desc>Medieval successor kingdom of the Carolingian Empire, comprising the present-day Netherlands, Belgium, Luxembourg, North Rhine-Westphalia (Germany), Rhineland-Palatinate (Germany), Saarland (Germany), and Lorraine (France).<bibl>Wikipedia<ptr target="https://en.wikipedia.org/wiki/Lotharingia"/></bibl></desc>
+                    <desc>Medieval successor kingdom of the Carolingian Empire, comprising the present-day Netherlands, Belgium, Luxembourg, North Rhine-Westphalia (Germany), Rhineland-Palatinate (Germany), Saarland (Germany), and Lorraine (France).<bibl>Wikipedia<ptr target="https://en.wikipedia.org/wiki/Lotharingia"/>
+                        </bibl>
+                    </desc>
                 </place>
                 <place xml:id="luxeuil">
                     <placeName ref="http://www.geonames.org/2996995">Luxeuil</placeName>

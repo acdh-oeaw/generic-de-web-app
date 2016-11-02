@@ -82,6 +82,48 @@ declare function app:listPers_hits($node as node(), $model as map(*), $searchkey
         
     </li> 
  };
+  
+ (:~
+ : creates a basic organisation-index derived from the  '/data/indices/listorg.xml'
+ :)
+declare function app:listOrg($node as node(), $model as map(*)) {
+    let $hitHtml := "hits.html?searchkey="
+    for $org in doc(concat($config:app-root, '/data/indices/listorg.xml'))//tei:listOrg/tei:org
+        return
+        <tr>
+            <td>
+                <a href="{concat($hitHtml,data($org/@xml:id))}">{$org/tei:orgName}</a>
+            </td>
+        </tr>
+};
+ 
+(:~
+ : creates a basic bibl-index derived from the  '/data/indices/listbibl.xml'
+ :)
+declare function app:listBibl($node as node(), $model as map(*)) {
+    let $hitHtml := "hits.html?searchkey="
+    for $bibl in doc(concat($config:app-root, '/data/indices/listbibl.xml'))//tei:item
+        return
+        <tr>
+            <td>
+                <a href="{concat($hitHtml,$bibl/tei:label)}">{$bibl}</a>
+            </td>
+        </tr>
+};
+ 
+(:~
+ : creates a basic place-index derived from the  '/data/indices/listplace.xml'
+ :)
+declare function app:listPlace($node as node(), $model as map(*)) {
+    let $hitHtml := "hits.html?searchkey="
+    for $place in doc(concat($config:app-root, '/data/indices/listplace.xml'))//tei:listPlace/tei:place
+        return
+        <tr>
+            <td>
+                <a href="{concat($hitHtml,data($place/@xml:id))}">{$place/tei:placeName}</a>
+            </td>
+        </tr>
+};
  
 (:~
  : creates a basic person-index derived from the  '/data/indices/listperson.xml'
