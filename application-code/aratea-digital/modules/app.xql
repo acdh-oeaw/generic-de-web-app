@@ -68,18 +68,13 @@ let $href := concat('show.html','?document=', app:getDocName($node))
  :)
 declare function app:listPers_hits($node as node(), $model as map(*), $searchkey as xs:string?, $path as xs:string?)
 {
-    for $hit in collection(concat($config:app-root, '/data/editions/'))//tei:TEI[.//tei:persName[@key=$searchkey] |.//tei:rs[@ref=concat("#",$searchkey)] |.//tei:rs[@key=contains(./@key,$searchkey)]]
-(:    for $hit in collection(concat($config:app-root, '/data/'))//tei:TEI[.//*[@key=$searchkey] | .//@ref=concat("#",$searchkey)]:)
-    let $doc := document-uri(root($hit)) 
-    (:let $params := if (contains($doc, '/editions/'))
-        then ""
-        else
-            "&amp;directory=descriptions":)
-(:            <a href="{concat(app:hrefToDoc($hit),$params)}">{app:getDocName($hit)}</a>:)
+for $hit in collection(concat($config:app-root, '/data/'))//tei:TEI[.//*[@key=$searchkey] | .//@ref=concat("#",$searchkey)]
+    let $doc := document-uri(root($hit))
+    let $type := tokenize($doc,'/')[(last() - 1)]
+    let $params := concat("&amp;directory=", $type, "&amp;stylesheet=", $type)
     return
     <li>
-        <a href="{app:hrefToDoc($hit)}">{app:getDocName($hit)}</a>
-        
+        <a href="{concat(app:hrefToDoc($hit),$params)}">{app:getDocName($hit)}</a>  
     </li> 
  };
   
@@ -159,7 +154,7 @@ declare function app:XMLtoHTML ($node as node(), $model as map (*), $query as xs
 let $ref := xs:string(request:get-parameter("document", ""))
 let $xmlPath := concat(xs:string(request:get-parameter("directory", "editions")), '/')
 let $xml := doc(replace(concat($config:app-root,'/data/', $xmlPath, $ref), '/exist/', '/db/'))
-let $xslPath := concat(xs:string(request:get-parameter("stylesheet", "xmlToHtml")), '.xsl')
+let $xslPath := concat(xs:string(request:get-parameter("stylesheet", "editions")), '.xsl')
 let $xsl := doc(replace(concat($config:app-root,'/resources/xslt/', $xslPath), '/exist/', '/db/'))
 let $params := 
 <parameters>
