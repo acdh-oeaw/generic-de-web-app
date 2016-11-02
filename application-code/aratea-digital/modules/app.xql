@@ -64,11 +64,11 @@ let $href := concat('show.html','?document=', app:getDocName($node))
  };
 
 (:~
- : fetches all documents which contain the searched person
+ : fetches all documents which contain the searched entity
  :)
-declare function app:listPers_hits($node as node(), $model as map(*), $searchkey as xs:string?, $path as xs:string?)
+declare function app:registerBasedSearch_hits($node as node(), $model as map(*), $searchkey as xs:string?, $path as xs:string?)
 {
-for $hit in collection(concat($config:app-root, '/data/'))//tei:TEI[.//*[@key=$searchkey] | .//@ref=concat("#",$searchkey)]
+for $hit in collection(concat($config:app-root, '/data/'))//tei:TEI[.//*[@key=$searchkey] | .//*[@ref=concat("#",$searchkey)] | .//tei:abbr[text()=$searchkey]]
     let $doc := document-uri(root($hit))
     let $type := tokenize($doc,'/')[(last() - 1)]
     let $params := concat("&amp;directory=", $type, "&amp;stylesheet=", $type)
