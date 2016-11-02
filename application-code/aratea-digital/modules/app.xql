@@ -68,14 +68,25 @@ let $href := concat('show.html','?document=', app:getDocName($node))
  :)
 declare function app:registerBasedSearch_hits($node as node(), $model as map(*), $searchkey as xs:string?, $path as xs:string?)
 {
-for $hit in collection(concat($config:app-root, '/data/'))//tei:TEI[.//*[@key=$searchkey] | .//*[@ref=concat("#",$searchkey)] | .//tei:abbr[text()=$searchkey]]
-    let $doc := document-uri(root($hit))
+for $title in collection(concat($config:app-root, '/data/'))//tei:TEI[.//*[@key=$searchkey] | .//*[@ref=concat("#",$searchkey)] | .//tei:abbr[text()=$searchkey]]
+    let $doc := document-uri(root($title))
     let $type := tokenize($doc,'/')[(last() - 1)]
     let $params := concat("&amp;directory=", $type, "&amp;stylesheet=", $type)
+    let $matchingdoc := root($title)//tei:abbr[text()=$searchkey] | root($title)//*[@key=$searchkey] |  root($title)//*[@ref=concat("#",$searchkey)]
+    let $hits := count($matchingdoc)
+    let $snippet := 
+        for $context in $matchingdoc
+        let $before := $context/preceding::text()[1]
+        let $after := $context/following::text()[1]
+        return
+            <p>... {$before} <strong><a href="{concat(app:hrefToDoc($title), $params)}"> {$context/text()}</a></strong> {$after}...<br/></p>
+    order by -$hits
     return
     <tr>
+        <td>{$hits}</td>
+        <td>{$snippet}</td>
         <td>
-            <a href="{concat(app:hrefToDoc($hit),$params)}">{app:getDocName($hit)}</a>
+            <a href="{concat(app:hrefToDoc($title),$params)}">{app:getDocName($title)}</a>
         </td>
     </tr> 
  };
