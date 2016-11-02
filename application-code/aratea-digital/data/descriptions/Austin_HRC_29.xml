@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI version="5.0" 
-    xmlns="http://www.tei-c.org/ns/1.0" 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/rules/schema/ER/v0.4/europeana-regia.xsd" 
-    xml:lang="deu">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="5.0" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/rules/schema/ER/v0.4/europeana-regia.xsd" xml:lang="deu">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Description <ref type="altMs" target="http://norman.hrc.utexas.edu/mnemGal/29/HRC_29.pdf">Austin, HRC MS 29</ref></title>
+                <title>Description <ref type="altMs" target="http://norman.hrc.utexas.edu/mnemGal/29/HRC_29.pdf">Austin, HRC MS 29</ref>
+                </title>
                 <respStmt>
                     <resp>cataloged by</resp>
                     <name>Ivana Dobcheva</name>
@@ -21,11 +18,12 @@
                 </respStmt>
             </editionStmt>
             <publicationStmt>
-              <p></p>
+                <p/>
             </publicationStmt>
-            <sourceDesc><p></p>
-              </sourceDesc>
-        </fileDesc>   
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
     </teiHeader>
     <text>
         <body>
@@ -39,17 +37,20 @@
                 </msIdentifier>
                 <head>
                     <title>Tegernsee miscellany. Excerptum de astrologia and De ordine ac positione stellarum</title>
-                    <note type="caption"></note>
+                    <note type="caption"/>
                     <origPlace>Southern Germany</origPlace>
-                    <origDate notBefore="1001" notAfter="1050"> s. XI<hi rend="sup">1</hi></origDate>                     
+                    <origDate notBefore="1001" notAfter="1050"> s. XI<hi rend="sup">1</hi>
+                    </origDate>
                 </head>
                 <msContents>
                     <msItem>
                         <locus from="1r" to="1v">1r-12r</locus>
                         <author ref="#bede">Bede</author>
-                        <title ref="#DNR"><abbr>DNR</abbr></title>
+                        <title ref="#DNR">
+                            <abbr>DNR</abbr>
+                        </title>
                         <msItem>
-                            <note >Table of content</note>
+                            <note>Table of content</note>
                             <rubric>De naturis rerum</rubric>
                             <incipit>I De quadrifario dei opere <lb/>II De mundi formatione</incipit>
                             <explicit>li <sic>Diuiso</sic> terre</explicit>
@@ -81,7 +82,7 @@
                         <explicit>exaequatae nature temporis sotia natura nancisceretur imaginem.</explicit>
                     </msItem>
                     <msItem>
-                        <locus from="25r">25r</locus>  
+                        <locus from="25r">25r</locus>
                         <note>Later filling text: short medical recipes.</note>
                         <incipit>Antidatum quod stomacho prodest et uentrem sine conturbatione soluet</incipit>
                     </msItem>
@@ -96,7 +97,8 @@
                     <msItem>
                         <locus from="26v" to="31r">26v-31r</locus>
                         <title ref="#de_ordine_ac_positione">De ordine ac positione</title>
-                        <incipit><supplied>E</supplied>st quidem hic ordo et positio siderum quae fixa caelo</incipit>
+                        <incipit>
+                            <supplied>E</supplied>st quidem hic ordo et positio siderum quae fixa caelo</incipit>
                         <decoNote>Drawings of the constellations around and within the text. (The images seem to have been drawn before the text was written). The stars are marked with red dots but only on <locus from="27r" to="27v">f. 27r-v</locus>. Blank space left for initials at the beginning of sections.</decoNote>
                     </msItem>
                     <msItem>
@@ -116,7 +118,8 @@
                         <title>Epistola ad Dardanum</title>
                         <rubric>Epistula hieronimi ad dardanum de generibus musicorum incipit cum interrogatione sua</rubric>
                         <incipit>Cogor a te ut ti dardane de aliis generibus musicorum sicut res docer</incipit>
-                        <explicit>intellegenda sunt si terrena sapienter ac diligenter respiciamus spiritualiter ac mystice in<gap/></explicit>
+                        <explicit>intellegenda sunt si terrena sapienter ac diligenter respiciamus spiritualiter ac mystice in<gap/>
+                        </explicit>
                     </msItem>
                     <msItem>
                         <locus from="101v">101v</locus>
@@ -124,7 +127,7 @@
                         <incipit>Decanus sub centurione Sub tribune centurio</incipit>
                         <explicit>et super quem unum annum donat ne elation subripiat</explicit>
                         <filiation>This just few lines long text follows Jerom’s letter also in <ref type="altMs">Florence MS Laurentiana Plut. XXIX Cod. 32</ref> from the 9th-10th c</filiation>
-                      </msItem>
+                    </msItem>
                     <msItem>
                         <locus from="102r" to="103v">102r-103v</locus>
                         <author ref="#berno">Berno of Reichenau</author>
@@ -149,17 +152,18 @@
                         </supportDesc>
                         <layoutDesc>
                             <layout ruledLines="26" columns="1">
-                                <p>On <locus from="1r" to="31v">ff. 1r-31v</locus> and on <locus  from="100v" to="100v"> f. 100v </locus> there are around 26 ruled lines in one column;</p></layout>
-                            <layout ruledLines="25 32" columns="2"> 
+                                <p>On <locus from="1r" to="31v">ff. 1r-31v</locus> and on <locus from="100v" to="100v"> f. 100v </locus> there are around 26 ruled lines in one column;</p>
+                            </layout>
+                            <layout ruledLines="25 32" columns="2">
                                 <p>on <locus from="32r" to="100v">ff. 32r-100r</locus> and<locus from="101r" to="102v">ff. 101r-102v</locus> there are between 25 and 32 ruled lines in two columns.</p>
-                            </layout>                                     
+                            </layout>
                         </layoutDesc>
                     </objectDesc>
                     <scriptDesc>
                         <scriptNote script="carolmin">Carolingian minuscule</scriptNote>
                     </scriptDesc>
                     <decoDesc>
-                        <decoNote></decoNote>
+                        <decoNote/>
                     </decoDesc>
                     <additions/>
                     <bindingDesc>
@@ -167,22 +171,30 @@
                             <p>Binding with four bosses and a strap-and-pin mechanism with the pin on the upper board.</p>
                         </binding>
                     </bindingDesc>
-                    <accMat type="fragment"><p>Paper sheet from the 15th c. content notebound in the MS between <locus from="1v" to="2r">first and second folio</locus>.</p>
-                    <p>Paste down <date notBefore="1200" notAfter="1300">13th c.</date> hymns attributed to Ambrose <quote>Hinc roma celsum uerticem<gap/></quote> and others.</p>
-                        <p><locus from="Ir" to="Iv">F. Ir-v</locus> and <locus from="I*r">f. I*r-v</locus> liturgical hymns with neums <quote>O sator rerum reparator <unclear>cui</unclear> christe  rex regum metuend<supplied>e cen</supplied>sor ad preces nostras<gap/></quote></p>
+                    <accMat type="fragment">
+                        <p>Paper sheet from the 15th c. content notebound in the MS between <locus from="1v" to="2r">first and second folio</locus>.</p>
+                        <p>Paste down <date notBefore="1200" notAfter="1300">13th c.</date> hymns attributed to Ambrose <quote>Hinc roma celsum uerticem<gap/>
+                            </quote> and others.</p>
+                        <p>
+                            <locus from="Ir" to="Iv">F. Ir-v</locus> and <locus from="I*r">f. I*r-v</locus> liturgical hymns with neums <quote>O sator rerum reparator <unclear>cui</unclear> christe  rex regum metuend<supplied>e cen</supplied>sor ad preces nostras<gap/>
+                            </quote>
+                        </p>
                         <p>On the back <locus from="VS">pastedown</locus> unidentified text.</p>
                     </accMat>
                 </physDesc>
                 <history>
                     <origin>
-                        <origDate notBefore="1001" notAfter="1050">XI<hi rend="sup">1</hi></origDate>
+                        <origDate notBefore="1001" notAfter="1050">XI<hi rend="sup">1</hi>
+                        </origDate>
                         <origPlace>
                             <geogName>Southern Germany</geogName>
-                         </origPlace>                        
+                        </origPlace>
                     </origin>
                     <provenance>
-                        <p>The manuscript is supposed to be copied in part by <rs type="person" ref="#ellinger">Abbot Ellinger</rs> of <rs type="corporate" ref="#tegernsee_abbey">Tegernsee Abbey</rs> (975/980-1056), as it is stated in a note on <locus from="103v">fol. 103v</locus> <quote>Abbas indignus ego Ellinger peccator istam glosam scripsi dum essem in Altahensi monasterio deo sanctoque quirino. Rogo uos omnes in ea legentes ut oretis pro me.</quote> which however is an indication only that he copied <title>De verborum significatione</title> and the following shorter texts, and not necessarily the whole manuscript.</p>
-                        <p>It belong to the <rs type="corporate" ref="#tegernsee_abbey">Tegernsee Abbey</rs> as noted on the <locus from="Ir">first flyleaf</locus> <quote>Istud volumen <unclear>attinet</unclear> venerabili monasterio sancti Quirini in Tegernsee<gap/> H&#x303; Abbas Ellingerus scripsit hunc librum</quote>. Additionally there is a note from the librarian of the monastery <rs type="person">Ambrosius Schwerzenbeck</rs> on the small paper leaf <locus from="1r">fol. 1-bis</locus> from the 15th c. This together with the notes and glosses written by <rs type="person" ref="#ellinger">Abbot Ellinger</rs> suggests that the manuscript in its current composition was procured by the Abbot for the use of his community around the <origDate notBefore="1001" notAfter="1050">first half of the 11th c.</origDate> in <rs type="corporate" ref="#tegernsee_abbey">Tegernsee</rs>. The manuscript is recorded in the 15th c. catalogue among Bede's works under the title <quote>Excerptum de naturalibus hystoriis Plinii philosophi</quote> with the signature <quote>l 44</quote>.</p>
+                        <p>The manuscript is supposed to be copied in part by <rs type="person" ref="#ellinger">Abbot Ellinger</rs> of <rs type="corporate" ref="#tegernsee_abbey">Tegernsee Abbey</rs> (975/980-1056), as it is stated in a note on <locus from="103v">fol. 103v</locus>
+                            <quote>Abbas indignus ego Ellinger peccator istam glosam scripsi dum essem in Altahensi monasterio deo sanctoque quirino. Rogo uos omnes in ea legentes ut oretis pro me.</quote> which however is an indication only that he copied <title>De verborum significatione</title> and the following shorter texts, and not necessarily the whole manuscript.</p>
+                        <p>It belong to the <rs type="corporate" ref="#tegernsee_abbey">Tegernsee Abbey</rs> as noted on the <locus from="Ir">first flyleaf</locus>
+                            <quote>Istud volumen <unclear>attinet</unclear> venerabili monasterio sancti Quirini in Tegernsee<gap/> H̃ Abbas Ellingerus scripsit hunc librum</quote>. Additionally there is a note from the librarian of the monastery <rs type="person">Ambrosius Schwerzenbeck</rs> on the small paper leaf <locus from="1r">fol. 1-bis</locus> from the 15th c. This together with the notes and glosses written by <rs type="person" ref="#ellinger">Abbot Ellinger</rs> suggests that the manuscript in its current composition was procured by the Abbot for the use of his community around the <origDate notBefore="1001" notAfter="1050">first half of the 11th c.</origDate> in <rs type="corporate" ref="#tegernsee_abbey">Tegernsee</rs>. The manuscript is recorded in the 15th c. catalogue among Bede's works under the title <quote>Excerptum de naturalibus hystoriis Plinii philosophi</quote> with the signature <quote>l 44</quote>.</p>
                     </provenance>
                 </history>
                 <additional>

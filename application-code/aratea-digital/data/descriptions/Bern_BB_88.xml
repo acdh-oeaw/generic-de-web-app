@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI version="5.0" 
-    xmlns="http://www.tei-c.org/ns/1.0" 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/rules/schema/ER/v0.4/europeana-regia.xsd" 
-    xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="5.0" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/rules/schema/ER/v0.4/europeana-regia.xsd" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Description of <ref type="mss" target="http://www.e-codices.unifr.ch/de/list/one/bbb/0088">Bern, Burgerbibliothek, MS 88</ref></title>
+                <title>Description of <ref type="mss" target="http://www.e-codices.unifr.ch/de/list/one/bbb/0088">Bern, Burgerbibliothek, MS 88</ref>
+                </title>
                 <respStmt>
                     <resp>Catalogued by:</resp>
                     <name type="person">Ivana Dobcheva</name>
@@ -18,44 +15,44 @@
                 <respStmt>
                     <resp>TEI-P5 coded by </resp>
                     <name type="person">Ivana Dobcheva</name>
-                    <name type="org"></name>
+                    <name type="org"/>
                 </respStmt>
             </editionStmt>
             <publicationStmt>
                 <publisher>
-                    <name type="org"></name>
-                    <!--<ptr target=""/>-->
+                    <name type="org"/><!--<ptr target=""/>-->
                 </publisher>
             </publicationStmt>
-            <sourceDesc><p></p></sourceDesc>
-        </fileDesc>           
-        <!--
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc><!--
             <revisionDesc>
 				<change who="" date=""></change>
 			</revisionDesc>
 		-->
     </teiHeader>
     <facsimile>
-        <graphic url='http://www.e-codices.unifr.ch/en/bbb/0088/1r' n='1r' />
-        <graphic url='http://www.e-codices.unifr.ch/en/bbb/0088/1v' n='1v' />
-        <graphic url='http://www.e-codices.unifr.ch/en/bbb/0088/2r' n='2r' />
-        <graphic url='http://www.e-codices.unifr.ch/en/bbb/0088/2v' n='2v' />
-        <graphic url='http://www.e-codices.unifr.ch/en/bbb/0088/3r' n='3r' />
-        <graphic url='http://www.e-codices.unifr.ch/en/bbb/0088/3v' n='3v' />
-        <graphic url='http://www.e-codices.unifr.ch/en/bbb/0088/4r' n='4r' />
-        <graphic url='http://www.e-codices.unifr.ch/en/bbb/0088/4v' n='4v' />
-        <graphic url='http://www.e-codices.unifr.ch/en/bbb/0088/5r' n='5r' />
-        <graphic url='http://www.e-codices.unifr.ch/en/bbb/0088/5v' n='5v' />
-        <graphic url='http://www.e-codices.unifr.ch/en/bbb/0088/6r' n='6r' />
-        <graphic url='http://www.e-codices.unifr.ch/en/bbb/0088/6v' n='6v' />
-        <graphic url='http://www.e-codices.unifr.ch/en/bbb/0088/7r' n='7r' />
-        <graphic url='http://www.e-codices.unifr.ch/en/bbb/0088/7v' n='7v' />
-        <graphic url='http://www.e-codices.unifr.ch/en/bbb/0088/8r' n='8r' />
-        <graphic url='http://www.e-codices.unifr.ch/en/bbb/0088/8v' n='8v' />
-        <graphic url='http://www.e-codices.unifr.ch/en/bbb/0088/9r' n='9r' />
-        <graphic url='http://www.e-codices.unifr.ch/en/bbb/0088/9v' n='9v' />
-        <graphic url='http://www.e-codices.unifr.ch/en/bbb/0088/10r' n='10r' />
-        <graphic url='http://www.e-codices.unifr.ch/en/bbb/0088/10v' n='10v' />
+        <graphic url="http://www.e-codices.unifr.ch/en/bbb/0088/1r" n="1r"/>
+        <graphic url="http://www.e-codices.unifr.ch/en/bbb/0088/1v" n="1v"/>
+        <graphic url="http://www.e-codices.unifr.ch/en/bbb/0088/2r" n="2r"/>
+        <graphic url="http://www.e-codices.unifr.ch/en/bbb/0088/2v" n="2v"/>
+        <graphic url="http://www.e-codices.unifr.ch/en/bbb/0088/3r" n="3r"/>
+        <graphic url="http://www.e-codices.unifr.ch/en/bbb/0088/3v" n="3v"/>
+        <graphic url="http://www.e-codices.unifr.ch/en/bbb/0088/4r" n="4r"/>
+        <graphic url="http://www.e-codices.unifr.ch/en/bbb/0088/4v" n="4v"/>
+        <graphic url="http://www.e-codices.unifr.ch/en/bbb/0088/5r" n="5r"/>
+        <graphic url="http://www.e-codices.unifr.ch/en/bbb/0088/5v" n="5v"/>
+        <graphic url="http://www.e-codices.unifr.ch/en/bbb/0088/6r" n="6r"/>
+        <graphic url="http://www.e-codices.unifr.ch/en/bbb/0088/6v" n="6v"/>
+        <graphic url="http://www.e-codices.unifr.ch/en/bbb/0088/7r" n="7r"/>
+        <graphic url="http://www.e-codices.unifr.ch/en/bbb/0088/7v" n="7v"/>
+        <graphic url="http://www.e-codices.unifr.ch/en/bbb/0088/8r" n="8r"/>
+        <graphic url="http://www.e-codices.unifr.ch/en/bbb/0088/8v" n="8v"/>
+        <graphic url="http://www.e-codices.unifr.ch/en/bbb/0088/9r" n="9r"/>
+        <graphic url="http://www.e-codices.unifr.ch/en/bbb/0088/9v" n="9v"/>
+        <graphic url="http://www.e-codices.unifr.ch/en/bbb/0088/10r" n="10r"/>
+        <graphic url="http://www.e-codices.unifr.ch/en/bbb/0088/10v" n="10v"/>
     </facsimile>
     <text>
         <body>
@@ -68,7 +65,8 @@
                 <head>
                     <title>Germanicus' Aratea with Scholia Bernensia (De signis coeli)</title>
                     <origPlace ref="#luxeuil">Luxeuil</origPlace> (?) or <origPlace ref="#saint_bertin">Saint-Bertin(?)</origPlace>
-                    <origDate notBefore="0986" notAfter="1015">s. X<hi rend="sup">ex</hi>-XI<hi rend="sup">in</hi></origDate>
+                    <origDate notBefore="0986" notAfter="1015">s. X<hi rend="sup">ex</hi>-XI<hi rend="sup">in</hi>
+                    </origDate>
                 </head>
                 <msContents>
                     <textLang mainLang="lat"/>
@@ -82,7 +80,9 @@
                         <title ref="#germanicus_aratea">Aratea</title>
                         <rubric>Claudii caesaris arati phaenomena</rubric>
                         <incipit>Ab ioue principium magno deduxit aratus</incipit>
-                        <explicit><note>text of the poem ends <locus to="10r">10r</locus></note> Significet ventosue truces fidamque quietem.</explicit>
+                        <explicit>
+                            <note>text of the poem ends <locus to="10r">10r</locus>
+                            </note> Significet ventosue truces fidamque quietem.</explicit>
                         <note>Lost vv. 157-240 on a now lost bifolio at the middle of the quire (between ff. 3 and 4), as well as vv. 387-445 on a now lost folio presumably facing f. 7 which is now singleton.</note>
                         <note>f. 8r blank</note>
                         <msItem>
@@ -114,13 +114,15 @@
                             <locus from="11v">11v</locus>
                             <decoNote>Planisphere with five concentric circles for each of the celestial zones and another one marking the zodiacal band.</decoNote>
                         </msItem>
-                    </msItem>		
+                    </msItem>
                 </msContents>
                 <physDesc>
                     <objectDesc form="codex">
                         <supportDesc material="perg">
                             <support>
-                                <p><material>Parchment</material></p>
+                                <p>
+                                    <material>Parchment</material>
+                                </p>
                             </support>
                             <extent>
                                 <measure type="leavesCount" quantity="13">i + 11 + i</measure>
@@ -130,7 +132,9 @@
                                 </dimensions>
                             </extent>
                             <foliation>Modern foliation with pencil in the upper outher corner of each recto and verso.</foliation>
-                            <collation><formula>I<hi rend="sup">8(-2)</hi> (ff. 1-6, missing two folios after 3), II<hi rend="sup">1(-1)</hi> (f. 7 missing 1 folio after 7),  III<hi rend="sup">4</hi> (ff. 8-11)</formula></collation>
+                            <collation>
+                                <formula>I<hi rend="sup">8(-2)</hi> (ff. 1-6, missing two folios after 3), II<hi rend="sup">1(-1)</hi> (f. 7 missing 1 folio after 7),  III<hi rend="sup">4</hi> (ff. 8-11)</formula>
+                            </collation>
                         </supportDesc>
                         <layoutDesc>
                             <layout columns="1 2" ruledLines="47">
@@ -139,13 +143,15 @@
                         </layoutDesc>
                     </objectDesc>
                     <scriptDesc>
-                        <summary></summary>
+                        <summary/>
                         <scriptNote script="carolmin">
-                            <p></p>
-                        </scriptNote>                     
-                    </scriptDesc>  
+                            <p/>
+                        </scriptNote>
+                    </scriptDesc>
                     <decoDesc>
-                        <decoNote>28 illustrations of the constellations, two per folio. For iconographical analysis see <bibl>Homburger, Otto: Die illustrierten Handschriften der Burgerbibliothek Bern. Bd. 2. (Bern, um 1960)<ptr target="http://www.e-codices.unifr.ch/de/description/bbb/0088/"/></bibl>, <bibl><abbr>Sternbilder des Mittelalters</abbr>, pp. 216-17</bibl>, as well as Kristen Lippincott's Saxl Project<ptr target="http://www.kristenlippincott.com/assets/Uploads/MSS-descriptions-Germanicus-Bern-88-15-Nov-2012.pdf"/>.</decoNote>
+                        <decoNote>28 illustrations of the constellations, two per folio. For iconographical analysis see <bibl>Homburger, Otto: Die illustrierten Handschriften der Burgerbibliothek Bern. Bd. 2. (Bern, um 1960)<ptr target="http://www.e-codices.unifr.ch/de/description/bbb/0088/"/>
+                            </bibl>, <bibl>
+                                <abbr>Sternbilder des Mittelalters</abbr>, pp. 216-17</bibl>, as well as Kristen Lippincott's Saxl Project<ptr target="http://www.kristenlippincott.com/assets/Uploads/MSS-descriptions-Germanicus-Bern-88-15-Nov-2012.pdf"/>.</decoNote>
                     </decoDesc>
                     <bindingDesc>
                         <binding>
@@ -154,41 +160,55 @@
                     </bindingDesc>
                 </physDesc>
                 <history>
-                    <summary></summary>
+                    <summary/>
                     <origin>
                         <p>The manuscript is a copy of <ref type="altMs" target="Boulogne-sur-mer_188.xml">Boulogne-sur-mer, BM, MS 188</ref>. Looking at the iconographic features  proposed that the illustrations were drawn by <rs type="person" ref="#odbert">Odbert</rs> from <origPlace ref="#saint_bertin">St. Bertin</origPlace>, where the exemplar <ref type="altMs" target="Boulogne-sur-mer_188.xml">MS Boulogne 188</ref> came from.</p>
                     </origin>
                     <provenance>
-                        <p>Donantion inscription on top margin of f. 1v: <quote>Werinharius eps dedit sanctę Marię</quote> refering to a gift made by bishop <rs type="person" ref="#werner_von_habsburg">Werner I</rs> (1001-1028) made to the cathedral of St. Mary in <rs type="place" ref="#strasbourg">Strasbourg</rs> (on the library at Strasbourg destroyed in the war of 1870 see <bibl>Hoffmann, H. Schreibschulen p. 273-4</bibl>). <!--While for palaeographical studies it is of small imporatance whether the book itself was an import or the monk Constantius went to write it in Strasbourg, it is of great relevance for studing the transmission of the Aratea. One can, however, only speculate if the bishop wanted to supply his cathedral library with texts, he thought were important and of which knew to be in Luxeuil or St. Bertin.--></p>
+                        <p>Donantion inscription on top margin of f. 1v: <quote>Werinharius eps dedit sanctę Marię</quote> refering to a gift made by bishop <rs type="person" ref="#werner_von_habsburg">Werner I</rs> (1001-1028) made to the cathedral of St. Mary in <rs type="place" ref="#strasbourg">Strasbourg</rs> (on the library at Strasbourg destroyed in the war of 1870 see <bibl>Hoffmann, H. Schreibschulen p. 273-4</bibl>). <!--While for palaeographical studies it is of small imporatance whether the book itself was an import or the monk Constantius went to write it in Strasbourg, it is of great relevance for studing the transmission of the Aratea. One can, however, only speculate if the bishop wanted to supply his cathedral library with texts, he thought were important and of which knew to be in Luxeuil or St. Bertin.-->
+                        </p>
                         <p>The manuscript was for some time binded together with <ref type="mss">Bern, Burgerbibliothek MS 87</ref> (described together by Wimpfelin in 1508: <quote>Geometria ex Greco in latinum a Boecio translate, proprietates et dispositions signorum caeli</quote>). This manuscript has a colophon written by <rs type="person" role="scribe">Constantius</rs>, priest of St. Peter’s abbey church in Luxeuil in <origDate when="1004">1004</origDate>. It is then possible that Werner procured copies of Boethius' texts from Constantius in Luxeuil and an Aratea from St. Bertin and at some time later the two were bound together based on their common use in the quadrivium.</p>
                     </provenance>
                 </history>
                 <additional>
                     <listBibl>
                         <head>Selected bibliography:</head>
-                        <bibl><abbr>Sternbilder des Mittelalters</abbr>, pp. 214-18.</bibl>
+                        <bibl>
+                            <abbr>Sternbilder des Mittelalters</abbr>, pp. 214-18.</bibl>
                         <bibl>Boutemy, André. "Obdert de Saint-Bertin et la second Bible de Charles le Chauve," <title>Scriptorium</title> 4 (1950): 101-102.</bibl>
                         <bibl>Homburger, Otto. “Über die kunstgeschichtliche Bedeutung der Handschriften der Burgerbibliothek.” In <title>Schätze der Burgerbibliothek Bern</title>, pp. 107-130. Bern: Lang, 1953.</bibl>
-                        <bibl><abbr>Bischoff, Kommentar</abbr>, pp. 13-14.</bibl>
-                        <bibl><abbr>Lott, Transmission</abbr>.</bibl>
-                        <bibl><abbr>Ullman, Geometry</abbr>, pp. 263-285.</bibl>
-                        <bibl><abbr>Reeve (1980)</abbr>, p. 518.</bibl>
-                        <bibl><abbr>Mütherich (1989)</abbr>, pp. 31-58.</bibl>
-                        <bibl><abbr>Obbeama (1989)</abbr>, p. 13.</bibl>
-                        <bibl><abbr>Munk Olsen, Catalogue 1</abbr>, p. 406.</bibl>
-                        <bibl><abbr>Blume (2000)</abbr>, p. 549.</bibl>
-                        <bibl><abbr>Haffner</abbr>, p. 24.</bibl>
-                        <bibl><abbr>Le Boeuffle (1975)</abbr>, pp. xli-xlii.</bibl>
-                        <bibl><abbr>Gain (1976)</abbr>, pp. 2-8.</bibl>
-                        <bibl><abbr>Dell'Era (1979)</abbr>, pp. 269-70.</bibl>
-                        <bibl><abbr>Dekker</abbr>, pp. 145, 163, 173-75 and 233-35.</bibl>
+                        <bibl>
+                            <abbr>Bischoff, Kommentar</abbr>, pp. 13-14.</bibl>
+                        <bibl>
+                            <abbr>Lott, Transmission</abbr>.</bibl>
+                        <bibl>
+                            <abbr>Ullman, Geometry</abbr>, pp. 263-285.</bibl>
+                        <bibl>
+                            <abbr>Reeve (1980)</abbr>, p. 518.</bibl>
+                        <bibl>
+                            <abbr>Mütherich (1989)</abbr>, pp. 31-58.</bibl>
+                        <bibl>
+                            <abbr>Obbema (1989)</abbr>, p. 13.</bibl>
+                        <bibl>
+                            <abbr>Munk Olsen, Catalogue 1</abbr>, p. 406.</bibl>
+                        <bibl>
+                            <abbr>Blume (2000)</abbr>, p. 549.</bibl>
+                        <bibl>
+                            <abbr>Haffner</abbr>, p. 24.</bibl>
+                        <bibl>
+                            <abbr>Le Boeuffle (1975)</abbr>, pp. xli-xlii.</bibl>
+                        <bibl>
+                            <abbr>Gain (1976)</abbr>, pp. 2-8.</bibl>
+                        <bibl>
+                            <abbr>Dell'Era (1979)</abbr>, pp. 269-70.</bibl>
+                        <bibl>
+                            <abbr>Dekker</abbr>, pp. 145, 163, 173-75 and 233-35.</bibl>
                         <bibl>Saenger, Paul. <title>Space Between Words: The Origins of Silent Reading</title>. Stanford University Press, 1997.</bibl>
                         <bibl>Stutzmann, Dominique. “Saint-Bertin : centre culturel du VIIe au XVIIIe siècle.” 2016. <ptr target="http://saint-bertin.irht.cnrs.fr/site/php/notice.php?id=Boulogne-sur-Mer188&amp;catalogue=boulogne"/>.</bibl>
-                        <bibl>Lippincott, Kristen. Saxl Project <ptr target="http://www.kristenlippincott.com/assets/Uploads/MSS-descriptions-Germanicus-Bern-88-15-Nov-2012.pdf"/>.</bibl>                        
+                        <bibl>Lippincott, Kristen. Saxl Project <ptr target="http://www.kristenlippincott.com/assets/Uploads/MSS-descriptions-Germanicus-Bern-88-15-Nov-2012.pdf"/>.</bibl>
                     </listBibl>
                 </additional>
             </msDesc>
         </body>
     </text>
 </TEI>
-

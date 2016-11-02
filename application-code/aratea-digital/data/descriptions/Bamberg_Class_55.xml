@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="5.0" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/rules/schema/ER/v0.4/europeana-regia.xsd" xml:lang="en">
     <teiHeader>
         <fileDesc>
@@ -19,15 +20,13 @@
             </editionStmt>
             <publicationStmt>
                 <publisher>
-                    <name type="org"/>
-                    <!--<ptr target=""/>-->
+                    <name type="org"/><!--<ptr target=""/>-->
                 </publisher>
             </publicationStmt>
             <sourceDesc>
                 <p/>
             </sourceDesc>
-        </fileDesc>           
-        <!--
+        </fileDesc><!--
             <revisionDesc>
 				<change who="" date=""></change>
 			</revisionDesc>
@@ -182,12 +181,16 @@
                         <bibl>Leitschuh, Friedrich and Hans Fischer. <title>Katalog der Handschriften der Königlichen Bibliothek zu Bamberg</title>. Vol. I,2. Bamberg, 1906. Here pp. <ref target="http://bilder.manuscripta-mediaevalia.de/bilder/hs-bilder/k/HSK0600_1093.jpg">61</ref>-<ref target="http://bilder.manuscripta-mediaevalia.de/bilder/hs-bilder/k/HSK0600_1098.jpg">66</ref>.</bibl>
                         <bibl>Suckale-Redlefsen, Gude. Die Handschriften des 8. bis 11. Jahrhunderts der Staatsbibliothek Bamberg. Wiesbaden: Harrassowitz, 2004. Here pp. <ref target="http://www.manuscripta-mediaevalia.de/dokumente/html/hsk0627a">61</ref>-62</bibl>
                         <bibl>Menso Folkerts, "Mittelalterliche Mathematik: das Quadrivium." In <title>Zählen Messen Rechnen. 1000 Jahre Mathematik in Handschriften und frühen Drucken</title>, 12-29. Petersberg: Imhof, 2008.</bibl>
-                        <bibl><abbr>Leonardi</abbr>, 8.</bibl>
-                        <bibl><abbr>Bischoff, Katalog I</abbr>, 49.</bibl>
+                        <bibl>
+                            <abbr>Leonardi</abbr>, 8.</bibl>
+                        <bibl>
+                            <abbr>Bischoff, Katalog I</abbr>, 49.</bibl>
                         <bibl>Hoffmann, Hartmut. Bamberger Handschriften des 10. und des 11. Jahrhunderts. Hannover, Hahnsche Buchhandlung, 1995, esp. <ref target="http://www.mgh.de/dmgh/resolving/MGH_Schriften_39_S._26">26-30</ref> and <ref target="http://www.mgh.de/dmgh/resolving/MGH_Schriften_39_S._136">136</ref>.</bibl>
                         <bibl>Borst, Arno. <title>Das Buch der Naturgeschichte: Plinius und seine Leser im Zeitalter des Pergaments</title>. Heidelberg: Winter, 1994. Here p. 185.</bibl>
-                        <bibl><abbr>Munk Olsen, Catalogue 2</abbr>, p. 250.</bibl>
-                        <bibl><abbr>Munk Olsen, L’ étude 3,1</abbr>, p. 38.</bibl>
+                        <bibl>
+                            <abbr>Munk Olsen, Catalogue 2</abbr>, p. 250.</bibl>
+                        <bibl>
+                            <abbr>Munk Olsen, L’ étude 3,1</abbr>, p. 38.</bibl>
                         <bibl>Toneatto, Lucio. <title>Codices Artis Mensoriae: i manoscritti degli antichi opuscoli latini d'agrimensura (V - XIX sec.)</title>. Spoleto 1995. Here pp. 888-894.</bibl>
                     </listBibl>
                 </additional>

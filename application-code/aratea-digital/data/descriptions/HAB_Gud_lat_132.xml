@@ -1,228 +1,249 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI version="5.0" 
-	xmlns="http://www.tei-c.org/ns/1.0" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/rules/schema/ER/v0.4/europeana-regia.xsd" 
-	xml:lang="eng">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title>Description <ref type="altMs" target="http://diglib.hab.de/mss/132-gud-lat/start.htm?image=00001">Wolfenbüttel HAB, Cod. Guelf. 132 Gud. lat.</ref></title>
-				<respStmt>
-					<resp>cataloged by</resp>
-					<name>Ivana Dobcheva</name>
-				</respStmt>
-			</titleStmt>
-			<editionStmt>
-				<edition>Digital catalogue using the TEI P5 metadata schema</edition>
-				<respStmt>
-					<resp> TEI-P5 coded by </resp>
-					<name type="person">Ivana Dobcheva</name>
-				</respStmt>
-			</editionStmt>
-			<publicationStmt>
-				<p></p>
-			</publicationStmt>
-			<sourceDesc><p></p>
-			</sourceDesc>
-		</fileDesc>   
-	</teiHeader>
-	<facsimile>
-		<graphic url=""/>
-	</facsimile>
-	<text>
-		<body>
-			<msDesc xml:id="mss_gudLat132_tei-msDesc_IvanaDobcheva" xml:lang="eng">
-				<msIdentifier>
-					<settlement>Wolfenbüttel</settlement>
-					<repository>Herzog August Bibliothek</repository>
-					<collection>Gudische Handschriften, lateinisch</collection>
-					<idno sortKey="gud_lat_132">Cod. Guelf. 132 Gud. lat.</idno>
-				</msIdentifier>
-				<head>
-					<title></title>
-					<note type="caption"><!-- für eine vorformulierte Schlagzeile, die genauso abge"druckt" werden soll --></note>
-					<origPlace ref="#corvey">Corvey Abbey</origPlace>
-					<origDate notBefore="0850" notAfter="0900">IX<hi rend="sup">2</hi></origDate>
-				</head>
-				<msContents>
-					<textLang mainLang="lat"/>
-					<msItem>
-						<locus from="1r" to="48v">1r-48v</locus>
-						<author ref="#vitruvius">Vitruvius</author>
-						<title ref="#de_architecura">De architectura</title>
-						<msItem>
-							<locus from="1r" to="1v"></locus>
-							<note>Table of content:</note>
-							<incipit>Incipiunt capitula<lb/>De princiis artis architectonicae<lb/>De uentis</incipit>
-						</msItem>
-						<msItem>
-							<locus from="1v">1v</locus>
-							<note>Text:</note>
-							<rubric><hi rend="font-variant:small-caps">De artis architectonicae peritia multa oratione</hi> uitruius polio aliiq<am>ue</am> auctores scintissime scripsere.</rubric>  
-							<incipit>Verum nelonga eorim dissertaque dasundia</incipit>
-							<explicit>totu<am>m</am> corpus om<am>ni</am>a architeturę membra in decem uoluminibus haberet explicate <hi rend="font-variant:small-caps">uitruuii liber x explicit feliciter amen</hi></explicit>
-							<note>With running titles on the upper margin of pages. Many correction to the text by a different hand in darker brown ink.</note>
-							<bibl>Marie-Thérèse Cam, Catherine Jacquemard, "Les interpolations médiévales dans la tradition de M. Cetius Faventinus," Revue d'histoire des textes 32 (2002):</bibl>
-							<bibl>Krinsky. 78 Vitruvius MSS in Journal of the Warburg and Courtauld Inst. 30 (1967): 36-70</bibl>
-						</msItem>
-					</msItem>
-					<msItem>
-						<locus from="49r" to="52r">49r-52r</locus>
-						<author ref="#martianus_capella">Martianus Capella</author>
-						<title ref="#de_nuptiis">De nuptiis Philologiae et Mercirii <note>Book II (116-126)</note></title>						
-						<rubric>Incipiunt uersus de nuptiis philologiae</rubric>
-						<incipit>Et iam tunc roseo subtexere sidera peplo<lb/> Coeperat amboru<am>m</am> promens aurora pudorem</incipit>
-						<explicit>ac nos sacrate musas.</explicit>
-						<note>Remarks: written by a different hand than the <quote>De architectura</quote>. Different ruling – the outer double lines are more narrow to each other; also pricking visible unlike in the previous f.os; also different hand; all clues suggest that this is a separate but contemporary production.</note>
-						<msItem>
-							<locus from="52v" to="54r">52v-54r</locus>
-							<author ref="#martianus_capella">Martianus Capella</author>
-							<title>De nuptiis. Philologiae et Mercirii <note>Book VIII De astronomia (838 – 846,1)</note></title>
-							<incipit>Peracta iam spatiorum circulorumq<am>ue</am> breuiter ratione</incipit>
-							<explicit>haec est inequalitas  quae dieru<am>m</am> spatia noctiu<am>m</am> q<am>ue</am> discriminat</explicit>
-							<note>Skiped is the first half of the book containing information on the circles, shape of the universe etc. The text begins straight from the section devoted to the constellations</note>
-						</msItem>
-						<bibl>Preaux - Le manuscrit Avranches 240 et l'oeuvre de Martianus Capella.</bibl>						
-					</msItem>
-					<msItem>
-						<locus from="54v" to="61r">54v-61r</locus>
-						<author ref="#bede">Ps-Bede</author>
-						<title ref="#de_signis_coeli">De signis coeli</title>
-						<rubric>incipit excerptu[m] de astronomia</rubric>
-						<incipit>Helix arcuturus maior habet autem in capite</incipit>
-						<explicit>ccclx dieb<am>us</am> signiferu<am>m</am> circu<am>m</am> suu<am>m</am> complens</explicit>						
-					</msItem>
-					<msItem>
-						<locus from="61v">61v</locus>
-						<author>Ausonius</author>
-						<title>Epitome phenomenon</title>
-						<rubric>prisciani epitome phenomen</rubric>
-						<incipit>Ad boreę partes arctoae uertuntur et anguis</incipit>
-						<explicit>Hinc sequitur pistrix simul eridaniq<am>ue</am> fluenta.</explicit>						
-					</msItem>
-					<msItem>
-						<locus from="61v">61v</locus>
-						<note>Lemmata to <rs type="person" role="author" ref="#avienus">Avienus</rs>' <title>Aratea</title></note>
-						<rubric>Rufi festi auieni uiri clari arati phenomena</rubric>
-						<incipit>Arctoe anguis corona <add resp="later">o</add>phyucus</incipit>
-						<explicit>Sol aselli uenti hiems aetas</explicit>
-						<note>Missing three leaves after f. <locus from="61v">61</locus>.</note>						
-					</msItem>
-					<msItem>
-						<locus from="62r" to="65r">62r-65r</locus>
-						<author ref="#remius_favinus">Remius Favinus</author>
-						<title ref="#de_ponderibus">Carmen de ponderibus et mensuris</title>
-						<incipit>Pondera paeoniis ueterum memorata libellis</incipit>
-						<explicit>necnon &amp; sine aquis.</explicit>
-						<bibl>Raios, D. K. Recherches sur le "Carmen de ponderibus et mensuris". Jannina, Dedale, 1983.</bibl>						
-					</msItem>
-					<msItem>
-						<locus from="65r" to="70v">65r-70v</locus>
-						<author ref="#priscianus">Priscianus</author>
-						<title ref="#de_figuris_numerorum">De figuris numerorum</title>
-						<incipit><hi rend="font-variant:small-caps">priscian<ex>us</ex>us gram<ex>m</ex>aticus symmacho</hi> Omni te symmache nobilitatis</incipit>
-						<explicit>quinquangulu<ex>m</ex> sexangulum  et similia.</explicit>
-					</msItem>
-					<msItem>
-						<locus from="70v" to="100v">70v-100v</locus>
-						<author ref="#priscianus">Priscianus</author>
-						<title ref="#partitiones_duodecim_versuum_Aeneidos">Partitiones duodecim versuum Aeneidos principalium</title>
-						<rubric>prisciani g<ex>ramatici</ex> Partitiones xij uers<ex>uum</ex> aeneid<ex>os</ex> principalium</rubric>
-						<incipit><hi rend="font-variant:small-caps">arma uirumq<ex>ue</ex> cano troie qui primus ab oris</hi>. uersus genere uniformis specia dactilicus</incipit>
-						<explicit>&amp; pro graugena grauigena faciens.</explicit>
-						<finalRubric><hi rend="font-variant:small-caps">prisciani grammatici svper xii primos versvs aeneidos explicit tractatus partitionum</hi></finalRubric>
-						<note>Missing two leaves after <locus from="71v">71v</locus>.</note>
-					</msItem>
-					<msItem>
-						<locus from="100v" to="108r">100v-108r</locus>
-						<author ref="#bede">Bede</author>
-						<title ref="#de_orthographia_bedae">Orthographia</title>
-						<rubric><hi rend="font-variant:small-caps">Incipit ortographia bedę praesbyteri</hi></rubric>
-						<incipit>A littera &amp;iam nota praenominis est</incipit>
-						<explicit>oratoris sermo peruerat. <hi rend="font-variant:small-caps">Explicit. Amen.</hi></explicit>
-					</msItem>					
-				</msContents>
-				<physDesc>
-					<objectDesc form="codex">
-						<supportDesc material="perg">
-							<support>
-								<p><material>Parchment</material></p>
-							</support>
-							<extent>
-								<measure type="leavesCount" quantity="110">i (paper) + 108 + i (paper) </measure>
-								<dimensions type="leaf" unit="mm">
-									<height>225</height>
-									<width>197</width>
-								</dimensions>
-							</extent>
-							<collation><formula>1-7<hi rend="sup">8</hi>, 8<hi rend="sup">4(-1)</hi>, 9<hi rend="sup">2</hi>, 10<hi rend="sup">8</hi>, 11<hi rend="sup">4</hi>, 12-15<hi rend="sup">8</hi>, 16<hi rend="sup">6(-3)</hi></formula>Quires open with a hair side, h, f-f, h-h. The first two quires much harder thick parchment.</collation>
-							<condition>
-								<p>f. 3 and 4 cut upper margin; outer margin of f. 8 – probably originally blank and cut for second use. </p>
-							</condition>
-						</supportDesc>
-						<layoutDesc>
-							<layout columns="1" ruledLines="24">
-								<p>Ruled in dry point on hair side; 24 lines per page.</p>
-							</layout>
-						</layoutDesc>
-					</objectDesc>
-					<handDesc hands="5">
-						<summary></summary>
-						<handNote script="carolmin">
-							<p>Scribe 1 wrote ff. <locus from="1r" to="48v">1r-48v</locus>.</p>
-						</handNote>
-						<handNote script="carolmin">
-							<p>Scribe 2 wrote ff. <locus from="49r" to="61r">49-61r</locus></p>
-						</handNote>
-						<handNote script="carolmin">
-							<p>Scribe 3 wrote ff. <locus from="61v" to="65r">61v-65r</locus></p>
-						</handNote>
-						<handNote script="carolmin">
-							<p>Scribe 4 wrote ff. <locus from="65r" to="83r">65r-83r </locus> and appears togeter with Hand 5 in the remaining f.os <locus from="83v" to="108r">83v-108r.</locus></p>
-						</handNote>
-					</handDesc>
-					<scriptDesc>
-						<scriptNote script="carolmin"><p>Caroline minuscule</p></scriptNote>
-					</scriptDesc>
-					<musicNotation></musicNotation>
-					<decoDesc>
-						<summary></summary>
-						<decoNote type="miniature">Blank spaces left probably for illustrations in the text of <title>De ordine ac positione</title> on ff. <locus from="54v" to="60v">54v-60v</locus>.</decoNote>
-						<decoNote type="illustration">On f. <locus from="108v">108v</locus> there is a human head drawn in ink.</decoNote>
-						<decoNote type="initial">Coloured and ornamented initials.</decoNote>
-					</decoDesc>
-					<additions></additions>
-					<bindingDesc>
-						<binding>
-							<p>Modern binding with red leather.</p>
-						</binding>
-					</bindingDesc>
-				</physDesc>
-				<history>
-					<summary></summary>
-					<origin>
-						<p>According to <bibl>Ganz</bibl> the manuscript was written at <rs type="corporate" ref="#corvey">Corvey Abbey</rs> partially copied by a Corbie scribe.</p>
-					</origin>
-					<provenance>
-						<p>According to Gustav Milchsack there is a note on the lower margin of f. <locus from="11v">11v</locus>: <quote><rs type="person" role="scribe">Sebastianus</rs> dei cultor</quote>.</p>
-					</provenance>
-					<acquisition>
-						<p></p>
-					</acquisition>
-				</history>
-				<additional>
-					<listBibl>
-						<head>Selected bibliography:</head>
-						<bibl>Ganz, Corbie, p. 158</bibl>
-						<bibl>O. Heinemann, Die Hss. der Herzoglichen Bibliothek zu Wolfenbüttel, IV, pp. 155-6</bibl>
-						<bibl>Leonardi, C. I codici di Marziano Capella, in Aevum 34 (1960): 493-4</bibl>
-						<bibl>Ebert, F. A. Zur Handschriftenkunde, II, pp. 29, 40, 138, 142, 177</bibl>
-						<bibl>Keil, H. Grammatici Latini III, pp. 398-9</bibl>
-						<bibl>Holder, A. Rufi Festi Auieni Carmina, ad Aeni pontem 1887, pp. xii-xiii</bibl>
-					</listBibl>
-				</additional>
-			</msDesc>
-		</body>		
-	</text>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="5.0" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/rules/schema/ER/v0.4/europeana-regia.xsd" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Description <ref type="altMs" target="http://diglib.hab.de/mss/132-gud-lat/start.htm?image=00001">Wolfenbüttel HAB, Cod. Guelf. 132 Gud. lat.</ref>
+                </title>
+                <respStmt>
+                    <resp>cataloged by</resp>
+                    <name>Ivana Dobcheva</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Digital catalogue using the TEI P5 metadata schema</edition>
+                <respStmt>
+                    <resp> TEI-P5 coded by </resp>
+                    <name type="person">Ivana Dobcheva</name>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url=""/>
+    </facsimile>
+    <text>
+        <body>
+            <msDesc xml:id="mss_gudLat132_tei-msDesc_IvanaDobcheva" xml:lang="eng">
+                <msIdentifier>
+                    <settlement>Wolfenbüttel</settlement>
+                    <repository>Herzog August Bibliothek</repository>
+                    <collection>Gudische Handschriften, lateinisch</collection>
+                    <idno sortKey="gud_lat_132">Cod. Guelf. 132 Gud. lat.</idno>
+                </msIdentifier>
+                <head>
+                    <title/>
+                    <note type="caption"><!-- für eine vorformulierte Schlagzeile, die genauso abge"druckt" werden soll --></note>
+                    <origPlace ref="#corvey">Corvey Abbey</origPlace>
+                    <origDate notBefore="0850" notAfter="0900">IX<hi rend="sup">2</hi>
+                    </origDate>
+                </head>
+                <msContents>
+                    <textLang mainLang="lat"/>
+                    <msItem>
+                        <locus from="1r" to="48v">1r-48v</locus>
+                        <author ref="#vitruvius">Vitruvius</author>
+                        <title ref="#de_architecura">De architectura</title>
+                        <msItem>
+                            <locus from="1r" to="1v"/>
+                            <note>Table of content:</note>
+                            <incipit>Incipiunt capitula<lb/>De princiis artis architectonicae<lb/>De uentis</incipit>
+                        </msItem>
+                        <msItem>
+                            <locus from="1v">1v</locus>
+                            <note>Text:</note>
+                            <rubric>
+                                <hi rend="font-variant:small-caps">De artis architectonicae peritia multa oratione</hi> uitruius polio aliiq<am>ue</am> auctores scintissime scripsere.</rubric>
+                            <incipit>Verum nelonga eorim dissertaque dasundia</incipit>
+                            <explicit>totu<am>m</am> corpus om<am>ni</am>a architeturę membra in decem uoluminibus haberet explicate <hi rend="font-variant:small-caps">uitruuii liber x explicit feliciter amen</hi>
+                            </explicit>
+                            <note>With running titles on the upper margin of pages. Many correction to the text by a different hand in darker brown ink.</note>
+                            <bibl>Marie-Thérèse&#160;Cam, Catherine&#160;Jacquemard,&#160;"Les interpolations médiévales dans la tradition de M. Cetius Faventinus," Revue d'histoire des textes 32 (2002):</bibl>
+                            <bibl>Krinsky. 78 Vitruvius MSS in Journal of the Warburg and Courtauld Inst. 30 (1967): 36-70</bibl>
+                        </msItem>
+                    </msItem>
+                    <msItem>
+                        <locus from="49r" to="52r">49r-52r</locus>
+                        <author ref="#martianus_capella">Martianus Capella</author>
+                        <title ref="#de_nuptiis">De nuptiis Philologiae et Mercirii <note>Book II (116-126)</note>
+                        </title>
+                        <rubric>Incipiunt uersus de nuptiis philologiae</rubric>
+                        <incipit>Et iam tunc roseo subtexere sidera peplo<lb/> Coeperat amboru<am>m</am> promens aurora pudorem</incipit>
+                        <explicit>ac nos sacrate musas.</explicit>
+                        <note>Remarks: written by a different hand than the <quote>De architectura</quote>. Different ruling – the outer double lines are more narrow to each other; also pricking visible unlike in the previous f.os; also different hand; all clues suggest that this is a separate but contemporary production.</note>
+                        <msItem>
+                            <locus from="52v" to="54r">52v-54r</locus>
+                            <author ref="#martianus_capella">Martianus Capella</author>
+                            <title>De nuptiis. Philologiae et Mercirii <note>Book VIII De astronomia (838 – 846,1)</note>
+                            </title>
+                            <incipit>Peracta iam spatiorum circulorumq<am>ue</am> breuiter ratione</incipit>
+                            <explicit>haec est inequalitas  quae dieru<am>m</am> spatia noctiu<am>m</am> q<am>ue</am> discriminat</explicit>
+                            <note>Skiped is the first half of the book containing information on the circles, shape of the universe etc. The text begins straight from the section devoted to the constellations</note>
+                        </msItem>
+                        <bibl>Preaux - Le manuscrit Avranches 240 et l'oeuvre de Martianus Capella.</bibl>
+                    </msItem>
+                    <msItem>
+                        <locus from="54v" to="61r">54v-61r</locus>
+                        <author ref="#bede">Ps-Bede</author>
+                        <title ref="#de_signis_coeli">De signis coeli</title>
+                        <rubric>incipit excerptu[m] de astronomia</rubric>
+                        <incipit>Helix arcuturus maior habet autem in capite</incipit>
+                        <explicit>ccclx dieb<am>us</am> signiferu<am>m</am> circu<am>m</am> suu<am>m</am> complens</explicit>
+                    </msItem>
+                    <msItem>
+                        <locus from="61v">61v</locus>
+                        <author>Ausonius</author>
+                        <title>Epitome phenomenon</title>
+                        <rubric>prisciani epitome phenomen</rubric>
+                        <incipit>Ad boreę partes arctoae uertuntur et anguis</incipit>
+                        <explicit>Hinc sequitur pistrix simul eridaniq<am>ue</am> fluenta.</explicit>
+                    </msItem>
+                    <msItem>
+                        <locus from="61v">61v</locus>
+                        <note>Lemmata to <rs type="person" role="author" ref="#avienus">Avienus</rs>' <title>Aratea</title>
+                        </note>
+                        <rubric>Rufi festi auieni uiri clari arati phenomena</rubric>
+                        <incipit>Arctoe anguis corona <add resp="later">o</add>phyucus</incipit>
+                        <explicit>Sol aselli uenti hiems aetas</explicit>
+                        <note>Missing three leaves after f. <locus from="61v">61</locus>.</note>
+                    </msItem>
+                    <msItem>
+                        <locus from="62r" to="65r">62r-65r</locus>
+                        <author ref="#remius_favinus">Remius Favinus</author>
+                        <title ref="#de_ponderibus">Carmen de ponderibus et mensuris</title>
+                        <incipit>Pondera paeoniis ueterum memorata libellis</incipit>
+                        <explicit>necnon &amp; sine aquis.</explicit>
+                        <bibl>Raios, D. K. Recherches sur le "Carmen de ponderibus et mensuris". Jannina, Dedale, 1983.</bibl>
+                    </msItem>
+                    <msItem>
+                        <locus from="65r" to="70v">65r-70v</locus>
+                        <author ref="#priscianus">Priscianus</author>
+                        <title ref="#de_figuris_numerorum">De figuris numerorum</title>
+                        <incipit>
+                            <hi rend="font-variant:small-caps">priscian<ex>us</ex>us gram<ex>m</ex>aticus symmacho</hi> Omni te symmache nobilitatis</incipit>
+                        <explicit>quinquangulu<ex>m</ex> sexangulum  et similia.</explicit>
+                    </msItem>
+                    <msItem>
+                        <locus from="70v" to="100v">70v-100v</locus>
+                        <author ref="#priscianus">Priscianus</author>
+                        <title ref="#partitiones_duodecim_versuum_Aeneidos">Partitiones duodecim versuum Aeneidos principalium</title>
+                        <rubric>prisciani g<ex>ramatici</ex> Partitiones xij uers<ex>uum</ex> aeneid<ex>os</ex> principalium</rubric>
+                        <incipit>
+                            <hi rend="font-variant:small-caps">arma uirumq<ex>ue</ex> cano troie qui primus ab oris</hi>. uersus genere uniformis specia dactilicus</incipit>
+                        <explicit>&amp; pro graugena grauigena faciens.</explicit>
+                        <finalRubric>
+                            <hi rend="font-variant:small-caps">prisciani grammatici svper xii primos versvs aeneidos explicit tractatus partitionum</hi>
+                        </finalRubric>
+                        <note>Missing two leaves after <locus from="71v">71v</locus>.</note>
+                    </msItem>
+                    <msItem>
+                        <locus from="100v" to="108r">100v-108r</locus>
+                        <author ref="#bede">Bede</author>
+                        <title ref="#de_orthographia_bedae">Orthographia</title>
+                        <rubric>
+                            <hi rend="font-variant:small-caps">Incipit ortographia bedę praesbyteri</hi>
+                        </rubric>
+                        <incipit>A littera &amp;iam nota praenominis est</incipit>
+                        <explicit>oratoris sermo peruerat. <hi rend="font-variant:small-caps">Explicit. Amen.</hi>
+                        </explicit>
+                    </msItem>
+                </msContents>
+                <physDesc>
+                    <objectDesc form="codex">
+                        <supportDesc material="perg">
+                            <support>
+                                <p>
+                                    <material>Parchment</material>
+                                </p>
+                            </support>
+                            <extent>
+                                <measure type="leavesCount" quantity="110">i (paper) + 108 + i (paper) </measure>
+                                <dimensions type="leaf" unit="mm">
+                                    <height>225</height>
+                                    <width>197</width>
+                                </dimensions>
+                            </extent>
+                            <collation>
+                                <formula>1-7<hi rend="sup">8</hi>, 8<hi rend="sup">4(-1)</hi>, 9<hi rend="sup">2</hi>, 10<hi rend="sup">8</hi>, 11<hi rend="sup">4</hi>, 12-15<hi rend="sup">8</hi>, 16<hi rend="sup">6(-3)</hi>
+                                </formula>Quires open with a hair side, h, f-f, h-h. The first two quires much harder thick parchment.</collation>
+                            <condition>
+                                <p>f. 3 and 4 cut upper margin; outer margin of f. 8 – probably originally blank and cut for second use. </p>
+                            </condition>
+                        </supportDesc>
+                        <layoutDesc>
+                            <layout columns="1" ruledLines="24">
+                                <p>Ruled in dry point on hair side; 24 lines per page.</p>
+                            </layout>
+                        </layoutDesc>
+                    </objectDesc>
+                    <handDesc hands="5">
+                        <summary/>
+                        <handNote script="carolmin">
+                            <p>Scribe 1 wrote ff. <locus from="1r" to="48v">1r-48v</locus>.</p>
+                        </handNote>
+                        <handNote script="carolmin">
+                            <p>Scribe 2 wrote ff. <locus from="49r" to="61r">49-61r</locus>
+                            </p>
+                        </handNote>
+                        <handNote script="carolmin">
+                            <p>Scribe 3 wrote ff. <locus from="61v" to="65r">61v-65r</locus>
+                            </p>
+                        </handNote>
+                        <handNote script="carolmin">
+                            <p>Scribe 4 wrote ff. <locus from="65r" to="83r">65r-83r </locus> and appears togeter with Hand 5 in the remaining f.os <locus from="83v" to="108r">83v-108r.</locus>
+                            </p>
+                        </handNote>
+                    </handDesc>
+                    <scriptDesc>
+                        <scriptNote script="carolmin">
+                            <p>Caroline minuscule</p>
+                        </scriptNote>
+                    </scriptDesc>
+                    <musicNotation/>
+                    <decoDesc>
+                        <summary/>
+                        <decoNote type="miniature">Blank spaces left probably for illustrations in the text of <title>De ordine ac positione</title> on ff. <locus from="54v" to="60v">54v-60v</locus>.</decoNote>
+                        <decoNote type="illustration">On f. <locus from="108v">108v</locus> there is a human head drawn in ink.</decoNote>
+                        <decoNote type="initial">Coloured and ornamented initials.</decoNote>
+                    </decoDesc>
+                    <additions/>
+                    <bindingDesc>
+                        <binding>
+                            <p>Modern binding with red leather.</p>
+                        </binding>
+                    </bindingDesc>
+                </physDesc>
+                <history>
+                    <summary/>
+                    <origin>
+                        <p>According to <bibl>Ganz</bibl> the manuscript was written at <rs type="corporate" ref="#corvey">Corvey Abbey</rs> partially copied by a Corbie scribe.</p>
+                    </origin>
+                    <provenance>
+                        <p>According to Gustav Milchsack there is a note on the lower margin of f. <locus from="11v">11v</locus>: <quote>
+                                <rs type="person" role="scribe">Sebastianus</rs> dei cultor</quote>.</p>
+                    </provenance>
+                    <acquisition>
+                        <p/>
+                    </acquisition>
+                </history>
+                <additional>
+                    <listBibl>
+                        <head>Selected bibliography:</head>
+                        <bibl>Ganz, Corbie, p. 158</bibl>
+                        <bibl>O. Heinemann, Die Hss. der Herzoglichen Bibliothek zu Wolfenbüttel, IV, pp. 155-6</bibl>
+                        <bibl>Leonardi, C. I codici di Marziano Capella, in Aevum 34 (1960): 493-4</bibl>
+                        <bibl>Ebert, F. A. Zur Handschriftenkunde, II, pp. 29, 40, 138, 142, 177</bibl>
+                        <bibl>Keil, H. Grammatici Latini III, pp. 398-9</bibl>
+                        <bibl>Holder, A. Rufi Festi Auieni Carmina, ad Aeni pontem 1887, pp. xii-xiii</bibl>
+                    </listBibl>
+                </additional>
+            </msDesc>
+        </body>
+    </text>
 </TEI>

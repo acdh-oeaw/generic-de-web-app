@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI version="5.0" 
-    xmlns="http://www.tei-c.org/ns/1.0" 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/rules/schema/ER/v0.4/europeana-regia.xsd" 
-    xml:lang="eng">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="5.0" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/rules/schema/ER/v0.4/europeana-regia.xsd" xml:lang="eng">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Description of <ref type="mss" target="http://bvmm.irht.cnrs.fr/consult/consult.php?reproductionId=115">Boulogne-sur-mer, BM, MS 188</ref></title>
+                <title>Description of <ref type="mss" target="http://bvmm.irht.cnrs.fr/consult/consult.php?reproductionId=115">Boulogne-sur-mer, BM, MS 188</ref>
+                </title>
                 <respStmt>
                     <resp>Catalogued by:</resp>
                     <name type="person">Ivana Dobcheva</name>
@@ -18,18 +15,18 @@
                 <respStmt>
                     <resp>TEI-P5 coded by </resp>
                     <name type="person">Ivana Dobcheva</name>
-                    <name type="org"></name>
+                    <name type="org"/>
                 </respStmt>
             </editionStmt>
             <publicationStmt>
                 <publisher>
-                    <name type="org"></name>
-                    <!--<ptr target=""/>-->
+                    <name type="org"/><!--<ptr target=""/>-->
                 </publisher>
             </publicationStmt>
-            <sourceDesc><p></p></sourceDesc>
-        </fileDesc>           
-        <!--
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc><!--
             <revisionDesc>
 				<change who="" date=""></change>
 			</revisionDesc>
@@ -85,10 +82,10 @@
                     <settlement>Boulogne-sur-mer</settlement>
                     <repository>BM</repository>
                     <idno sortKey="boulogne_188">188</idno>
-                     <msName></msName>
+                    <msName/>
                 </msIdentifier>
                 <head>
-                    <title></title>
+                    <title/>
                     <note type="caption">Germanicus' Aratea</note>
                     <origPlace ref="#saint_bertin">Saint-Bertin</origPlace>
                     <origDate notBefore="0905" notAfter="1100">X-XI (not before 905).</origDate>
@@ -98,23 +95,33 @@
                     <msItem>
                         <locus from="1r" to="19v">1r-19v</locus>
                         <title>Calendar</title>
-                       <msItem>
-                           <locus from="1r">1r</locus>
-                           <note>On the Kalends, Ides, and Nones.</note>
-                           <incipit><hi rend="font-variant:small-caps">Ianuarus augustus et december IIII nones habent XVIIII KL</hi></incipit>
-                            <explicit><hi rend="font-variant:small-caps">Omnes ergo menses VIII ID habent.</hi></explicit>
+                        <msItem>
+                            <locus from="1r">1r</locus>
+                            <note>On the Kalends, Ides, and Nones.</note>
+                            <incipit>
+                                <hi rend="font-variant:small-caps">Ianuarus augustus et december IIII nones habent XVIIII KL</hi>
+                            </incipit>
+                            <explicit>
+                                <hi rend="font-variant:small-caps">Omnes ergo menses VIII ID habent.</hi>
+                            </explicit>
                             <note type="remark">Remarks: written in uncial with interchanging colours (green and red) for each second word; f.owed by a table of the ‘regulares concurrents luna epactae’ in each month.</note>
-                       </msItem>
+                        </msItem>
                         <msItem>
                             <locus from="1v">1v</locus>
-                            <title><hi rend="font-variant:small-caps">Cursus lunae per duodecim signa</hi></title>
+                            <title>
+                                <hi rend="font-variant:small-caps">Cursus lunae per duodecim signa</hi>
+                            </title>
                             <note type="remark">Remarks: a table of the twelve zodiacal signs doubled starting with aries and ending with aries again on the left handside while on the extreme right are noted the twelve months.</note>
-                            <note>A note at the bottom of the page: <quote><hi rend="font-variant:small-caps">litterae incensionis lunaris in pagina regulari per xviiii annos</hi></quote>. And later note in caroline minuscule brown ink: <quote>Luna uero XXVIII dieb et VIII horis zodiacum percurrit. Binis uero diebus et senis horis ac bisse unius horę per sigula signa labitur. Duo enim duodecies XXIIII dies sunt VI horę duodecies tres dies sunt, bisse uero duodecies VIII horę sunt &amp; sicut aiunt XXVII diebus &amp; VIII horis luna zodiacum transcurrit circulum</quote>.</note>
+                            <note>A note at the bottom of the page: <quote>
+                                    <hi rend="font-variant:small-caps">litterae incensionis lunaris in pagina regulari per xviiii annos</hi>
+                                </quote>. And later note in caroline minuscule brown ink: <quote>Luna uero XXVIII dieb et VIII horis zodiacum percurrit. Binis uero diebus et senis horis ac bisse unius horę per sigula signa labitur. Duo enim duodecies XXIIII dies sunt VI horę duodecies tres dies sunt, bisse uero duodecies VIII horę sunt &amp; sicut aiunt XXVII diebus &amp; VIII horis luna zodiacum transcurrit circulum</quote>.</note>
                         </msItem>
                         <msItem>
                             <locus from="2r" to="7v">2r-7v</locus>
                             <title ref="#filocalus_calendar">Filocalus calendar</title>
-                            <incipit><hi rend="font-variant:small-caps">Grecorum mensis eydineos signum capricorni principium iani sancit tropicus capricornus mensis ianuarius habet dies XXXI Lunam XXV</hi></incipit>
+                            <incipit>
+                                <hi rend="font-variant:small-caps">Grecorum mensis eydineos signum capricorni principium iani sancit tropicus capricornus mensis ianuarius habet dies XXXI Lunam XXV</hi>
+                            </incipit>
                             <explicit>Expliciunt IIIIor tempora anni XII menses ebdomadae LII &amp; unus dies. Dies CCCLXV et sex horę VIIII DCCLX momenta CCCL DC LX.</explicit>
                             <note type="remark">one the only events recorded side by side to the days are of astronomical phenomena such as <quote>Delphinus matutino exoritur</quote> noted for II. Non. Januari or <quote>In attica uergilię uesperi occultantur</quote> for III. Non. Aprili. There are no liturgical or religious events. </note>
                             <filiation> Chronography of 354.</filiation>
@@ -124,10 +131,11 @@
                             <note>Computistical tables to find epacts.</note>
                             <msItem>
                                 <locus from="10r">10r</locus>
-                                <note>Legend to the table: <quote>in minio colore concurrentes incipiunt<gap/></quote>.</note>
+                                <note>Legend to the table: <quote>in minio colore concurrentes incipiunt<gap/>
+                                    </quote>.</note>
                                 <incipit>Ab epactis praesentis anni deorsum intro grediens per lineam epactarum ascende</incipit>
                                 <explicit>quia secundo decennouenalis cicli anno DNS INCARNATUS EST. </explicit>
-                        </msItem>
+                            </msItem>
                         </msItem>
                         <msItem>
                             <locus from="11r" to="19r">11r-19r</locus>
@@ -143,7 +151,8 @@
                     <msItem>
                         <locus from="20r" to="33r">20r-33r</locus>
                         <author ref="#germanicus">Germanicus</author>
-                        <title ref="#germanicus_aratea">Aratea <note>Z family</note></title>
+                        <title ref="#germanicus_aratea">Aratea <note>Z family</note>
+                        </title>
                         <msItem>
                             <locus from="20r">20r</locus>
                             <note>Planispheric constellation map with the five celestial circles, the zodiac and the Milky Way.</note>
@@ -151,10 +160,15 @@
                         <msItem>
                             <locus from="20v" to="33r">20vb-33ra</locus>
                             <note>Text: vv. 1-725, fragments III and IIa.</note>
-                            <incipit><hi rend="font-variant:small-caps">Ab Ioue principium magno deduxit Aratus</hi></incipit>
-                            <explicit><hi rend="font-variant:small-caps">mercurius bimos gradivvs perficit orbis.</hi></explicit>
+                            <incipit>
+                                <hi rend="font-variant:small-caps">Ab Ioue principium magno deduxit Aratus</hi>
+                            </incipit>
+                            <explicit>
+                                <hi rend="font-variant:small-caps">mercurius bimos gradivvs perficit orbis.</hi>
+                            </explicit>
                             <decoNote>40 illustrations of the constellations placed in orange-black frames on blue background in the left part of the f.os. Two pictures per page one on top of the other; stars noted with black or golden dots.</decoNote>
-                            <decoNote> <locus from="30r">30r</locus> planisphere showing the planetary circles (similar to that in <ref type="altMs">Leiden VLQ MS 79 f. 93v</ref>), around the diagram in each corner four smaller circular diagram: 7 concentric circles one for each planet: similar to that in<ref type="altMs"> Laon BM 422 f. 15v</ref> but with textual differences; upper left an isidorian type of rota for the five zones; lower left a rota for the yearly position of the sun (so called tronos soli diagram or horologium rota), lower right a rota diagram for the twelve winds.</decoNote>
+                            <decoNote>
+                                <locus from="30r">30r</locus> planisphere showing the planetary circles (similar to that in <ref type="altMs">Leiden VLQ MS 79 f. 93v</ref>), around the diagram in each corner four smaller circular diagram: 7 concentric circles one for each planet: similar to that in<ref type="altMs"> Laon BM 422 f. 15v</ref> but with textual differences; upper left an isidorian type of rota for the five zones; lower left a rota for the yearly position of the sun (so called tronos soli diagram or horologium rota), lower right a rota diagram for the twelve winds.</decoNote>
                         </msItem>
                         <msItem>
                             <locus from="33v">33v</locus>
@@ -166,7 +180,9 @@
                     <objectDesc form="codex">
                         <supportDesc material="perg">
                             <support>
-                                <p><material>Parchment</material></p>
+                                <p>
+                                    <material>Parchment</material>
+                                </p>
                             </support>
                             <extent>
                                 <measure type="leavesCount" quantity="35"> i (paper) + 33 + i (paper)</measure>
@@ -175,7 +191,8 @@
                                     <width>280</width>
                                 </dimensions>
                             </extent>
-                            <collation>According to <bibl>C. Jeudi, Y.-F. Riou</bibl> <formula>I<hi rend="sup">10</hi> (ff.1-10), II-III<hi rend="sup">8</hi> (ff.11-18 and 19-26), IV<hi rend="sup">8(-1)</hi> (ff.27-33)</formula>.</collation>
+                            <collation>According to <bibl>C. Jeudi, Y.-F. Riou</bibl>
+                                <formula>I<hi rend="sup">10</hi> (ff.1-10), II-III<hi rend="sup">8</hi> (ff.11-18 and 19-26), IV<hi rend="sup">8(-1)</hi> (ff.27-33)</formula>.</collation>
                         </supportDesc>
                         <layoutDesc>
                             <layout columns="2" ruledLines="36">
@@ -186,37 +203,44 @@
                     <scriptDesc>
                         <scriptNote script="uncialis">
                             <p>The text of the calender and the tables on <locus from="1r" to="10v">ff. 1r-10v</locus>is written in uncial in red and green.</p>
-                        </scriptNote> 
+                        </scriptNote>
                         <scriptNote script="carolmin">
                             <p>The argumenta on <locus from="11r" to="19r"> f. 11r-19r</locus> are written in tiny Caroline minuscule.</p>
                         </scriptNote>
                         <scriptNote script="caprust">
                             <p>The text of germanicus' Aratea is written in Capitalis rustica.</p>
                         </scriptNote>
-                    </scriptDesc> 
+                    </scriptDesc>
                 </physDesc>
                 <history>
-                    <summary>The text of Germanicus' Aratea belong to the Z-family. There is still dispute about the origin of manuscript. The fact that the text in Boulogne-sur-mer skips 142 and 144-146, which are present in <ref type="altMs" target="Leiden_VLQ_79">Leiden, VLQ MS 79</ref> have cast doubt that the latter manuscript served as the model. Reeve (1980), however, argues that these verses were simply erased from the Leiden MS from the scribe who added the Gothic transcript. Scholars are nevertheless still careful in establishing the connection between the two witnesses (see Obbema). <!--Some nonsense also - Sourbiran attested that vv. 373-4 from Avienus interpolated after v. 146 of Germanicus were not found in the Leiden MS, thus leading to the conclusion that the Boulogne-sur-mer MS could not have been copied from the Leiden MS. These verses are however present in the Leiden MS on f. 17r-v. As Reev sugested one should have looked at the Gothic transcription and see if it really present a better text, which would allow than to suppose there was a sister MS of the Leiden MS, which served to correct the later transcription and from which perhaps the Boulogne-sur-mer MS was copied.--></summary>
+                    <summary>The text of Germanicus' Aratea belong to the Z-family. There is still dispute about the origin of manuscript. The fact that the text in Boulogne-sur-mer skips 142 and 144-146, which are present in <ref type="altMs" target="Leiden_VLQ_79">Leiden, VLQ MS 79</ref> have cast doubt that the latter manuscript served as the model. Reeve (1980), however, argues that these verses were simply erased from the Leiden MS from the scribe who added the Gothic transcript. Scholars are nevertheless still careful in establishing the connection between the two witnesses (see Obbema). <!--Some nonsense also - Sourbiran attested that vv. 373-4 from Avienus interpolated after v. 146 of Germanicus were not found in the Leiden MS, thus leading to the conclusion that the Boulogne-sur-mer MS could not have been copied from the Leiden MS. These verses are however present in the Leiden MS on f. 17r-v. As Reev sugested one should have looked at the Gothic transcription and see if it really present a better text, which would allow than to suppose there was a sister MS of the Leiden MS, which served to correct the later transcription and from which perhaps the Boulogne-sur-mer MS was copied.-->
+                    </summary>
                     <origin>
                         <p>The computistical argumenta in give a terminus post quem <origDate notBefore="0905">905</origDate>. Based on the palaeographical and art-historical features the MS is supposed to be written in the <rs type="corporate" ref="#">abbey of Saint-Omer-Saint-Bertin</rs> during the time of <rs type="person" ref="#odbert">Abbot Odbert</rs> (986-1008).</p>
                     </origin>
                     <provenance>
-                        <p>Unclear. Around the end of the 10th c. the mansucript was still in Saint-Bertin where it served as the model for the production of <ref type="altMs" target="Bern_BB_88.xml">Bern Bürgerbibliothek MS 88</ref>. It is however not mentioned in the library cathalogue from 1104 (<bibl><abbr>Becker</abbr>, Nr. 77, p. 181-184</bibl>).</p>
+                        <p>Unclear. Around the end of the 10th c. the mansucript was still in Saint-Bertin where it served as the model for the production of <ref type="altMs" target="Bern_BB_88.xml">Bern Bürgerbibliothek MS 88</ref>. It is however not mentioned in the library cathalogue from 1104 (<bibl>
+                                <abbr>Becker</abbr>, Nr. 77, p. 181-184</bibl>).</p>
                     </provenance>
                 </history>
                 <additional>
                     <listBibl>
                         <head>Selected bibliography:</head>
-                        <bibl><abbr>Obbeama (1989)</abbr>, pp. 11-13.</bibl>
-                        <bibl><abbr>Mütherich (1989)</abbr>.</bibl>
+                        <bibl>
+                            <abbr>Obbeama (1989)</abbr>, pp. 11-13.</bibl>
+                        <bibl>
+                            <abbr>Mütherich (1989)</abbr>.</bibl>
                         <bibl>Catalogue général des manuscrits des bibliothèques publiques des départements. Vol. IV. Pp. 687-8.</bibl>
                         <bibl>Jeudi, C. and Y.-F. Riou. <title>Les manuscrits classiques latins des Bibliotheques publiques de France</title>, I, Paris, 1989, p. 308-9</bibl>
-                        <bibl><abbr>Thiele</abbr>, pp. 82-3.</bibl>
-                        <bibl><abbr>Bischoff, Kommentar</abbr> (esp. pp. 13-14).</bibl>
+                        <bibl>
+                            <abbr>Thiele</abbr>, pp. 82-3.</bibl>
+                        <bibl>
+                            <abbr>Bischoff, Kommentar</abbr> (esp. pp. 13-14).</bibl>
                         <bibl>Boutemy, Andre. <title>L'abbe Odbert et l'enluminure anglais. (Extrait de A travers l'art francais, du moyen age au XXe siecle [=Archives de 'art francaise]</title>. 1978, pp. 15-19.</bibl>
                         <bibl>Heliot, P. "Les manuscrits illustrés de la bibliothèque de Boulogne." <title level="j">Bulletin du Comité flamand de France</title> 1 (1934): 189-221 (here pp. 7-8 and 32-3).</bibl>
                         <bibl>Saenger, Paul. <title>Space Between Words: The Origins of Silent Reading</title>. Stanford University Press, 1997.</bibl>
-                        <bibl><abbr>Reeve (1980)</abbr>, p. 518.</bibl>
+                        <bibl>
+                            <abbr>Reeve (1980)</abbr>, p. 518.</bibl>
                     </listBibl>
                 </additional>
             </msDesc>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="5.0" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/rules/schema/ER/v0.4/europeana-regia.xsd" xml:lang="en">
     <teiHeader>
         <fileDesc>
@@ -19,8 +20,7 @@
             <publicationStmt>
                 <date type="issued" when="2016-09-24">24.09.2016</date>
                 <publisher>
-                    <name type="org"/>
-                    <!--<ptr target=""/>-->
+                    <name type="org"/><!--<ptr target=""/>-->
                 </publisher>
             </publicationStmt>
             <sourceDesc>
@@ -142,7 +142,7 @@
                     </objectDesc>
                     <handDesc>
                         <handNote script="carolmin">
-                            <p>Two main hands writing in carolingian minuscule. Hand A wrote part 1 with Bede, <title>DTR</title>; Hand B wrote parts 2 and 3, where one notice also similar initials. In part 2 however the script and rubrication are more hasty. Hand B also wrote the marginal note in part 1, f. <locus from="16r">16r</locus>. Hand B use complete word-division; ligatures &amp; and e-caudata, st, ct; abbreviations -ur, -m and -n; punctuation: <quote>·</quote> and <quote>;</quote>. Hand A writes for the most with word-division; to the abbreviations used by Habd B adds -us; writes sporadic 'N'; punctuation: <quote>·</quote> / <quote>.,</quote> / <quote>,&#x00A8;</quote> and <quote>;</quote>.</p>
+                            <p>Two main hands writing in carolingian minuscule. Hand A wrote part 1 with Bede, <title>DTR</title>; Hand B wrote parts 2 and 3, where one notice also similar initials. In part 2 however the script and rubrication are more hasty. Hand B also wrote the marginal note in part 1, f. <locus from="16r">16r</locus>. Hand B use complete word-division; ligatures &amp; and e-caudata, st, ct; abbreviations -ur, -m and -n; punctuation: <quote>·</quote> and <quote>;</quote>. Hand A writes for the most with word-division; to the abbreviations used by Habd B adds -us; writes sporadic 'N'; punctuation: <quote>·</quote> / <quote>.,</quote> / <quote>,¨</quote> and <quote>;</quote>.</p>
                         </handNote>
                     </handDesc>
                     <decoDesc>
@@ -159,7 +159,8 @@
                 </physDesc>
                 <history>
                     <origin>
-                        <p>The manuscript was thought to originated from <rs type="place" ref="#corbie">Corbie</rs>. According to David Ganz, who studies the manuscripts produced at Corbie, Amien 222 may have been in Corbie in the 9th c., but it was not written there (see <bibl>Contreni, John J. ‘John Scottus and Bede’. In <title level="m">History and Eschatology in John Scottus Eriugena and His Time</title>. Ed. Michael Dunne and J. J. McEvoy, 91–140 (here p. 97, n. 15). Leuven University Press, 2002.</bibl> B. Bischoff (<bibl><abbr>Bischoff, Katalog I</abbr>, p. 14</bibl>) considered it to be written in <origPlace ref="ne_france" resp="Bischoff, Katalog I">North-east Francia</origPlace> in the <origDate notBefore="0867" notAfter="0900">last third of the ninth century</origDate>.</p>
+                        <p>The manuscript was thought to originated from <rs type="place" ref="#corbie">Corbie</rs>. According to David Ganz, who studies the manuscripts produced at Corbie, Amien 222 may have been in Corbie in the 9th c., but it was not written there (see <bibl>Contreni, John J. ‘John Scottus and Bede’. In <title level="m">History and Eschatology in John Scottus Eriugena and His Time</title>. Ed. Michael Dunne and J. J. McEvoy, 91–140 (here p. 97, n. 15). Leuven University Press, 2002.</bibl> B. Bischoff (<bibl>
+                                <abbr>Bischoff, Katalog I</abbr>, p. 14</bibl>) considered it to be written in <origPlace ref="ne_france" resp="Bischoff, Katalog I">North-east Francia</origPlace> in the <origDate notBefore="0867" notAfter="0900">last third of the ninth century</origDate>.</p>
                     </origin>
                     <provenance>
                         <p>Unclear.</p>
@@ -171,19 +172,25 @@
                 <additional>
                     <listBibl>
                         <head>Selected bibliography:</head>
-                        <bibl><abbr>Bischoff, Katalog I</abbr>, p. 14.</bibl>
-                        <bibl><abbr>Borst (1994)</abbr>, p. 158, n. 83.</bibl>
+                        <bibl>
+                            <abbr>Bischoff, Katalog I</abbr>, p. 14.</bibl>
+                        <bibl>
+                            <abbr>Borst (1994)</abbr>, p. 158, n. 83.</bibl>
                         <bibl>Contreni, John J. “Bede’s Scientific Works in the Carolingian Age.” In <title>Bède Le Vénérable</title>. Ed. by Stéphane Lebecq, Michel Perrin, and Olivier Szerwiniak, 247–59. Villeneuve d’Ascq: Institut de Recherches Historiques du Septentrion, 2005. <ptr target="http://hleno.revues.org/348"/>.</bibl>
                         <bibl>Coyecque, Ernest. <title level="m">Catalogue général des manuscrits des bibliothèques publiques de France; Départements</title>. Vol. 19. Paris: Plon, 1893, p. 105.<ptr target="https://archive.org/stream/cataloguegnr191893fran"/>
                         </bibl>
-                        <bibl><abbr>Dell'Era (1979)</abbr>.</bibl>
-                        <bibl><abbr>Haffner</abbr> p. 174.</bibl>
+                        <bibl>
+                            <abbr>Dell'Era (1979)</abbr>.</bibl>
+                        <bibl>
+                            <abbr>Haffner</abbr> p. 174.</bibl>
                         <bibl>Jones, Charles. “Manuscripts of Bede’s ‘De Natura Rerum.’” <title level="j">Isis</title> 27 (1937): 430–40, p. 431.</bibl>
                         <bibl>Le Bourdellès, Hubert. “La diffusion des&#160;Aratea&#160;dans la culture du nord-ouest de la France pendant le haut Moyen-Age, et le débat idéologique sur la mythologie d’après un texte inédit.” In <title level="m">L’Art du haut Moyen Age dans le Nord-Ouest de la France: Actes du Colloque de St Riquier (22-24 septembre 1987)</title>. Ed. by Dominique Poulan and Michel Perrin, 201–12. Greifswald: Reineke, 1993.</bibl>
-                        <bibl><abbr>Le Bourdellès (1985)</abbr>.</bibl>
+                        <bibl>
+                            <abbr>Le Bourdellès (1985)</abbr>.</bibl>
                         <bibl>Jeudy, Colette, and Yves-François Riou. Les manuscrits classiques latins des bibliothèques publiques de France: catalogue. Vol. I. Paris: CNRS, 1989, pp. 33-4.</bibl>
                         <bibl>Contreni, John J. “John Scottus and Bede.” In <title level="m">History and Eschatology in John Scottus Eriugena and His Time: Proceedings of the Tenth International Conference of the Society for the Promotion of Eriugenian Studies, Maynooth and Dublin, August 16-20, 2002</title>. Ed. by Michael Dunne and J. J. McEvoy, 91–140. Leuven University Press, 2002, p. 97.</bibl>
-                        <bibl><abbr>Sternbilder des Mittelalters</abbr>, pp. 76, 185-7, Plates 24-25.</bibl>
+                        <bibl>
+                            <abbr>Sternbilder des Mittelalters</abbr>, pp. 76, 185-7, Plates 24-25.</bibl>
                         <bibl>Kendall, Calvin B., and Faith Wallis, trans. <title level="m">Bede: On the Nature of Things and on Times</title>. Liverpool: Liverpool University Press, 2010, pp. 39, 44, and 65.</bibl>
                         <bibl>Lipp, Frances. <title level="u">The Carolingian Commentaries on Bede's De natura rerum</title>. Yale University (unpublished dissertation), 1961.</bibl>
                         <bibl>Lippincott, Kristen. Amiens, Bibliothèque municipale, 222<ptr target="http://www.kristenlippincott.com/assets/Uploads/MSS-descriptions-ps-Bede-de-signis-Amiens-222-15-Nov-2012.pdf"/>.</bibl>
@@ -321,8 +328,7 @@
                             <locus from="27v" to="28v">27v-28r</locus>
                             <note>Anonymous text on time:</note>
                             <incipit>Intuentum quit sit status quid cursus postremo quid finis. Status est natura uel temporum ordo</incipit>
-                            <explicit>nemo horas et momenta et ceteros temporum articulos distinguet quia omnia praesentia simul.</explicit>
-                            <!--<filiation>Similar to the commentary to Martianus Capella found in <ref type="altMs">Leiden, UB, MS VLQ 48</ref>.</filiation>-->
+                            <explicit>nemo horas et momenta et ceteros temporum articulos distinguet quia omnia praesentia simul.</explicit><!--<filiation>Similar to the commentary to Martianus Capella found in <ref type="altMs">Leiden, UB, MS VLQ 48</ref>.</filiation>-->
                             <quote type="full_text">Intuentum quit sit status quid cursus postremo quid finis. Status est natura uel temporum ordo <unclear>qui in se</unclear> semper per acto naturali circulo reuertitur ut partes in horam, horę in diem, dies in mensem, <supplied>m</supplied>enses in annum, anni in lunares solaresque circulos et cetera. Et ideo status dicitur quia semper sine ulla ordinis motatione currit per eosdem curriculos atque recurrit. Nam cursus ille temporum quem hic appellat per omnia motabilis est. Per VI enim huius mundi aetates gesta uariantur humana.                    
                                 <pb n="28r"/>De isto cursu chronica scripsit quę sunt secunda pars huius libri. Finem uero temporum elegantissime exposuit. cum de vii et viii aetate in fine sui operis disserte lucideque tracauit. <ref type="medieval" cRef="dtr_praefatio">Immo ipse labentibus curriculis temporum finem cum uoluerit imponet </ref>et reliqua. Quem finem deus tempori imponet  non per omnia patet facile. Si enim cęli et siderum cursibus quae hęc notissima tempora efficiunt profecto cęlum cum suius planetis aut penitus deficient quod absit aut sine ulla motatione de loco <subst>
                                     <del>ad</del>

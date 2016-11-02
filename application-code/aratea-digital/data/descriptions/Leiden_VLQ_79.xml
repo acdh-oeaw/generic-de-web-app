@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="5.0" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/rules/schema/ER/v0.4/europeana-regia.xsd" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Description of <ref type="mss" target="https://www.google.at/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=12&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwjUlp-60YTQAhWGvxQKHc4PA4gQFghNMAs&amp;url=https%3A%2F%2Fdisc.leidenuniv.nl%2Fwebclient%2FDeliveryManager%3Fcustom_att_2%3Dsimple_viewer%26pid%3D1739618&amp;usg=AFQjCNEPAT35U1FWC4RVm0RviP6w-z5Kvw">Leiden, Bibliotheek der Rijksuniversiteit Leiden, MS VLQ 79</ref>
+                </title>
+                <respStmt>
+                    <resp>Catalogued by:</resp>
+                    <name type="person">Ivana Dobcheva</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Digital edition according to TEI P5</edition>
+                <respStmt>
+                    <resp>TEI-P5 coded by </resp>
+                    <name type="person">Ivana Dobcheva</name>
+                    <name type="org"/>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>
+                    <name type="org"/><!--<ptr target=""/>-->
+                </publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc><!--
+            <revisionDesc>
+				<change who="" date=""></change>
+			</revisionDesc>
+		-->
+    </teiHeader>
+    <text>
+        <body>
+            <msDesc xml:id="leiden_vlq_79" xml:lang="eng">
+                <msIdentifier>
+                    <settlement>Leiden</settlement>
+                    <repository>Bibliotheek der Rijksuniversiteit Leiden</repository>
+                    <collection>VLQ</collection>
+                    <idno sortKey="leiden_vlq79">79</idno>
+                    <msName>Leiden Aratea</msName>
+                </msIdentifier>
+                <head>
+                    <title>Leiden Aratea</title>
+                    <note type="caption"/>
+                    <origPlace ref="#lotharingia">Lotharingia</origPlace>
+                    <origDate notBefore="0826" notAfter="0850">IX<hi rend="sup">2/4</hi>
+                    </origDate>
+                </head>
+                <msContents>
+                    <textLang mainLang="lat"/>
+                    <msItem>
+                        <locus from="Ir" to="Iv">Ir-v</locus>
+                        <note>blank with the exception of a later exlibris note.</note>
+                    </msItem>
+                    <msItem>
+                        <locus from="2r" to="97v"/>
+                        <author ref="#germanicus">Germanicus</author>
+                        <title ref="#germanicus_aratea">Aratea<note> Z family</note>
+                        </title>
+                        <msItem>
+                            <locus from="2r" to="92r">2r-92r</locus>
+                            <title>Aratea<note> vv. 1-725 with interpolations from Avienus</note>
+                            </title>
+                            <incipit>
+                                <hi rend="rubric">Ab ioue principium magno deduxit aratus</hi>
+                            </incipit>
+                            <explicit>Significet uentos uetruces fidamque quietem</explicit>
+                        </msItem>
+                        <msItem>
+                            <locus from="92v" to="93r"/>
+                            <note>blank.</note>
+                        </msItem>
+                        <msItem>
+                            <locus from="93v">93v</locus>
+                            <decoNote>Planisphere of the planetary orbits.</decoNote>
+                            <note>Text to each planet as for example: <quote>sol peragit circulum suum in CCLXV diebus et VI horis cuius pars altissima gemini, humillima sagittarius est.</quote>; <quote>Circulus signifer qui a grecis zodiacus appelatur habet in circulo pariter CCCLXV in latitudine XII per quem planete uario motu feruntur <gap reason="omitted"/>
+                                </quote>.</note>
+                        </msItem>
+                        <msItem>
+                            <locus from="94r" to="94v">94r-94v</locus>
+                            <note>Fragments III:</note>
+                            <incipit>Grandine permixtus aries niuibusque caducis</incipit>
+                            <explicit>Et rigor accedit uentis mitissimus ille.</explicit>
+                        </msItem>
+                        <msItem>
+                            <locus from="96r" to="96v">96r-v</locus>
+                            <note>Fragment II:</note>
+                            <incipit>Una uia est solis bissenis lucida signis</incipit>
+                            <explicit>Mercurius binos gradiuus perficit orbis.</explicit>
+                        </msItem>
+                    </msItem>
+                    <msItem>
+                        <locus from="97r" to="97v"/>
+                        <author ref="#avienus">Avienus</author>
+                        <title ref="#aratea_avienus">Aratea<note> vv. 1740-1762, 1769-1770, 1773, 1870, 1877-1878 (prognostica).</note>
+                        </title>
+                        <incipit>tempore tum proprio modulatur noctua carmen</incipit>
+                        <explicit>Pluribus indiciis sollers fulcire memento</explicit>
+                        <colophon>Vale fidens in d<am>omi</am>no xpi uestitus amore.</colophon>
+                        <msItem>
+                            <locus from="98r" to="99v"/>
+                            <note>blank.</note>
+                        </msItem>
+                        <decoNote>Illustrations of the constellations  on fols. 3v, 6v, 8v, 10v, 12v, 16v, 18v, 20v, 22v, 23v, 24v, 26v, 28v, 30v, 32v, 34v, 36v, 38v, 40v, 42v, 44v, 46v, 48v, 50v, 52v, 54v, 56v, 58v, 60v, 62v, 64v, 66v, 68v, 70v, 72v (now missing 74v probably), 76v, 78v, 80v, 82v, and 93v. See the iconographical analysis in <bibl>
+                                <abbr>Sternbilder des Mittelalters</abbr>, pp. 295-97</bibl> and <bibl>
+                                <abbr>Mütherich (1989)</abbr>
+                            </bibl>.</decoNote>
+                    </msItem>
+                </msContents>
+                <physDesc>
+                    <objectDesc form="codex">
+                        <supportDesc material="perg">
+                            <support>
+                                <p>
+                                    <material>Parchment</material>
+                                </p>
+                            </support>
+                            <extent>
+                                <measure type="leavesCount" quantity="95">95 folios</measure>
+                                <dimensions type="leaf" unit="mm">
+                                    <height>225</height>
+                                    <width>220</width>
+                                </dimensions>
+                            </extent>
+                            <foliation>Foliated 1-99 with pencil in the upper right corner (skipping n. 1, 13, 74 and 95 for the missing folios).</foliation>
+                            <collation>
+                                <formula>I<hi rend="sup">8(-1)</hi> (ff. 2-8, missing f.1), II<hi rend="sup">8(-1)</hi> (ff. 9-16, missing f.13), III-VIII<hi rend="sup">8</hi> (ff.17-24, 25-32, 33-40, 41-48, 49-56, 57-64), IX<hi rend="sup">8</hi> (ff.65-72), X<hi rend="sup">8(-1)</hi> (ff.73-80 missing f.74), XI<hi rend="sup">10(+1)</hi> (ff.81-91, f. 81 singleton), XII<hi rend="sup">8(-1)</hi> (ff.92-99, missing f.95)</formula>. Schema accroding to <bibl>
+                                    <abbr>Obbema (1989)</abbr>
+                                </bibl>.</collation>
+                            <condition>
+                                <p>Missing four folios (f.1, 13, 74 and 95), which were once replaced by paper leaves, and foliated. By the restoration of the manuscript in 1985-86 these paper leaves were removed.</p>
+                                <p>The carolingian scribe left the recto or verso side of folios with illustrations blank (3r, 6r, 8r, 10r, 12r, 16r, 18r, 20r, 22r, 23r, 24r, 26r, 28r, 30r, 32r, 34r, 36r, 38r, 40r, 42r, 44r, 46r, 48r, 50r, 52r, 54r, 56r, 58r, 60r, 62r, 64r, 66r, 68r, 70r, 72r, (now missing 74r was probably blank), 76r, 78r, 80r, 82r, 92v, 93r ). On some of these originally blank folios a later hand added the text in gothic minuscle (when the text was longer and could not be fit in the margins around the original text), so that at the present condition the MS has only 8r, 10r, 18r, 20r, 22r, 26r, 28r, 30r, 32r, 36r, 38r, 40r, 42r, 44r, 46r, 48r, 50r, 54r, 56r, 58r, 60r, 62r, 64r, 66r, 68r, 72r, 76r, 78r, 80r, and 82r blank.</p>
+                            </condition>
+                        </supportDesc>
+                        <layoutDesc>
+                            <layout columns="1" ruledLines="2 15">
+                                <p>15 ruled long lines.</p>
+                                <p>The first letter of every verse is written in red (exception 74v and 51r. Few red Initials (ff. 83r</p>
+                            </layout>
+                        </layoutDesc>
+                    </objectDesc>
+                    <scriptDesc>
+                        <scriptNote script="caprust">The poem is written in Capitalis rustica by several hands.</scriptNote>
+                        <scriptNote script="carolmin">
+                            <p>Caroline minuscle used only on f. 93v for short texts in the diagram of planetary motion. Carolingian <quote>a</quote> together with open cc-a. N used rarely. <quote>X</quote> with second stroke extended down to the left. The lower lobe of <quote>g</quote> is wide open. &amp; and st ligatures. Word-division almost complete. According to B. Bischoff this script is from <date notBefore="0826" notAfter="0850">s. IX<hi rend="sup">2/4</hi>
+                                </date> in <rs type="place">Lotharingia</rs>.</p>
+                        </scriptNote>
+                        <scriptNote script="textualis">In the <date notBefore="1251" notAfter="1300">s. XII<hi rend="sup">2</hi>
+                            </date> the text of the poem was written again in black ink in gothic minuscule.</scriptNote>
+                    </scriptDesc>
+                    <additions>Few interlinear notations in Caroline minuscle on ff. 83r, 91r-v and 94r. Possibly from the same hand which wrote f. 93v.</additions>
+                    <bindingDesc>
+                        <binding>
+                            <p>Modern binding.</p>
+                        </binding>
+                    </bindingDesc>
+                </physDesc>
+                <history>
+                    <origin>
+                        <p>Written in the <origDate notBefore="0826" notAfter="0850">s. IX<hi rend="sup">2/4</hi>
+                            </origDate>, somewhere in <origPlace ref="#lotharingia">Lotharingia</origPlace> (<origPlace ref="#aachen">Aachen</origPlace>-<origPlace ref="#metz">Metz</origPlace>) by the request of the royal court of <rs type="person" role="commissioner" ref="#louis_pious">Louis the Pious</rs> (813-840) and his second wife <rs type="person" ref="#judith">Judith</rs> (819-843); compiler and coordinator of the pictures and text  was presumably <rs type="person" role="editor" ref="#astronomus">the Astronomus</rs>.</p>
+                    </origin>
+                    <provenance>
+                        <p>The MS was probably in <rs type="place">St. Bertin</rs>
+                            <date notBefore="0990" notAfter="1010">around the year 1000</date> where it served as the exemplar for <ref type="altMs" target="Boulogne-sur-mer_BM_188.xml">Boulogne-sur-mer 188</ref>
+                        </p>
+                    </provenance>
+                    <provenance>
+                        <p>In the <date notBefore="1551" notAfter="1600">s. XVI<hi rend="sup">2</hi>
+                            </date> the manuscript was in the possession of an artist in Flanders. <rs type="person" ref="#susius">Jacobus van Suys</rs> bought the manuscript in <date when="1573-01">1573</date> in <rs type="place" ref="#gent">Gent</rs> (see the inscription on the flyleaf <quote>Sum Iacobi D<ex>anielis</ex> F<ex>ilius</ex> P<ex>atris</ex> N<ex>icolai</ex> Sussi. E pictoris pergula emptus mihi Gandaui Anno a Christo corporato MDLXXIII, Mense Ianuario <gap reason="omitted"/>
+                            </quote>).</p>
+                    </provenance>
+                    <provenance>
+                        <p>Acquired by <rs type="person" ref="#hugo_grotius">Hugo Grotius</rs> before the year <date notBefore="1595" notAfter="1600">1600</date>. After his death, in <date when="1648">1648</date> became part of the collection of <rs type="person" ref="#christina_from_sweden">Queen Christina from Sweden</rs> (1626-1689) in Antwerpen. The librarian <rs type="person" ref="#isaac_vossius">Isaac Vossius</rs> (1618-1689), who was responsible for the cathaloging of the collection, received the manuscript as a present from the queen.</p>
+                    </provenance>
+                    <acquisition>
+                        <p>After the death of Vossius, in <date when="1690">1690</date> Leiden University acquired the manuscript for its collection.</p>
+                    </acquisition>
+                </history>
+                <additional>
+                    <listBibl>
+                        <head>Selected bibliography:</head>
+                        <bibl>
+                            <abbr>Bischoff, Katalog II</abbr>, p. 60</bibl>
+                        <bibl>
+                            <abbr>Bischoff, Kommentar</abbr>.</bibl>
+                        <bibl>Dekker, Elly. "Carolingian Planetary Observations: The Case of the Leiden Planetary Configuration." <title>Journal for the history of astronomy</title> 38 (2007): 77-90.</bibl>
+                        <bibl>
+                            <abbr>Eastwood (2002)</abbr>.</bibl>
+                        <bibl>
+                            <abbr>Mütherich (1989)</abbr>.</bibl>
+                        <bibl>
+                            <abbr>Obbema (1989)</abbr>.</bibl>
+                        <bibl>
+                            <abbr>Sternbilder des Mittelalters</abbr>, pp. 292-298.</bibl>
+                        <bibl>Stückelberg, Alfred. "Sterngloben und Sternkarten. Zur wissenschaftlichen bedeutung des Leidener Aratus." <title>Museum helveticum: schweizerusche Zeitschrift für klassische Altertumswissenschaft</title> 47:2 (1990): 70-81.</bibl>
+                    </listBibl>
+                </additional>
+            </msDesc>
+        </body>
+    </text>
+</TEI>
