@@ -73,9 +73,11 @@ for $hit in collection(concat($config:app-root, '/data/'))//tei:TEI[.//*[@key=$s
     let $type := tokenize($doc,'/')[(last() - 1)]
     let $params := concat("&amp;directory=", $type, "&amp;stylesheet=", $type)
     return
-    <li>
-        <a href="{concat(app:hrefToDoc($hit),$params)}">{app:getDocName($hit)}</a>  
-    </li> 
+    <tr>
+        <td>
+            <a href="{concat(app:hrefToDoc($hit),$params)}">{app:getDocName($hit)}</a>
+        </td>
+    </tr> 
  };
   
  (:~

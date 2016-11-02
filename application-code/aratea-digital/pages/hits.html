@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div class="templates:surround?with=templates/page.html&amp;at=content">
+    <script src="$app-root/resources/js/tablesorter/js/jquery.tablesorter.js"/>
+    <script src="$app-root/resources/js/tablesorter/js/jquery.tablesorter.widgets.js"/>
+    <script src="$app-root/resources/js/tablesorter/js/jquery.tablesorter.pager.js"/>
+    <link rel="stylesheet" type="text/css" href="$app-root/resources/js/tablesorter/css/theme.bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="$app-root/resources/js/tablesorter/css/jquery.tablesorter.pager.css"/>
+    <script src="$app-root/resources/js/historyjs/native.history.js"/>
+    <script> $(function() { $("table").tablesorter({ theme : "bootstrap", widthFixed: false,
+        headerTemplate : '{content} {icon}', widgets : [ "uitheme", "filter", "zebra" ], filter_cssFilter: "form-control", }) }); 
+    </script>
     <h1>Hits</h1>
-    <div data-template="app:registerBasedSearch_hits"/>
+    <table>
+        <thead>
+            <tr>
+                <th>matching documents</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-template="app:registerBasedSearch_hits"/>
+        </tbody>
+    </table>
+    <script>
+        $( document ).ready(function() {
+        var fetched_param = decodeURIComponent($.urlParam("index"));
+        var fetched_searchkey = decodeURIComponent($.urlParam("searchkey"));
+        if (fetched_param != "null"){
+        $.tablesorter.setFilters( $('table'), [ fetched_param], true );
+        $('table').trigger('search', true);
+        }
+        $("td input").bind("keyup", function(e) {
+        var searchstring = $(this).val();
+        History.pushState({searchstring: "index-term"}, "looking for "+searchstring, "?searchkey="+fetched_searchkey+"&amp;index="+searchstring);   
+        });
+        });
+    </script>
 </div>
