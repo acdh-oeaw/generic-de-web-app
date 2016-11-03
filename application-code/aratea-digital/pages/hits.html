@@ -9,7 +9,12 @@
     <script> $(function() { $("table").tablesorter({ theme : "bootstrap", widthFixed: false,
         headerTemplate : '{content} {icon}', widgets : [ "uitheme", "filter", "zebra" ], filter_cssFilter: "form-control", }) }); 
     </script>
-    <h1>Hits</h1>
+    <h1>
+        <span id="hitcount"/> for
+        <strong>
+            <span id="searchkey"/>
+        </strong>
+    </h1>
     <table>
         <thead>
             <tr>
@@ -23,17 +28,15 @@
         </tbody>
     </table>
     <script>
-        $( document ).ready(function() {
-        var fetched_param = decodeURIComponent($.urlParam("index"));
-        var fetched_searchkey = decodeURIComponent($.urlParam("searchkey"));
-        if (fetched_param != "null"){
-        $.tablesorter.setFilters( $('table'), [ fetched_param], true );
-        $('table').trigger('search', true);
+        $( document ).ready(function() {       
+        var hits = ($('td.KWIC').children('p').length);
+        if (hits == 1){
+        $("#hitcount").text(hits+" Hit ");
         }
-        $("td input").bind("keyup", function(e) {
-        var searchstring = $(this).val();
-        History.pushState({searchstring: "index-term"}, "looking for "+searchstring, "?searchkey="+fetched_searchkey+"&amp;index="+searchstring);   
-        });
-        });
+        else {
+        $("#hitcount").text(hits+" Hits ");
+        }
+        $("#searchkey").text(decodeURIComponent($.urlParam("searchkey")));
+        });     
     </script>
 </div>

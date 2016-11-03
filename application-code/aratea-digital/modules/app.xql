@@ -84,7 +84,7 @@ for $title in collection(concat($config:app-root, '/data/'))//tei:TEI[.//*[@key=
     return
     <tr>
         <td>{$hits}</td>
-        <td>{$snippet}</td>
+        <td class="KWIC">{$snippet}</td>
         <td>
             <a href="{concat(app:hrefToDoc($title),$params)}">{app:getDocName($title)}</a>
         </td>
