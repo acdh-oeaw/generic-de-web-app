@@ -49,8 +49,11 @@ let $href := concat('show.html','?document=', app:getDocName($node))
  declare function app:ft_search($node as node(), $model as map (*)) {
  if (request:get-parameter("searchexpr", "") !="") then
  let $searchterm as xs:string:= request:get-parameter("searchexpr", "")
- for $hit in collection(concat($config:app-root, '/data/editions/'))//*[.//tei:p[ft:query(.,$searchterm)]|.//tei:cell[ft:query(.,$searchterm)]]
-    let $href := concat(app:hrefToDoc($hit), "&amp;searchexpr=", $searchterm) 
+ for $hit in collection(concat($config:app-root, '/data/'))//*[.//tei:p[ft:query(.,$searchterm)]|.//tei:cell[ft:query(.,$searchterm)] | .//tei:msDesc[ft:query(.,$searchterm)]]
+    let $doc := document-uri(root($hit))
+    let $type := tokenize($doc,'/')[(last() - 1)]
+    let $params := concat("&amp;directory=", $type, "&amp;stylesheet=", $type)
+    let $href := concat(app:hrefToDoc($hit), "&amp;searchexpr=", $searchterm, $params) 
     let $score as xs:float := ft:score($hit)
     order by $score descending
     return
