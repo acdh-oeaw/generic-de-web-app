@@ -183,7 +183,19 @@
     #####################
     ###  Formatierung ###
     #####################
---><!-- resp -->
+--><!--
+    #####################
+    ###  entity-index-linking ###
+    #####################
+-->
+    <xsl:template match="node()[@ref]">
+        <span style="color:green" class="linkedEntity">
+            <xsl:attribute name="data-key">
+                <xsl:value-of select="current()/@ref"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template><!-- resp -->
     <xsl:template match="tei:respStmt/tei:resp">
         <xsl:apply-templates/>&#160;
     </xsl:template>
@@ -193,22 +205,7 @@
                 <xsl:apply-templates/>
             </li>
         </xsl:for-each>
-    </xsl:template><!-- reference strings   -->
-    <xsl:template match="tei:rs[@ref or @key]">
-        <strong>
-            <xsl:element name="a">
-                <xsl:attribute name="class">reference</xsl:attribute>
-                <xsl:attribute name="data-type">
-                    <xsl:value-of select="concat('list', data(@type), '.xml')"/>
-                </xsl:attribute>
-                <xsl:attribute name="data-key">
-                    <xsl:value-of select="substring-after(data(@ref), '#')"/>
-                    <xsl:value-of select="@key"/>
-                </xsl:attribute>
-                <xsl:value-of select="."/>
-            </xsl:element>
-        </strong>
-    </xsl:template><!-- additions -->
+    </xsl:template><!-- reference strings   --><!-- additions -->
     <xsl:template match="tei:add">
         <xsl:element name="span">
             <xsl:attribute name="style">

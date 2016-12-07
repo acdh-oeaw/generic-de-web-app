@@ -101,6 +101,26 @@
                     </div>
                 </div>
             </div>
+            <script>
+            $(document).ready(function(){
+            var trigger = $('.linkedEntity');
+            $(trigger).click(function(){
+                var dataKey = $( this ).data('key');
+                dataKey = dataKey.substring(1);
+                var url = "entity-info.html?entityID="+dataKey
+               console.log([url, dataKey]);
+               // console.log(url);
+            $('#loadModal').load(url, function(){
+            $('#myModal').modal('show');
+            });
+            });
+            });
+        </script>
+            <script type="text/javascript">
+            $(window).load(function(){
+            $('#myModal').modal('show');
+            });
+        </script>
             <script type="text/javascript">
                 $(function (){
                   var options = {

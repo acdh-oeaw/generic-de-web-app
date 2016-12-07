@@ -184,3 +184,15 @@ let $params :=
 return 
     transform:transform($xml, $xsl, $params)
 };
+
+
+(:~
+ : creates a basic table of content derived from the documents stored in '/data/editions'
+ :)
+declare function app:showEntityInfo($node as node(), $model as map(*)) {
+    let $ref := xs:string(request:get-parameter("entityID", ""))
+    let $element := collection(concat($config:app-root,'/data/indices/'))//*[@xml:id=$ref]
+    for $x in $element
+    return
+        $x
+};
