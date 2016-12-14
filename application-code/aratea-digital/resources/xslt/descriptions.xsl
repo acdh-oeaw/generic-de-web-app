@@ -89,20 +89,12 @@
                                         </td>
                                     </tr>
                                 </tbody>
-                            </table><!--<div class="panel-footer">
-                        <xsl:element name="p">
-                            <xsl:attribute name="style">
-                                <xsl:text>text-align:center;</xsl:text>
-                            </xsl:attribute>
-                            Permalink zu dieser Seite: <br/>
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:value-of select="concat('http://digital-archiv.at:8081/exist/apps/buchbesitz-collection/show/', //tei:TEI/@xml:id)"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="concat('http://digital-archiv.at:8081/exist/apps/buchbesitz-collection/show/', //tei:TEI/@xml:id)"/>
-                            </xsl:element>
-                        </xsl:element>
-                    </div>-->
+                            </table>
+                            <div class="panel-footer">
+                                <p style="text-align:center;">
+                                    <a id="link_to_source"/>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -117,6 +109,29 @@
                     </div>
                 </div>
             </div>
+            <script type="text/javascript">
+                // creates a link to the xml version of the current docuemnt available via eXist-db's REST-API
+                var params={};
+                window.location.search
+                .replace(/[?&amp;]+([^=&amp;;]+)=([^&amp;;]*)/gi, function(str,key,value) {
+                params[key] = value;
+                }
+                );
+                var collection;
+                //alert(params['directory'])
+                if (params['directory'] === "undefined"  || params['directory'] === "") {
+                collection = 'editions';
+                } else {
+                collection = params['directory']
+                }
+                var path = window.location.origin+window.location.pathname;
+                var replaced = path.replace("exist/apps/", "exist/rest/db/apps/");
+                current_html = window.location.pathname.substring(window.location.pathname.lastIndexOf("/") + 1)
+                var source_dokument = replaced.replace("pages/"+current_html, "data/"+collection+"/"+params['document']);
+                // console.log(source_dokument)
+                $( "#link_to_source" ).attr('href',source_dokument);
+                $( "#link_to_source" ).text(source_dokument);
+            </script>
         </div>
     </xsl:template><!-- crit apparatus -->
     <xsl:template match="tei:subst">
@@ -204,26 +219,18 @@
                 </ul>
             </p>
         </xsl:for-each>
-    </xsl:template><!--  Links to indices   -->
-    <xsl:template match="tei:author[@ref]">
-        <xsl:element name="a">
-            <xsl:attribute name="class">reference</xsl:attribute>
-            <xsl:attribute name="data-type">listPers.xml</xsl:attribute>
+    </xsl:template><!--  Links to indices   --><!--
+    #####################
+    ###  entity-index-linking ###
+    #####################
+-->
+    <xsl:template match="node()[@ref]">
+        <strong style="color:green" class="linkedEntity">
             <xsl:attribute name="data-key">
-                <xsl:value-of select="substring-after(@ref, '#')"/>
+                <xsl:value-of select="current()/@ref"/>
             </xsl:attribute>
-            <xsl:value-of select="."/>
-        </xsl:element>
-    </xsl:template>
-    <xsl:template match="tei:title[@ref]">
-        <xsl:element name="a">
-            <xsl:attribute name="class">reference</xsl:attribute>
-            <xsl:attribute name="data-type">listWork.xml</xsl:attribute>
-            <xsl:attribute name="data-key">
-                <xsl:value-of select="substring-after(@ref, '#')"/>
-            </xsl:attribute>
-            <xsl:value-of select="."/>
-        </xsl:element>
+            <xsl:apply-templates/>
+        </strong>
     </xsl:template><!-- Incipit sectio in qua exemplaria efficiendi columnae --><!-- M. Dario Montecasparius Doctorem Petrum Andorferum S.P.D. -->
     <xsl:template match="tei:cb"/>
     <xsl:template match="tei:lb" mode="col">

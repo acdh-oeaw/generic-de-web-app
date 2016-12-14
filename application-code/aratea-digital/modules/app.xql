@@ -2,6 +2,7 @@ xquery version "3.0";
 module namespace app="http://www.digital-archiv.at/ns/aratea-digital/templates";
 declare namespace tei="http://www.tei-c.org/ns/1.0";
 declare namespace functx = 'http://www.functx.com';
+declare namespace util = "http://exist-db.org/xquery/util";
 import module namespace templates="http://exist-db.org/xquery/templates" ;
 import module namespace config="http://www.digital-archiv.at/ns/aratea-digital/config" at "config.xqm";
 import module namespace kwic = "http://exist-db.org/xquery/kwic" at "resource:org/exist/xquery/lib/kwic.xql";
@@ -154,11 +155,12 @@ declare function app:listPers($node as node(), $model as map(*)) {
  : creates a basic table of content derived from the documents stored in '/data/editions'
  :)
 declare function app:toc($node as node(), $model as map(*)) {
-    for $doc in collection(concat($config:app-root, '/data/editions/'))//tei:TEI
+    for $doc in (collection(concat($config:app-root, '/data/editions'))//tei:TEI, collection(concat($config:app-root, '/data/descriptions'))//tei:TEI)
+    let $collection := functx:substring-after-last(util:collection-name($doc), '/')
         return
         <tr>
             <td>
-                <a href="{app:hrefToDoc($doc)}">{app:getDocName($doc)}</a>
+                <a href="{concat(app:hrefToDoc($doc),'&amp;directory=',$collection,'&amp;stylesheet=',$collection)}">{app:getDocName($doc)}</a>
             </td>
         </tr>   
 };

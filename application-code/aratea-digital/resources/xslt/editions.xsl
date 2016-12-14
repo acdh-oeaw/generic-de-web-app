@@ -166,14 +166,21 @@
                 // creates a link to the xml version of the current docuemnt available via eXist-db's REST-API
                 var params={};
                 window.location.search
-                .replace(/[?&amp;]+([^=&amp;]+)=([^&amp;]*)/gi, function(str,key,value) {
+                .replace(/[?&amp;]+([^=&amp;;]+)=([^&amp;;]*)/gi, function(str,key,value) {
                 params[key] = value;
                 }
                 );
+                var collection;
+                //alert(params['directory'])
+                if (params['directory'] === "undefined"  || params['directory'] === "") {
+                collection = 'editions';
+                } else {
+                collection = params['directory']
+                }
                 var path = window.location.origin+window.location.pathname;
                 var replaced = path.replace("exist/apps/", "exist/rest/db/apps/");
                 current_html = window.location.pathname.substring(window.location.pathname.lastIndexOf("/") + 1)
-                var source_dokument = replaced.replace("pages/"+current_html, "data/editions/"+params['document']);
+                var source_dokument = replaced.replace("pages/"+current_html, "data/"+collection+"/"+params['document']);
                 // console.log(source_dokument)
                 $( "#link_to_source" ).attr('href',source_dokument);
                 $( "#link_to_source" ).text(source_dokument);
@@ -189,12 +196,12 @@
     #####################
 -->
     <xsl:template match="node()[@ref]">
-        <span style="color:green" class="linkedEntity">
+        <strong style="color:green" class="linkedEntity">
             <xsl:attribute name="data-key">
                 <xsl:value-of select="current()/@ref"/>
             </xsl:attribute>
             <xsl:apply-templates/>
-        </span>
+        </strong>
     </xsl:template><!-- resp -->
     <xsl:template match="tei:respStmt/tei:resp">
         <xsl:apply-templates/>&#160;
@@ -205,7 +212,22 @@
                 <xsl:apply-templates/>
             </li>
         </xsl:for-each>
-    </xsl:template><!-- reference strings   --><!-- additions -->
+    </xsl:template>
+    <xsl:template match="tei:msItem">
+        <xsl:for-each select=".">
+            <p>
+                <ul>
+                    <xsl:for-each select="./*">
+                        <li>
+                            <strong>
+                                <xsl:value-of select="name(.)"/>
+                            </strong>: <xsl:apply-templates select="."/>
+                        </li>
+                    </xsl:for-each>
+                </ul>
+            </p>
+        </xsl:for-each>
+    </xsl:template><!-- additions -->
     <xsl:template match="tei:add">
         <xsl:element name="span">
             <xsl:attribute name="style">
