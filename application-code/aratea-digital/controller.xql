@@ -5,6 +5,13 @@ declare variable $exist:resource external;
 declare variable $exist:controller external;
 declare variable $exist:prefix external;
 declare variable $exist:root external;
+declare variable $forwarded-hostname := if (contains(request:get-header('X-Forwarded-Host'), ','))
+                                then substring-before(request:get-header('X-Forwarded-Host'), ',')
+                                else request:get-header('X-Forwarded-Host');
+declare variable $urlScheme := if ((lower-case(request:get-header('X-Forwarded-Proto')) = 'https') or
+       (lower-case(request:get-header('Front-End-Https')) = 'on')) then 'https:' else 'http:';
+declare variable $xForwardBasedUrl := request:get-header('X-Forwarded-Request-Uri');
+declare variable $url := $urlScheme||$forwarded-hostname||$xForwardBasedUrl||'pages/index.html';
 
 if ($exist:path eq '') then
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
@@ -14,7 +21,7 @@ if ($exist:path eq '') then
 else if ($exist:path eq "/") then
     (: forward root path to index.xql :)
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
-        <redirect url="pages/index.html"/>
+        <redirect url="{$url}"/>
     </dispatch>
     
 else if (ends-with($exist:resource, ".html")) then
