@@ -275,15 +275,39 @@
         <xsl:variable name="currentFrom">
             <xsl:value-of select="./@from"/>
         </xsl:variable>
+        <xsl:variable name="currentFrom">
+            <xsl:value-of select="./@from"/>
+        </xsl:variable>
+        <xsl:variable name="currentTo">
+            <xsl:value-of select="./@to"/>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="./@to">
+                <xsl:element name="a">
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="ancestor::node()//tei:graphic[@n=$currentFrom]/@url"/>
+                    </xsl:attribute>
+                    <xsl:value-of select="."/>
+                </xsl:element>
+                <xsl:element name="a">
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="ancestor::node()//tei:graphic[@n=$currentTo]/@url"/>
+                    </xsl:attribute>
+                    [jump to excipit]
+                </xsl:element>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:element name="a">
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="ancestor::node()//tei:graphic[@n=$currentFrom]/@url"/>
+                    </xsl:attribute>
+                    <xsl:value-of select="."/>
+                </xsl:element>
+            </xsl:otherwise>
+        </xsl:choose>       
         
-        <xsl:element name="a">
-            <xsl:attribute name="href">
-                <xsl:value-of select="ancestor::node()//tei:graphic[@n=$currentFrom]/@url"/>
-<!--                hansi-->
-            </xsl:attribute>
-            <xsl:value-of select="."/>
-        </xsl:element>
     </xsl:template>
+    
     <xsl:template match="tei:body[descendant::tei:cb]">
         <xsl:for-each select="descendant::tei:cb[@n = 'a']">
             <xsl:variable name="next" select="(following::tei:cb)[1]"/>
