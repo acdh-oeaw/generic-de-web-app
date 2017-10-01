@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns="http://www.w3.org/1999/xhtml" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="tei" version="2.0"><!-- <xsl:strip-space elements="*"/>-->
     <xsl:param name="ref"/><!--
 ##################################
@@ -272,9 +271,16 @@
             <xsl:attribute name="style">
                 <xsl:text>text-align:right;</xsl:text>
             </xsl:attribute>
+            <xsl:element name="a">
+                <xsl:attribute name="href">
+                    <xsl:value-of select="@facs"/>
+                </xsl:attribute>
+                <xsl:attribute name="target">_blank</xsl:attribute>
+            
             <xsl:text>[Bl.</xsl:text>
             <xsl:value-of select="@n"/>
             <xsl:text>]</xsl:text>
+            </xsl:element>
         </xsl:element>
         <xsl:element name="hr"/>
     </xsl:template><!-- Tabellen -->
